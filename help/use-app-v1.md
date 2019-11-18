@@ -1,17 +1,15 @@
 ---
 title: Usar o aplicativo de desktop AEM versão 1.x
-seo-title: Usar o aplicativo Adobe Experience Manager para desktop versão 1.x
 description: Saiba como usar o aplicativo Adobe Experience Manager para desktop versão 1.x e otimizar seu trabalho com ativos no desktop.
-seo-description: Saiba como usar o aplicativo Adobe Experience Manager para desktop versão 1.x e otimizar seu trabalho com ativos em fluxos de trabalho de desktop e criação.
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c305f57b8ad874bcffc250689d917e31820225e4
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
