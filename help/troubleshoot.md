@@ -1,22 +1,20 @@
 ---
 title: Práticas recomendadas para o aplicativo de desktop AEM e solução de problemas
-seo-title: Solução de problemas e práticas recomendadas do aplicativo de desktop AEM
 description: Siga as práticas recomendadas e solucione problemas para resolver problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
-seo-description: Siga as práticas recomendadas e solucione problemas para resolver problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a46660a3d56100e0d767e7f2b54656782bb5e7a7
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
 
-# Solução de problemas do aplicativo de desktop AEM {#troubleshoot-v2}
+# Troubleshoot AEM desktop app {#troubleshoot-v2}
 
 O aplicativo de desktop Adobe Experience Manager (AEM) se conecta a um repositório DAM (Digital Asset Management, Gerenciamento de ativos digitais) remoto da implantação do AEM. O aplicativo obtém informações do repositório e resultados da pesquisa em seu computador, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do AEM Assets.
 
