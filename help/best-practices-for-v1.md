@@ -1,17 +1,15 @@
 ---
 title: Práticas recomendadas para aplicativos de desktop AEM versão 1.x
-seo-title: Práticas recomendadas para aplicativos de desktop AEM versão 1.x
 description: Principais recursos e uso recomendado do aplicativo Adobe Experience Manager para desktop versão 1.x.
-seo-description: Principais recursos e uso recomendado do aplicativo Adobe Experience Manager para desktop versão 1.x.
 uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 57d5cd78-abce-4ede-a50e-7c161db43ae
+discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 946b853d740444853525e540ff7af1cbc46f9998
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
@@ -30,7 +28,7 @@ O aplicativo de desktop monta o repositório AEM Assets como um compartilhamento
 >
 >Antes de ler este documento, você pode consultar as práticas [recomendadas gerais de integração do](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) AEM e da Creative Cloud para obter uma visão geral de nível superior do tópico.
 
-## Arquitetura de aplicativo para desktop do AEM {#aem-desktop-app-architecture}
+## AEM desktop app architecture {#aem-desktop-app-architecture}
 
 O aplicativo de desktop AEM usa compartilhamentos de rede WebDAV (Windows) ou SMB (Mac) para montar compartilhamentos de rede. O compartilhamento de rede montado é somente local. O aplicativo de desktop AEM intercepta as chamadas (abrir, ler, gravar) e fornece armazenamento em cache local adicional. Ele traduz chamadas remotas para o servidor de ativos AEM para solicitações HTTP de AEM otimizadas. O diagrama a seguir descreve a arquitetura do aplicativo para desktop do AEM.
 
