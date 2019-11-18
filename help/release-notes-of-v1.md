@@ -1,17 +1,15 @@
 ---
 title: Notas de versão do aplicativo para desktop AEM para a versão 1.x
-seo-title: Notas de versão do aplicativo para desktop AEM para a versão 1.x
 description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para o aplicativo de desktop AEM versão 1.x.
-seo-description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para o aplicativo de desktop AEM versão 1.x.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c305f57b8ad874bcffc250689d917e31820225e4
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
@@ -20,12 +18,12 @@ source-git-commit: c305f57b8ad874bcffc250689d917e31820225e4
 
 ## Informações da versão {#release-information}
 
-| Produtos | Aplicativo de desktop Adobe Experience Manager (AEM) |
+| Produtos | Aplicativo de desktop do Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
 | Versão | 1.10 (1.10.0.3 no Mac e no Windows) |
 | Tipo | Versão secundária |
 | Data | 31 de agosto de 2018 |
-| Download de URLs | [Mac OS X 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); 32 [bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe)do Windows; [Windows 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
+| URLs para download | [Mac OS X 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); 32 [bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe)do Windows; [Windows 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
 | Compatibilidade | AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
@@ -36,7 +34,7 @@ source-git-commit: c305f57b8ad874bcffc250689d917e31820225e4
 
 O AEM Desktop é compatível com os seguintes sistemas operacionais:
 
-* Mac OS X 10.10 ou posterior, com as últimas correções de erros.
+* Mac OS X 10.10 ou posterior, com as correções de erros mais recentes.
 * Windows 7 e Windows 10 com os service packs e correções de erros mais recentes.
 
 A Adobe recomenda usar a versão mais recente do AEM Desktop para aproveitar a funcionalidade mais recente, as correções de erros mais recentes e o melhor desempenho possível.
@@ -45,7 +43,7 @@ A versão do aplicativo AEM Desktop que você está planejando instalar no compu
 
 Consulte a matriz [de compatibilidade](#compatibilitymatrix) detalhada no final deste documento para avaliar os pré-requisitos para sua configuração.
 
-## Novidades do aplicativo 1.10 para desktop do AEM {#what-s-new-in-aem-desktop-app}
+## What's New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
 
 O aplicativo de desktop AEM 1.10 foca na melhoria da experiência do usuário em uploads grandes, informações sobre as operações em segundo plano e experiência otimizada ao abrir ativos com arquivos vinculados (como o InDesign).
 
@@ -295,7 +293,7 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
 
 **Usar certificados SSL assinados pela CA.** Observe que o aplicativo de desktop AEM não oferece suporte a certificados SSL autoassinados ao se conectar ao AEM por uma conexão segura HTTPS. Um certificado assinado pela CA é necessário no servidor para essas conexões. (CQ-87941)
 
-## Known issues {#known-issues}
+## Problemas conhecidos {#known-issues}
 
 * Geral:
    * Os URLs do servidor são necessários para apontar para o servidor sem um caminho (por exemplo, `http://server`, `https://server`, `http://server:port`ou `https://server:port`). Caminhos de contexto e subpastas diferentes de /content/dam não são suportados (CQ-89343, CQ-87272)
