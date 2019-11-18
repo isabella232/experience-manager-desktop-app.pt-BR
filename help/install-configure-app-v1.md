@@ -1,17 +1,15 @@
 ---
 title: Instalar e configurar o aplicativo de desktop AEM versão 1.x
-seo-title: Instalar e configurar o aplicativo de desktop AEM versão 1.x
 description: Instale e configure o aplicativo de desktop AEM versão 1.x para trabalhar com os servidores do AEM Assets e mapeie os ativos para montar como uma unidade em seu desktop.
-seo-description: Instale e configure o aplicativo de desktop AEM versão 1.x para trabalhar com os servidores do AEM Assets e mapeie os ativos para montar como uma unidade em seu desktop.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f6365302-1690-4719-9b8c-035719422740
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ce29042aff6d4caea0e7b8a56673d4bfed03a45
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
