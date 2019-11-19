@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ---
 
@@ -84,7 +84,7 @@ Se você estiver atualizando de um aplicativo de desktop do AEM anterior, é nec
 
 O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema de arquivos local e vice-versa, conforme iniciado pelas ações do usuário.
 
-![Fluxo de ativos do servidor AEM para aplicativos de desktop nativos por meio de aplicativos de desktop](assets/do-not-localize/da20_flow_diagram.png)
+![Fluxo de ativos do servidor AEM para aplicativos de desktop nativos por meio de aplicativos de desktop](assets/da20_flow_diagram.png)
 
 ## Problemas conhecidos {#known-issues-v2}
 
