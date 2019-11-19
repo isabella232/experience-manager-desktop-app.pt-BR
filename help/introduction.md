@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ---
 
@@ -47,6 +47,6 @@ O novo aplicativo traz melhorias consideráveis à experiência do usuário, al�
 
 Os principais casos de uso e melhorias do novo aplicativo são mapeados com a jornada do cliente na ilustração a seguir.
 
-![Novidades no aplicativo de desktop do AEM](assets/do-not-localize/whats-new-desktop-app-v2.png)
+![Novidades no aplicativo de desktop do AEM](assets/aem_desktop_app_usecases_v2.png)
 
 O aplicativo de desktop permite que os usuários realizem todos os casos de uso mencionados acima diretamente no aplicativo. Se necessário, você também pode optar por fazer a detecção de ativos na interface da Web e passar o controle para o aplicativo para abrir e editar os ativos.
