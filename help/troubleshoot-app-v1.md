@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -24,11 +24,11 @@ O aplicativo de desktop Adobe Experience Manager (AEM) inclui utilitários que a
 
 Com essa arquitetura, o aplicativo desktop intercepta chamadas do sistema de arquivos (abrir, fechar, ler, gravar e assim por diante) no compartilhamento de rede montado e as converte em chamadas HTTP nativas do AEM para o servidor AEM. Os arquivos são armazenados em cache localmente. Para obter mais detalhes, consulte [Usar o aplicativo de desktop AEM v1.x](use-app-v1.md).
 
-## Visão geral dos componentes do aplicativo para desktop {#desktop-nbsp-app-component-overview}
+## AEM desktop app component overview {#desktop-app-component-overview}
 
 o aplicativo desktop inclui os seguintes componentes:
 
-* **O aplicativo** Desktop: Monta/desmonta o DAM como um sistema de arquivos remoto e traduz as chamadas do sistema de arquivos entre o compartilhamento de rede montado localmente e a instância remota do AEM à qual ele se conecta.
+* **O aplicativo** desktop: O aplicativo monta ou desmonta o DAM como um sistema de arquivos remoto e traduz as chamadas do sistema de arquivos entre o compartilhamento de rede montado localmente e a instância remota do AEM à qual ele se conecta.
 * **Cliente** WebDAV/SMB do sistema operacional: Trata da comunicação entre o Windows Explorer/Finder e o aplicativo de desktop. Se um arquivo for recuperado, criado, modificado, excluído, movido ou copiado, o cliente WebDAV/SMB do sistema operacional (OS) comunicará esta operação para o aplicativo de desktop. Depois de receber a comunicação, o aplicativo de desktop a converte em chamadas de API remota nativas do AEM. Por exemplo, se um usuário cria um arquivo no diretório montado, o cliente WebDAV/SMB inicia uma solicitação, que o aplicativo desktop converte em uma solicitação HTTP que cria o arquivo no DAM. O cliente WebDAV/SMB é um componente incorporado do SO. Ele não é afiliado a aplicativos de desktop, AEM ou Adobe de nenhuma forma.
 * **Instância** do Adobe Experience Manager: Fornece acesso aos ativos armazenados no repositório DAM do AEM Assets. Além disso, ele executa ações solicitadas pelo aplicativo desktop em nome dos aplicativos de desktop locais que interagem com o compartilhamento de rede montado. A instância de AEM de destino deve executar o AEM versão 6.1 ou superior. Instâncias do AEM que executam versões anteriores do AEM podem exigir pacotes de recursos adicionais e hot fixes instalados para se tornarem totalmente funcionais.
 
@@ -87,7 +87,7 @@ Todas as operações não são armazenadas em cache localmente. Os itens a segui
 
 ## Operações individuais {#individual-operations}
 
-Ao solucionar problemas de desempenho subotimizado para usuários individuais, consulte primeiro [Limitações](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations). As seções subsequentes incluem sugestões para melhorar o desempenho de usuários individuais.
+Ao solucionar problemas de desempenho sub-otimizado para usuários individuais, consulte primeiro [Limitações](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations). As seções subsequentes incluem sugestões para melhorar o desempenho de usuários individuais.
 
 ## Recomendações de largura de banda {#bandwidth-recommendations}
 
@@ -133,7 +133,7 @@ Você pode melhorar o desempenho no lado do AEM, ativando fluxos de trabalho tra
 
 ### Ajustar fila de Fluxo de trabalho transitório do Granite {#adjust-granite-transient-workflow-queue}
 
-Outro método para melhorar o desempenho do AEM é configurar o valor máximo de trabalhos paralelos para o trabalho da Fila de Fluxo de Trabalho Transitório Granite. O valor recomendado é aproximadamente a metade do número de CPUs disponíveis no servidor. Para ajustar o valor, execute estas etapas:
+Outro método para melhorar o desempenho do AEM é configurar o valor máximo de trabalhos paralelos para o trabalho da Fila de Fluxo de Trabalho Transitório Granite. O valor recomendado é aproximadamente a metade do número da CPU disponível no servidor. Para ajustar o valor, execute estas etapas:
 
 1. Navegue até */system/console/configMgr* na instância do AEM a ser configurada (por exemplo, <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>).
 1. Procure **QueueConfiguration** e clique para abrir cada tarefa até localizar o trabalho **Granite Transient Workflow Queue** . Clique no ícone Editar ao lado dele.
@@ -141,7 +141,7 @@ Outro método para melhorar o desempenho do AEM é configurar o valor máximo de
 
 ## Configuração AWS {#aws-configuration}
 
-Devido às limitações de largura de banda da rede, o desempenho do WebDAV/SMB pode diminuir quando vários usuários trabalham simultaneamente. A Adobe recomenda aumentar o tamanho da instância AWS para uma instância de AEM de destino executada no AWS para melhorar o desempenho do WebDAV/SMB.
+Devido às limitações de largura de banda da rede, o desempenho do WebDAV/SMB pode diminuir quando vários usuários trabalham simultaneamente. A Adobe recomenda aumentar o tamanho da instância AWS para uma instância de AEM de destino que é executada no AWS para melhorar o desempenho do WebDAV/SMB.
 
 Essa medida aumenta especificamente a quantidade de largura de banda de rede disponível para o servidor. Veja alguns detalhes:
 
@@ -155,7 +155,7 @@ Há algumas limitações conhecidas na maneira como você pode interagir com arq
 
 ### Geral {#general}
 
-Ao gravar em um arquivo com check-out, o bloqueio é aplicado somente na implementação WebDAV do AEM. Consequentemente, o bloqueio só é imposto por clientes que usam o WebDAV, como o aplicativo de desktop. O bloqueio não é imposto pela interface da Web do AEM. A interface do AEM apenas exibe um ícone de cadeado na exibição de cartão para os ativos com check-out. O ícone é superficial e não tem efeito sobre o comportamento do AEM.
+Ao gravar em um arquivo com check-out, o bloqueio é aplicado somente na implementação do AEM WebDAV. Consequentemente, o bloqueio só é imposto por clientes que usam o WebDAV, como o aplicativo de desktop. O bloqueio não é imposto pela interface da Web do AEM. A interface do AEM apenas exibe um ícone de cadeado na exibição de cartão para os ativos com check-out. O ícone é superficial e não tem efeito sobre o comportamento do AEM.
 
 Em geral, os clientes WebDAV nem sempre se comportam como esperado. Pode haver outros problemas. No entanto, atualizar ou verificar o ativo no AEM é uma forma sólida de verificar se um ativo não está sendo modificado. Esse comportamento é típico dos clientes do OS WebDAV, que não estão sob o controle da Adobe.
 
@@ -212,7 +212,7 @@ A maneira mais simples de corrigir essa situação é abrir o arquivo em conflit
 
 Limpar o cache do AEM Desktop é uma tarefa preliminar de solução de problemas que pode resolver vários problemas do AEM Desktop.
 
-Você pode limpar o cache excluindo o diretório de cache do aplicativo nos seguintes locais: Windows: %LocalAppData%\Adobe\AssetsCompanion\Cache\
+Você pode limpar o cache excluindo o diretório de cache do aplicativo nos seguintes locais:Windows: %LocalAppData%\Adobe\AssetsCompanion\Cache\
 
 Mac: ~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/
 
