@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -59,13 +59,13 @@ Na segunda fase, o aplicativo de desktop carrega o arquivo atualizado no servido
 
 ## Conectar-se a uma instância do AEM atrás de um dispatcher {#connect-to-an-aem-instance-behind-a-dispatcher}
 
-Os métodos Copiar e mover na API de ativos exigem que os seguintes cabeçalhos adicionais sejam passados para o AEM:
+Os métodos de cópia e movimentação na API Ativos exigem que os seguintes cabeçalhos adicionais sejam passados para o AEM:
 
 * Destino X
 * Profundidade X
 * X-Overwrite
 
-A área de trabalho do AEM se conecta ao AEM usando um URL que inclui a porta padrão. Portanto, a configuração *virtualhosts* na configuração do dispatcher deve incluir o número da porta padrão. Para obter mais informações sobre a configuração de hosts virtuais, consulte [Identificação de hosts](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuais.
+A área de trabalho do AEM se conecta ao AEM usando um URL que inclui a porta padrão. Portanto, a `virtualhosts` configuração na configuração do dispatcher deve incluir o número da porta padrão. Para obter mais informações sobre a `virtualhosts` configuração, consulte [Identificação de hosts](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuais.
 
 Para obter informações adicionais sobre como configurar o dispatcher para passar por esses cabeçalhos adicionais, consulte [Especificação dos cabeçalhos](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
 
@@ -119,6 +119,6 @@ Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edi
 * [Introdução ao aplicativo de desktop do AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
 * [Usar o aplicativo de desktop do AEM](use-app-v1.md)
 
-* [Entenda o check-in/check-out com o aplicativo de desktop AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
+* [Compreender o check-in/check-out com o aplicativo de desktop AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
 * [Usar o aplicativo de desktop com os ativos AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
 * [Solução de problemas do aplicativo de desktop AEM](troubleshoot-app-v1.md)
