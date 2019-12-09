@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -26,7 +26,7 @@ Siga as seguintes práticas recomendadas para evitar alguns problemas comuns e a
 
 * **Entenda como o aplicativo de desktop funciona**: Antes de começar a usar o aplicativo, aguarde alguns minutos sabendo como ele funciona. Saiba mais sobre a vinculação entre a interface do usuário da Web e a área de trabalho, o mapeamento do repositório, o armazenamento em cache de ativos, a gravação local e o upload em segundo plano. Veja [como funciona](release-notes.md#how-app-works).
 
-* **Evite caracteres não suportados em nomes** de pastas:Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas nos ativos](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)AEM. Alguns casos de uso do AEM podem ser afetados por caracteres não suportados no nome da pasta.
+* **Evite caracteres não suportados em nomes** de pastas: Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas nos ativos](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)AEM. Alguns casos de uso do AEM podem ser afetados por caracteres não suportados no nome da pasta.
 
 * **Práticas recomendadas para evitar conflitos**: Para evitar conflitos em potencial ao colaborar em vários ativos, consulte [evitar conflitos](using.md#adv-workflow-collaborate-avoid-conflicts)de edição.
 
