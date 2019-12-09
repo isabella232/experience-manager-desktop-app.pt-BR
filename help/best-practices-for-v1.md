@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -46,7 +46,7 @@ Os principais recursos do aplicativo de desktop AEM incluem:
 * Coloque ativos vinculados em outros documentos: Em aplicativos como a Creative Cloud (PS, ID, AI etc), você pode colocar um arquivo externo como um link (por exemplo, você pode inserir uma imagem em um documento do InDesign). Nesse caso, a montagem de compartilhamento de rede permite que você navegue e selecione ativos do AEM para colocação. A inserção de arquivos vinculados também funciona em alguns aplicativos que não são da Adobe, como o MS Office.
 * Resolução de referência no AEM: Se os arquivos inseridos e o arquivo principal com links estiverem armazenados no AEM, ele poderá fornecer automaticamente informações do lado do servidor sobre as referências dos ativos.
 * Acesse o ativo da área de trabalho: No compartilhamento de rede montado, um menu contextual fornece uma caixa de diálogo Mais informações (visualização maior, metadados principais) e a capacidade de abrir um ativo na interface do usuário do AEM.
-* Carregando pastas grandes e hierárquicas em massa: Se você usar a opção Criar &gt; Carregamento de pasta na interface do usuário do AEM para fazer upload de ativos, o aplicativo da área de trabalho do AEM fará upload da hierarquia de pastas selecionada para o AEM em segundo plano. O progresso do upload pode ser monitorado com uma interface de usuário dedicada no aplicativo de desktop.
+* Carregando pastas grandes e hierárquicas em massa: Se você usar a opção Criar &gt; Carregamento de pasta na interface do usuário do AEM para fazer upload de ativos, o aplicativo da área de trabalho do AEM fará upload da hierarquia de pastas selecionada para o AEM em segundo plano. O progresso do upload pode ser monitorado com uma interface dedicada no aplicativo de desktop.
 
 ## Uso inadequado do aplicativo de desktop AEM {#inappropriate-use-of-aem-desktop-app}
 
@@ -64,7 +64,7 @@ Os principais recursos do aplicativo de desktop AEM incluem:
 
 O aplicativo de desktop AEM fornece acesso virtual a todo o repositório DAM - e pode ser complicado para os usuários criativos de desktop encontrar e acessar os ativos certos em seu desktop. Use essas práticas recomendadas para simplificar isso para eles.
 
-* Use os recursos de colaboração na interface do usuário do AEM Assets para fornecer acesso mais direto aos ativos certos para o usuário criativo. Compartilhar pastas ou coleções, fornecer coleções inteligentes (pesquisas salvas) ou enviar notificações com ponteiros para os ativos certos são algumas delas. O usuário criativo pode usar as ações de desktop na interface do usuário da Web para obter acesso rápido a esses ativos em sua área de trabalho.
+* Use os recursos de colaboração na interface do usuário do AEM Assets para fornecer acesso mais direto aos ativos certos para o usuário criativo. Compartilhar pastas ou coleções, fornecer coleções inteligentes (pesquisas salvas) ou enviar notificações com ponteiros para os ativos certos são algumas delas. O usuário criativo pode usar as ações da área de trabalho na interface do usuário da Web para obter acesso rápido a esses ativos em seu desktop.
 * Considere as permissões certas para ativos (controle de acesso) para simplificar a visualização no repositório DAM para os usuários criativos, basicamente limitando seu acesso somente aos ativos de que eles precisam / que estão interessados:
 
    * Algumas áreas não relevantes para os usuários criativos podem ser negadas para seus grupos de usuários, para removê-los de sua visão, também no desktop
@@ -109,7 +109,9 @@ Para entender as práticas recomendadas sobre a configuração de rede do AEM As
 
 * **** Salvar largura de banda: Considere desativar a visualização do ícone no Finder no Mac - ao navegar pelo repositório montado usando o Finder. O Finder solicita que cada arquivo gere uma visualização e faz com que o aplicativo desktop baixe e armazene o ativo em cache localmente. Observe que, ao economizar largura de banda, isso também diminuiria a experiência do usuário para os usuários no desktop, portanto, isso deve ser feito ao trabalhar com repositórios com ativos grandes e/ou largura de banda limitada.
 
-**** Observação: Para desativar visualizações de ícones, no Finder vá para Exibir, selecione Opções de visualização e desmarque a opção "Mostrar visualização de ícones". Isso só funciona para a pasta atual - para torná-la padrão, clique no botão "Usar como padrão" na mesma janela.
+>[!NOTE]
+>
+>Para desativar visualizações de ícones, no Finder vá para Exibir, selecione Opções de visualização e desmarque a opção "Mostrar visualização de ícones". Isso só funciona para a pasta atual - para torná-la padrão, clique no botão "Usar como padrão" na mesma janela.
 
 ### Otimizando o desempenho do servidor {#optimizing-server-performance}
 
