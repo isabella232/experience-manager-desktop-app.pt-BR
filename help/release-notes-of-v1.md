@@ -9,14 +9,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: 75e7cbaaa23b441b5e3a6e55381cd5f548231537
 
 ---
 
 
 # Notas de versão do aplicativo de desktop AEM v1.x{#aem-desktop-app-release-notes}
 
-## Informações da versão {#release-information}
+Para o aplicativo de desktop versão v1.x, veja a seguir os links de download e as informações de compatibilidade do AEM.
 
 | Produtos | Aplicativo de desktop do Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
@@ -24,7 +24,7 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 | Tipo | Versão secundária |
 | Data | 31 de agosto de 2018 |
 | URLs para download | [Mac OS X 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); 32 [bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe)do Windows; [Windows 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
-| Compatibilidade | AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| Compatibilidade | AEM 6.5.x; AEM 6.4.x; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ O AEM Desktop é compatível com os seguintes sistemas operacionais:
 * Mac OS X 10.10 ou posterior, com as correções de erros mais recentes.
 * Windows 7 e Windows 10 com os service packs e correções de erros mais recentes.
 
-A Adobe recomenda usar a versão mais recente do AEM Desktop para aproveitar a funcionalidade mais recente, as correções de erros mais recentes e o melhor desempenho possível.
+A Adobe recomenda usar a versão mais recente do aplicativo AEM para desktop para aproveitar a funcionalidade mais recente, as correções de erros mais recentes e o melhor desempenho possível.
 
-A versão do aplicativo AEM Desktop que você está planejando instalar no computador local requer uma versão específica do servidor AEM/componentes adicionais do servidor (service packs, hot fixes ou pacotes de recursos). Verifique se o servidor AEM está configurado corretamente antes de se conectar a ele pela primeira vez. Se precisar de ajuda, entre em contato com o administrador do AEM.
+A versão do aplicativo de desktop AEM que você está planejando instalar em sua máquina local requer uma versão específica do servidor AEM/componentes adicionais do servidor (service packs, hot fixes ou pacotes de recursos). Verifique se o servidor AEM está configurado corretamente antes de se conectar a ele pela primeira vez. Se precisar de ajuda, entre em contato com o administrador do AEM.
 
 Consulte a matriz [de compatibilidade](#compatibilitymatrix) detalhada no final deste documento para avaliar os pré-requisitos para sua configuração.
 
@@ -113,8 +113,8 @@ Uploads em massa: Carregar hierarquias de pastas grandes via Criar &gt; Carregar
 
 **Ícones para indicar o status das operações** em segundo plano O ícone do aplicativo indicará o estado das operações em segundo plano para fornecer uma melhor indicação visual aos usuários. Por exemplo, quando o aplicativo não estiver conectado ao AEM, o ícone ficará acinzentado, quando houver um upload ativo, ele mostrará uma sobreposição "sincronizada" etc.
 
-**Pré-busca dos ativos**vinculados Para melhorar a experiência do usuário ao trabalhar com documentos do InDesign que incluem ativos vinculados armazenados no AEM, o aplicativo de desktop tentará e pré-busca desses arquivos vinculados para o cache local antes de baixar e abrir o documento do InDesign. Dessa forma, o usuário terá os arquivos vinculados disponíveis localmente e não precisará aguardar mais ao acessá-los no InDesign (no painel Links).
-Observe que a pré-busca só funciona se o AEM reconhecer os links no lado do servidor. Um ativo com links reconhecidos terá uma lista de "Referências" listada na exibição Propriedades do ativo do InDesign.
+**Pré-busca dos ativos**vinculados Para melhorar a experiência do usuário ao trabalhar com documentos do InDesign que incluem ativos vinculados armazenados no AEM, o aplicativo de desktop tentará pré-buscar esses arquivos vinculados ao cache local antes de baixar e abrir o documento do InDesign. Dessa forma, o usuário terá os arquivos vinculados disponíveis localmente e não precisará aguardar mais ao acessá-los no InDesign (no painel Links).
+Observe que a busca prévia só funciona se o AEM reconhecer os links no lado do servidor. Um ativo com links reconhecidos terá uma lista de "Referências" listada na exibição Propriedades do ativo do InDesign.
 
 ### Melhorias disponíveis desde o aplicativo de desktop AEM 1.8.x{#enhancements-available-since-aem-desktop-app-18x}
 
@@ -131,7 +131,7 @@ O aplicativo de desktop AEM versão 1.8.1 de acompanhamento rápido adicionou me
    * (Mac) Adicione suporte para conexão com o AEM por meio da configuração de proxy .pac (CQ-4233430)
    * (Win) corrigir problemas com a caixa de diálogo Avançado - URL de logon (CQ-4236061)
 * Correções de erros:
-   * Caixa de diálogo Mais informações do ativo * às vezes, a barra de ação não estava visível (CQ-4208540)
+   * Caixa de diálogo Mais informações do ativo: às vezes, a barra de ação não estava visível (CQ-4208540)
    * (Win) O arquivo agora pode ser sincronizado após reverter para uma versão anterior da interface do usuário do AEM Assets (CQ-4216411)
 
 ### Melhorias disponíveis desde o aplicativo de desktop AEM 1.7{#Enhancements-Available-Since-AEM-Desktop-App-17}
@@ -301,9 +301,9 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
    * Os nomes de arquivos e pastas com caracteres reservados não são tratados corretamente. Certifique-se de usar os nomes de arquivos e pastas que atendem aos requisitos do AEM (CQ-93361, CQ-93308, CQ-89276, CQ-4217183)
    * Alguns aplicativos, como o Adobe Illustrator, podem criar arquivos com nomes sem suporte no AEM. Por exemplo, adicionar `Converted` após a conversão de um arquivo, o que impede que ele seja carregado (CQ-4216985)
    * Ativos com nomes internacionais podem aparecer e desaparecer a cada poucos segundos
-* Check-in/Check-out:
+* Check-in e Check-out:
    * Um ativo com check-out feito por um usuário não é possível abrir para outro usuário, seja pela ação Abrir da interface de usuário ou diretamente na área de trabalho. Alguns aplicativos podem relatá-lo como bloqueado, mas também corrompido ou até mesmo suspenso ao tentar abrir. (CQ-4199234)
-   * Alterar arquivos simultaneamente por vários usuários pode causar a perda de algumas modificações. A solução alternativa é usar a funcionalidade de check-in/check-out para impedir que vários usuários alterem o mesmo arquivo (CQ-97035)
+   * Alterar arquivos simultaneamente por vários usuários pode causar a perda de algumas modificações. A solução alternativa é usar a funcionalidade de check-in e check-out para impedir que vários usuários alterem o mesmo arquivo (CQ-97035)
    * Determinados aplicativos não suportam o sinalizador somente leitura corretamente, o que permite que um usuário salve um arquivo cujo check-out foi feito por outro usuário. O arquivo modificado não é transferido até que o outro usuário faça check-in no arquivo. Ambas as modificações estão disponíveis no AEM como diferentes versões do ativo (CQ-89551, CQ-87572, CQ-89615)
    * O status de check-out e somente leitura é relatado independentemente no Finder. Isso resulta em 2 ícones de bloqueio quando um usuário faz check-out de um ativo (CQ-89507)
 * Integração do Finder:
@@ -330,7 +330,7 @@ O aplicativo de desktop AEM funciona com várias versões do AEM. Consulte a mat
 
 | Versão | Revisão | Data de lançamento | Compatibilidade |
 |---------|------------------------|--------------|-------------------------------------------------------------|
-| 1.10 | 1.10.0.3 (Mac e Win) | 31 de ago de 2018 | AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1.10 | 1.10.0.3 (Mac e Win) | 31 de ago de 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.9 | 1.9.1.1 (Mac e Win) | 21 de jun de 2018 | AEM 6.4;AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.8 | 1.8.1.0 (Mac e Win) | 28 de mar de 2018 | AEM 6.4;AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.7 | 1.7.0.3 (Mac e Win) | 10 de jan de 2018 | AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
