@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -196,11 +196,11 @@ O aplicativo permite que você faça check-out dos arquivos de ativos para imped
    ![Abrir no menu de contexto AEM Assets no Mac](assets/chlimage_1-5.png)
 
 1. Clique com o botão direito do mouse no ativo e selecione Mais informações de ativos no menu de contexto.
-1. Na caixa de diálogo Informações do ativo, clique/toque no ícone de Check-out para fazer check-out do ativo. O ícone Check-out alterna para o ícone Checkout depois que você clica/toca nele.
+1. Na caixa de diálogo Informações do ativo, clique/toque no ícone de Check-out para fazer check-out do ativo. O ícone Check-out alterna para o ícone de check-in depois que você clica/toca nele.
 
    ![Navegue até o ativo para fazer check-out](assets/chlimage_1-6.png)
 
-1. Para fazer check-in do ativo de modo que ele esteja disponível para outros usuários, clique/toque no ícone Check-in na caixa de diálogo Informações do ativo.
+1. Para fazer check-in do ativo de modo que ele esteja disponível para outros usuários, clique/toque no ícone de check-in na caixa de diálogo Informações do ativo.
 
 ### Verificar ativos no Windows {#check-out-assets-on-windows}
 
@@ -212,7 +212,7 @@ O aplicativo permite que você faça check-out dos arquivos de ativos para imped
    ![O ícone de finalização alterna](assets/chlimage_1-7.png)
 
 1. Clique com o botão direito do mouse no ativo e selecione Abrir na Web no menu de contexto.
-1. Na caixa de diálogo Informações do ativo, clique/toque no ícone Check-out. O ícone Check-out alterna para o ícone Checkout.
+1. Na caixa de diálogo Informações do ativo, clique/toque no ícone Check-out. O ícone Check-out alterna para o ícone de check-in.
 
    ![O ícone de finalização alterna](assets/chlimage_1-8.png)
 
@@ -221,17 +221,17 @@ O aplicativo permite que você faça check-out dos arquivos de ativos para imped
    >[!NOTE]
    >O ícone de cadeado pode aparecer após alguns minutos de atraso. O aplicativo da área de trabalho AEM armazena os ativos em cache para acesso rápido, portanto, pode levar alguns minutos para atualizar o status bloqueado.
 
-1. Para fazer check-in do ativo de modo que ele esteja disponível para outros usuários, clique/toque no ícone Check-in na caixa de diálogo Informações **do** ativo.
+1. Para fazer check-in do ativo de modo que ele esteja disponível para outros usuários, clique/toque no ícone de check-in na caixa de diálogo Informações **do** ativo.
 
 ### Fazer check-in de um ativo usando o Finder ou o Explorer e a interface da Web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-Quando terminar de editar os ativos, salve os ativos no aplicativo de desktop. No menu de contexto, selecione Mais informações de ativos e clique/toque em Check-in.
+Quando terminar de editar os ativos, salve os ativos no aplicativo de desktop. No menu de contexto, selecione Mais informações de ativos e clique/toque em check-in.
 
 Os ativos são carregados no servidor AEM. Opcionalmente, você pode verificar o status do upload selecionando Exibir status do ativo no ícone da bandeja.
 
 ![Janela de status de upload e transferência de arquivos de aplicativo do AEM Desktop](assets/aem_desktopapp_upload_status.png)
 
-Como alternativa, você pode fazer check-in de um ativo na interface da Web do AEM. Clique/toque nos ativos com check-out ou selecione-os. Na barra de ferramentas, clique/toque no ícone de check-in ![Ícone](assets/aemassets_icon_checkin.png)de check-in.
+Como alternativa, você pode fazer check-in de um ativo na interface da Web do AEM. Clique/toque nos ativos com check-out ou selecione-os. Na barra de ferramentas, clique/toque no ícone de ![check-in ícone](assets/aemassets_icon_checkin.png).
 
 ### Carregar ativos e pastas em massa no servidor AEM {#bulkupload}
 
@@ -257,6 +257,6 @@ Outra alternativa é selecionar arquivos/pastas que você deseja carregar no AEM
 >[!MORELIKETHIS]
 >
 >* [Introdução ao aplicativo de desktop do AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
->* [Entenda o check-in/check-out com o aplicativo de desktop AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
+>* [Compreender o check-in/check-out com o aplicativo de desktop AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
 >* [Solução de problemas do aplicativo AEM Desktop](troubleshoot-app-v1.md)
 
