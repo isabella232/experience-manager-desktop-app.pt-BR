@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -40,9 +40,9 @@ Antes de começar a usar o aplicativo, saiba [como ele funciona](release-notes.m
 
 * O status do arquivo é **[!UICONTROL Modified remotely]**: O aplicativo indica se um ativo que você baixou foi alterado no servidor AEM. O aplicativo também oferece a opção de baixar a versão mais recente e atualizar sua cópia local. Consulte [como evitar conflitos](using.md#adv-workflow-collaborate-avoid-conflicts)de edição.
 
-* **Check-out**: Se você estiver editando um arquivo ou pretender editar um arquivo, alterne o status para fazer check-out. Ele adiciona um ícone de cadeado no ativo no aplicativo e na interface da Web do AEM. O ícone de bloqueio indica para outros usuários evitar a edição simultânea do mesmo ativo, pois resulta em um conflito de edição.
+* **[!UICONTROL Check-out]**: Se você estiver editando um arquivo ou pretender editar um arquivo, alterne o status para fazer check-out. Ele adiciona um ícone de cadeado no ativo no aplicativo e na interface da Web do AEM. O ícone de bloqueio indica para outros usuários evitar a edição simultânea do mesmo ativo, pois resulta em um conflito de edição.
 
-* **Check-in**: Marque o ativo como seguro para que outros usuários editem sem causar um conflito de edição. Quando você carrega suas alterações, o ícone de cadeado é removido automaticamente. Alternar o status de check-in também remove o ícone de bloqueio, embora seja recomendável não fazer check-in manualmente sem fazer upload das alterações. Se você descartar suas alterações, alterne manualmente o check-in.
+* **[!UICONTROL Check-in]**: Marque o ativo como seguro para que outros usuários editem sem causar um conflito de edição. Quando você carrega suas alterações, o ícone de cadeado é removido automaticamente. Alternar o status de check-in também remove o ícone de bloqueio, embora seja recomendável não fazer check-in manualmente sem fazer upload das alterações. Se você descartar suas alterações, alterne manualmente o check-in.
 
 * **[!UICONTROL Open]** ação: Basta abrir o ativo para visualizá-lo no aplicativo nativo. Não é recomendável editar o ativo usando essa ação, pois ele não faz check-out do ativo e outros usuários podem fazer edições que levam a conflitos de edição.
 
