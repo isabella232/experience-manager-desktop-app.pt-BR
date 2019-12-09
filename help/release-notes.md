@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -89,15 +89,15 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 ## Problemas conhecidos {#known-issues-v2}
 
 **Problemas da interface do usuário:**
-* Às vezes, a interface do aplicativo de desktop pode ficar em branco. Clique com o botão direito do mouse e clique em [!UICONTROL Refresh] para carregar o aplicativo novamente. Essa atualização redefine o estado do aplicativo e você inicia na tela de boas-vindas na raiz do repositório DAM. <!-- CQ-4270267 -->
-* Difícil de navegar pelas pastas/resultados de pesquisa sem um trackpad ou botão de rolagem do mouse. A barra de rolagem pode não aparecer com dispositivos de mouse sem o botão de rolagem. <!-- CQ-4269947 -->
+* Às vezes, a interface do aplicativo desktop pode ficar em branco. Right-click and click [!UICONTROL Refresh] to re-load the application. Após essa atualização, você iniciará na raiz do repositório DAM. As atualizações ou os status de seus ativos são retidos. <!-- CQ-4270267 -->
+* Difícil navegar pelas pastas/resultados de pesquisa sem um teclado de rastreamento ou ponteiro do mouse. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 * Raramente, a barra de andamento não é exibida corretamente quando o ativo de upload é alterado.
 * Depois de aplicar e remover o filtro para localizar todos os ativos editados localmente, o aplicativo não leva os usuários até os resultados da pesquisa ou a visualização de pasta com os quais os usuários começaram a trabalhar. O aplicativo exibe a pasta raiz do repositório DAM.
 * Às vezes, quando você é conectado a um URL que não tem um servidor AEM em execução, a tela de conexão fica sem resposta. Saia do aplicativo e reinicie.
 
 **Problemas de CRUD (Create, Read, Update, and Delete, Criar, ler, atualizar e excluir):**
 * O aplicativo tenta carregar arquivos mesmo com caracteres inválidos, isso pode causar falha de carregamento no servidor. <!-- CQ-4273652 -->
-* Ao fazer upload de alterações em um ativo com comentários, os comentários são armazenados com o ativo no AEM, mas não ficam visíveis como comentários de versão (resolvido no AEM 6.4.5, 6.5.1). <!-- CQ-4268990 -->
+* Ao carregar alterações em um ativo com comentários, os comentários são armazenados com o ativo no AEM, mas não são visíveis como comentários de controle de versão. Esse problema foi resolvido no AEM 6.4.5 e no AEM 6.5.1. A Adobe recomenda fortemente a instalação dos service packs mais recentes. <!-- CQ-4268990 -->
 * As transferências de ativos não podem ser canceladas pelo usuário. Se você acionou uma transferência volumosa não intencional, saia do aplicativo e reinicie. <!-- CQ-4278940 -->
 
 **Problemas de plataforma:**
