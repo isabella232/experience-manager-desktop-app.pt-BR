@@ -1,5 +1,5 @@
 ---
-title: Notas de versão do aplicativo de desktop do AEM
+title: Notas de versão do aplicativo para desktop do AEM
 description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para o aplicativo de desktop do AEM.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
@@ -8,21 +8,22 @@ discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
+mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: b2015bd65db70a25e4c52e62a4de45a01a6748d5
 
 ---
 
 
-# Notas de versão do aplicativo de desktop do AEM {#release-notes-v2}
+# AEM desktop app release notes {#release-notes-v2}
 
 | Produtos | Aplicativo de desktop do Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
-| Versão do aplicativo (revisão) | 2.0 (2.0.0.4) |
+| Versão do aplicativo (revisão) | 2.0 (2.0.1.1) |
 | Versões compatíveis do AEM | AEM 6.5, AEM 6.4, AEM 6.3 (com pacote de compatibilidade) |
-| Tipo | Versão Principal |
-| Data de lançamento | 30 de agosto de 2019 (Mac), 9 de setembro de 2019 (Win) |
-| URLs para download | [MacOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.0.4.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.0.4.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.0.4.exe) |
+| Tipo | Versão secundária |
+| Data de lançamento | 12 de dez de 2019 (Mac e Win) |
+| URLs para download | [MacOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.1.1.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.1.1.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.1.1.exe) |
 
 ## Requisitos e pré-requisitos do sistema {#system-requirements-and-prerequisites-v2}
 
@@ -36,12 +37,15 @@ O aplicativo funciona com as seguintes versões do AEM, sejam elas implantadas n
 * [AEM 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) ou posterior
 * [AEM 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) ou posterior
 * AEM 6.4.0 - 6.4.3 com pacote de [compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
-* AEM 6.3.3.1 e posterior com pacote de [compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
-* Para o AEM 6.3, [service packs não foram planejados](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html). A Adobe recomenda atualizar para uma versão mais recente do AEM.
+
+>[!NOTE]
+>
+>O suporte do aplicativo para desktop para o AEM 6.3 está obsoleto. A Adobe recomenda atualizar para uma versão mais recente e compatível do AEM.
+>O AEM 6.3.3.1 ou posterior funciona com o aplicativo de desktop após a instalação do pacote [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidade. Esse pacote não está disponível para o AEM 6.3, pois nenhum pacote de [serviços está planejado](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
 A versão do aplicativo que você pretende instalar no computador local requer uma versão específica do servidor do Adobe Experience Manager/componentes adicionais do servidor (service packs, hot fixes ou pacotes de recursos). Entre em contato com o administrador do AEM para obter ajuda.
 
-### Suporte para diferentes tipos de ativos e arquivos {#support-for-file-types}
+### Support for different assets and file types {#support-for-file-types}
 
 O aplicativo é compatível com os ativos armazenados no AEM que representam arquivos binários para as operações básicas. A abertura de arquivos no aplicativo de desktop nativo depende da associação do sistema operacional dos tipos de arquivos específicos, como PNG ou JPG, para aplicativos específicos, como Mac Preview ou Adobe Photoshop.
 
@@ -51,16 +55,22 @@ Alguns tipos de arquivo oferecem suporte para a inserção de ativos vinculados 
 * Arquivos do Adobe Illustrator (formato AI)
 * Arquivos do Adobe Photoshop (formato PS)
 
-O recurso é compatível com as versões da Adobe Creative Cloud 2018 e da Creative Cloud 2019 do aplicativo acima. O aplicativo usa uma abordagem heurística e de melhor correspondência para mapear os caminhos de desktop locais dos ativos vinculados para URLs no servidor AEM. Baseia-se em algumas suposições:
+O recurso é compatível com as versões da Adobe Creative Cloud 2018 e da Adobe Creative Cloud 2019 do aplicativo acima. O aplicativo usa uma abordagem heurística e de melhor correspondência para mapear os caminhos de desktop locais dos ativos vinculados para URLs no servidor AEM. Baseia-se em algumas suposições:
 
-* Os caminhos para os arquivos colocados no aplicativo nativo usam um caminho de desktop global (posicionado a partir do compartilhamento de rede local mostrado com a opção “Revelar”)
-* Os caminhos são armazenados no registro XMP do arquivo pelo aplicativo nativo
-* O AEM extraiu o registro XMP com os caminhos para o registro de metadados do ativo
-* Os caminhos podem corresponder aos ativos no AEM (ou seja, os arquivos inseridos também estão no AEM em um caminho correspondente)
+* Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
+* Os caminhos são armazenados no registro XMP do arquivo pelo aplicativo nativo.
+* O AEM extraiu o registro XMP com os caminhos para o registro de metadados do ativo.
+* Os caminhos podem ser correspondidos aos ativos no AEM, ou seja, os arquivos colocados também estão no AEM em um caminho correspondente).
 
 ## Novos recursos e melhorias {#whats-new-added}
 
-Para conhecer os detalhes, consulte [Novidades no aplicativo](introduction.md#whats-new-v2).
+To know the details, see [What's new in v2.0](introduction.md#whats-new-v2).
+
+Correções de erros e atualizações feitas na versão 2.0.1 são:
+
+* Permitir que a opção configure o diretório para corresponder ao `%Temp%` `%APPDATA%` caminho. <!-- CQ-4282665 -->
+* Permite que os usuários façam logon no AEM Author por meio da autenticação Okta SAML. <!-- CQ-4278134 -->
+
 
 ## Instruções de instalação {#installation-instructions-v2}
 
@@ -89,6 +99,7 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 ## Problemas conhecidos {#known-issues-v2}
 
 **Problemas da interface do usuário:**
+
 * Às vezes, a interface do aplicativo desktop pode ficar em branco. Right-click and click [!UICONTROL Refresh] to re-load the application. Após essa atualização, você iniciará na raiz do repositório DAM. As atualizações ou os status de seus ativos são retidos. <!-- CQ-4270267 -->
 * Difícil navegar pelas pastas/resultados de pesquisa sem um teclado de rastreamento ou ponteiro do mouse. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 * Raramente, a barra de andamento não é exibida corretamente quando o ativo de upload é alterado.
@@ -96,18 +107,20 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 * Às vezes, quando você é conectado a um URL que não tem um servidor AEM em execução, a tela de conexão fica sem resposta. Saia do aplicativo e reinicie.
 
 **Problemas de CRUD (Create, Read, Update, and Delete, Criar, ler, atualizar e excluir):**
+
 * O aplicativo tenta carregar arquivos mesmo com caracteres inválidos, isso pode causar falha de carregamento no servidor. <!-- CQ-4273652 -->
 * Ao carregar alterações em um ativo com comentários, os comentários são armazenados com o ativo no AEM, mas não são visíveis como comentários de controle de versão. Esse problema foi resolvido no AEM 6.4.5 e no AEM 6.5.1. A Adobe recomenda fortemente a instalação dos service packs mais recentes. <!-- CQ-4268990 -->
 * As transferências de ativos não podem ser canceladas pelo usuário. Se você acionou uma transferência volumosa não intencional, saia do aplicativo e reinicie. <!-- CQ-4278940 -->
 
 **Problemas de plataforma:**
+
 * Às vezes, no Windows, o status de um ativo pode mudar imediatamente para [!UICONTROL Edited Locally] depois de abri-lo, mesmo que você não o tenha editado. Clique em [!UICONTROL Refresh] para atualizar.
 
 >[!MORELIKETHIS]
 >
 >* [Documentação do AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
->* [Documentação dos Ativos AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)
->* [Usar o aplicativo de desktop do AEM](using.md)
+>* [Documentação dos Ativos AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
+>* [Como usar o aplicativo de desktop do AEM](using.md)
 >* [Instalar e atualizar o aplicativo de desktop](install-upgrade.md)
 >* [Práticas recomendadas e dicas para solução de problemas](troubleshoot.md)
 
