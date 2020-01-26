@@ -9,14 +9,18 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ---
 
 
 # Instalar e configurar o aplicativo de desktop AEM v1.x {#install-and-configure-aem-desktop-app}
 
-Instale e configure o aplicativo de desktop do AEM para trabalhar com os servidores do AEM Assets e baixe os ativos no sistema de arquivos local. Para usar o aplicativo de desktop AEM,
+Usando o aplicativo de desktop AEM, os ativos no AEM são facilmente acessíveis em sua área de trabalho local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas no AEM quando você carrega e uma nova versão é criada no repositório.
+
+Essa integração permite que várias funções na organização gerenciem os ativos centralmente nos ativos AEM e os acessem na Creative Cloud e em outros aplicativos, além de facilitar a adesão aos vários padrões, inclusive a marca.
+
+Para usar o aplicativo de desktop AEM,
 
 * Certifique-se de que a versão do servidor AEM seja compatível com o aplicativo de desktop AEM. Consulte a matriz de [compatibilidade](release-notes-of-v1.md#compatibilitymatrix).
 * Baixe e instale o aplicativo.
@@ -38,7 +42,7 @@ Para obter detalhes, consulte [Instalar e conectar o aplicativo de desktop AEM a
 
 O aplicativo de desktop AEM usa o proxy predefinido do sistema para se conectar à Internet por HTTPS. O aplicativo só pode se conectar usando um proxy de rede que não exija autenticação extra.
 
-Se você configurar ou modificar as configurações do servidor proxy para Windows (Opções da Internet &gt; Configurações de LAN), reinicie o aplicativo de desktop do AEM para que as alterações tenham efeito.
+Se você configurar ou modificar as configurações do servidor proxy para Windows (Opções da Internet > Configurações de LAN), reinicie o aplicativo de desktop do AEM para que as alterações tenham efeito.
 
 Se o proxy exigir autenticação, a equipe de TI poderá adicionar o URL dos ativos AEM às configurações do servidor proxy para permitir a passagem do tráfego do aplicativo.
 
@@ -86,7 +90,7 @@ No Mac OS X, há um diretório semelhante em `~/Library/Group Containers/group.c
 
 ### Opção no aplicativo para gerenciar o cache {#in-app-option-to-manage-cache}
 
-Você pode controlar a quantidade de espaço em disco disponível para fins de armazenamento em cache local. Os artefatos do servidor do AEM Assets são armazenados em cache localmente para proporcionar uma experiência mais suave. Você pode alterar os padrões para atender às suas necessidades. Além disso, você pode limpar o cache para obter todos os ativos novamente. Para definir as opções desejadas, clique no ícone do aplicativo e clique em **[!UICONTROL Advanced]** &gt; **[!UICONTROL Manage Cache]**. ****
+Você pode controlar a quantidade de espaço em disco disponível para fins de armazenamento em cache local. Os artefatos do servidor do AEM Assets são armazenados em cache localmente para proporcionar uma experiência mais suave. Você pode alterar os padrões para atender às suas necessidades. Além disso, você pode limpar o cache para obter todos os ativos novamente. Para definir as opções desejadas, clique no ícone do aplicativo e clique em **[!UICONTROL Advanced]**>**[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
@@ -108,11 +112,11 @@ Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edi
 
    São necessários privilégios de administrador para salvar alterações neste arquivo.
 
-1. Procure a string "ProxyCacheRoot". Você verá que seu valor está definido para o local de cache "%LocalAppData%\Adobe\AssetsCompanion\Cache". Basta alterar esse valor para qualquer caminho válido.
+1. Procure a string &quot;ProxyCacheRoot&quot;. Você verá que seu valor está definido para o local de cache &quot;%LocalAppData%\Adobe\AssetsCompanion\Cache&quot;. Basta alterar esse valor para qualquer caminho válido.
 
    >[!NOTE]
    >
-   >O aplicativo cria automaticamente um subdiretório *&lt;Endpoint&gt;* de AEM codificado; esse comportamento não é configurável.
+   >O aplicativo cria automaticamente um subdiretório *&lt;Endpoint>* de AEM codificado; esse comportamento não é configurável.
 
 ## Recursos adicionais {#additional-resources}
 
