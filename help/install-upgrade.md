@@ -9,14 +9,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ---
 
 
 # Instalar o aplicativo de desktop do AEM {#install-app-v2}
 
-## Requisitos do sistema {#tech-specs-v2}
+Usando o aplicativo de desktop AEM, os ativos no AEM são facilmente acessíveis em sua área de trabalho local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas no AEM quando você carrega e uma nova versão é criada no repositório.
+
+Essa integração permite que várias funções na organização gerenciem os ativos centralmente nos ativos AEM e os acessem na Creative Cloud e em outros aplicativos, além de facilitar a adesão aos vários padrões, inclusive a marca.
+
+Para usar o aplicativo de desktop AEM,
+
+* Certifique-se de que a versão do servidor AEM seja compatível com o aplicativo de desktop AEM. Consulte a matriz de [compatibilidade](release-notes-of-v1.md#compatibilitymatrix).
+* Baixe e instale o aplicativo.
+* Teste a conexão usando alguns ativos. Consulte [Acessar e abrir ativos na área de trabalho](use-app-v1.md#openondesktop).
+
+## Pré-requisitos do sistema e links de download {#tech-specs-v2}
 
 Para obter informações detalhadas, consulte as notas [de versão do aplicativo para desktop do](release-notes.md)AEM.
 
@@ -44,7 +54,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 1. Execute o binário do instalador e siga as instruções na tela para instalar.
 1. No Windows, o instalador pode solicitar a instalação `Visual Studio C++ Redistributable 2015`. Siga as instruções na tela para instalá-la. Se a instalação falhar, instale-a manualmente. Baixe o instalador [daqui](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e instale os arquivos `vc_redist.x64.exe` e `vc_redist.x86.exe` arquivos. Execute novamente o instalador do aplicativo para desktop do AEM.
 1. Reinicie a máquina conforme solicitado. Inicie o aplicativo de desktop para configurá-lo.
-1. Para conectar o aplicativo a um repositório do AEM, clique no ícone do aplicativo na bandeja para iniciar o aplicativo. Forneça o endereço da instância do AEM. Clique em **[!UICONTROL Connect]** e forneça as credenciais.
+1. Para conectar o aplicativo a um repositório do AEM, clique no ícone do aplicativo na bandeja para iniciar o aplicativo. Forneça o endereço da instância do AEM. Clique em **[!UICONTROL Connect]**e forneça as credenciais.
 
    ![Tela de conexão do aplicativo desktop ao](assets/connect_da2.png "endereço do servidor de entradaTela de conexão ao endereço do servidor de entrada")
 
@@ -54,7 +64,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
 1. Após uma conexão bem-sucedida, você pode exibir a lista de pastas e ativos disponíveis na pasta raiz do AEM DAM. Você pode navegar pelas pastas dentro do aplicativo.
 
-   ![Após o logon, o aplicativo exibe o](assets/firstview_da2.png "conteúdo do DAM. Após o logon, o aplicativo exibe o conteúdo do DAM")
+   ![Ao efetuar o logon, o aplicativo exibe o](assets/firstview_da2.png "conteúdo DAMdepois do logon, o aplicativo exibe o conteúdo DAM")
 
 1. (AEM 6.5.1 ou superior) Se você estiver usando um aplicativo de desktop com AEM 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte Conector [do](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AzureDataStore) Azure ou conector [](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore)S3.
 
@@ -62,12 +72,12 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
 ## Definir preferências {#set-preferences}
 
-Para alterar as preferências, clique no ícone ![](assets/do-not-localize/more_options_da2.png) Mais opções e no ícone **[!UICONTROL Preference]** ![Preferências](assets/do-not-localize/preferences_icon_da2.png). Na **[!UICONTROL Preferences]** janela, ajuste os valores do seguinte:
+Para alterar as preferências, clique no ícone ![](assets/do-not-localize/more_options_da2.png) Mais opções e no ícone **[!UICONTROL Preference]**![Preferências](assets/do-not-localize/preferences_icon_da2.png). Na**[!UICONTROL Preferences]** janela, ajuste os valores do seguinte:
 
 * [!UICONTROL Launch application on login].
 * [!UICONTROL Show window when application starts].
 * **[!UICONTROL Cache Directory]**: Local do cache local do aplicativo (ele contém os ativos baixados localmente).
-* **[!UICONTROL Network Drive Letter]**: A letra da unidade usada para mapear para o AEM DAM. Não altere isso se não tiver certeza. O aplicativo pode mapear para qualquer letra de unidade no Windows. Se dois usuários inserirem ativos de letras de unidade diferentes, eles não poderão ver os ativos colocados uns pelos outros. O caminho dos ativos é alterado. Os ativos permanecem colocados no arquivo binário (digamos, INDD) e não são removidos. O aplicativo lista todas as letras de unidade disponíveis e, por padrão, usa a última letra disponível que normalmente é `Z`.
+* **[!UICONTROL Network Drive Letter]**: A letra da unidade usada para mapear para o AEM DAM. Não altere isso se não tiver certeza. O aplicativo pode mapear para qualquer letra de unidade no Windows. Se dois usuários inserirem ativos de letras de unidade diferentes, eles não poderão ver os ativos colocados uns pelos outros. O caminho dos ativos é alterado. Os ativos permanecem colocados no arquivo binário (digamos, INDD) e não são removidos. O aplicativo lista todas as letras de unidade disponíveis e, por padrão, usa a última letra disponível que normalmente é`Z`.
 * **[!UICONTROL Maximum Cache Size]**: Cache permitido no disco rígido em GB que é usado para armazenar ativos baixados localmente.
 * **[!UICONTROL Current cache size]**: Tamanho de armazenamento dos ativos baixados localmente. As informações são exibidas somente depois que os ativos são baixados usando o aplicativo.
 * **[!UICONTROL Automatically download linked assets]**: Os ativos colocados nos aplicativos nativos da Creative Cloud suportados são buscados automaticamente se você baixar o arquivo original.
