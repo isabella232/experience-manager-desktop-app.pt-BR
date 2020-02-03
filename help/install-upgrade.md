@@ -1,6 +1,6 @@
 ---
-title: Instalar e configurar o aplicativo de desktop do AEM
-description: Instale e configure o aplicativo de desktop do AEM para trabalhar com os servidores do AEM Assets e baixe os ativos no sistema de arquivos local.
+title: Instalar e configurar o aplicativo Adobe Experience Manager para desktop
+description: Instale e configure o aplicativo de desktop Adobe Experience Manager para trabalhar com os servidores de ativos Adobe Experience Manager e baixe os ativos no sistema de arquivos local.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,26 +9,26 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# Instalar o aplicativo de desktop do AEM {#install-app-v2}
+# Install Adobe Experience Manager desktop app {#install-app-v2}
 
-Usando o aplicativo de desktop AEM, os ativos no AEM são facilmente acessíveis em sua área de trabalho local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas no AEM quando você carrega e uma nova versão é criada no repositório.
+Usando o aplicativo Adobe Experience Manager para desktop, os ativos no Experience Manager são facilmente acessíveis em seu desktop local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas no Experience Manager quando você carrega e uma nova versão é criada no repositório.
 
-Essa integração permite que várias funções na organização gerenciem os ativos centralmente nos ativos AEM e os acessem na Creative Cloud e em outros aplicativos, além de facilitar a adesão aos vários padrões, inclusive a marca.
+Essa integração permite que várias funções na organização gerenciem os ativos centralmente nos ativos Adobe Experience Manager e os acessem na Creative Cloud e em outros aplicativos, além de facilitar a adesão aos vários padrões, inclusive a marca.
 
-Para usar o aplicativo de desktop AEM,
+Para usar o aplicativo de desktop Experience Manager,
 
-* Certifique-se de que a versão do servidor AEM seja compatível com o aplicativo de desktop AEM. Consulte a matriz de [compatibilidade](release-notes-of-v1.md#compatibilitymatrix).
+* Certifique-se de que a versão do servidor Experience Manager seja compatível com o aplicativo de desktop Experience Manager. Consulte a matriz de [compatibilidade](release-notes-of-v1.md#compatibilitymatrix).
 * Baixe e instale o aplicativo.
 * Teste a conexão usando alguns ativos. Consulte [Acessar e abrir ativos na área de trabalho](use-app-v1.md#openondesktop).
 
 ## Pré-requisitos do sistema e links de download {#tech-specs-v2}
 
-Para obter informações detalhadas, consulte as notas [de versão do aplicativo para desktop do](release-notes.md)AEM.
+Para obter informações detalhadas, consulte as notas [de versão do aplicativo para desktop do](release-notes.md)Experience Manager.
 
 ## Atualizar do app v1.x para o app v2 {#upgrade-from-previous-version}
 
