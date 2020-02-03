@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: ab63bfd7eea356be924e1ed62eef387796913e6c
 
 ---
 
@@ -66,6 +66,8 @@ O AEM Desktop não é adequado para a manipulação intensiva do sistema de arqu
 * Compactação ou descompactação de arquivos
 
 Devido a limitações no sistema operacional, o Windows tem uma limitação de tamanho de arquivo de 4.294.967.295 bytes (aproximadamente 4,29 GB). É devido a uma configuração de registro que define o tamanho de um arquivo em um compartilhamento de rede. O valor da configuração do Registro é um DWORD com um tamanho máximo igual ao número referenciado.
+
+O aplicativo de desktop do Experience Manager não tem um valor de tempo limite configurável que desconecta a conexão entre o servidor do Experience Manager e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentará fazer upload do ativo algumas vezes, aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
 
 ## Cache e comunicação com o AEM {#caching-and-communication-with-aem}
 
@@ -126,7 +128,7 @@ Se o desempenho do WebDAV/SMB diminuir drasticamente quando vários usuários tr
 Você pode melhorar o desempenho no lado do AEM, ativando fluxos de trabalho transitórios para o fluxo de trabalho do Ativo de atualização do DAM. Habilitar fluxos de trabalho transitórios reduz o poder de processamento necessário para atualizar ativos quando eles são criados ou modificados no AEM.
 
 1. Navegue até `/miscadmin` a instância do AEM a ser configurada (por exemplo, `http://[Server]:[Port]/miscadmin`).
-1. Na árvore de navegação, expanda **Ferramentas** &gt; **Fluxo de trabalho** &gt; **Modelos** &gt; **dam**.
+1. Na árvore de navegação, expanda **Ferramentas** > **Fluxo de trabalho** > **Modelos** > **dam**.
 1. Clique duas vezes em Ativo **de atualização** DAM.
 1. No painel de ferramentas flutuantes, alterne para a guia **Página** e clique em Propriedades **** da página.
 1. Marque a caixa de seleção Fluxo de trabalho **temporário e clique em** OK ****.
@@ -218,7 +220,7 @@ Mac: ~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/
 
 No entanto, o local pode ser alterado dependendo do ponto de extremidade AEM configurado para desktop. O valor é uma versão codificada do URL direcionado. Por exemplo, se o aplicativo estiver direcionando `http://localhost:4502`, o nome do diretório será `http%3A%2F%2Flocalhost%3A4502%2F`.
 
-Para limpar o cache, exclua o diretório &lt;Endpoint AEM codificado&gt;.
+Para limpar o cache, exclua o diretório &lt;Endpoint AEM codificado>.
 
 >[!NOTE]
 >
@@ -238,7 +240,7 @@ Clique no ícone da área de trabalho do AEM e escolha **Sobre**. O número da v
 
 Ocasionalmente, podem ocorrer problemas ao atualizar o aplicativo de desktop AEM no MacOS. Isso é causado pelo fato de a pasta de sistema herdada para o aplicativo de desktop AEM impedir que novas versões do desktop AEM sejam carregadas corretamente. Para resolver esse problema, as pastas e os arquivos a seguir podem ser removidos manualmente.
 
-Antes de executar as etapas abaixo, arraste o aplicativo "Adobe Experience Manager Desktop" da pasta Aplicativos MacOS para a lixeira. Em seguida, abra o terminal e execute o seguinte comando, fornecendo sua senha quando solicitado.
+Antes de executar as etapas abaixo, arraste o aplicativo &quot;Adobe Experience Manager Desktop&quot; da pasta Aplicativos MacOS para a lixeira. Em seguida, abra o terminal e execute o seguinte comando, fornecendo sua senha quando solicitado.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
