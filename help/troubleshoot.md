@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas para o aplicativo de desktop AEM e solução de problemas
+title: Práticas recomendadas e solução de problemas para o aplicativo de desktop Adobe Experience Manager
 description: Siga as práticas recomendadas e solucione problemas para resolver problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
@@ -9,14 +9,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# Troubleshoot AEM desktop app {#troubleshoot-v2}
+# Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-O aplicativo de desktop Adobe Experience Manager (AEM) se conecta a um repositório DAM (Digital Asset Management, Gerenciamento de ativos digitais) remoto da implantação do AEM. O aplicativo obtém informações do repositório e resultados da pesquisa em seu computador, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do AEM Assets.
+O aplicativo de desktop Adobe Experience Manager (AEM) se conecta a um repositório DAM (Digital Asset Management, Gerenciamento de ativos digitais) de implantação remota do Experience Manager. O aplicativo obtém informações do repositório e resultados da pesquisa em seu computador, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do AEM Assets.
 
 Leia para solucionar problemas do aplicativo, aprender as práticas recomendadas e descobrir as limitações.
 
@@ -26,19 +26,21 @@ Siga as seguintes práticas recomendadas para evitar alguns problemas comuns e a
 
 * **Entenda como o aplicativo de desktop funciona**: Antes de começar a usar o aplicativo, aguarde alguns minutos sabendo como ele funciona. Saiba mais sobre a vinculação entre a interface do usuário da Web e a área de trabalho, o mapeamento do repositório, o armazenamento em cache de ativos, a gravação local e o upload em segundo plano. Veja [como funciona](release-notes.md#how-app-works).
 
-* **Evite caracteres não suportados em nomes** de pastas: Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas nos ativos](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)AEM. Alguns casos de uso do AEM podem ser afetados por caracteres não suportados no nome da pasta.
+* **Evite caracteres não suportados em nomes** de pastas: Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas nos ativos](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)do Experience Manager. Alguns casos de uso do Adobe Experience Manager podem ser afetados por caracteres não suportados no nome da pasta.
 
 * **Práticas recomendadas para evitar conflitos**: Para evitar conflitos em potencial ao colaborar em vários ativos, consulte [evitar conflitos](using.md#adv-workflow-collaborate-avoid-conflicts)de edição.
 
-* **Use o upload de pasta para pastas** grandes e hierárquicas: Em vez de usar a interface da Web do Assets ou outros métodos, use o aplicativo de desktop do AEM para carregar pastas grandes. O aplicativo carrega os ativos em segundo plano com o registro e o monitoramento. Consulte ativos [de upload em](using.md#bulk-upload-assets)massa.
+* **Use o upload de pasta para pastas** grandes e hierárquicas: Em vez de usar a interface da Web do Assets ou outros métodos, use o aplicativo de desktop Experience Manager para carregar pastas grandes. O aplicativo carrega os ativos em segundo plano com o registro e o monitoramento. Consulte ativos [de upload em](using.md#bulk-upload-assets)massa.
 
-* **Use a versão** mais recente: Use a versão mais recente do aplicativo e sempre verifique a compatibilidade antes de instalar uma nova versão do aplicativo ou antes de atualizar para uma versão mais recente do AEM. Consulte as notas [de versão](release-notes.md).
+* **Use a versão** mais recente: Use a versão mais recente do aplicativo e sempre verifique a compatibilidade antes de instalar uma nova versão do aplicativo ou antes de atualizar para uma versão mais recente do Adobe Experience Manager. See [release notes](release-notes.md).
 
-* **Use a mesma letra** de unidade: Use a mesma letra de unidade em uma organização para mapear para o AEM DAM. Para ver os ativos colocados por outros usuários, os caminhos devem ser os mesmos. Usar a mesma letra de unidade garante um caminho constante para ativos DAM. Os ativos permanecem posicionados e não são removidos mesmo se letras de unidade diferentes forem usadas por usuários diferentes.
+* **Use a mesma letra** de unidade: Use a mesma letra de unidade em uma organização para mapear para o Adobe Experience Manager DAM. Para ver os ativos colocados por outros usuários, os caminhos devem ser os mesmos. Usar a mesma letra de unidade garante um caminho constante para ativos DAM. Os ativos permanecem posicionados e não são removidos mesmo se letras de unidade diferentes forem usadas por usuários diferentes.
 
-* **Lembre-se da rede**: O desempenho da rede é essencial para o desempenho do aplicativo de desktop AEM. Se você enfrentar uma resposta lenta a transferências de arquivos ou operações em massa, desative os recursos ou aplicativos que podem causar muito tráfego de rede.
+* **Lembre-se da rede**: O desempenho da rede é essencial para o desempenho do aplicativo de desktop Experience Manager. Se você enfrentar uma resposta lenta a transferências de arquivos ou operações em massa, desative os recursos ou aplicativos que podem causar muito tráfego de rede.
 
 * **Casos de uso não suportados para aplicativos** de desktop: Não use o aplicativo para a migração do Assets (ele precisa de planejamento e outras ferramentas); para operações DAM de uso intenso (como mover pastas grandes, uploads grandes, localizar arquivos usando pesquisas avançadas de metadados); e como um cliente de sincronização (os princípios de design e os padrões de uso são diferentes dos clientes sincronizados, como o Microsoft OneDrive ou a sincronização de desktop da Adobe Creative Cloud).
+
+* **Tempo limite**: Atualmente, o aplicativo de desktop não tem um valor de tempo limite configurável que desconecta a conexão entre o servidor do Experience Manager e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentará fazer upload do ativo algumas vezes, aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
 
 ## Como solucionar problemas {#troubleshooting-prep}
 
@@ -80,7 +82,7 @@ No entanto, o local pode mudar dependendo do ponto de extremidade AEM configurad
 
 ### Conheça a versão do aplicativo para desktop do AEM {#know-app-version-v2}
 
-Clique no menu ![](assets/do-not-localize/more_options_da2.png) Aplicativo para abrir o menu do aplicativo e clique em **[!UICONTROL Help]** &gt; **[!UICONTROL About]**.
+Clique no menu ![](assets/do-not-localize/more_options_da2.png) Aplicativo para abrir o menu do aplicativo e clique em **[!UICONTROL Help]**>**[!UICONTROL About]**.
 
 ## Não é possível ver ativos colocados {#placed-assets-missing}
 
