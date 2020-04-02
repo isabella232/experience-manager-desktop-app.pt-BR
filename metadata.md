@@ -1,17 +1,17 @@
 ---
 cloud: experience-cloud
 solution-title: Aprendizagem e suporte
-solution-hub-url: https://helpx.adobe.com/support/experience-manager/6-4.html
+solution-hub-url: https://helpx.adobe.com/support/experience-manager/6-5.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Introdução
 getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: Tutoriais
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html
-mini-toc-levels: 2
+tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
+mini-toc-levels: 1
 git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.en
-index: n
+index: y
 translation-type: tm+mt
-source-git-commit: f42f9437de9d9b96d1fcf1c3e1730fd74548eec1
+source-git-commit: e5e7f60d97bfb24bb4c668cd074430218a657db4
 
 ---
 
@@ -23,9 +23,9 @@ O arquivo metadata.md inclui metadados de nível de acordo de recompra que passa
 | metadata | o que ele faz |
 |--- |--- |
 | título da solução | Usado no cabeçalho do artigo como link |
-| solution-hub-url | Abre a página do hub helpx |
+| solution-hub-url | Abre a página de hub de suporte |
 | ícone da solução | Exibe o ícone da solução ao lado do título da solução. Ainda não implementado |
-| getting-started-url | Link para a página de introdução ao helpx |
+| getting-started-url | Link para a página de introdução |
 | tutoriais-url | Link para tutoriais em vídeo — tutoriais do helpx ou tutoriais do KT |
 | níveis minitoctoc | Determina o número de níveis de cabeçalho exibidos no painel direito. o padrão é 2 |
 | repo git | Especifica o local do acordo principal para uso interno |
