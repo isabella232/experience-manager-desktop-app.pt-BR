@@ -10,20 +10,20 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
 
 ---
 
 
 # Notas de versão do aplicativo Adobe Experience Manager para desktop {#release-notes-v2}
 
-| Produtos | Aplicativo de desktop do Adobe Experience Manager (AEM) |
-|---------------|--------------------------------------------------------------------|
-| Versão do aplicativo (revisão) | 2.0 (2.0.1.1) |
-| Versões compatíveis do AEM | AEM 6.5, AEM 6.4, AEM 6.3 (com pacote de compatibilidade) |
+| Produtos | Aplicativo de desktop do Adobe Experience Manager |
+|----|----|
+| Versão do aplicativo (revisão) | 2.0 (2.0.2.0) |
+| Versões compatíveis do AEM | AEM como serviço em nuvem; AEM 6.5; AEM 6.4; AEM 6.3 (com pacote de compatibilidade) |
 | Tipo | Versão secundária |
-| Data de lançamento | 12 de dez de 2019 (Mac e Win) |
-| URLs para download | [MacOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.1.1.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.1.1.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.1.1.exe) |
+| Data de lançamento | 15 de abr de 2020 (Mac e Win) |
+| URLs para download | [macOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
 
 ## Requisitos e pré-requisitos do sistema {#system-requirements-and-prerequisites-v2}
 
@@ -32,10 +32,11 @@ O aplicativo de desktop Adobe Experience Manager é compatível com os seguintes
 * Mac OS X 10.10 ou posterior, com as correções de erros mais recentes.
 * Windows 7 e Windows 10 com os service packs e correções de erros mais recentes.
 
-O aplicativo funciona com as seguintes versões do Experience Manager, seja implantado no local ou nos Adobe Managed Services (AMS):
+O aplicativo funciona com as seguintes versões do Experience Manager, seja implantado como um serviço em nuvem, no Adobe Managed Services (AMS) ou no local:
 
-* [Experience Manager 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) ou posterior
-* [Experience Manager 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) ou posterior
+* [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html)
+* [Experience Manager 6.5.0+](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) ou posterior
+* [Experience Manager 6.4.4+](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) ou posterior
 * Experience Manager 6.4.0 - 6.4.3 com pacote de [compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
@@ -47,7 +48,7 @@ A versão do aplicativo que você pretende instalar no computador local requer u
 
 ### Support for different assets and file types {#support-for-file-types}
 
-O aplicativo suporta ativos armazenados no Adobe Experience Manager que representam arquivos binários para suas operações básicas. A abertura de arquivos no aplicativo de desktop nativo depende da associação do sistema operacional dos tipos de arquivos específicos, como PNG ou JPG, para aplicativos específicos, como Mac Preview ou Adobe Photoshop.
+O aplicativo oferece suporte a ativos armazenados no Adobe Experience Manager que representam arquivos binários para suas operações básicas. A abertura de arquivos no aplicativo de desktop nativo depende da associação do sistema operacional dos tipos de arquivos específicos, como PNG ou JPG, para aplicativos específicos, como Mac Preview ou Adobe Photoshop.
 
 Alguns tipos de arquivo oferecem suporte para a inserção de ativos vinculados no binário. O aplicativo pré-baixa os ativos vinculados se o ativo estiver presente no repositório do Experience Manager quando esses arquivos binários forem abertos usando o aplicativo de desktop. Os tipos de arquivos compatíveis no momento incluem o seguinte:
 
@@ -60,16 +61,28 @@ O recurso é compatível com as versões da Adobe Creative Cloud 2018 e da Adobe
 * Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
 * Os caminhos são armazenados no registro XMP do arquivo pelo aplicativo nativo.
 * O Experience Manager extraiu o registro XMP com os caminhos para o registro de metadados do ativo.
-* Os caminhos podem corresponder aos ativos no Experience Manager, ou seja, os arquivos inseridos também estão no Experience Manager sob um caminho correspondente).
+* Os caminhos podem corresponder aos ativos no Experience Manager, ou seja, os arquivos inseridos também estão no Experience Manager em um caminho correspondente.
 
 ## Novos recursos e melhorias {#whats-new-added}
 
 To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
-Correções de erros e atualizações feitas na versão 2.0.1 são:
+**Atualizações no app v2.0.2**
+
+As correções e atualizações de erros são:
+
+* Para melhorar o desempenho do upload, aumente a aceleração do upload em [!UICONTROL Preferences]. Quando essa configuração é ativada, o aplicativo usa mais processos de CPU locais e consome mais recursos.
+* Corrigido o problema com uploads de ativos quando nomes de arquivos ou caminhos contêm determinados caracteres GB18030. <!-- CQ-4283494 -->
+* A opção Classificar por relevância está disponível depois de alternar para outro tipo de classificação nos resultados da pesquisa. <!-- CQ-4286874 -->
+* O aplicativo para desktop agora lista subpastas sem a necessidade de atualizar explicitamente. <!-- CQ-4285711 -->
+* (Windows) Corrigido um problema raro de interface de aplicativo inutilizável em algumas máquinas do Windows. Os usuários não podem clicar na interface do aplicativo, pois ela aparece distorcida com a área de clique dos elementos da interface sendo deslocada. <!-- CQ-4280785 -->
+
+**Atualizações no app v2.0.1**
+
+As correções e atualizações de erros são:
 
 * Permitir que a opção configure o diretório para corresponder ao `%Temp%` `%APPDATA%` caminho. <!-- CQ-4282665 -->
-* Permite que os usuários façam logon no AEM Author por meio da autenticação Okta SAML. <!-- CQ-4278134 -->
+* Permita que os usuários façam logon no AEM Author por meio da autenticação Okta SAML. <!-- CQ-4278134 -->
 
 ## Instruções de instalação {#installation-instructions-v2}
 
@@ -99,7 +112,7 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 
 **Problemas da interface do usuário:**
 
-* Às vezes, a interface do aplicativo desktop pode ficar em branco. Right-click and click [!UICONTROL Refresh] to re-load the application. Após essa atualização, você iniciará na raiz do repositório DAM. As atualizações ou os status de seus ativos são retidos. <!-- CQ-4270267 -->
+* Às vezes, a interface do aplicativo de desktop pode ficar em branco. Right-click and click [!UICONTROL Refresh] to re-load the application. Após essa atualização, você start na raiz do repositório DAM. As atualizações ou os status de seus ativos são retidos. <!-- CQ-4270267 -->
 * Difícil navegar pelas pastas/resultados de pesquisa sem um teclado de rastreamento ou ponteiro do mouse. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 * Raramente, a barra de andamento não é exibida corretamente quando o ativo de upload é alterado.
 * Depois de aplicar e remover o filtro para localizar todos os ativos editados localmente, o aplicativo não leva os usuários até os resultados da pesquisa ou a visualização de pasta com os quais os usuários começaram a trabalhar. O aplicativo exibe a pasta raiz do repositório DAM.
@@ -108,7 +121,7 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 **Problemas de CRUD (Create, Read, Update, and Delete, Criar, ler, atualizar e excluir):**
 
 * O aplicativo tenta carregar arquivos mesmo com caracteres inválidos, isso pode causar falha de carregamento no servidor. <!-- CQ-4273652 -->
-* Ao carregar alterações em um ativo com comentários, os comentários são armazenados com o ativo no AEM, mas não são visíveis como comentários de controle de versão. Esse problema foi resolvido no AEM 6.4.5 e no AEM 6.5.1. A Adobe recomenda fortemente a instalação dos service packs mais recentes. <!-- CQ-4268990 -->
+* Ao carregar alterações em um ativo com comentários, os comentários são armazenados com o ativo no AEM, mas não são visíveis como comentários de controle de versão. Esse problema foi resolvido no AEM 6.4.5 e no AEM 6.5.1. A Adobe recomenda enfaticamente a instalação dos service packs mais recentes. <!-- CQ-4268990 -->
 * As transferências de ativos não podem ser canceladas pelo usuário. Se você acionou uma transferência volumosa não intencional, saia do aplicativo e reinicie. <!-- CQ-4278940 -->
 
 **Problemas de plataforma:**
@@ -117,8 +130,8 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 
 >[!MORELIKETHIS]
 >
->* [Documentação do AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
->* [Documentação dos Ativos AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
+>* [Documentação do AEM como um serviço em nuvem](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+>* [Documentação do AEM como ativos de serviço em nuvem](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
 >* [Como usar o aplicativo de desktop Experience Manager](using.md)
 >* [Instalar e atualizar o aplicativo de desktop](install-upgrade.md)
 >* [Práticas recomendadas e dicas para solução de problemas](troubleshoot.md)
