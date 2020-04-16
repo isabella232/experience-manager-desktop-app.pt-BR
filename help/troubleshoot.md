@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -22,7 +22,7 @@ Leia para solucionar problemas do aplicativo, aprender as práticas recomendadas
 
 ## Best practices {#best-practices-to-prevent-troubles}
 
-Siga as seguintes práticas recomendadas para evitar alguns problemas comuns e a solução de problemas.
+Siga as práticas recomendadas a seguir para evitar alguns problemas comuns e a solução de problemas.
 
 * **Entenda como o aplicativo de desktop funciona**: Antes de começar a usar o aplicativo, aguarde alguns minutos sabendo como ele funciona. Saiba mais sobre a vinculação entre a interface do usuário da Web e a área de trabalho, o mapeamento do repositório, o armazenamento em cache de ativos, a gravação local e o upload em segundo plano. Veja [como funciona](release-notes.md#how-app-works).
 
@@ -30,7 +30,7 @@ Siga as seguintes práticas recomendadas para evitar alguns problemas comuns e a
 
 * **Práticas recomendadas para evitar conflitos**: Para evitar conflitos em potencial ao colaborar em vários ativos, consulte [evitar conflitos](using.md#adv-workflow-collaborate-avoid-conflicts)de edição.
 
-* **Use o upload de pasta para pastas** grandes e hierárquicas: Em vez de usar a interface da Web do Assets ou outros métodos, use o aplicativo de desktop Experience Manager para carregar pastas grandes. O aplicativo carrega os ativos em segundo plano com o registro e o monitoramento. Consulte ativos [de upload em](using.md#bulk-upload-assets)massa.
+* **Use o upload de pasta para pastas** grandes e hierárquicas: Em vez de usar a interface da Web do Assets ou outros métodos, use o aplicativo de desktop Experience Manager para fazer upload de pastas grandes. O aplicativo carrega os ativos em segundo plano com o registro e o monitoramento. Consulte [fazer upload de ativos](using.md#bulk-upload-assets)em massa.
 
 * **Use a versão** mais recente: Use a versão mais recente do aplicativo e sempre verifique a compatibilidade antes de instalar uma nova versão do aplicativo ou antes de atualizar para uma versão mais recente do Adobe Experience Manager. See [release notes](release-notes.md).
 
@@ -40,13 +40,13 @@ Siga as seguintes práticas recomendadas para evitar alguns problemas comuns e a
 
 * **Casos de uso não suportados para aplicativos** de desktop: Não use o aplicativo para a migração do Assets (ele precisa de planejamento e outras ferramentas); para operações DAM de uso intenso (como mover pastas grandes, uploads grandes, localizar arquivos usando pesquisas avançadas de metadados); e como um cliente de sincronização (os princípios de design e os padrões de uso são diferentes dos clientes sincronizados, como o Microsoft OneDrive ou a sincronização de desktop da Adobe Creative Cloud).
 
-* **Tempo limite**: Atualmente, o aplicativo de desktop não tem um valor de tempo limite configurável que desconecta a conexão entre o servidor do Experience Manager e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentará fazer upload do ativo algumas vezes, aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
+* **Tempo limite**: Atualmente, o aplicativo de desktop não tem um valor de tempo limite configurável que desconecta a conexão entre o servidor do Experience Manager e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentativas fazer upload do ativo algumas vezes aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
 
 ## Como solucionar problemas {#troubleshooting-prep}
 
 Para solucionar problemas com o aplicativo de desktop, tenha em mente as seguintes informações. Além disso, ele o prepara para transmitir melhor os problemas ao Atendimento ao cliente da Adobe se você optar por buscar suporte.
 
-### Ativar modo de depuração {#enable-debug-mode}
+### Ativar o modo de depuração {#enable-debug-mode}
 
 Para solucionar problemas, você pode ativar o modo de depuração e obter mais informações nos registros. Para executar o aplicativo no modo de depuração, use as seguintes opções de linha de comando em um terminal ou no prompt de comando.
 
@@ -56,15 +56,15 @@ Para solucionar problemas, você pode ativar o modo de depuração e obter mais 
 
 ### Localização dos ficheiros de registro {#check-log-files-v2}
 
-Você pode encontrar os arquivos de registro para o aplicativo de desktop AEM nos seguintes locais. Ao carregar muitos ativos, se alguns arquivos não forem carregados, consulte o arquivo no local acima para identificar os uploads que falharam. `backend.log`
+Você pode encontrar os arquivos de registro para o aplicativo de desktop AEM nos seguintes locais. Ao fazer upload de muitos ativos, se alguns arquivos não forem carregados, consulte o `backend.log` arquivo para identificar os uploads que falharam.
 
-* No Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+* Caminho no Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
-* No Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+* Caminho no Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
 >[!NOTE]
 >
->Ao trabalhar com o Atendimento ao cliente da Adobe em uma solicitação/ticket de suporte, você pode ser solicitado a compartilhar os arquivos de registro para ajudar a equipe de suporte a entender o problema. Arquive a `Logs` pasta inteira e compartilhe-a com o Atendimento ao cliente.
+>Ao trabalhar com o Atendimento ao cliente da Adobe em uma solicitação/ticket de suporte, você pode ser solicitado a compartilhar os arquivos de registro para ajudar a equipe do Atendimento ao cliente a entender o problema. Arquive a `Logs` pasta inteira e compartilhe-a com seu contato com o Atendimento ao cliente.
 
 ### Limpar cache {#clear-cache-v2}
 
@@ -82,7 +82,7 @@ No entanto, o local pode mudar dependendo do ponto de extremidade AEM configurad
 
 ### Conheça a versão do aplicativo para desktop do AEM {#know-app-version-v2}
 
-Clique no menu ![](assets/do-not-localize/more_options_da2.png) Aplicativo para abrir o menu do aplicativo e clique em **[!UICONTROL Help]**>**[!UICONTROL About]**.
+Clique no menu ![](assets/do-not-localize/more_options_da2.png) Aplicativo para abrir o menu do aplicativo e clique em **[!UICONTROL Help]** > **[!UICONTROL About]**.
 
 ## Não é possível ver ativos colocados {#placed-assets-missing}
 
@@ -97,7 +97,7 @@ Se você não conseguir ver os ativos que você ou outros profissionais criativo
 
 Ocasionalmente, podem ocorrer problemas ao atualizar o aplicativo de desktop AEM no MacOS. Isso é causado pelo fato de a pasta de sistema herdada para o aplicativo de desktop AEM impedir que novas versões do aplicativo de desktop AEM sejam carregadas corretamente. Para resolver esse problema, as pastas e os arquivos a seguir podem ser removidos manualmente.
 
-Antes de executar as etapas a seguir, arraste o `Adobe Experience Manager Desktop` aplicativo da pasta Aplicativos MacOS para a lixeira. Em seguida, abra terminal, execute o seguinte comando e forneça sua senha quando solicitado.
+Antes de executar as etapas a seguir, arraste o `Adobe Experience Manager Desktop` aplicativo da pasta Aplicativos MacOS para a lixeira. Em seguida, abra o terminal, execute o seguinte comando e forneça sua senha quando solicitado.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
@@ -110,20 +110,20 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ## Não é possível carregar arquivos {#upload-fails}
 
-Se você estiver usando um aplicativo de desktop com AEM 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Ele resolve o problema de falha de carregamento de arquivo relacionado ao [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte as instruções [de instalação](install-upgrade.md#install-v2).
+Se você estiver usando um aplicativo de desktop com AEM 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Ele resolve o problema de falha de carregamento de arquivo relacionado ao [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte as instruções [de](install-upgrade.md#install-v2)instalação.
 
-## Problema de configuração SSL {#ssl-config-v2}
+## Problema de configuração de SSL {#ssl-config-v2}
 
-As bibliotecas que o aplicativo de desktop AEM usa para comunicação HTTP utilizam imposição rigorosa de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar o aplicativo de desktop AEM. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
+As bibliotecas que o aplicativo de desktop AEM usa para comunicação HTTP utilizam imposição rigorosa de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar o aplicativo de desktop do AEM. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
 
-## O aplicativo não responde {#unresponsive}
+## O aplicativo não está respondendo {#unresponsive}
 
-Raramente, o aplicativo pode ficar sem resposta, exibir apenas uma tela branca ou exibir um erro na parte inferior da interface sem nenhuma opção na interface. Tente o seguinte na ordem:
+Raramente, o aplicativo pode ficar sem resposta, exibir apenas uma tela branca ou exibir um erro na parte inferior da interface, sem nenhuma opção na interface. Tente o seguinte na ordem:
 
 1. Clique com o botão direito do mouse na interface do aplicativo e clique em **[!UICONTROL Refresh]**.
 1. Saia do aplicativo e reinicie-o.
 
-Em ambos os métodos, o aplicativo é iniciado na pasta DAM raiz.
+Em ambos os métodos, os start do aplicativo na pasta DAM raiz.
 
 >[!MORELIKETHIS]
 >
