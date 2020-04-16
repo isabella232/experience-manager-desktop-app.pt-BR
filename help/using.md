@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -183,6 +183,8 @@ Você pode carregar pastas ou arquivos individuais do seu sistema de arquivos lo
 Para visualização da lista de ativos transferidos em uma determinada sessão, clique em **[!UICONTROL View]** > **[!UICONTROL Assets transfers]**. A lista permite que você visualização e verifique rapidamente as transferências de arquivos da sessão atual.
 
 ![Lista de ativos transferidos em uma](assets/assets_transfered_da2.png "sessão específica Lista de ativos transferidos em uma sessão específica")
+
+Você pode controlar a simultaneidade de upload (aceleração) em **[!UICONTROL Preferences]** > **[!UICONTROL Upload acceleration]** configuração. Geralmente, mais simultaneidade fornece uploads mais rápidos, mas pode ser uma utilização intensiva de recursos, consumindo mais poder de processamento da máquina local. Se você tiver um sistema lento, tente fazer uploads novamente usando um valor menor de simultaneidade.
 
 >[!NOTE]
 >
