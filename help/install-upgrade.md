@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
 
 ---
 
@@ -33,26 +33,28 @@ Para usar o aplicativo de desktop Experience Manager,
 
 Para obter informações detalhadas, consulte as notas [de versão do aplicativo para desktop do](release-notes.md)Experience Manager.
 
-## Atualizar do app v1.x para o app v2 {#upgrade-from-previous-version}
+## Upgrade from a previous version {#upgrade-from-previous-version}
 
-Se você já for um usuário do aplicativo, entenda as diferenças e as semelhanças entre a versão anterior e a mais recente do aplicativo. Além disso, siga estas diretrizes para transição de v1.x para a versão mais recente.
+Se você for um usuário da versão 1.x do aplicativo para desktop, entenda as diferenças e as semelhanças entre a versão anterior e a versão mais recente do aplicativo. Veja [as novidades no aplicativo](introduction.md#whats-new-v2) para desktop e [como o aplicativo funciona](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
->O aplicativo de desktop v1.x e v2 não podem coexistir em uma máquina. Antes de instalar uma versão, desinstale a outra versão.
+>Duas versões do aplicativo desktop não podem coexistir em uma máquina. Antes de instalar uma versão, desinstale a outra versão.
 
-Para atualizar da v1.x para a versão mais recente do aplicativo, siga estas instruções:
+Para atualizar de uma versão anterior do aplicativo, siga estas instruções:
 
-1. Antes de atualizar, sincronize todos os seus ativos. Carregue todas as alterações usando app v1.x. Isso evita perder quaisquer alterações ao desinstalar o aplicativo v1.x.
-1. Desinstale o aplicativo v1.x. Ao desinstalar a v1.x, limpe o cache.
+1. Antes de atualizar, sincronize todos os ativos e carregue as alterações no Experience Manager. Isso evita perder edições ao desinstalar o aplicativo.
+1. Desinstale a versão anterior do aplicativo. Ao desinstalar, selecione a opção para limpar o cache.
 1. Reinicie a máquina.
-1. Baixe e instale o aplicativo mais recente. Siga as instruções abaixo.
+1. [Baixe](release-notes.md) e [instale](#install-v2) o aplicativo mais recente. Siga as instruções abaixo.
 
 ## Instalar {#install-v2}
 
 Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer aplicativo de desktop Adobe Experience Manager v1.x existente antes de instalar o aplicativo mais recente. Para obter mais informações, consulte acima.
 
+1. Baixe o instalador mais recente da página de notas [de](release-notes.md) versão.
 1. Mantenha o URL e as credenciais de sua implantação do Experience Manager acessíveis.
+1. Se você estiver atualizando de outra versão do aplicativo, consulte [atualizar o aplicativo](#upgrade-from-previous-version)para desktop.
 1. Ignore esta etapa se você estiver usando o Experience Manager como um serviço da Cloud, o Experience Manager 6.4.4 ou posterior ou o Experience Manager 6.5.0 ou posterior. Certifique-se de que a configuração do Experience Manager atenda aos requisitos de compatibilidade mencionados nas notas [de](release-notes.md)versão. Se necessário, baixe o pacote [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) compatibilidade aplicável e instale-o usando o Experience Manager Package Manager como administrador do Experience Manager. Para instalar um pacote, consulte [Como trabalhar com pacotes](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 1. Execute o binário do instalador e siga as instruções na tela para instalar.
 1. No Windows, o instalador pode solicitar a instalação `Visual Studio C++ Redistributable 2015`. Siga as instruções na tela para instalá-la. Se a instalação falhar, instale-a manualmente. Baixe o instalador [daqui](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e instale os arquivos `vc_redist.x64.exe` e `vc_redist.x86.exe` arquivos. Execute novamente o instalador do aplicativo para desktop do AEM.
