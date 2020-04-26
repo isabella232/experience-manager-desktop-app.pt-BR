@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
 
 ---
 
@@ -333,7 +333,7 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
 O aplicativo de desktop AEM funciona com várias versões do AEM. Consulte a matriz de compatibilidade das versões suportadas.
 
 | Versão | Revisão | Data de lançamento | Compatibilidade |
-|---------|------------------------|--------------|-------------------------------------------------------------|
+|---|---|---|---|
 | 1.10 | 1.10.0.3 (Mac e Win) | 31 de ago de 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.9 | 1.9.1.1 (Mac e Win) | 21 de jun de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.8 | 1.8.1.0 (Mac e Win) | 28 de mar de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
