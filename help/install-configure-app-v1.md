@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
 
 ---
 
@@ -118,11 +118,10 @@ Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edi
    >
    >O aplicativo cria automaticamente um subdiretório *&lt;Endpoint>* de AEM codificado; esse comportamento não é configurável.
 
-## Recursos adicionais {#additional-resources}
-
+>[!MORELIKETHIS]
 * [Introdução ao aplicativo de desktop do AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Usar o aplicativo de desktop do AEM](use-app-v1.md)
-
 * [Compreender o check-in/check-out com o aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Usar o aplicativo de desktop com os ativos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Solução de problemas do aplicativo de desktop AEM](troubleshoot-app-v1.md)
+
