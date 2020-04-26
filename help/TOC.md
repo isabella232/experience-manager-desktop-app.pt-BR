@@ -1,15 +1,15 @@
 ---
 cloud: experience-cloud
-product: Aplicativo de desktop do Adobe Experience Manager
+product: Adobe Experience Manager desktop app
 audience: end-user
 user-guide-title: Ajuda do aplicativo de desktop do AEM
 solution-title: Ativos AEM
-solution-hub-url: https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html
+solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html
 getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html
 tutorials-title: Tutoriais do AEM
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-tutorials.html
-translation-type: ht
-source-git-commit: ffc67d223f4db3a3a91cba5dfb5f725153319b02
+translation-type: tm+mt
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
