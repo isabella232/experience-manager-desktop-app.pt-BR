@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -24,7 +24,7 @@ Para usar o aplicativo de desktop AEM,
 
 * Certifique-se de que a versão do servidor AEM seja compatível com o aplicativo de desktop AEM. Consulte a matriz de [compatibilidade](release-notes-of-v1.md#compatibilitymatrix).
 * Baixe e instale o aplicativo.
-* Teste a conexão usando alguns ativos. Consulte [Acessar e abrir ativos na área de trabalho](use-app-v1.md#openondesktop).
+* Teste a conexão usando alguns ativos. Consulte [Acessar e abrir ativos em sua área de trabalho](use-app-v1.md#openondesktop).
 
 ## Requisitos do sistema, pré-requisitos e links de download {#system-requirements-prerequisites-and-download-links}
 
@@ -36,7 +36,7 @@ Para obter detalhes, consulte [Instalar e conectar o aplicativo de desktop AEM a
 
 >[!NOTE]
 >
->Somente uma instância do aplicativo de desktop AEM pode ser instalada e estar ativa de cada vez.
+>Somente uma instância do aplicativo de desktop do AEM pode ser instalada e estar ativa de cada vez.
 
 ## Suporte a proxy {#proxy-support}
 
@@ -50,11 +50,11 @@ Se o proxy exigir autenticação, a equipe de TI poderá adicionar o URL dos ati
 
 Ao alterar um arquivo de um local de compartilhamento de rede montado pelo aplicativo de desktop, os arquivos são salvos nesse local em duas fases. Na primeira fase, um arquivo é salvo localmente. Um usuário pode salvar o arquivo e continuar trabalhando nele, sem esperar a conclusão da transferência.
 
-Na segunda fase, o aplicativo de desktop carrega o arquivo atualizado no servidor AEM após um atraso predefinido (por exemplo, 30s). Esta operação ocorre em segundo plano. Use a opção Exibir status do ativo para exibir o status da operação de upload.
+Na segunda fase, o aplicativo de desktop carrega o arquivo atualizado no servidor AEM após um atraso predefinido (por exemplo, 30s). Esta operação ocorre em segundo plano. Use a opção Status do ativo de Visualização para visualização do status da operação de upload.
 
 1. Faça upload de um ativo para os ativos AEM.
 1. Clique/toque no ícone do aplicativo para desktop do AEM na barra de ferramentas.
-1. No menu, selecione a opção Exibir status do ativo.
+1. No menu, selecione a opção Status do ativo de Visualização.
 1. Na caixa de diálogo, reveja o status da operação de upload.
 
 >[!NOTE]
@@ -84,19 +84,19 @@ O componente sobreposto depende da natureza da personalização. Para alterar qu
 
 ## Gerenciar cache {#manage-cache}
 
-No Windows, o cache está em `%LOCALAPPDATA%\Adobe\AssetsCompanion\Cache\`, onde é uma versão codificada do host AEM configurado no aplicativo de desktop. Por exemplo, `http://localhost:4502` é exibido como `http%3A%2F%2Flocalhost%3A4502%2F`.
+No Windows, o cache está em `%LOCALAPPDATA%\Adobe\AssetsCompanion\Cache\`, onde é uma versão codificada do host AEM configurada no aplicativo de desktop. Por exemplo, `http://localhost:4502` é exibido como `http%3A%2F%2Flocalhost%3A4502%2F`.
 
 No Mac OS X, há um diretório semelhante em `~/Library/Group Containers/group.com.adobe.aem.desktop/cache`.
 
 ### Opção no aplicativo para gerenciar o cache {#in-app-option-to-manage-cache}
 
-Você pode controlar a quantidade de espaço em disco disponível para fins de armazenamento em cache local. Os artefatos do servidor do AEM Assets são armazenados em cache localmente para proporcionar uma experiência mais suave. Você pode alterar os padrões para atender às suas necessidades. Além disso, você pode limpar o cache para obter todos os ativos novamente. Para definir as opções desejadas, clique no ícone do aplicativo e clique em **[!UICONTROL Advanced]**>**[!UICONTROL Manage Cache]**. ****
+Você pode controlar a quantidade de espaço em disco disponível para fins de armazenamento em cache local. Os artefatos do servidor do AEM Assets são armazenados em cache localmente para proporcionar uma experiência mais suave. Você pode alterar os padrões para atender às suas necessidades. Além disso, você pode limpar o cache para obter todos os ativos novamente. Para definir as opções desejadas, clique no ícone do aplicativo e clique em **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
 >Quando você limpa o cache, ele preserva suas alterações não salvas. Todos os ativos não verificados no servidor AEM são retidos e não excluídos.
 
-### Alterar local do cache no Windows {#change-location-of-cache-on-windows}
+### Alterar o local do cache no Windows {#change-location-of-cache-on-windows}
 
 O local padrão do cache para o aplicativo de desktop AEM é:
 
@@ -110,7 +110,7 @@ Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edi
 1. Navegue até o diretório de instalação do aplicativo. O local padrão no Windows é `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop`.
 1. Edite o arquivo Adobe Experience Manager Desktop.exe.config com um editor de texto.
 
-   São necessários privilégios de administrador para salvar alterações neste arquivo.
+   São necessários privilégios de administrador para salvar as alterações neste arquivo.
 
 1. Procure a string &quot;ProxyCacheRoot&quot;. Você verá que seu valor está definido para o local de cache &quot;%LocalAppData%\Adobe\AssetsCompanion\Cache&quot;. Basta alterar esse valor para qualquer caminho válido.
 
@@ -120,9 +120,9 @@ Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edi
 
 ## Recursos adicionais {#additional-resources}
 
-* [Introdução ao aplicativo de desktop do AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+* [Introdução ao aplicativo de desktop do AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Usar o aplicativo de desktop do AEM](use-app-v1.md)
 
-* [Compreender o check-in/check-out com o aplicativo de desktop AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
-* [Usar o aplicativo de desktop com os ativos AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
+* [Compreender o check-in/check-out com o aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+* [Usar o aplicativo de desktop com os ativos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Solução de problemas do aplicativo de desktop AEM](troubleshoot-app-v1.md)
