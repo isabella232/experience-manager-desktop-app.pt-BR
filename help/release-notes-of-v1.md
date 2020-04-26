@@ -9,12 +9,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f1ea381cc88b5382288b2479d26e976dc7289b88
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
 
-# Notas de versão do aplicativo de desktop AEM v1.x{#aem-desktop-app-release-notes}
+# Notas de versão do aplicativo de desktop AEM v1.x {#aem-desktop-app-release-notes}
 
 Para o aplicativo de desktop versão v1.x, veja a seguir os links de download e as informações de compatibilidade do AEM.
 
@@ -120,7 +120,7 @@ Uploads em massa: Carregar hierarquias de pastas grandes via Criar > Carregar pa
 **Pré-busca dos ativos**vinculados Para melhorar a experiência do usuário ao trabalhar com documentos do InDesign que incluem ativos vinculados armazenados no AEM, o aplicativo de desktop tentará e pré-busca desses arquivos vinculados para o cache local antes de baixar e abrir o documento do InDesign. Dessa forma, o usuário terá os arquivos vinculados disponíveis localmente e não precisará aguardar mais ao acessá-los no InDesign (no painel Links).
 Observe que a busca prévia só funciona se o AEM reconhecer os links no lado do servidor. Um ativo com links reconhecidos terá uma lista de &quot;Referências&quot; listada na visualização Propriedades do ativo do InDesign.
 
-### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.8.x{#enhancements-available-since-aem-desktop-app-18x}
+### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.8.x {#enhancements-available-since-aem-desktop-app-18x}
 
 O aplicativo de desktop AEM versão 1.8.1 de acompanhamento rápido adicionou melhorias ao abrir vários arquivos simultaneamente da interface do usuário do AEM à versão 1.8 (CQ-4237747, CQ-4238780). As melhorias no aplicativo 1.8 para desktop do AEM são:
 
@@ -138,7 +138,7 @@ O aplicativo de desktop AEM versão 1.8.1 de acompanhamento rápido adicionou me
    * Caixa de diálogo Mais informações do ativo: às vezes, a barra de ação não estava visível (CQ-4208540)
    * (Win) O arquivo agora pode ser sincronizado após reverter para uma versão anterior da interface do usuário do AEM Assets (CQ-4216411)
 
-### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.7{#Enhancements-Available-Since-AEM-Desktop-App-17}
+### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
 * Estabilidade:
    * Estabilidade aprimorada quando o aplicativo de desktop AEM se conecta a um servidor AEM sobrecarregado (CQ-4224803)
@@ -158,7 +158,7 @@ O aplicativo de desktop AEM versão 1.8.1 de acompanhamento rápido adicionou me
 >
 >Problemas encontrados nas cargas beta 1.7 do aplicativo de desktop AEM (que não estavam presentes na versão 1.6 não são reportados nas notas de versão).
 
-### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.6{#Enhancements-Available-Since-AEM-Desktop-App-16}
+### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
 * Documentação: Novas práticas [recomendadas para a documentação do aplicativo](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) v1.x.
 * Processo de logon aprimorado no AEM:
@@ -182,7 +182,7 @@ O aplicativo de desktop AEM versão 1.8.1 de acompanhamento rápido adicionou me
    * Alta utilização da CPU (CQ-4218070).
    * Erro ao arrastar e soltar arquivos ao fazer upload para o AEM (CQ-4217006).
 
-### Melhorias disponíveis desde o aplicativo de desktop AEM 1.5{#Enhancements-Available-Since-AEM-Desktop-App-15}
+### Melhorias disponíveis desde o aplicativo de desktop AEM 1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
 **Versão 1.5.1.5 para Mac OS X:** A versão 1.5.1.5 oferece os seguintes benefícios:
 
@@ -217,13 +217,13 @@ Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;
 * Melhoria da confiabilidade de abrir, posicionar e salvar ativos AEM em aplicativos da Creative Cloud (CQ-4203968, CQ-4205511, CQ-103543, CQ-4207141, CQ-90980)
 * Suporte aprimorado: opção para limpar o cache (CQ-4202541), acesso fácil aos registros (CQ-4202340, CQ-4204673)
 * Outras correções:
-   * Melhor suporte para ativos e pastas com caracteres japoneses nas configurações de nome/idioma não-inglês (CQ-4195433, CQ-4205793, CQ-4199446)
+   * Melhor suporte para ativos e pastas com caracteres japoneses nas configurações de nome/idioma diferente do inglês (CQ-4195433, CQ-4205793, CQ-4199446)
    * Melhor manipulação do logon com SSL (CQ-4200217)
    * Montagem de compartilhamento mais confiável (CQ-4200793)
    * Várias melhorias na estabilidade (CQ-4207539, CQ-4200378)
    * Melhor manipulação do URL do AEM Assets em Preferências (CQ-97388)
 
-### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.4{#Enhancements-Available-Since-AEM-Desktop-App-14}
+### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * Carregamento simplificado de pastas hierárquicas por meio da nova ação Criar > Carregar pasta na interface de usuário de toque
    * Ação inicia uma operação de carregamento de pasta executada pelo aplicativo de desktop
@@ -235,7 +235,7 @@ Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;
 * Compatibilidade aprimorada com as versões mais recentes do SO
 * Correções relatadas pelo cliente
 
-### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.3{#Enhancements-Available-Since-AEM-Desktop-App-13}
+### Aprimoramentos disponíveis desde o aplicativo de desktop AEM 1.3 {#Enhancements-Available-Since-AEM-Desktop-App-13}
 
 * Maior eficiência. Os usuários gastam menos tempo esperando a conclusão das operações de rede.
 * Integração aprimorada do Finder, que oferece mais estabilidade e acesso a recursos, como miniaturas.
