@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 52f70e5b95318d8b3b3930be1233cc51aa997914
 
 ---
 
@@ -105,7 +105,7 @@ Uma boa experiência para os usuários que usam o aplicativo de desktop AEM depe
 
 Para entender as práticas recomendadas sobre a configuração de rede do AEM Assets, consulte o documento de considerações [de rede do](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) AEM Assets. Alguns dos aspectos importantes que ajudam a otimizar a experiência do aplicativo de desktop do AEM para os usuários incluem:
 
-* **Usar o Dispatcher corretamente configurado:** Use o AEM Dispatcher para obter segurança adicional e verifique se ele está configurado para conexão de aplicativo de desktop do [AEM com o AEM atrás de um dispatcher](using.md)
+* **Usar o Dispatcher corretamente configurado:** Use o AEM Dispatcher para obter segurança adicional e verifique se ele está configurado para conexão de aplicativo de desktop do [AEM com o AEM atrás de um dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **Salvar largura de banda:** Considere desativar a pré-visualização de ícone no Finder no Mac - ao navegar pelo repositório montado usando o Finder. O Finder solicita que cada arquivo gere uma pré-visualização e faz com que o aplicativo de desktop baixe e armazene o ativo em cache localmente. Observe que, ao economizar largura de banda, isso também diminuiria a experiência do usuário para os usuários no desktop, portanto, isso deve ser feito ao trabalhar com repositórios com ativos grandes e/ou largura de banda limitada.
 
@@ -119,4 +119,4 @@ Para entender como o servidor do AEM Assets deve ser otimizado para desempenho, 
 
 * **Carregamento de ativos mais eficiente:** Configure o modelo de fluxo de trabalho de Atualização de ativos do [AEM para ser temporário](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows).
 
-* **Limitar CPU do servidor para uploads:** Certifique-se de que o parâmetro de trabalho de fluxo de trabalho paralelo máximo esteja definido corretamente, para que os uploads não esgotem toda a CPU.
+* **Limitar CPU do servidor para uploads:** Certifique-se de que o parâmetro de trabalho de fluxo de trabalho paralelo máximo esteja definido corretamente, de modo que os uploads não esgotem toda a CPU.
