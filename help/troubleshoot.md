@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
 
 ---
 
@@ -24,7 +24,7 @@ Leia para solucionar problemas do aplicativo, aprender as práticas recomendadas
 
 Siga as práticas recomendadas a seguir para evitar alguns problemas comuns e a solução de problemas.
 
-* **Entenda como o aplicativo de desktop funciona**: Antes de começar a usar o aplicativo, aguarde alguns minutos sabendo como ele funciona. Saiba mais sobre a vinculação entre a interface do usuário da Web e a área de trabalho, o mapeamento do repositório, o armazenamento em cache de ativos, a gravação local e o upload em segundo plano. Veja [como funciona](release-notes.md#how-app-works).
+* **Entenda como o aplicativo de desktop funciona**: Antes de começar a usar o aplicativo, passe alguns momentos sabendo como ele funciona. Saiba mais sobre a vinculação entre a interface da Web e o desktop do Experience Manager, o mapeamento do repositório, o armazenamento em cache de ativos, a gravação local e o upload em segundo plano. Veja [como funciona](release-notes.md#how-app-works).
 
 * **Evite caracteres não suportados em nomes** de pastas: Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas nos ativos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)do Experience Manager. Alguns casos de uso do Adobe Experience Manager podem ser afetados por caracteres não suportados no nome da pasta.
 
@@ -134,8 +134,8 @@ As bibliotecas que o aplicativo de desktop AEM usa para comunicação HTTP utili
 
 Raramente, o aplicativo pode ficar sem resposta, exibir apenas uma tela branca ou exibir um erro na parte inferior da interface, sem nenhuma opção na interface. Tente o seguinte na ordem:
 
-1. Clique com o botão direito do mouse na interface do aplicativo e clique em **[!UICONTROL Refresh]**.
-1. Saia do aplicativo e reinicie-o.
+* Clique com o botão direito do mouse na interface do aplicativo e clique em **[!UICONTROL Refresh]**.
+* Saia do aplicativo e abra-o novamente.
 
 Em ambos os métodos, os start do aplicativo na pasta DAM raiz.
 
