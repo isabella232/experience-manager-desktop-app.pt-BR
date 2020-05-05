@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
+source-git-commit: 63cb82b6bdafeb87d296a895d68cb3912045839a
 
 ---
 
@@ -75,7 +75,7 @@ As correções e atualizações de erros são:
 * Corrigido o problema com uploads de ativos quando nomes de arquivos ou caminhos contêm determinados caracteres GB18030. <!-- CQ-4283494 -->
 * A opção Classificar por relevância está disponível depois de alternar para outro tipo de classificação nos resultados da pesquisa. <!-- CQ-4286874 -->
 * O aplicativo para desktop agora lista subpastas sem a necessidade de atualizar explicitamente. <!-- CQ-4285711 -->
-* (Windows) Corrigido um problema raro de interface de aplicativo inutilizável em algumas máquinas do Windows. Os usuários não podem clicar na interface do aplicativo, pois ela aparece distorcida com a área de clique dos elementos da interface sendo deslocada. <!-- CQ-4280785 -->
+* (Windows) Corrigido um problema raro de interface de aplicativo inutilizável em algumas máquinas do Windows. Os usuários não podem clicar na interface do aplicativo, pois ela aparece distorcida com a área de clique dos elementos de interface deslocados. <!-- CQ-4280785 -->
 
 **Atualizações no app v2.0.1**
 
