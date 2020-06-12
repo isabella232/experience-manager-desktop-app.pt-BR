@@ -10,7 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 63cb82b6bdafeb87d296a895d68cb3912045839a
+source-git-commit: 2e634c13ef1bcb0cd1868100f5a2d7cb20c189be
+workflow-type: tm+mt
+source-wordcount: '1318'
+ht-degree: 51%
 
 ---
 
@@ -35,8 +38,8 @@ O aplicativo de desktop Adobe Experience Manager é compatível com os seguintes
 O aplicativo funciona com as seguintes versões do Experience Manager, seja implantado como um serviço em nuvem, no Adobe Managed Services (AMS) ou no local:
 
 * [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html)
-* [Experience Manager 6.5.0+](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) ou posterior
-* [Experience Manager 6.4.4+](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) ou posterior
+* [Experience Manager 6.5.0](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) ou mais recente
+* [Experience Manager 6.4.4](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) ou mais recente
 * Experience Manager 6.4.0 - 6.4.3 com pacote de [compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
