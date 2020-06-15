@@ -1,6 +1,6 @@
 ---
 title: Instalar e configurar o aplicativo de desktop AEM versão 1.x
-description: Instale e configure o aplicativo de desktop AEM versão 1.x para trabalhar com os servidores do AEM Assets e mapeie os ativos para montar como uma unidade em seu desktop.
+description: Instale e configure o aplicativo de desktop AEM versão 1.x para trabalhar com servidores AEM Assets e mapeie os ativos para montar como uma unidade em seu desktop.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,7 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 Usando o aplicativo de desktop AEM, os ativos no AEM são facilmente acessíveis em sua área de trabalho local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas no AEM quando você carrega e uma nova versão é criada no repositório.
 
-Essa integração permite que várias funções na organização gerenciem os ativos centralmente nos ativos AEM e os acessem na Creative Cloud e em outros aplicativos, além de facilitar a adesão aos vários padrões, inclusive a marca.
+Essa integração permite que várias funções na organização gerenciem os ativos centralmente nos AEM Assets e os acessem na Creative Cloud e em outros aplicativos, além de facilitar a adesão aos vários padrões, inclusive a marca.
 
 Para usar o aplicativo de desktop AEM,
 
@@ -44,7 +47,7 @@ Ao alterar um arquivo de um local de compartilhamento de rede montado pelo aplic
 
 Na segunda fase, o aplicativo de desktop carrega o arquivo atualizado no servidor AEM após um atraso predefinido (por exemplo, 30s). Esta operação ocorre em segundo plano. Use a opção Status do ativo de Visualização para visualização do status da operação de upload.
 
-1. Faça upload de um ativo para os ativos AEM.
+1. Carregar um ativo para AEM Assets.
 1. Clique/toque no ícone do aplicativo para desktop do AEM na barra de ferramentas.
 1. No menu, selecione a opção Status do ativo de Visualização.
 1. Na caixa de diálogo, reveja o status da operação de upload.
@@ -75,7 +78,7 @@ Se você configurar ou modificar as configurações do servidor proxy para Windo
 >
 >A configuração de proxy só é aplicada quando você start o aplicativo de desktop. Feche e reinicie o aplicativo para que as alterações entrem em vigor.
 
-Se o proxy exigir autenticação, a equipe de TI poderá adicionar o URL dos ativos AEM às configurações do servidor proxy para permitir a passagem do tráfego do aplicativo.
+Se o proxy exigir autenticação, a equipe de TI poderá permitir que o URL dos ativos Experience Manager nas configurações do servidor proxy permita que o tráfego do aplicativo passe.
 
 ## Personalizar a caixa de diálogo Informações do ativo {#customize-the-asset-info-dialog}
 
@@ -94,7 +97,7 @@ No Mac OS X, há um diretório semelhante em `~/Library/Group Containers/group.c
 
 ### Opção no aplicativo para gerenciar o cache {#in-app-option-to-manage-cache}
 
-Você pode controlar a quantidade de espaço em disco disponível para fins de armazenamento em cache local. Os artefatos do servidor do AEM Assets são armazenados em cache localmente para proporcionar uma experiência mais suave. Você pode alterar os padrões para atender às suas necessidades. Além disso, você pode limpar o cache para obter todos os ativos novamente. Para definir as opções desejadas, clique no ícone do aplicativo e clique em **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
+Você pode controlar a quantidade de espaço em disco disponível para fins de armazenamento em cache local. Os artefatos do servidor AEM Assets são armazenados em cache localmente para proporcionar uma experiência mais suave. Você pode alterar os padrões para atender às suas necessidades. Além disso, você pode limpar o cache para obter todos os ativos novamente. Para definir as opções desejadas, clique no ícone do aplicativo e clique em **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
@@ -126,6 +129,6 @@ Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edi
 * [Introdução ao aplicativo de desktop do AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Usar o aplicativo de desktop do AEM](use-app-v1.md)
 * [Compreender o check-in/check-out com o aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [Usar o aplicativo de desktop com os ativos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+* [Uso de aplicativos de desktop com AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Solução de problemas do aplicativo de desktop AEM](troubleshoot-app-v1.md)
 
