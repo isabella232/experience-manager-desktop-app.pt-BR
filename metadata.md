@@ -11,7 +11,10 @@ mini-toc-levels: 1
 git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.en
 index: y
 translation-type: tm+mt
-source-git-commit: e5e7f60d97bfb24bb4c668cd074430218a657db4
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +31,7 @@ O arquivo metadata.md inclui metadados de nível de acordo de recompra que passa
 | getting-started-url | Link para a página de introdução |
 | tutoriais-url | Link para tutoriais em vídeo — tutoriais do helpx ou tutoriais do KT |
 | níveis minitoctoc | Determina o número de níveis de cabeçalho exibidos no painel direito. o padrão é 2 |
-| repo git | Especifica o local do acordo principal para uso interno |
+| repo git | Especifica o local do acordo de recompra primário para uso interno |
 
 No arquivo TOC.md
 
