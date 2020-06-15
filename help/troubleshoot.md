@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas e solução de problemas para o aplicativo de desktop Adobe Experience Manager
+title: Práticas recomendadas e solução de problemas para aplicativos de desktop Adobe Experience Manager
 description: Siga as práticas recomendadas e solucione problemas para resolver problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
@@ -9,14 +9,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 1%
 
 ---
 
 
 # Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-O aplicativo de desktop Adobe Experience Manager (AEM) se conecta a um repositório DAM (Digital Asset Management, Gerenciamento de ativos digitais) de implantação remota do Experience Manager. O aplicativo obtém informações do repositório e resultados da pesquisa em seu computador, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do AEM Assets.
+O aplicativo de desktop Adobe Experience Manager (AEM) se conecta a um repositório DAM (Digital Asset Management, gerenciamento de ativos digitais) de implantação remota do Experience Manager. O aplicativo obtém informações do repositório e resultados da pesquisa em seu computador, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do AEM Assets.
 
 Leia para solucionar problemas do aplicativo, aprender as práticas recomendadas e descobrir as limitações.
 
@@ -24,15 +27,15 @@ Leia para solucionar problemas do aplicativo, aprender as práticas recomendadas
 
 Siga as práticas recomendadas a seguir para evitar alguns problemas comuns e a solução de problemas.
 
-* **Entenda como o aplicativo de desktop funciona**: Antes de começar a usar o aplicativo, passe alguns momentos sabendo como ele funciona. Saiba mais sobre a vinculação entre a interface da Web e o desktop do Experience Manager, o mapeamento do repositório, o armazenamento em cache de ativos, a gravação local e o upload em segundo plano. Veja [como funciona](release-notes.md#how-app-works).
+* **Entenda como o aplicativo de desktop funciona**: Antes de começar a usar o aplicativo, passe alguns momentos sabendo como ele funciona. Saiba mais sobre a vinculação entre a interface da Web do Experience Manager e o desktop, o mapeamento do repositório, o armazenamento em cache de ativos, a gravação local e o upload em segundo plano. Veja [como funciona](release-notes.md#how-app-works).
 
-* **Evite caracteres não suportados em nomes** de pastas: Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas nos ativos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)do Experience Manager. Alguns casos de uso do Adobe Experience Manager podem ser afetados por caracteres não suportados no nome da pasta.
+* **Evite caracteres não suportados em nomes** de pastas: Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas em Ativos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)Experience Manager. Alguns casos de uso de Adobe Experience Manager podem ser afetados por caracteres não suportados no nome da pasta.
 
 * **Práticas recomendadas para evitar conflitos**: Para evitar conflitos em potencial ao colaborar em vários ativos, consulte [evitar conflitos](using.md#adv-workflow-collaborate-avoid-conflicts)de edição.
 
 * **Use o upload de pasta para pastas** grandes e hierárquicas: Em vez de usar a interface da Web do Assets ou outros métodos, use o aplicativo de desktop Experience Manager para fazer upload de pastas grandes. O aplicativo carrega os ativos em segundo plano com o registro e o monitoramento. Consulte [fazer upload de ativos](using.md#bulk-upload-assets)em massa.
 
-* **Use a versão** mais recente: Use a versão mais recente do aplicativo e sempre verifique a compatibilidade antes de instalar uma nova versão do aplicativo ou antes de atualizar para uma versão mais recente do Adobe Experience Manager. See [release notes](release-notes.md).
+* **Use a versão** mais recente: Use a versão mais recente do aplicativo e sempre verifique a compatibilidade antes de instalar uma nova versão do aplicativo ou antes de atualizar para uma versão mais nova do Adobe Experience Manager. See [release notes](release-notes.md).
 
 * **Use a mesma letra** de unidade: Use a mesma letra de unidade em uma organização para mapear para o Adobe Experience Manager DAM. Para ver os ativos colocados por outros usuários, os caminhos devem ser os mesmos. Usar a mesma letra de unidade garante um caminho constante para ativos DAM. Os ativos permanecem posicionados e não são removidos mesmo se letras de unidade diferentes forem usadas por usuários diferentes.
 
@@ -40,7 +43,7 @@ Siga as práticas recomendadas a seguir para evitar alguns problemas comuns e a 
 
 * **Casos de uso não suportados para aplicativos** de desktop: Não use o aplicativo para a migração do Assets (ele precisa de planejamento e outras ferramentas); para operações DAM de uso intenso (como mover pastas grandes, uploads grandes, localizar arquivos usando pesquisas avançadas de metadados); e como um cliente de sincronização (os princípios de design e os padrões de uso são diferentes dos clientes sincronizados, como o Microsoft OneDrive ou a sincronização de desktop da Adobe Creative Cloud).
 
-* **Tempo limite**: Atualmente, o aplicativo de desktop não tem um valor de tempo limite configurável que desconecta a conexão entre o servidor do Experience Manager e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentativas fazer upload do ativo algumas vezes aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
+* **Tempo limite**: Atualmente, o aplicativo de desktop não tem um valor de tempo limite configurável que desconecta a conexão entre o servidor de Experience Manager e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentativas fazer upload do ativo algumas vezes aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
 
 ## Como solucionar problemas {#troubleshooting-prep}
 
