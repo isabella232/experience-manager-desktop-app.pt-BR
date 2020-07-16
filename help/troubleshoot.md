@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4e2926adfe46265c78f85b63696c98859f895134
+source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1242'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Para ativar o modo de depuração no Windows, siga estas etapas:
 
 1. Localize `logging.json` o arquivo na pasta de instalação do aplicativo de desktop. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
 
-1. No `logging.json` arquivo, localize todas as instâncias de `"level": "info"`. Altere os valores de `info` para `debug`. Salve e feche o arquivo.
+1. No `logging.json` arquivo, localize todas as instâncias de `"level": "info"`. Altere os valores de `info` para `debug`, que é `"level": "debug"`. Salve e feche o arquivo.
 
 1. Limpe os diretórios em cache que estão no local definido nas [Preferências](/help/install-upgrade.md#set-preferences)do aplicativo.
 
