@@ -1,6 +1,6 @@
 ---
-title: Notas de versão do aplicativo Adobe Experience Manager para desktop
-description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para o aplicativo de desktop Adobe Experience Manager.
+title: Notas de versão do aplicativo para desktop Adobe Experience Manager
+description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para aplicativos de desktop Adobe Experience Manager.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -10,20 +10,20 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7a803edce0b6300b4a4142dcdc2f61d8347acea
+source-git-commit: eda366b969edb3c266ae8a5900ea7c0409846db0
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 50%
+source-wordcount: '1326'
+ht-degree: 49%
 
 ---
 
 
-# Notas de versão do aplicativo Adobe Experience Manager para desktop {#release-notes-v2}
+# Notas de versão do aplicativo para desktop Adobe Experience Manager {#release-notes-v2}
 
 | Produtos | Aplicativo de desktop do Adobe Experience Manager |
 |----|----|
 | Versão do aplicativo (revisão) | 2.0 (2.0.2.0) |
-| Versões compatíveis do AEM | AEM como serviço em nuvem; AEM 6.5; AEM 6.4; AEM 6.3 (com pacote de compatibilidade) |
+| Versões compatíveis do AEM | AEM como Cloud Service; AEM 6.5; AEM 6.4; AEM 6.3 (com pacote de compatibilidade) |
 | Tipo | Versão secundária |
 | Data de lançamento | 15 de abr de 2020 (Mac e Win) |
 | URLs para download | [macOS de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows de 64 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows de 32 bits](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
@@ -35,23 +35,23 @@ O aplicativo de desktop Adobe Experience Manager é compatível com os seguintes
 * Mac OS X 10.14 ou mais recente, com as últimas correções de erros.
 * Windows 7 e Windows 10 com os service packs e correções de erros mais recentes.
 
-O aplicativo funciona com as seguintes versões do Experience Manager, seja implantado como um serviço em nuvem, no Adobe Managed Services (AMS) ou no local:
+O aplicativo funciona com as seguintes versões de Experience Manager, seja implantadas como um Cloud Service, no Adobe Managed Services (AMS) ou no local:
 
 * [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html)
 * [Experience Manager 6.5.0](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) ou mais recente
 * [Experience Manager 6.4.4](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) ou mais recente
-* Experience Manager 6.4.0 - 6.4.3 com pacote de [compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* Experience Manager 6.4.0 - 6.4.3 com pacote de [compatibilidade](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
->O suporte do aplicativo para desktop para o Experience Manager 6.3 foi descontinuado. A Adobe recomenda atualizar para uma versão mais recente e compatível do Adobe Experience Manager.
->O Experience Manager 6.3.3.1 ou posterior funciona com o aplicativo desktop após a instalação do pacote [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidade. Esse pacote não está disponível para o Experience Manager 6.3, pois nenhum pacote [de serviços está planejado](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>O suporte do aplicativo para desktop para o Experience Manager 6.3 está obsoleto. A Adobe recomenda atualizar para uma versão de Adobe Experience Manager mais recente e compatível.
+>O Experience Manager 6.3.3.1 ou posterior funciona com o aplicativo desktop após a instalação do pacote [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidade. Esse pacote não está disponível para a Experience Manager 6.3, pois nenhum pacote de [serviços está planejado](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
 A versão do aplicativo que você pretende instalar no computador local requer uma versão específica do servidor do Adobe Experience Manager/componentes adicionais do servidor (service packs, hot fixes ou pacotes de recursos). Entre em contato com o administrador do Adobe Experience Manager para obter ajuda.
 
 ### Support for different assets and file types {#support-for-file-types}
 
-O aplicativo oferece suporte a ativos armazenados no Adobe Experience Manager que representam arquivos binários para suas operações básicas. A abertura de arquivos no aplicativo de desktop nativo depende da associação do sistema operacional dos tipos de arquivos específicos, como PNG ou JPG, para aplicativos específicos, como Mac Preview ou Adobe Photoshop.
+O aplicativo suporta ativos armazenados no Adobe Experience Manager que representam arquivos binários para suas operações básicas. A abertura de arquivos no aplicativo de desktop nativo depende da associação do sistema operacional dos tipos de arquivos específicos, como PNG ou JPG, para aplicativos específicos, como Mac Preview ou Adobe Photoshop.
 
 Alguns tipos de arquivo oferecem suporte para a inserção de ativos vinculados no binário. O aplicativo pré-baixa os ativos vinculados se o ativo estiver presente no repositório do Experience Manager quando esses arquivos binários forem abertos usando o aplicativo de desktop. Os tipos de arquivos compatíveis no momento incluem o seguinte:
 
@@ -59,12 +59,12 @@ Alguns tipos de arquivo oferecem suporte para a inserção de ativos vinculados 
 * Arquivos do Adobe Illustrator (formato AI)
 * Arquivos do Adobe Photoshop (formato PS)
 
-O recurso é compatível com as versões da Adobe Creative Cloud 2018 e da Adobe Creative Cloud 2019 do aplicativo acima. O aplicativo usa uma abordagem heurística e de melhor correspondência para mapear os caminhos de desktop locais de ativos vinculados a URLs no servidor do Experience Manager. Baseia-se em algumas suposições:
+O recurso é compatível com as versões da Adobe Creative Cloud 2018 e da Adobe Creative Cloud 2019 do aplicativo acima. O aplicativo usa uma abordagem heurística e de melhor correspondência para mapear os caminhos de desktop locais de ativos vinculados a URLs no servidor Experience Manager. Baseia-se em algumas suposições:
 
 * Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
 * Os caminhos são armazenados no registro XMP do arquivo pelo aplicativo nativo.
 * O Experience Manager extraiu o registro XMP com os caminhos para o registro de metadados do ativo.
-* Os caminhos podem corresponder aos ativos no Experience Manager, ou seja, os arquivos inseridos também estão no Experience Manager em um caminho correspondente.
+* Os caminhos podem ser correspondidos a ativos no Experience Manager, ou seja, os arquivos colocados também estão em Experience Manager sob um caminho correspondente.
 
 ## Novos recursos e melhorias {#whats-new-added}
 
@@ -133,8 +133,8 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 
 >[!MORELIKETHIS]
 >
->* [Documentação do AEM como um serviço em nuvem](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
->* [Documentação do AEM como ativos de serviço em nuvem](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
+>* [AEM como documentação de Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+>* [Documentação do AEM como um Cloud Service Assets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
 >* [Como usar o aplicativo de desktop Experience Manager](using.md)
 >* [Instalar e atualizar o aplicativo de desktop](install-upgrade.md)
 >* [Práticas recomendadas e dicas para solução de problemas](troubleshoot.md)
