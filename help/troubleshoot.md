@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+source-git-commit: 4e2926adfe46265c78f85b63696c98859f895134
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 1%
@@ -55,15 +55,15 @@ Para solucionar problemas, você pode ativar o modo de depuração e obter mais 
 
 Para ativar o modo de depuração no Windows, siga estas etapas:
 
-1. Localize `Adobe Experience Manager Desktop.exe.config` o arquivo na pasta de instalação do aplicativo de desktop. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop`. Salve e feche o arquivo.
+1. Localize `Adobe Experience Manager Desktop.exe.config` o arquivo na pasta de instalação do aplicativo de desktop. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop`.
 
-1. Localize `<level value="INFO"/>` perto do final do arquivo. Mude o valor para `DEBUG`, isto é, `<level value="DEBUG"/>`.
+1. Localize `<level value="INFO"/>` perto do final do arquivo. Altere o valor de `INFO` para `DEBUG`, que é `<level value="DEBUG"/>`. Salve e feche o arquivo.
 
 1. Localize `logging.json` o arquivo na pasta de instalação do aplicativo de desktop. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
 
-1. No `logging.json` arquivo, localize todas as instâncias do `level` parâmetro. Altere os valores de `info` para `debug`. Salve e feche o arquivo.
+1. No `logging.json` arquivo, localize todas as instâncias de `"level": "info"`. Altere os valores de `info` para `debug`. Salve e feche o arquivo.
 
-1. Limpe os diretórios em cache que estão no local definido nas preferências do aplicativo.
+1. Limpe os diretórios em cache que estão no local definido nas [Preferências](/help/install-upgrade.md#set-preferences)do aplicativo.
 
 1. Reinicie o aplicativo de desktop.
 
