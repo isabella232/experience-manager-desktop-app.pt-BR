@@ -3,7 +3,7 @@ title: Use AEM aplicativo para desktop versão 1.x.
 description: Saiba como usar o aplicativo Adobe Experience Manager para desktop versão 1.x e otimizar seu trabalho com ativos no desktop.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1bd50a439059ac66e0368eeefc6af67ff160d9b
+source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
 workflow-type: tm+mt
 source-wordcount: '2516'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Na interface do usuário do Assets, você pode explorar os locais dos ativos ou 
 
 Quando você clica em **Abrir** para abrir um ativo no computador local, o aplicativo baixa o ativo em seu cache interno. O aplicativo inicia o aplicativo desktop nativo associado ao tipo de arquivo do ativo baixado.
 
-No Mac, selecione **Abrir** no menu de contexto para abrir um ativo por meio AEM aplicativo de desktop. No Windows, selecione Abrir na Web no menu de contexto para abrir o ativo. Na janela Status do ativo, clique/toque em ![Abrir no ícone](assets/aemassets_icon_openondesktop.png) da área de trabalho para abrir o ativo.
+No Mac, selecione **Abrir** no menu de contexto para abrir um ativo por meio AEM aplicativo de desktop. No Windows, selecione Abrir na Web no menu de contexto para abrir o ativo. Na janela Status do ativo, clique/toque em ![Abrir no ícone](assets/do-not-localize/aemassets_icon_openondesktop.png) da área de trabalho para abrir o ativo.
 
 Para arquivos Adobe InDesign (INDD), selecione **[!UICONTROL Open]** no menu de contexto. Quando você clica nessa opção, o aplicativo baixa os ativos vinculados no seu sistema de arquivos local e abre o arquivo INDD no Adobe InDesign. Esse método garante que os ativos necessários estejam disponíveis localmente ao editar o arquivo INDD.
 
@@ -141,19 +141,19 @@ Depois de mapear o repositório do AEM Assets para a unidade local, você pode a
 
    Essas ações da área de trabalho também estão disponíveis quando você clica no ícone Ações **da** área de trabalho na barra de ferramentas depois de selecionar o ativo ou na barra de ferramentas na página do ativo.
 
-1. Para abrir o ativo no aplicativo de desktop associado à extensão de arquivo específica, clique/toque na ação rápida **Abrir no desktop** ![Abrir no ícone](assets/aemassets_icon_openondesktop.png)da área de trabalho.
+1. Para abrir o ativo no aplicativo de desktop associado à extensão de arquivo específica, clique/toque na ação rápida **Abrir no desktop** ![Abrir no ícone](assets/do-not-localize/aemassets_icon_openondesktop.png)da área de trabalho.
 
    Como alternativa, escolha **Abrir** no menu Ações **da** área de trabalho na barra de ferramentas.
 
-Para localizar o ativo específico no sistema de arquivos local, clique em **Revelar** ação rápida ![ícone](assets/aemassets_reveal_icon.png)Revelar. Como alternativa, escolha **Revelar** no menu Ações **da** área de trabalho na barra de ferramentas.
+Para localizar o ativo específico no sistema de arquivos local, clique em **Revelar** ação rápida ![ícone](assets/do-not-localize/aemassets_reveal_icon.png)Revelar. Como alternativa, escolha **Revelar** no menu Ações **da** área de trabalho na barra de ferramentas.
 
 ## Compreender os status dos ativos {#understand-the-asset-statuses}
 
-| ![Ícone de aplicativo padrão do Windows](assets/win_default.png) | O aplicativo está conectado ao servidor e todos os ativos são sincronizados. |
-|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Ícone desativado do Windows](assets/win_disabled.png) | O aplicativo é iniciado, mas não está conectado ao servidor. Alguns ativos podem estar com sincronização pendente. |
-| ![Ícone de sincronização de arquivos do Windows](assets/win_sync.png) | Os ativos estão sincronizando. Os arquivos estão sendo carregados ou baixados. Você pode ver os status exatos e pausar as transferências na janela Status do Ativo. |
-| ![Ícone de reconexão do Windows](assets/win_refresh.png) | O aplicativo está tentando se reconectar. Os possíveis problemas de rede estão fazendo com que ela se desconecte. |
+| ![Ícone de aplicativo padrão do Windows](assets/do-not-localize/win_default.png) | O aplicativo está conectado ao servidor e todos os ativos são sincronizados. |
+--- |--- |
+| ![Ícone desativado do Windows](assets/do-not-localize/win_disabled.png) | O aplicativo é iniciado, mas não está conectado ao servidor. Alguns ativos podem estar com sincronização pendente. |
+| ![Ícone de sincronização de arquivos do Windows](assets/do-not-localize/win_sync.png) | Os ativos estão sincronizando. Os arquivos estão sendo carregados ou baixados. Você pode ver os status exatos e pausar as transferências na janela Status do Ativo. |
+| ![Ícone de reconexão do Windows](assets/do-not-localize/win_refresh.png) | O aplicativo está tentando se reconectar. Os possíveis problemas de rede estão fazendo com que ela se desconecte. |
 
 ## Trabalhe com seus ativos {#workonassets}
 
@@ -169,7 +169,7 @@ Há duas maneiras de fazer check-out de ativos na interface da Web AEM. Para obt
 
    Essas ações da área de trabalho também estão disponíveis quando você clica/toca no ícone Ações da área de trabalho na barra de ferramentas depois de selecionar o ativo ou na barra de ferramentas na página do ativo.
 
-1. Para abrir o ativo, clique/toque na ação rápida Abrir na área de trabalho ![Abrir no ícone](assets/aemassets_icon_openondesktop.png)da área de trabalho.
+1. Para abrir o ativo, clique/toque na ação rápida Abrir na área de trabalho ![Abrir no ícone](assets/do-not-localize/aemassets_icon_openondesktop.png)da área de trabalho.
 
    Como alternativa, escolha Abrir no menu Ações da área de trabalho na barra de ferramentas.
 
@@ -177,7 +177,7 @@ Há duas maneiras de fazer check-out de ativos na interface da Web AEM. Para obt
    >
    >Quando você edita um arquivo que acabou de ser aberto e não teve check-out, outros usuários não sabem que um ativo está sendo atualizado por você.
 
-1. Para abrir um ativo para edição em um aplicativo Adobe Creative Cloud, clique/toque no ícone ![Editar desktop da ação rápida](assets/aemassets_icon_editdesktop.png)Editar área de trabalho. Isso também verifica o ativo para edição. Depois de terminar a edição, faça o check-in do ativo para atualizar as alterações no AEM Assets.
+1. Para abrir um ativo para edição em um aplicativo Adobe Creative Cloud, clique/toque no ícone ![Editar desktop da ação rápida](assets/do-not-localize/aemassets_icon_editdesktop.png)Editar área de trabalho. Isso também verifica o ativo para edição. Após terminar a edição, faça o check-in do ativo para atualizar as alterações no AEM Assets.
 
    Como alternativa, escolha Editar no menu Ações da área de trabalho na barra de ferramentas.
 
@@ -219,7 +219,7 @@ O aplicativo permite que você faça check-out dos arquivos de ativos para imped
 
    ![O ícone de finalização alterna](assets/chlimage_1-8.png)
 
-1. Revise o ativo no Explorer. O ícone de cadeado no ícone ![de cadeado](assets/aemassets_icon_lockcheckout.png) de ativo indica que você fez check-out do ativo.
+1. Revise o ativo no Explorer. O ícone de cadeado no ícone ![de cadeado](assets/do-not-localize/aemassets_icon_lockcheckout.png) de ativo indica que você fez check-out do ativo.
 
    >[!NOTE]
    >
@@ -231,7 +231,7 @@ O aplicativo permite que você faça check-out dos arquivos de ativos para imped
 
 Quando terminar de editar os ativos, salve os ativos no aplicativo de desktop. No menu de contexto, selecione **Mais informações** de ativos e clique em check-in.
 
-Os ativos são carregados para AEM servidor. Como opção, você pode verificar o status do upload selecionando **Visualização Asset Status** (Status do ativo de ) no ícone da bandeja do sistema. Como alternativa, você pode fazer check-in de um ativo na interface da Web AEM. Clique nos ativos com check-out ou selecione-os. Na barra de ferramentas, clique no ícone de check-in no ícone de ![check-in](assets/aemassets_icon_checkin.png).
+Os ativos são carregados para AEM servidor. Como opção, você pode verificar o status do upload selecionando **Visualização Asset Status** (Status do ativo de ) no ícone da bandeja do sistema. Como alternativa, você pode fazer check-in de um ativo na interface da Web AEM. Clique nos ativos com check-out ou selecione-os. Na barra de ferramentas, clique no ícone de check-in no ícone de ![check-in](assets/do-not-localize/aemassets_icon_checkin.png).
 
 Um ativo é carregado para AEM automaticamente depois que qualquer alteração é salva localmente. O check-in disponibiliza o ativo para outros usuários AEM para edição.
 
