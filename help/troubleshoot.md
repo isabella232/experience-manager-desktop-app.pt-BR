@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-O aplicativo de desktop Adobe Experience Manager (AEM) se conecta a um repositório DAM (Digital Asset Management, gerenciamento de ativos digitais) de implantação remota do Experience Manager. O aplicativo obtém informações do repositório e resultados da pesquisa em seu computador, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do AEM Assets.
+O aplicativo de desktop Adobe Experience Manager (AEM) se conecta a um repositório DAM (Digital Asset Management, gerenciamento de ativos digitais) de implantação remota. O aplicativo obtém informações do repositório e resultados da pesquisa em seu computador, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do AEM Assets.
 
 Leia para solucionar problemas do aplicativo, aprender as práticas recomendadas e descobrir as limitações.
 
@@ -41,7 +41,7 @@ Siga as práticas recomendadas a seguir para evitar alguns problemas comuns e a 
 
 * **Lembre-se da rede**: O desempenho da rede é essencial para o desempenho do aplicativo de desktop Experience Manager. Se você enfrentar uma resposta lenta a transferências de arquivos ou operações em massa, desative os recursos ou aplicativos que podem causar muito tráfego de rede.
 
-* **Casos de uso não suportados para aplicativos** de desktop: Não use o aplicativo para a migração do Assets (ele precisa de planejamento e outras ferramentas); para operações DAM de uso intenso (como mover pastas grandes, uploads grandes, localizar arquivos usando pesquisas avançadas de metadados); e como um cliente de sincronização (os princípios de design e os padrões de uso são diferentes dos clientes sincronizados, como o Microsoft OneDrive ou a sincronização de desktop da Adobe Creative Cloud).
+* **Casos de uso não suportados para aplicativos** de desktop: Não use o aplicativo para a migração do Assets (ele precisa de planejamento e outras ferramentas); para operações DAM de uso intenso (como mover pastas grandes, uploads grandes, localizar arquivos usando pesquisas avançadas de metadados); e como um cliente de sincronização (os princípios de design e os padrões de uso são diferentes dos clientes em sincronia, como o Microsoft OneDrive ou o Adobe Creative Cloud Desktop Sync).
 
 * **Tempo limite**: Atualmente, o aplicativo de desktop não tem um valor de tempo limite configurável que desconecta a conexão entre o servidor de Experience Manager e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentativas fazer upload do ativo algumas vezes aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
 
@@ -73,7 +73,7 @@ Para ativar o modo de depuração no Windows, siga estas etapas:
 
 ### Localização dos ficheiros de registro {#check-log-files-v2}
 
-Você pode encontrar os arquivos de registro para o aplicativo de desktop AEM nos seguintes locais. Ao fazer upload de muitos ativos, se alguns arquivos não forem carregados, consulte o `backend.log` arquivo para identificar os uploads que falharam.
+Você pode encontrar os arquivos de registro para AEM aplicativo de desktop nos seguintes locais. Ao fazer upload de muitos ativos, se alguns arquivos não forem carregados, consulte o `backend.log` arquivo para identificar os uploads que falharam.
 
 * Caminho no Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
@@ -81,23 +81,23 @@ Você pode encontrar os arquivos de registro para o aplicativo de desktop AEM no
 
 >[!NOTE]
 >
->Ao trabalhar com o Atendimento ao cliente da Adobe em uma solicitação/ticket de suporte, você pode ser solicitado a compartilhar os arquivos de registro para ajudar a equipe do Atendimento ao cliente a entender o problema. Arquive a `Logs` pasta inteira e compartilhe-a com seu contato com o Atendimento ao cliente.
+>Ao trabalhar com o Atendimento ao cliente do Adobe em uma solicitação/ticket de suporte, você pode ser solicitado a compartilhar os arquivos de registro para ajudar a equipe do Atendimento ao cliente a entender o problema. Arquive a `Logs` pasta inteira e compartilhe-a com seu contato com o Atendimento ao cliente.
 
 ### Limpar cache {#clear-cache-v2}
 
-Limpar o cache do aplicativo de desktop do AEM é uma tarefa preliminar de solução de problemas que pode resolver vários problemas. Limpe o cache das preferências do aplicativo. Consulte [Definir preferências](install-upgrade.md#set-preferences). O local padrão da pasta de cache é:
+Limpar AEM cache do aplicativo desktop é uma tarefa preliminar de solução de problemas que pode resolver vários problemas. Limpe o cache das preferências do aplicativo. Consulte [Definir preferências](install-upgrade.md#set-preferences). O local padrão da pasta de cache é:
 
 * No Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
 * No Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-No entanto, o local pode mudar dependendo do ponto de extremidade AEM configurado para desktop do AEM. O valor é uma versão codificada do URL direcionado. Por exemplo, se o aplicativo estiver direcionando `http://localhost:4502`, o nome do diretório será `http%3A%2F%2Flocalhost%3A4502%2F`. Para limpar o cache, exclua a pasta apropriada. Outro motivo para limpar o cache é liberar espaço em disco quando você está com pouco espaço em disco.
+No entanto, o local pode mudar dependendo do ponto final AEM configurado AEM desktop. O valor é uma versão codificada do URL direcionado. Por exemplo, se o aplicativo estiver direcionando `http://localhost:4502`, o nome do diretório será `http%3A%2F%2Flocalhost%3A4502%2F`. Para limpar o cache, exclua a pasta apropriada. Outro motivo para limpar o cache é liberar espaço em disco quando você está com pouco espaço em disco.
 
 >[!CAUTION]
 >
->Se você limpar o cache da área de trabalho do AEM, as modificações de ativos locais que não são sincronizadas com o servidor do AEM serão irrevogavelmente perdidas.
+>Se você limpar AEM cache da área de trabalho, as modificações de ativos locais que não são sincronizadas com AEM servidor serão irrevogavelmente perdidas.
 
-### Conheça a versão do aplicativo para desktop do AEM {#know-app-version-v2}
+### Conheça a versão do aplicativo para desktop AEM {#know-app-version-v2}
 
 Clique no menu ![](assets/do-not-localize/more_options_da2.png) Aplicativo para abrir o menu do aplicativo e clique em **[!UICONTROL Help]** > **[!UICONTROL About]**.
 
@@ -107,12 +107,12 @@ Se você não conseguir ver os ativos que você ou outros profissionais criativo
 
 * Conexão com o servidor. A conectividade de rede flexível pode paralisar os downloads de ativos.
 * Tamanho de arquivo. Ativos grandes demoram mais para serem baixados e exibidos.
-* Aumente a consistência da letra. Se você ou outro colaborador tiver colocado os ativos ao mapear o AEM DAM para uma letra de unidade diferente, os ativos colocados não serão exibidos.
+* Aumente a consistência da letra. Se você ou outro colaborador colocou os ativos ao mapear o DAM AEM para uma letra de unidade diferente, os ativos colocados não serão exibidos.
 * Permissões. Para verificar se você tem permissões para buscar os ativos inseridos, entre em contato com o administrador do AEM.
 
 ## Problemas ao atualizar no macOS {#issues-when-upgrading-on-macos}
 
-Ocasionalmente, podem ocorrer problemas ao atualizar o aplicativo de desktop AEM no MacOS. Isso é causado pelo fato de a pasta de sistema herdada para o aplicativo de desktop AEM impedir que novas versões do aplicativo de desktop AEM sejam carregadas corretamente. Para resolver esse problema, as pastas e os arquivos a seguir podem ser removidos manualmente.
+Ocasionalmente, podem ocorrer problemas ao atualizar AEM aplicativo desktop no macOS. Isso é causado pela pasta herdada do sistema para AEM aplicativo desktop que impede que novas versões do aplicativo AEM desktop sejam carregadas corretamente. Para resolver esse problema, as pastas e os arquivos a seguir podem ser removidos manualmente.
 
 Antes de executar as etapas a seguir, arraste o `Adobe Experience Manager Desktop` aplicativo da pasta Aplicativos MacOS para a lixeira. Em seguida, abra o terminal, execute o seguinte comando e forneça sua senha quando solicitado.
 
@@ -131,7 +131,7 @@ Se você estiver usando um aplicativo de desktop com AEM 6.5.1 ou posterior, atu
 
 ## Problema de configuração de SSL {#ssl-config-v2}
 
-As bibliotecas que o aplicativo de desktop AEM usa para comunicação HTTP utilizam imposição rigorosa de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar o aplicativo de desktop do AEM. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
+As bibliotecas que AEM aplicativo de desktop usa para comunicação HTTP utilizam imposição rigorosa de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar AEM aplicativo de desktop. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
 
 ## O aplicativo não está respondendo {#unresponsive}
 
@@ -146,3 +146,4 @@ Em ambos os métodos, os start do aplicativo na pasta DAM raiz.
 >
 >* [Problemas conhecidos](release-notes.md#known-issues-v2)
 >* [Evitar conflitos de edição](using.md#adv-workflow-collaborate-avoid-conflicts)
+
