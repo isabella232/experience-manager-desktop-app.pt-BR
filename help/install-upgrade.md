@@ -1,6 +1,6 @@
 ---
-title: Instalar e configurar o aplicativo de desktop Adobe Experience Manager
-description: Instale e configure o aplicativo de desktop Adobe Experience Manager para trabalhar com os servidores Adobe Experience Manager Assets e baixe os ativos no sistema de arquivos local.
+title: Instalar e configurar o aplicativo Adobe Experience Manager desktop
+description: Instale e configure o aplicativo Adobe Experience Manager desktop para trabalhar com os servidores Adobe Experience Manager Assets e baixe os ativos no sistema de arquivos local.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1238'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Install Adobe Experience Manager desktop app {#install-app-v2}
 
-Usando o aplicativo de desktop Adobe Experience Manager, os recursos no Experience Manager são facilmente disponíveis em seu desktop local e podem ser usados em qualquer aplicativo de desktop nativo. Os ativos podem ser visualizados, abertos em aplicativos nativos da área de trabalho, revelados no Mac Finder ou no Windows Explorer para serem colocados em outros documentos e alterados localmente - as alterações são salvas no Experience Manager quando você carrega e uma nova versão é criada no repositório.
+Usando o aplicativo Adobe Experience Manager para desktop, os recursos no Experience Manager são facilmente disponíveis em seu desktop local e podem ser usados em qualquer aplicativo nativo de desktop. Os ativos podem ser visualizados, abertos em aplicativos nativos da área de trabalho, revelados no Mac Finder ou no Windows Explorer para serem colocados em outros documentos e alterados localmente - as alterações são salvas no Experience Manager quando você carrega e uma nova versão é criada no repositório.
 
 Tal integração permite que várias funções na organização
 
@@ -81,7 +81,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
    *Figura: Tela de conexão com o endereço do servidor de entrada*
 
-   >[!Cautorização]
+   >[!CAUTION]
    >
    >Verifique se não há espaços à esquerda ou à direita antes ou depois do endereço do servidor AEM. Caso contrário, o aplicativo não poderá se conectar ao servidor AEM.
 
@@ -93,7 +93,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
 1. (Experience Manager 6.5.1 ou posterior) Se você estiver usando um aplicativo desktop com o Experience Manager 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte Conector [do](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) Azure ou conector [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore)S3.
 
-   Se você for um cliente Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe.
+   Se você for um cliente do Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe.
 
 ## Definir preferências {#set-preferences}
 
@@ -107,9 +107,9 @@ Para alterar as preferências, clique no ícone ![](assets/do-not-localize/more_
 
 * **[!UICONTROL Network Drive Letter]**: A letra da unidade usada para mapear para o DAM AEM. Não altere isso se não tiver certeza. O aplicativo pode mapear para qualquer letra de unidade no Windows. Se dois usuários inserirem ativos de letras de unidade diferentes, eles não poderão ver os ativos colocados uns pelos outros. O caminho dos ativos é alterado. Os ativos permanecem colocados no arquivo binário (digamos, INDD) e não são removidos. O aplicativo lista todas as letras de unidade disponíveis e, por padrão, usa a última letra disponível que normalmente é `Z`.
 
-* **[!UICONTROL Maximum Cache Size]**: Cache permitido no disco rígido em GB que é usado para armazenar os ativos baixados localmente.
+* **[!UICONTROL Maximum Cache Size]**: Cache permitido no disco rígido em GB que é usado para armazenar ativos baixados localmente.
 
-* **[!UICONTROL Current cache size]**: Tamanho do Armazenamento dos ativos baixados localmente. As informações são exibidas somente depois que os ativos são baixados usando o aplicativo.
+* **[!UICONTROL Current cache size]**: Tamanho do armazenamento dos ativos baixados localmente. As informações são exibidas somente depois que os ativos são baixados usando o aplicativo.
 
 * **[!UICONTROL Automatically download linked assets]**: Os ativos colocados nos aplicativos de Creative Cloud nativos suportados são buscados automaticamente se você baixar o arquivo original.
 
