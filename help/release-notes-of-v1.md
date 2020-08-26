@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 9de9d086be4c0eccda7a60bd3dcbe68735394fad
 workflow-type: tm+mt
-source-wordcount: '3857'
+source-wordcount: '3869'
 ht-degree: 2%
 
 ---
@@ -35,10 +35,15 @@ Para o aplicativo de desktop versão v1.x, os links a seguir são os links de do
 
 ## Requisitos e pré-requisitos do sistema {#system-requirements-and-prerequisites}
 
-AEM desktop é compatível com os seguintes sistemas operacionais:
+[!DNL Adobe Experience Manager]O aplicativo de desktop do é compatível com os seguintes sistemas operacionais:
 
-* Mac OS X 10.10 ou posterior, com as correções de erros mais recentes.
-* Windows 7 e Windows 10 com os service packs e correções de erros mais recentes.
+* Mac OS X 10.10 ou mais recente, com as últimas correções de erros.
+
+* Windows 10 com os service packs e correções de erros mais recentes.
+
+>[!NOTE]
+>
+>O fornecedor não oferece mais suporte ao Windows 7 (https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 
 A Adobe recomenda usar a versão mais recente do aplicativo AEM desktop para aproveitar a funcionalidade mais recente, as correções de erros mais recentes e o melhor desempenho possível.
 
@@ -88,7 +93,7 @@ Esta versão estende e substitui as versões anteriores do aplicativo para deskt
 
 ### Aprimoramentos disponíveis desde AEM aplicativo para desktop 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
-O aplicativo de desktop Adobe Experience Manager (AEM) 1.9.1 era uma versão de correção para resolver alguns problemas principais do cliente em relação à verificação de ativos e à cópia de arquivos do compartilhamento de rede para um diretório local.
+O aplicativo de desktop Adobe Experience Manager (AEM) 1.9.1 era uma versão de correção para resolver alguns problemas principais do cliente em relação à finalização de ativos e à cópia de arquivos do compartilhamento de rede para um diretório local.
 
 * Os ativos com check-out feito por um usuário não devem estar disponíveis para modificação para outros usuários (CQ-4246009)
 
@@ -130,7 +135,7 @@ AEM aplicativo de desktop 1.9 focado na melhoria da experiência do usuário em 
 
 * Se um usuário optar por abrir ou editar vários arquivos da interface do usuário do Experience Manager Assets, eles serão agrupados. Por exemplo, myasset.jpeg e mais 4 arquivos.
 
-* Ao baixar Documentos de InDesigns, incluindo ativos vinculados armazenados em AEM Assets, o aplicativo de desktop baixará todos os Ativos vinculados primeiro, antes de abrir o [!UICONTROL Adobe InDesign] documento e indicará o download dos ativos vinculados. Por exemplo, 5 de 24.
+* Ao baixar Documentos de InDesigns, incluindo ativos vinculados armazenados no AEM Assets, o aplicativo de desktop baixará todos os Ativos vinculados primeiro, antes de abrir o [!UICONTROL Adobe InDesign] documento e indicará o download dos ativos vinculados. Por exemplo, 5 de 24.
 
 [!UICONTROL Bulk Uploads]
 
@@ -181,7 +186,7 @@ AEM aplicativo de desktop versão 1.8.1 de acompanhamento rápido adicionou melh
 
    * Caixa de diálogo Mais informações do ativo: às vezes, a barra de ação não estava visível (CQ-4208540).
 
-   * (Win) O arquivo agora pode ser sincronizado após reverter para uma versão anterior da interface do usuário do AEM Assets (CQ-4216411).
+   * (Win) O arquivo agora pode ser sincronizado depois de reverter para uma versão anterior da interface do usuário do AEM Assets (CQ-4216411).
 
 ### Aprimoramentos disponíveis desde AEM aplicativo para desktop 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
@@ -289,13 +294,13 @@ Esse comportamento é o mesmo para ativos em disco local e ativos em um diretór
 
 * Se um usuário modificar um ativo colocado pelo diretório montado AEM desktop e, em seguida, limpar seu cache local, o ativo colocado será reportado como desatualizado.
 
-Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;sincronização atrasada&quot; da AEM Desktop.
+Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;sincronização atrasada&quot; da área de trabalho AEM.
 
 **Versão 1.5.0.x para Mac OS X e Windows:** Esta versão do aplicativo AEM desktop oferece os seguintes benefícios:
 
 * Melhor estabilidade e resiliência contra questões de rede.
 
-   * Mapeamento mais estável de pastas de AEM Assets (CQ-103276, CQ-4204669, CQ-4203957).
+   * Mapeamento mais estável de pastas do AEM Assets (CQ-103276, CQ-4204669, CQ-4203957).
 
    * Melhor manipulação de arquivos em cache (CQ-4204336, CQ-4206263).
 
@@ -318,13 +323,13 @@ Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;
 
    * Várias melhorias na estabilidade (CQ-4207539, CQ-4200378).
 
-   * Melhor tratamento do URL do AEM Assets em Preferências (CQ-97388).
+   * Melhor manipulação do URL da AEM Assets em Preferências (CQ-97388).
 
 ### Aprimoramentos disponíveis desde AEM aplicativo para desktop 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * Carregamento simplificado de pastas hierárquicas por meio da nova ação Criar > Carregar pasta na interface do usuário de toque.
    * Ação inicia uma operação de carregamento de pasta executada pelo aplicativo de desktop
-   * O aplicativo desktop atravessa a hierarquia de pastas específica na área de trabalho em segundo plano e carrega os arquivos para os AEM Assets
+   * O aplicativo de desktop atravessa a hierarquia de pastas específica na área de trabalho em segundo plano e carrega os arquivos na AEM Assets
    * O usuário pode monitorar o progresso na nova janela Upload Queue Status (Status da fila de upload) com a barra de progresso para operações em andamento
    * O status da fila de upload também fornece informações melhores sobre solução de problemas (por exemplo, sem conexão com o servidor)
 * Nova ação de edição na interface do usuário de toque, que combina as operações de retirada e abertura em uma única
@@ -341,7 +346,7 @@ Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;
 * Integração aprimorada com o Mac OS (protocolo de unidade de rede local alterado de WebDAV para SMB1 mais estável).
 * O aplicativo de desktop se conecta com o servidor AEM usando AEM protocolo HTTP RESTful nativo.
 * Os arquivos são salvos localmente primeiro e carregados de volta para AEM em segundo plano após um tempo predefinido (30 segundos). Isso reduz o tempo para salvar arquivos.
-* Melhor manipulação de aplicativos de desktop que usam operações intermediárias de arquivos para salvar um arquivo (salvamentos parciais e arquivos temporários), o que permite que a linha do tempo do ativo AEM exiba informações corretas de versão e upload de ativos.
+* Melhor manipulação de aplicativos de desktop que usam operações de arquivos intermediários para salvar um arquivo (salvamentos parciais e arquivos temporários), o que permite que a linha do tempo do ativo AEM exiba informações corretas de versão e upload de ativos.
 * Caixa de diálogo fornecida para rastrear o status das tarefas de upload em segundo plano.
 
 ## Lista de alterações {#list-of-changes}
@@ -350,7 +355,7 @@ Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;
 
 Desde o MacOS 10.12 (Sierra), a Apple alterou as permissões na pasta /Volumes usada para montar unidades de rede e dispositivos para torná-los mais restritivos. A criação de um novo ponto de montagem exigia direitos administrativos. Esse problema foi corrigido no MacOS 10.12.5.
 
-Como AEM aplicativo de desktop deve ser executado para usuários que não têm direitos de administrador na máquina local, o ponto de montagem do repositório do AEM Assets foi alterado em 1.4 e 1.5 para uma subpasta DAM na pasta local do usuário no MacOS (CQ-104183).
+Como AEM aplicativo de desktop deve ser executado para usuários que não têm direitos de administrador na máquina local, o ponto de montagem do repositório AEM Assets foi alterado em 1.4 e 1.5 para uma subpasta DAM na pasta local do usuário no MacOS (CQ-104183).
 
 Como a pasta /Volumes não requer mais direitos administrativos, essa alteração foi revertida em 1.5.1. Isso também possibilita o compartilhamento de documentos de InDesigns que colocaram ativos AEM entre usuários do MacOS.
 
@@ -380,11 +385,11 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
 
 **Upload de pasta.** É recomendável usar o novo recurso de Carregamento de pasta para carregar pastas maiores e hierárquicas em AEM em vez de usar uma cópia / arrastar e soltar em um repositório AEM montado no nível do Finder / Explorer. Ao usar o recurso de upload de pasta, o aplicativo desktop se comunica diretamente com o AEM e, portanto, tem um controle muito melhor sobre o processo geral.
 
-**Mantenha AEM sessão disponível.** AEM aplicativo desktop depende de uma sessão aberta ao servidor AEM Assets para garantir a operação correta. Para usuários que trabalham com aplicativos de desktop todos os dias, é recomendável desmontar AEM Assets no final do dia para forçar o logout e, em seguida, &quot;Montar AEM Assets&quot; pela manhã para garantir que eles estejam conectados e que o compartilhamento de rede esteja operacional.
+**Mantenha AEM sessão disponível.** AEM aplicativo de desktop depende de uma sessão aberta ao servidor AEM Assets para garantir a operação correta. Para usuários que trabalham com aplicativos de desktop todos os dias, é recomendável desmontar a AEM Assets no final do dia para forçar o logout e, em seguida, &quot;Montar a AEM Assets&quot; pela manhã para garantir que eles estejam conectados e que o compartilhamento de rede esteja operacional.
 
 **Desative &quot;Pré-visualização de ícones&quot; no Finder.** Para navegar em pastas grandes com o Finder, especialmente com conectividade de rede ruim, verifique se &quot;Ícone&quot; e &quot;Pré-visualização de ícones&quot; estão desativados. Caso contrário, o Finder fará o download de cada ativo em uma pasta para gerar uma pequena pré-visualização, o que pode resultar em desempenho insatisfatório e na utilização de alta largura de banda (CQ-4219779)
 
-* No Finder, vá para a pasta de rede compartilhada do AEM Assets
+* No Finder, vá para a pasta de rede compartilhada da AEM Assets
 * Clique com o botão direito do mouse no ponto de montagem DAM
 * Selecionar Mostrar opções de Visualização
 * Desmarque &quot;Mostrar pré-visualização do ícone&quot;
@@ -410,8 +415,8 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
 * Integração do Finder:
    * Ao arrastar/soltar arquivos grandes, o Finder pode expirar enquanto os arquivos são transferidos em segundo plano. Isso resulta em um `Error - 36`. A solução alternativa é arrastar/soltar ou abrir o ativo novamente (CQ-4219628)
    * O recarregamento manual da pasta nem sempre funciona. Solução:  aguarde 30s para que a pasta seja atualizada automaticamente. (CQ-97389)
-   * Mais Informações sobre Ativos... está limitado a seleções de arquivo único (CQ-89542, CQ-87656)
-   * Abrir em AEM Assets... está limitado a seleções de arquivo único e pasta (CQ-83382)
+   * Mais informações sobre ativos... está limitado a seleções de arquivo único (CQ-89542, CQ-87656)
+   * Abrir no AEM Assets... está limitado a seleções de arquivo único e pasta (CQ-83382)
    * Erro ao renomear ativos que não têm extensão (CQ-4218971)
 * Funcionalidade Copiar/Colar: Colar está disponível quando nenhum ativo foi copiado para a área de transferência
 * Windows:
