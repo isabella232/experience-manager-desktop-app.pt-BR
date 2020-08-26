@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 519fe85e5642eb88dd45515948e898185e262003
+source-git-commit: 6763474c278ab8d8f52a0a466657e66a08b0748b
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 46%
@@ -32,9 +32,9 @@ ht-degree: 46%
 
 O aplicativo Adobe Experience Manager para desktop é compatível com os seguintes sistemas operacionais:
 
-Mac OS X 10.14 ou mais recente, com as últimas correções de erros.
+* Mac OS X 10.14 ou mais recente, com as últimas correções de erros.
 
-Windows 10 com os service packs e correções de erros mais recentes.
+* Windows 10 com os service packs e correções de erros mais recentes.
 
 >[!NOTE]
 >
