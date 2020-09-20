@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
+source-git-commit: 29bbcc21f01dd0c1338fdbf3e979ef363a93533c
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,9 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
 1. Reinicie a máquina, conforme solicitado. Inicie e configure o aplicativo de desktop.
 
-1. Para conectar o aplicativo a um repositório AEM, clique no ícone do aplicativo na bandeja para iniciar o aplicativo. Forneça o endereço da instância AEM. Clique em **[!UICONTROL Connect]** e forneça as credenciais.
+1. Para conectar o aplicativo a um repositório AEM, clique no ícone do aplicativo na bandeja e inicie o aplicativo. Forneça o endereço do servidor AEM no formato `https://[aem-server-url]:[port]/`.
+
+   Clique em **[!UICONTROL Connect]** e forneça as credenciais.
 
    ![Tela de conexão do aplicativo desktop ao endereço do servidor de entrada](assets/connect_da2.png)
 
