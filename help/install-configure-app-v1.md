@@ -3,13 +3,13 @@ title: Instalar e configurar AEM aplicativo de desktop versão 1.x
 description: Instale e configure AEM aplicativo de desktop versão 1.x para trabalhar com servidores AEM Assets e mapeie os ativos para montar como uma unidade em seu desktop.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS,SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f6365302-1690-4719-9b8c-035719422740
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Usando o aplicativo de desktop AEM, os ativos dentro do AEM são facilmente acessíveis em seu desktop local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em AEM quando você carrega e uma nova versão é criada no repositório.
 
-Essa integração permite que várias funções na organização gerenciem os ativos centralmente em AEM Assets e os acessem no Creative Cloud e em outros aplicativos, além de facilitar a adesão aos vários padrões, inclusive a marca.
+Essa integração permite que várias funções na organização gerenciem os ativos centralmente no AEM Assets e os acessem no Creative Cloud e em outros aplicativos, além de facilitar o cumprimento dos vários padrões, inclusive a marca.
 
 Para usar AEM aplicativo de desktop,
 
@@ -49,7 +49,7 @@ Ao alterar um arquivo de um local de compartilhamento de rede montado pelo aplic
 
 Na segunda fase, o aplicativo de desktop carrega o arquivo atualizado no servidor AEM após um atraso predefinido (por exemplo, 30 s). Esta operação ocorre em segundo plano. Use a opção Status do ativo de Visualização para visualização do status da operação de upload.
 
-1. Carregar um ativo para AEM Assets.
+1. Carregue um ativo para a AEM Assets.
 
 1. Clique/toque no ícone do aplicativo AEM desktop na barra de ferramentas.
 
@@ -137,6 +137,6 @@ Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edi
 * [Introdução ao aplicativo de desktop do AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Usar o aplicativo de desktop do AEM](use-app-v1.md)
 * [Entenda o check-in/check-out com AEM aplicativo de desktop](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [Uso de aplicativos de desktop com AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+* [Usar o aplicativo de desktop com o AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Solução de problemas AEM aplicativo de desktop](troubleshoot-app-v1.md)
 
