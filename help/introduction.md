@@ -1,12 +1,12 @@
 ---
-title: Introdução ao aplicativo de desktop Adobe Experience Manager
-description: Saiba mais sobre como usar o aplicativo de desktop Adobe Experience Manager para otimizar os workflows de gerenciamento de ativos para usuários criativos ao usar os Adobe Experience Manager Assets diretamente do desktop.
+title: Introdução ao aplicativo Adobe Experience Manager para desktop
+description: Saiba como usar o aplicativo Adobe Experience Manager desktop para otimizar os workflows de gerenciamento de ativos para usuários criativos ao usar o Adobe Experience Manager Assets diretamente de seu desktop.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 67%
@@ -18,13 +18,13 @@ ht-degree: 67%
 
 A Adobe oferece fluxos de trabalho conectados nas soluções para viabilizar a produtividade de nível superior para os usuários direcionados e profissionais criativos. O aplicativo de desktop do Adobe Experience Manager conecta repositórios e aplicativos de desktop, incluindo a Adobe e terceiros, para fornecer acesso mais rápido a recursos e fluxos de trabalho simplificados. Essa economia de tempo e esforço aumenta a eficiência dos usuários que trabalham com ativos do Adobe Experience Manager nos fluxos de trabalho de desktop.
 
-Usando o aplicativo, os ativos nos Ativos do Adobe Experience Manager podem ser facilmente acessados em seu desktop local e podem ser usados em qualquer aplicativo de desktop. Você pode abrir e editar os ativos nos aplicativos de desktop de sua escolha. As edições locais são disponibilizadas no Adobe Experience Manager como uma nova versão do ativo somente quando você escolhe fazer upload das alterações, o que permite lidar com a edição de ativos em andamento de maneira eficiente no desktop. O aplicativo oferece suporte ao carregamento de ativos e pastas aninhadas para o Experience Manager, simplificando a adição de novo conteúdo ao repositório.
+Usando o aplicativo, os ativos no Adobe Experience Manager Assets são facilmente acessíveis em seu desktop local e podem ser usados em qualquer aplicativo de desktop. Você pode abrir e editar os ativos nos aplicativos de desktop de sua escolha. As edições locais são disponibilizadas no Adobe Experience Manager como uma nova versão do ativo somente quando você opta por fazer upload das alterações, o que permite lidar com a edição de ativos em andamento de maneira eficiente no desktop. O aplicativo oferece suporte ao carregamento de ativos e pastas aninhadas para o Experience Manager, simplificando a adição de novo conteúdo ao repositório.
 
 Essa integração permite que várias funções na organização gerenciem os ativos centralmente nos Ativos do Experience Manager. Os profissionais de marketing e usuários empresariais podem garantir a conformidade com os vários padrões, incluindo identidade visual e licenciamento. Os usuários criativos, que também têm uma ferramenta dedicada, o [Adobe Asset Link](https://www.adobe.com/marketing/experience-manager-assets/adobe-asset-link.html), para trabalhar com ativos no Adobe Photoshop, Illustrator e InDesign, também podem acessar ativos no desktop na Creative Cloud e em outros aplicativos nativos.
 
 >[!NOTE]
 >
->O aplicativo de desktop Adobe Experience Manager foi introduzido na versão Adobe Experience Manager 6.1 e era anteriormente chamado de Aplicativo Complementar Adobe Experience Manager Assets. Para obter ajuda sobre a versão 1.x do aplicativo, consulte o índice na barra lateral esquerda. A Adobe recomenda atualizar para a versão mais recente 2.
+>O aplicativo Adobe Experience Manager desktop foi introduzido no Adobe Experience Manager 6.1 e era anteriormente chamado de aplicativo associado Adobe Experience Manager Assets. Para obter ajuda sobre a versão 1.x do aplicativo, consulte o índice na barra lateral esquerda. A Adobe recomenda atualizar para a versão mais recente 2.
 
 A documentação do aplicativo de desktop contém informações sobre as seguintes funções e casos de uso.
 
