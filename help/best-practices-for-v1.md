@@ -3,13 +3,13 @@ title: Práticas recomendadas do aplicativo para desktop AEM versão 1.x
 description: Recursos principais e uso recomendado do aplicativo Adobe Experience Manager desktop versão 1.x.
 uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3e10be1fd9dd1ff5293e96b46565825e6be1fc4f
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -143,4 +143,4 @@ Para entender como o servidor AEM Assets deve ser otimizado para desempenho, con
 
 * **Carregamento** de ativos mais eficiente. Configure o modelo de fluxo de trabalho de Atualização de ativos [AEM para ser temporário](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows).
 
-* **Limitar CPU do servidor para uploads**. Certifique-se de que o parâmetro de trabalho de fluxo de trabalho paralelo máximo esteja definido corretamente, para que os uploads não esgotem toda a CPU.
+* **Limitar CPU do servidor para uploads**. Certifique-se de que o parâmetro de trabalho de fluxo de trabalho paralelo máximo esteja definido corretamente, de modo que os uploads não esgotem toda a CPU.
