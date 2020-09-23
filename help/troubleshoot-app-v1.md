@@ -3,13 +3,13 @@ title: Solução de problemas AEM aplicativo para desktop versão 1.x
 description: Solucione problemas AEM aplicativo de desktop versão 1.x para resolver problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Solucione problemas AEM aplicativo de desktop para resolver problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
 
-O aplicativo para desktop Adobe Experience Manager (AEM) inclui utilitários que ajudam a mapear o repositório de AEM Assets como um compartilhamento de rede no desktop (compartilhamento SMB no Mac OS). O compartilhamento de rede é uma tecnologia de sistema operacional que permite que fontes remotas sejam tratadas como se fossem parte de um sistema de arquivos local do computador. No caso de aplicativos de desktop, a estrutura de repositório DAM (digital asset management, gerenciamento de ativos digitais) de uma instância remota AEM é direcionada como a fonte de arquivos remotos. O diagrama a seguir descreve a topologia do aplicativo de desktop:
+O aplicativo para desktop Adobe Experience Manager (AEM) inclui utilitários que ajudam a mapear o repositório AEM Assets como um compartilhamento de rede no desktop (compartilhamento SMB no Mac OS). O compartilhamento de rede é uma tecnologia de sistema operacional que permite que fontes remotas sejam tratadas como se fossem parte de um sistema de arquivos local do computador. No caso de aplicativos de desktop, a estrutura de repositório DAM (digital asset management, gerenciamento de ativos digitais) de uma instância remota AEM é direcionada como a fonte de arquivos remotos. O diagrama a seguir descreve a topologia do aplicativo de desktop:
 
 ![diagrama do aplicativo desktop](assets/aem-desktopapp-architecture.png)
 
@@ -33,13 +33,13 @@ o aplicativo desktop inclui os seguintes componentes:
 
 * **O aplicativo** de desktop: O aplicativo monta ou desmonta o DAM como um sistema de arquivos remoto e traduz as chamadas do sistema de arquivos entre o compartilhamento de rede montado localmente e a instância remota AEM à qual ele se conecta.
 * **Cliente** WebDAV/SMB do sistema operacional: Trata da comunicação entre o Windows Explorer/Finder e o aplicativo de desktop. Se um arquivo for recuperado, criado, modificado, excluído, movido ou copiado, o cliente WebDAV/SMB do sistema operacional (OS) comunicará esta operação para o aplicativo de desktop. Depois de receber a comunicação, o aplicativo de desktop a converte em chamadas de API remotas nativas AEM. Por exemplo, se um usuário cria um arquivo no diretório montado, o cliente WebDAV/SMB inicia uma solicitação, que o aplicativo desktop converte em uma solicitação HTTP que cria o arquivo no DAM. O cliente WebDAV/SMB é um componente incorporado do SO. Ele não é afiliado a aplicativos de desktop, AEM ou Adobe de forma alguma.
-* **instância** Adobe Experience Manager: Fornece acesso aos ativos armazenados no repositório AEM Assets DAM. Além disso, ele executa ações solicitadas pelo aplicativo desktop em nome dos aplicativos de desktop locais que interagem com o compartilhamento de rede montado. A instância do AEM do público alvo deve ser executada AEM versão 6.1 ou superior. AEM instâncias executando versões AEM anteriores podem exigir pacotes de recursos adicionais e hot fixes instalados para se tornarem totalmente funcionais.
+* **Instância** do Adobe Experience Manager: Fornece acesso aos ativos armazenados no repositório do AEM Assets DAM. Além disso, ele executa ações solicitadas pelo aplicativo desktop em nome dos aplicativos de desktop locais que interagem com o compartilhamento de rede montado. A instância do AEM do público alvo deve ser executada AEM versão 6.1 ou superior. AEM instâncias executando versões AEM anteriores podem exigir pacotes de recursos adicionais e hot fixes instalados para se tornarem totalmente funcionais.
 
 ## Casos de uso pretendido para AEM aplicativo de desktop {#intended-use-cases-for-aem-desktop-app}
 
-AEM aplicativo desktop usa a tecnologia de compartilhamento de rede para mapear um repositório AEM remoto para um desktop local. No entanto, não se destina a substituir um compartilhamento de rede que contém ativos, onde os usuários executam operações de gerenciamento de ativos digitais diretamente de seu desktop local. Isso inclui mover ou copiar vários arquivos, ou arrastar estruturas de pastas grandes para o compartilhamento de rede do AEM Assets diretamente no Finder/Explorer.
+AEM aplicativo desktop usa a tecnologia de compartilhamento de rede para mapear um repositório AEM remoto para um desktop local. No entanto, não se destina a substituir um compartilhamento de rede que contém ativos, onde os usuários executam operações de gerenciamento de ativos digitais diretamente de seu desktop local. Isso inclui mover ou copiar vários arquivos, ou arrastar estruturas de pastas grandes para o compartilhamento de rede da AEM Assets diretamente no Finder/Explorer.
 
-AEM aplicativo para desktop fornece uma maneira conveniente de acessar (abrir) e editar (salvar) ativos DAM entre a interface do usuário de toque do AEM Assets e a área de trabalho local. Ele vincula ativos no servidor AEM Assets aos workflows baseados em desktop.
+AEM aplicativo para desktop fornece uma maneira conveniente de acessar (abrir) e editar (salvar) ativos DAM entre a interface do usuário AEM Assets Touch e a área de trabalho local. Ele vincula ativos no servidor AEM Assets aos workflows baseados em desktop.
 
 O exemplo de uso a seguir ilustra como AEM Desktop deve ser usada:
 
@@ -76,7 +76,7 @@ O aplicativo de desktop Experience Manager não tem um valor de tempo limite con
 
 AEM aplicativo desktop fornece recursos internos de cache e upload em segundo plano para melhorar a experiência do usuário final. Quando você salva um arquivo grande, ele é salvo localmente pela primeira vez para permitir que você continue trabalhando. Depois de algum tempo (atualmente 30 segundos), o arquivo é enviado para o servidor AEM em segundo plano.
 
-Diferentemente das soluções de sincronização de arquivos ou Creative Cloud Desktop, como Microsoft One Drive, AEM aplicativo de desktop não é um cliente de sincronização de desktop completo. A razão para isso é que ele fornece acesso a todo o repositório de AEM Assets, que pode ser extremamente grande (centenas de gigabytes ou terabytes) para uma sincronização completa.
+Diferentemente das soluções de sincronização de arquivos ou Creative Cloud Desktop, como Microsoft One Drive, AEM aplicativo de desktop não é um cliente de sincronização de desktop completo. Isso acontece porque ele fornece acesso a todo o repositório AEM Assets, que pode ser extremamente grande (centenas de gigabytes ou terabytes) para uma sincronização completa.
 
 O armazenamento em cache oferece a capacidade de limitar a sobrecarga da rede/armazenamento somente a um subconjunto de ativos relevantes para o usuário.
 
@@ -248,7 +248,7 @@ Clique no ícone AEM área de trabalho e escolha **Sobre**. O número da versão
 
 Ocasionalmente, podem ocorrer problemas ao atualizar AEM aplicativo desktop no macOS. Isso é causado pela pasta herdada do sistema para AEM aplicativo de desktop que impede que novas versões AEM desktop sejam carregadas corretamente. Para resolver esse problema, as pastas e os arquivos a seguir podem ser removidos manualmente.
 
-Antes de executar as etapas abaixo, arraste o aplicativo &quot;Área de trabalho Adobe Experience Manager&quot; da pasta Aplicativos MacOS para a Lixeira. Em seguida, abra o terminal e execute o seguinte comando, fornecendo sua senha quando solicitado.
+Antes de executar as etapas abaixo, arraste o aplicativo &quot;Adobe Experience Manager Desktop&quot; da pasta Aplicativos macOS para a lixeira. Em seguida, abra o terminal e execute o seguinte comando, fornecendo sua senha quando solicitado.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
