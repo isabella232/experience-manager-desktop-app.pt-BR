@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ O local padrão do cache para o aplicativo de desktop AEM é o seguinte:
 
 * No Mac, `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`.
 
-`EncodedAEMEndpoint` é AEM URL de ponto de extremidade AEM configurado pelo aplicativo de desktop. O valor é uma versão codificada do URL de definição de metas do servidor AEM. Por exemplo, se o aplicativo estiver direcionando `http://localhost:4502`, o nome do diretório será `http%3A%2F%2Flocalhost%3A4502`. O caminho do Windows para o diretório de cache neste exemplo é %LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502.
+`EncodedAEMEndpoint` é AEM URL de ponto de extremidade AEM configurado pelo aplicativo de desktop. O valor é uma versão codificada do URL de definição de metas do servidor AEM. Por exemplo, se o aplicativo estiver direcionando `http://localhost:4502`, o nome do diretório será `http%3A%2F%2Flocalhost%3A4502`. O caminho do Windows para o diretório de cache neste exemplo é `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`.
 
 Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edite o arquivo de configuração do aplicativo.
 
@@ -127,7 +127,7 @@ Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edi
 
    São necessários privilégios de administrador para salvar as alterações neste arquivo.
 
-1. Procure a string &quot;ProxyCacheRoot&quot;. Você verá que seu valor está definido para o local de cache &quot;%LocalAppData%\Adobe\AssetsCompanion\Cache&quot;. Basta alterar esse valor para qualquer caminho válido.
+1. Procure a string &quot;ProxyCacheRoot&quot;. Você verá que seu valor está definido para o local do cache `%LocalAppData%\Adobe\AssetsCompanion\Cache`. Basta alterar esse valor para qualquer caminho válido.
 
    >[!NOTE]
    >
