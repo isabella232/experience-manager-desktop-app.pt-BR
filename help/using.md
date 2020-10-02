@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: f5f65fa8ddceae62f2e046f2d20e853aef572f2c
 workflow-type: tm+mt
-source-wordcount: '3997'
+source-wordcount: '3999'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Use o aplicativo Adobe Experience Manager (AEM) para desktop para acessar facilm
 
 A integração permite que várias funções na organização gerenciem os ativos centralmente nos Ativos do Experience Manager e acessem os ativos na área de trabalho local nos aplicativos nativos do Windows ou Mac OS.
 
-Quando você abrir o aplicativo depois de fazer logoff ou pela primeira vez, forneça o URL do servidor Experience Manager no formato `https://[aem-server-url]:[port]/`. Clique em Conectar. Forneça credenciais para conectar o aplicativo ao servidor.
+Quando você abrir o aplicativo depois de fazer logoff ou pela primeira vez, forneça o URL do servidor Experience Manager no formato `https://[aem-server-url]:[port]/`. Em seguida, selecione a [!UICONTROL Connect] opção. Forneça credenciais para conectar o aplicativo ao servidor.
 
 As tarefas principais que você usa o aplicativo de desktop Experience Manager são:
 
