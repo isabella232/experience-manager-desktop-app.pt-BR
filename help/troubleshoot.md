@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 381e586077c7db63dd57a468b1c6abc60c63e34e
+source-git-commit: b4add64df21991495d5cc01e6250bbc9fc444ff0
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 1%
+source-wordcount: '1880'
+ht-degree: 0%
 
 ---
 
@@ -105,7 +105,7 @@ No entanto, o local pode mudar dependendo do ponto final AEM configurado AEM des
 
 Clique no menu ![](assets/do-not-localize/more_options_da2.png) Aplicativo para abrir o menu do aplicativo e clique em **[!UICONTROL Help]** > **[!UICONTROL About]**.
 
-## Não é possível ver ativos colocados {#placed-assets-missing}
+### Não é possível ver ativos colocados {#placed-assets-missing}
 
 Se você não conseguir ver os ativos que você ou outros profissionais criativos colocaram nos arquivos de suporte (por exemplo, arquivos INDD), verifique o seguinte:
 
@@ -114,7 +114,7 @@ Se você não conseguir ver os ativos que você ou outros profissionais criativo
 * Aumente a consistência da letra. Se você ou outro colaborador colocou os ativos ao mapear o DAM AEM para uma letra de unidade diferente, os ativos colocados não serão exibidos.
 * Permissões. Para verificar se você tem permissões para buscar os ativos inseridos, entre em contato com o administrador do AEM.
 
-## Problemas ao atualizar no macOS {#issues-when-upgrading-on-macos}
+### Problemas ao atualizar no macOS {#issues-when-upgrading-on-macos}
 
 Ocasionalmente, podem ocorrer problemas ao atualizar AEM aplicativo desktop no macOS. Isso é causado pela pasta herdada do sistema para AEM aplicativo desktop que impede que novas versões do aplicativo AEM desktop sejam carregadas corretamente. Para resolver esse problema, as pastas e os arquivos a seguir podem ser removidos manualmente.
 
@@ -129,13 +129,28 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-## Não é possível carregar arquivos {#upload-fails}
+### Não é possível carregar arquivos {#upload-fails}
 
 Se você estiver usando um aplicativo de desktop com AEM 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Ele resolve o problema de falha de carregamento de arquivo relacionado ao [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte as instruções [de instalação](install-upgrade.md#install-v2).
 
-## [!DNL Experience Manager] problemas de conexão do aplicativo de desktop {#connection-issues}
+### [!DNL Experience Manager] problemas de conexão do aplicativo de desktop {#connection-issues}
 
-### A autenticação de logon SAML não está funcionando {#da-connection-issue-with-saml-aem}
+Se você estiver enfrentando problemas gerais de conectividade, veja algumas maneiras de obter mais informações sobre o que o aplicativo para [!DNL Experience Manager] desktop está fazendo.
+
+**Verificar o registro de solicitações**
+
+[!DNL Experience Manager] o aplicativo desktop registra todas as solicitações que envia, juntamente com o código de resposta de cada solicitação, em um arquivo de log dedicado.
+
+1. Abra `request.log` o diretório de log do aplicativo para ver essas solicitações.
+
+1. Cada linha no registro representa uma solicitação ou uma resposta. As solicitações terão um `>` caractere seguido do URL solicitado. As respostas terão um `<` caractere seguido pelo código de resposta e o URL solicitado. As solicitações e a resposta podem ser correspondidas usando o GUID de cada linha.
+
+**Verificar solicitações carregadas pelo navegador incorporado do aplicativo**
+
+A maioria das solicitações do aplicativo é encontrada no registro de solicitações. No entanto, se não houver informações úteis, então pode ser útil investigar as solicitações enviadas pelo navegador incorporado do aplicativo.
+Consulte a seção [](#da-connection-issue-with-saml-aem) SAML para obter instruções sobre como visualização essas solicitações.
+
+#### A autenticação de logon SAML não está funcionando {#da-connection-issue-with-saml-aem}
 
 Se o aplicativo de [!DNL Experience Manager] [!DNL Adobe Experience Manager] desktop não se conectar à sua instância habilitada por SSO (SAML), leia esta seção para solucionar problemas. Os processos SSO são variados, às vezes complexos, e o design do aplicativo faz o melhor para acomodar esses tipos de conexões. No entanto, algumas configurações exigem solução de problemas adicional.
 
@@ -186,11 +201,45 @@ Para solucionar problemas ainda mais, é possível visualização os URLs exatos
 
 Analisar a sequência de URL que está sendo carregada pode ajudar a solucionar problemas no fim do SAML para determinar o que está errado.
 
-### Problema de configuração de SSL {#ssl-config-v2}
+#### Problema de configuração de SSL {#ssl-config-v2}
 
 As bibliotecas que AEM aplicativo de desktop usa para comunicação HTTP utilizam imposição rigorosa de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar AEM aplicativo de desktop. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
 
-## O aplicativo não está respondendo {#unresponsive}
+
+As bibliotecas que AEM desktop usa para a comunicação HTTP utilizam imposição rigorosa de SSL. Portanto, pode haver casos em que as conexões SSL que têm sucesso por meio de um navegador falham com o aplicativo [!DNL Adobe Experience Manager] desktop. Isso é bom porque incentiva a configuração correta do SSL e aumenta a segurança, mas pode ser frustrante quando o aplicativo não consegue se conectar.
+
+A abordagem recomendada neste caso é usar uma ferramenta para analisar o certificado SSL de um servidor e identificar problemas para que eles possam ser corrigidos. Há sites que verificam o certificado de um servidor ao fornecer seu URL.
+
+Como medida temporária, é possível desativar a imposição SSL estrita em aplicativos para [!DNL Adobe Experience Manager] desktop. Esta não é uma solução de longo prazo recomendada, pois reduz a segurança ocultando a causa raiz do SSL configurado incorretamente. Para desativar a imposição estrita:
+
+1. Use o editor de sua escolha para editar o arquivo de configuração JavaScript do aplicativo, que é encontrado (por padrão) nos seguintes locais (dependendo do sistema operacional):
+
+   No Mac: `/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
+
+   No Windows: `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop\javascript\config.json`
+
+1. Localize a seguinte seção no arquivo:
+
+   ```shell
+   ...
+   "assetRepository": {
+       "options": {
+   ...
+   ```
+
+1. Modifique a seção adicionando `"strictSSL": false` o seguinte:
+
+   ```shell
+   ...
+   "assetRepository": {
+       "options": {
+           "strictSSL": false,
+   ...
+   ```
+
+1. Salve o arquivo e reinicie o aplicativo da [!DNL Adobe Experience Manager] área de trabalho.
+
+### O aplicativo não está respondendo {#unresponsive}
 
 Raramente, o aplicativo pode ficar sem resposta, exibir apenas uma tela branca ou exibir um erro na parte inferior da interface, sem nenhuma opção na interface. Tente o seguinte na ordem:
 
