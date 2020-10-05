@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 381e586077c7db63dd57a468b1c6abc60c63e34e
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1537'
 ht-degree: 1%
 
 ---
@@ -51,37 +51,41 @@ Para solucionar problemas com o aplicativo de desktop, tenha em mente as seguint
 
 ### Ativar o modo de depuração {#enable-debug-mode}
 
-Para solucionar problemas, você pode ativar o modo de depuração e obter mais informações nos registros. Para usar o aplicativo no modo de depuração no Mac, use as seguintes opções de linha de comando em um terminal ou no prompt de comando: `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
-
-Para ativar o modo de depuração no Windows, siga estas etapas:
-
-1. Localize `Adobe Experience Manager Desktop.exe.config` o arquivo na pasta de instalação do aplicativo de desktop. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop`.
-
-1. Localize `<level value="INFO"/>` perto do final do arquivo. Altere o valor de `INFO` para `DEBUG`, que é `<level value="DEBUG"/>`. Salve e feche o arquivo.
-
-1. Localize `logging.json` o arquivo na pasta de instalação do aplicativo de desktop. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
-
-1. No `logging.json` arquivo, localize todas as instâncias de `"level": "info"`. Altere os valores de `info` para `debug`, que é `"level": "debug"`. Salve e feche o arquivo.
-
-1. Limpe os diretórios em cache que estão no local definido nas [Preferências](/help/install-upgrade.md#set-preferences)do aplicativo.
-
-1. Reinicie o aplicativo de desktop.
-
-<!-- The Windows command doesn't work for now.
-* On Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
--->
-
-### Localização dos ficheiros de registro {#check-log-files-v2}
-
-Você pode encontrar os arquivos de registro para AEM aplicativo de desktop nos seguintes locais. Ao fazer upload de muitos ativos, se alguns arquivos não forem carregados, consulte o `backend.log` arquivo para identificar os uploads que falharam.
-
-* Caminho no Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
-
-* Caminho no Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+Para solucionar problemas, você pode ativar o modo de depuração e obter mais informações nos registros.
 
 >[!NOTE]
 >
->Ao trabalhar com o Atendimento ao cliente do Adobe em uma solicitação/ticket de suporte, você pode ser solicitado a compartilhar os arquivos de registro para ajudar a equipe do Atendimento ao cliente a entender o problema. Arquive a `Logs` pasta inteira e compartilhe-a com seu contato com o Atendimento ao cliente.
+>Os níveis de log válidos são DEBUG, INFO, WARN ou ERROR. A verbosidade dos registros é mais alta em DEBUG e mais baixa em ERROR.
+
+Para usar o aplicativo no modo de depuração no Mac:
+
+1. Abra uma janela de terminal ou um prompt de comando.
+
+1. Inicie o aplicativo para [!DNL Experience Manager] desktop executando o seguinte comando:
+
+   `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
+
+Para ativar o modo de depuração no Windows:
+
+1. Abra uma janela de comando.
+
+1. Inicie o aplicativo [!DNL Experience Manager] desktop executando o seguinte comando:
+
+`AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
+
+### Localização dos ficheiros de registro {#check-log-files-v2}
+
+[!DNL Experience Manager] o aplicativo desktop armazena seus arquivos de registro nos seguintes locais, dependendo do sistema operacional:
+
+No Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+
+No Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+
+Ao fazer upload de muitos ativos, se alguns arquivos não forem carregados, consulte o `backend.log` arquivo para identificar os uploads que falharam.
+
+>[!NOTE]
+>
+>Ao trabalhar com o Atendimento ao cliente do Adobe em uma solicitação de suporte ou ticket, você pode ser solicitado a compartilhar os arquivos de registro para ajudar a equipe do Atendimento ao cliente a entender o problema. Arquive a `Logs` pasta inteira e compartilhe-a com seu contato com o Atendimento ao cliente.
 
 ### Limpar cache {#clear-cache-v2}
 
@@ -129,7 +133,60 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 Se você estiver usando um aplicativo de desktop com AEM 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Ele resolve o problema de falha de carregamento de arquivo relacionado ao [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte as instruções [de instalação](install-upgrade.md#install-v2).
 
-## Problema de configuração de SSL {#ssl-config-v2}
+## [!DNL Experience Manager] problemas de conexão do aplicativo de desktop {#connection-issues}
+
+### A autenticação de logon SAML não está funcionando {#da-connection-issue-with-saml-aem}
+
+Se o aplicativo de [!DNL Experience Manager] [!DNL Adobe Experience Manager] desktop não se conectar à sua instância habilitada por SSO (SAML), leia esta seção para solucionar problemas. Os processos SSO são variados, às vezes complexos, e o design do aplicativo faz o melhor para acomodar esses tipos de conexões. No entanto, algumas configurações exigem solução de problemas adicional.
+
+Às vezes, o processo SAML não redireciona para o caminho solicitado originalmente, ou o redirecionamento final é para um host diferente do configurado no aplicativo [!DNL Adobe Experience Manager] desktop. Para verificar se não é esse o caso:
+
+1. Abra um navegador da Web.
+
+1. Insira o URL `<AEM host>/content/dam.json` na barra de endereços.
+
+   Substitua `<AEM host>` pela instância do público alvo [!DNL Adobe Experience Manager] , por exemplo `http://localhost:4502/content/dam.json`.
+
+1. Faça logon na [!DNL Adobe Experience Manager] instância.
+
+1. Quando o logon for concluído, verifique o endereço atual do navegador na barra de endereços. Deve corresponder exatamente ao URL que foi digitado inicialmente.
+
+1. Verifique também se tudo antes corresponde `/content/dam.json` ao valor do público alvo [!DNL Adobe Experience Manager] configurado nas configurações do aplicativo [!DNL Adobe Experience Manager] desktop.
+
+**O processo de logon SAML funciona corretamente de acordo com as etapas acima, mas os usuários ainda não conseguem fazer logon**
+
+A janela dentro do aplicativo de [!DNL Adobe Experience Manager] [!DNL Adobe Experience Manager] desktop que exibe o processo de login é simplesmente um navegador da Web que exibe a interface do usuário da Web da instância do público alvo:
+
+* A versão Mac usa um [WebView](https://developer.apple.com/documentation/webkit/webview).
+
+* A versão do Windows usa o [CefSharp](https://cefsharp.github.io/)baseado em Chromo.
+
+Verifique se o processo SAML suporta esses navegadores.
+
+Para solucionar problemas ainda mais, é possível visualização os URLs exatos que o navegador está tentando carregar. Para ver essas informações:
+
+1. Siga as instruções para iniciar o aplicativo no modo [de](#enable-debug-mode)depuração.
+
+1. Reproduza a tentativa de login.
+
+1. Navegue até o diretório [de](#check-log-files-v2) log do aplicativo
+
+1. Para Windows:
+
+   1. Abra &quot;aemcompanionlog.txt&quot;.
+
+   1. Procure mensagens que comecem com &quot;Endereço do navegador de logon alterado para&quot;. Essas entradas também contêm o URL que o aplicativo carregou.
+
+   Para Mac:
+
+   1. `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`, em que **n** é substituído por qualquer número que esteja no nome de arquivo mais recente.
+
+   1. Procure mensagens que comecem com &quot;quadro carregado&quot;. Essas entradas também contêm o URL que o aplicativo carregou.
+
+
+Analisar a sequência de URL que está sendo carregada pode ajudar a solucionar problemas no fim do SAML para determinar o que está errado.
+
+### Problema de configuração de SSL {#ssl-config-v2}
 
 As bibliotecas que AEM aplicativo de desktop usa para comunicação HTTP utilizam imposição rigorosa de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar AEM aplicativo de desktop. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
 
