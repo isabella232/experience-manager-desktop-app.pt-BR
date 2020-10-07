@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b4add64df21991495d5cc01e6250bbc9fc444ff0
+source-git-commit: a7a334df5eaa2b8a8d0412bff1ed2a47d39ca1a2
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '2230'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,48 @@ Siga as práticas recomendadas a seguir para evitar alguns problemas comuns e a 
 
 Para solucionar problemas com o aplicativo de desktop, tenha em mente as seguintes informações. Além disso, ele o prepara para transmitir melhor os problemas ao Atendimento ao cliente da Adobe se você optar por buscar suporte.
 
+### Localização dos ficheiros de registro {#check-log-files-v2}
+
+[!DNL Experience Manager] o aplicativo desktop armazena seus arquivos de registro nos seguintes locais, dependendo do sistema operacional:
+
+No Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+
+No Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+
+Ao fazer upload de muitos ativos, se alguns arquivos não forem carregados, consulte o `backend.log` arquivo para identificar os uploads que falharam.
+
+>[!NOTE]
+>
+>Ao trabalhar com o Atendimento ao cliente do Adobe em uma solicitação de suporte ou ticket, você pode ser solicitado a compartilhar os arquivos de registro para ajudar a equipe do Atendimento ao cliente a entender o problema. Arquive a `Logs` pasta inteira e compartilhe-a com seu contato com o Atendimento ao cliente.
+
+### Alterar o nível de detalhes nos arquivos de registro {#level-of-details-in-log}
+
+Para alterar o nível de detalhes nos arquivos de registro:
+
+1. Verifique se o aplicativo não está em execução.
+
+1. No sistema Windows:
+
+   1. Abra uma janela de comando.
+
+   1. Inicie o aplicativo [!DNL Adobe Experience Manager] desktop executando o comando:
+
+   ```shell
+   set AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe
+   ```
+
+   No sistema Mac:
+
+   1. Abra uma janela de terminal.
+
+   1. Inicie o aplicativo [!DNL Adobe Experience Manager] desktop executando o comando:
+
+   ```shell
+   AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app
+   ```
+
+Os níveis de log válidos são DEBUG, INFO, WARN ou ERROR. A verbosidade dos registros é mais alta em DEBUG e mais baixa em ERROR.
+
 ### Ativar o modo de depuração {#enable-debug-mode}
 
 Para solucionar problemas, você pode ativar o modo de depuração e obter mais informações nos registros.
@@ -73,46 +115,61 @@ Para ativar o modo de depuração no Windows:
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
 
-### Localização dos ficheiros de registro {#check-log-files-v2}
-
-[!DNL Experience Manager] o aplicativo desktop armazena seus arquivos de registro nos seguintes locais, dependendo do sistema operacional:
-
-No Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
-
-No Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
-
-Ao fazer upload de muitos ativos, se alguns arquivos não forem carregados, consulte o `backend.log` arquivo para identificar os uploads que falharam.
-
->[!NOTE]
->
->Ao trabalhar com o Atendimento ao cliente do Adobe em uma solicitação de suporte ou ticket, você pode ser solicitado a compartilhar os arquivos de registro para ajudar a equipe do Atendimento ao cliente a entender o problema. Arquive a `Logs` pasta inteira e compartilhe-a com seu contato com o Atendimento ao cliente.
-
 ### Limpar cache {#clear-cache-v2}
 
-Limpar AEM cache do aplicativo desktop é uma tarefa preliminar de solução de problemas que pode resolver vários problemas. Limpe o cache das preferências do aplicativo. Consulte [Definir preferências](install-upgrade.md#set-preferences). O local padrão da pasta de cache é:
+Execute as seguintes etapas:
 
-* No Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
+1. Start o aplicativo e conecte uma instância AEM.
 
-* No Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
+1. Abra as preferências do aplicativo clicando nas elipses no canto superior direito e selecionando [!UICONTROL Preferences].
 
-No entanto, o local pode mudar dependendo do ponto final AEM configurado AEM desktop. O valor é uma versão codificada do URL direcionado. Por exemplo, se o aplicativo estiver direcionando `http://localhost:4502`, o nome do diretório será `http%3A%2F%2Flocalhost%3A4502%2F`. Para limpar o cache, exclua a pasta apropriada. Outro motivo para limpar o cache é liberar espaço em disco quando você está com pouco espaço em disco.
+1. Localize a entrada que exibe a [!UICONTROL Current Cache Size]. Clique no ícone de lixeira ao lado desse elemento.
+
+Para limpar manualmente o cache, siga as etapas abaixo.
 
 >[!CAUTION]
 >
->Se você limpar AEM cache da área de trabalho, as modificações de ativos locais que não são sincronizadas com AEM servidor serão irrevogavelmente perdidas.
+>Esta é uma operação potencialmente destrutiva. Se houver alterações no arquivo local para as quais não foi feito upload, [!DNL Adobe Experience Manager]essas alterações serão perdidas prosseguindo.
 
-### Conheça a versão do aplicativo para desktop AEM {#know-app-version-v2}
+O cache é limpo excluindo o diretório de cache do aplicativo, que é encontrado nas preferências do aplicativo.
 
-Clique no menu ![](assets/do-not-localize/more_options_da2.png) Aplicativo para abrir o menu do aplicativo e clique em **[!UICONTROL Help]** > **[!UICONTROL About]**.
+1. Start do aplicativo.
+
+1. Abra as preferências do aplicativo selecionando as elipses no canto superior direito e selecionando [!UICONTROL Preferences].
+
+1. Observe o [!UICONTROL Cache Directory] valor.
+
+   Neste diretório, há subdiretórios nomeados após os [!DNL Adobe Experience Manager] Endpoints Codificados. Os nomes são uma versão codificada do [!DNL Adobe Experience Manager] URL direcionado. Por exemplo, se o aplicativo estiver direcionando, `localhost:4502` o nome do diretório será `localhost_4502`.
+
+Para limpar o cache, exclua o diretório Endpoint [!DNL Adobe Experience Manager] codificado desejado. Como alternativa, a exclusão do diretório inteiro especificado nas preferências limpará o cache para todas as instâncias que foram usadas pelo aplicativo.
+
+Limpar [!DNL Adobe Experience Manager]] o cache do aplicativo desktop é uma tarefa preliminar de solução de problemas que pode resolver vários problemas. Limpe o cache das preferências do aplicativo. Consulte [Definir preferências](install-upgrade.md#set-preferences). O local padrão da pasta de cache é:
+
+### Conheça a versão do aplicativo para [!DNL Adobe Experience Manager] desktop {#know-app-version-v2}
+
+Para ver o número da versão:
+
+1. Start do aplicativo.
+
+1. Clique nas elipses no canto superior direito, passe o mouse sobre [!UICONTROL Help]e clique em [!UICONTROL About].
+
+   O número da versão é listado nesta tela.
 
 ### Não é possível ver ativos colocados {#placed-assets-missing}
 
 Se você não conseguir ver os ativos que você ou outros profissionais criativos colocaram nos arquivos de suporte (por exemplo, arquivos INDD), verifique o seguinte:
 
 * Conexão com o servidor. A conectividade de rede flexível pode paralisar os downloads de ativos.
+
 * Tamanho de arquivo. Ativos grandes demoram mais para serem baixados e exibidos.
+
 * Aumente a consistência da letra. Se você ou outro colaborador colocou os ativos ao mapear o DAM AEM para uma letra de unidade diferente, os ativos colocados não serão exibidos.
+
 * Permissões. Para verificar se você tem permissões para buscar os ativos inseridos, entre em contato com o administrador do AEM.
+
+### As edições em arquivos na interface do usuário do aplicativo de desktop não são refletidas [!DNL Adobe Experience Manager] imediatamente em {#changes-on-da-not-visible-on-aem}
+
+[!DNL Adobe Experience Manager] o aplicativo de desktop deixa ao usuário a decisão de quando todas as edições em um arquivo são concluídas. Dependendo do tamanho e da complexidade de um arquivo, leva um tempo significativo para transferir a nova versão de um arquivo de volta para [!DNL Adobe Experience Manager]. O design do aplicativo solicita a minimização do número de vezes que um arquivo é transferido para frente e para trás, em vez de adivinhar quando as edições do arquivo são concluídas e carregadas automaticamente. Recomenda-se que o usuário inicie a transferência do arquivo de volta para [!DNL Adobe Experience Manager] o, escolhendo fazer upload das alterações do arquivo.
 
 ### Problemas ao atualizar no macOS {#issues-when-upgrading-on-macos}
 
@@ -247,6 +304,22 @@ Raramente, o aplicativo pode ficar sem resposta, exibir apenas uma tela branca o
 * Saia do aplicativo e abra-o novamente.
 
 Em ambos os métodos, os start do aplicativo na pasta DAM raiz.
+
+### Precisa de ajuda adicional com o aplicativo [!DNL Experience Manager] de desktop {#additional-help}
+
+Crie um ticket Jira com as seguintes informações:
+
+* Use `DAM - Companion App` como o [!UICONTROL Component].
+
+* Etapas detalhadas para reproduzir o problema em [!UICONTROL Description].
+
+* Registros de nível DEBUG capturados durante a reprodução do problema.
+
+* Versão AEM público alvo.
+
+* Versão do sistema operacional.
+
+* [!DNL Adobe Experience Manager] versão do aplicativo para desktop. Para saber a versão do aplicativo, consulte [encontrar a versão](#know-app-version-v2)do aplicativo para desktop.
 
 >[!MORELIKETHIS]
 >
