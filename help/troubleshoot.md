@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a7a334df5eaa2b8a8d0412bff1ed2a47d39ca1a2
+source-git-commit: 540821ad10f14ad855c66a2b93d356ba118515c7
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 0%
@@ -143,7 +143,7 @@ O cache é limpo excluindo o diretório de cache do aplicativo, que é encontrad
 
 Para limpar o cache, exclua o diretório Endpoint [!DNL Adobe Experience Manager] codificado desejado. Como alternativa, a exclusão do diretório inteiro especificado nas preferências limpará o cache para todas as instâncias que foram usadas pelo aplicativo.
 
-Limpar [!DNL Adobe Experience Manager]] o cache do aplicativo desktop é uma tarefa preliminar de solução de problemas que pode resolver vários problemas. Limpe o cache das preferências do aplicativo. Consulte [Definir preferências](install-upgrade.md#set-preferences). O local padrão da pasta de cache é:
+Limpar o cache [!DNL Adobe Experience Manager] do aplicativo desktop é uma tarefa preliminar de solução de problemas que pode resolver vários problemas. Limpe o cache das preferências do aplicativo. Consulte [Definir preferências](install-upgrade.md#set-preferences). O local padrão da pasta de cache é:
 
 ### Conheça a versão do aplicativo para [!DNL Adobe Experience Manager] desktop {#know-app-version-v2}
 
