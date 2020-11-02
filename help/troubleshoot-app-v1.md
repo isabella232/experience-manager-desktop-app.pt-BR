@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 1%
@@ -144,7 +144,7 @@ Você pode melhorar o desempenho no lado da AEM, habilitando workflows transitó
 
 Outro método para melhorar o desempenho AEM é configurar o valor máximo de trabalhos paralelos para o trabalho da Fila de Fluxo de Trabalho Transitório Granite. O valor recomendado é aproximadamente a metade do número da CPU disponível com o servidor. Para ajustar o valor, execute estas etapas:
 
-1. Navegue até */system/console/configMgr* na instância de AEM a ser configurada (por exemplo, <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>).
+1. Navegue até */system/console/configMgr* na instância de AEM a ser configurada (por exemplo, `http://[aem_server]:[port]/system/console/configMgr`).
 1. Procure **QueueConfiguration** e clique para abrir cada tarefa até localizar o trabalho **Granite Transient Workflow Queue** . Clique em Editar ao lado.
 1. Altere o valor **Máximo de Trabalhos** Paralelos e clique em **Salvar**.
 
