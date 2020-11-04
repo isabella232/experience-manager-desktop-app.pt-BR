@@ -3,9 +3,9 @@ title: Use AEM aplicativo para desktop versão 1.x.
 description: Saiba como usar o aplicativo Adobe Experience Manager para desktop versão 1.x e otimizar seu trabalho com ativos no desktop.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -253,7 +253,5 @@ Como alternativa, selecione os arquivos/pastas para os quais deseja carregar no 
 
 >[!MORELIKETHIS]
 >
->* [Introdução ao aplicativo de desktop do AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
->* [Entenda o check-in/check-out com AEM aplicativo de desktop](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 >* [Solução de problemas AEM aplicativo de desktop](troubleshoot-app-v1.md)
 
