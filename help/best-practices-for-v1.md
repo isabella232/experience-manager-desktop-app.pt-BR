@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -35,7 +35,7 @@ O aplicativo desktop monta o repositório AEM Assets como um compartilhamento de
 
 AEM aplicativo desktop usa compartilhamentos de rede WebDAV (Windows) ou SMB (Mac) para montar compartilhamentos de rede. O compartilhamento de rede montado é somente local. AEM aplicativo de desktop intercepta as chamadas (abrir, ler, gravar) e fornece cache local adicional. Ele traduz chamadas remotas para o servidor AEM Assets para solicitações HTTP AEM otimizadas. O diagrama a seguir descreve a arquitetura do aplicativo AEM desktop.
 
-![AEM arquitetura de aplicativos para desktop](assets/chlimage_1.png)
+![AEM arquitetura de aplicativos para desktop](assets/arch_v1.png)
 
 *Figura: arquitetura de aplicativos para desktop*
 
