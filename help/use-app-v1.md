@@ -3,9 +3,9 @@ title: Use AEM aplicativo para desktop versão 1.x.
 description: Saiba como usar o aplicativo Adobe Experience Manager para desktop versão 1.x e otimizar seu trabalho com ativos no desktop.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Usando o aplicativo, os ativos dentro do AEM são facilmente acessíveis em seu desktop local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em AEM com uma nova versão criada no repositório.
 
-Essa integração permite que várias funções na organização gerenciem os ativos centralmente em AEM Assets e os acessem no Creative Cloud e em outros aplicativos, além de facilitar a adesão aos vários padrões, inclusive a marca.
+Essa integração permite que várias funções na organização gerenciem os ativos centralmente no AEM Assets e os acessem no Creative Cloud e em outros aplicativos, além de facilitar o cumprimento dos vários padrões, inclusive a marca.
 
 As principais tarefas que você usa o aplicativo AEM desktop v1 incluem:
 
@@ -28,11 +28,11 @@ Para as várias ações recomendadas e não ativas, consulte as práticas [recom
 
 >[!NOTE]
 >
->AEM aplicativo desktop foi introduzido na versão AEM 6.1 e foi chamado de Aplicativo Complementar AEM Assets.
+>AEM aplicativo de desktop foi introduzido na AEM 6.1 e foi chamado de Aplicativo associado AEM Assets.
 
 ## Pontos de contato do aplicativo para desktop AEM no fluxo de trabalho criativo {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
-AEM aplicativo para desktop, juntamente com AEM Assets, integra seu fluxo de trabalho criativo e oferta os seguintes pontos de contato.
+AEM aplicativo para desktop, juntamente com a AEM Assets, integra seu fluxo de trabalho criativo e oferta os seguintes pontos de contato.
 
 ![O aplicativo para desktop AEM aponta o fluxo de trabalho criativo](assets/aem_desktopapp_workflow.png)
 
@@ -40,7 +40,7 @@ O aplicativo para desktop AEM aponta o fluxo de trabalho criativo
 
 ## Instalar e conectar AEM aplicativo desktop ao servidor AEM {#installandconnect}
 
-Antes de começar a criar ou editar os ativos criativos, conecte o aplicativo de desktop ao servidor AEM Assets para baixar e fazer upload dos ativos no repositório. Execute as seguintes tarefas:
+Antes de começar a criar ou editar os ativos criativos, conecte o aplicativo de desktop ao servidor AEM Assets para baixar e fazer upload de ativos no repositório. Execute as seguintes tarefas:
 
 1. [Instale o aplicativo](#installapp).
 1. [Defina suas preferências](#inapppref) e detalhes da conexão.
@@ -70,11 +70,11 @@ A configuração detalhada pode ser necessária, dependendo das preferências da
 
 O aplicativo permite que as configurações se conectem e se desconectem dos servidores AEM, o status de visualização dos uploads, o gerenciamento do cache local e assim por diante. As configurações padrão funcionam para um usuário típico do aplicativo. Você pode ajustar as configurações para aproveitar ao máximo o aplicativo e sair da integração com AEM servidor. As várias configurações são descritas abaixo em detalhes.
 
-**Explorar ativos** Abra a unidade local na qual o repositório do AEM Assets está montado. Em outras palavras, explore os ativos que agora estão disponíveis em sua máquina local.
+**Explorar ativos** Abra a unidade local na qual o repositório AEM Assets está montado. Em outras palavras, explore os ativos que agora estão disponíveis em sua máquina local.
 
-**Status** do ativo de Visualização Quando os ativos alterados são carregados ou novos ativos são adicionados ao repositório de AEM Assets, o aplicativo carrega os ativos em segundo plano. O upload em segundo plano permite operações suaves, sem a necessidade de aguardar a conclusão do upload, especialmente para ativos de grande porte. Você pode salvar suas alterações localmente e esquecê-las. O aplicativo leva algum tempo para enviar esses ativos para o servidor, dependendo da largura de banda disponível. Você pode verificar o status do upload, juntamente com algumas informações mais básicas.
+**Status** do ativo de visualização Quando os ativos alterados são carregados ou novos ativos são adicionados ao repositório da AEM Assets, o aplicativo carrega os ativos em segundo plano. O upload em segundo plano permite operações suaves, sem a necessidade de aguardar a conclusão do upload, especialmente para ativos de grande porte. Você pode salvar suas alterações localmente e esquecê-las. O aplicativo leva algum tempo para enviar esses ativos para o servidor, dependendo da largura de banda disponível. Você pode verificar o status do upload, juntamente com algumas informações mais básicas.
 
-**Opções** Clique/toque em Opções na bandeja do aplicativo AEM Desktop para acessar as configurações para iniciar o aplicativo quando o sistema for start; conectar-se ao servidor AEM quando o aplicativo for iniciado; e para alterar a letra da unidade local onde os AEM Assets estão disponíveis após a montagem.
+**Opções** Clique/toque em Opções na bandeja do aplicativo AEM Desktop para acessar as configurações para iniciar o aplicativo quando o sistema for start; conectar-se ao servidor AEM quando o aplicativo for iniciado; e para alterar a letra da unidade local onde o AEM Assets está disponível após a montagem.
 
 **Avançado > Gerenciar cache** Você pode controlar a quantidade de espaço em disco disponível para fins de armazenamento em cache local. Os artefatos do servidor AEM Assets são armazenados em cache localmente para proporcionar uma experiência mais suave. Você pode alterar os padrões para atender às suas necessidades. Além disso, você pode limpar o cache para obter todos os ativos novamente. Quando você limpa o cache, ele preserva suas alterações não salvas. Todos os ativos não verificados no servidor AEM são retidos e não excluídos.
 
@@ -92,7 +92,7 @@ O aplicativo oferece suporte à configuração proxy no Mac e no Windows. A conf
 
 1. Na tela de logon, especifique o nome de usuário e a senha para sua instância. Para especificar uma instância AEM alternativa, selecione a **[!UICONTROL Alternate Login URL]** opção.
 
-   ![Forneça credenciais AEM servidor na tela de login AEM desktop](assets/chlimage_1-2.png)
+   ![Forneça credenciais AEM servidor na tela de logon AEM aplicativo desktop](assets/login_screen_v1.png)
 
 ### Ativar ações da área de trabalho AEM interface da Web {#desktopactions}
 
@@ -105,7 +105,7 @@ Na interface do usuário do Assets, você pode explorar os locais dos ativos ou 
 
 1. Na caixa de diálogo Preferências do usuário, selecione **[!UICONTROL Show Desktop Actions For Assets]**. Clique em **[!UICONTROL Accept]**.
 
-   ![Marque Mostrar ações da área de trabalho para ativos para ativar ações da área de trabalho](assets/chlimage_1-3.png)
+   ![Marque [!UICONTROL Show Desktop Actions For Assets] para ativar ações da área de trabalho](assets/enable_desktop_actions.png)
 
    *Figura: Marque Mostrar ações da área de trabalho para ativos para ativar as ações da área de trabalho.*
 
@@ -127,21 +127,21 @@ Para arquivos Adobe InDesign (INDD), selecione **[!UICONTROL Open]** no menu de 
 
 >[!NOTE]
 >
->O Adobe recomenda que você vá para Opções de Visualização do Finder no Mac e desative as opções **Mostrar informações** do item, **Mostrar pré-visualização** do item e **Mostrar coluna** de pré-visualização para a pasta de AEM Assets montados. Ele melhora o desempenho.
+>O Adobe recomenda que você vá para Opções de Visualização do Finder no Mac e desative as opções **Mostrar informações** do item, **Mostrar pré-visualização** do item e **Mostrar coluna** de pré-visualização para a pasta montada do AEM Assets. Ele melhora o desempenho.
 
 ### Opções adicionais na interface AEM {#additional-options-in-aem-assets}
 
-Depois de mapear o repositório do AEM Assets para a unidade local, você pode ativar ícones adicionais e o recurso de Upload de pasta para os ativos e pastas mapeados.
+Depois de mapear o repositório do AEM Assets para a unidade local, é possível ativar ícones adicionais e o recurso de Upload de pasta será exibido para os ativos e pastas mapeados.
 
-1. Abra a interface do AEM Assets e passe o ponteiro do mouse sobre uma pasta ou um ativo para exibir as ações da área de trabalho como ações rápidas na visualização Cartão.
+1. Abra a interface do AEM Assets e passe o ponteiro do mouse sobre uma pasta ou um ativo para exibir as ações da área de trabalho como ações rápidas na visualização do cartão.
 
-   ![Na interface do usuário do Assets, abra o menu de ações rápidas para ver as ações da área de trabalho](assets/chlimage_1-4.png)
+   ![Na interface do usuário do Assets, abra o menu de ações rápidas para ver as ações da área de trabalho](assets/desktop_actions_in_card_view.png)
 
    *Figura: Na interface do usuário do Assets, abra o menu de ações rápidas para ver as ações da área de trabalho.*
 
-   Essas ações da área de trabalho também estão disponíveis quando você clica no ícone Ações **da** área de trabalho na barra de ferramentas depois de selecionar o ativo ou na barra de ferramentas na página do ativo.
+   Essas ações da área de trabalho também estão disponíveis quando você clica na opção Ações **da** área de trabalho na barra de ferramentas depois de selecionar o ativo ou na barra de ferramentas na página do ativo.
 
-1. Para abrir o ativo no aplicativo de desktop associado à extensão de arquivo específica, clique/toque na ação rápida **Abrir no desktop** ![Abrir no ícone](assets/do-not-localize/aemassets_icon_openondesktop.png)da área de trabalho.
+1. Para abrir o ativo no aplicativo de área de trabalho associado à extensão de arquivo específica, clique no ícone **Abrir na ação rápida da área de trabalho** ![](assets/do-not-localize/aemassets_icon_openondesktop.png)Abrir na área de trabalho.
 
    Como alternativa, escolha **Abrir** no menu Ações **da** área de trabalho na barra de ferramentas.
 
@@ -159,13 +159,13 @@ Para localizar o ativo específico no sistema de arquivos local, clique em **Rev
 
 ### Verificar ativos na interface da Web AEM {#check-out-assets-from-the-aem-web-interface}
 
-O AEM Assets permite que você faça check-out dos ativos para edição e volte a fazer check-in deles depois de concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo e impede que outros usuários executem qualquer uma dessas operações. Para poder fazer check-out/check-in de ativos, você precisa ter acesso de gravação neles.
+A AEM Assets permite que você faça check-out dos ativos para edição e volte a fazer check-in deles depois de concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo e impede que outros usuários executem qualquer uma dessas operações. Para poder fazer check-out/check-in de ativos, você precisa ter acesso de gravação neles.
 
 Há duas maneiras de fazer check-out de ativos na interface da Web AEM. Para obter informações detalhadas sobre o primeiro método, consulte arquivos de [check-in e check-out da interface do usuário](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html)do Assets. Siga estas etapas para obter os segundo métodos de dar baixa e abrir o ativo quando AEM aplicativo para desktop estiver instalado.
 
-1. Abra a interface do AEM Assets e passe o ponteiro do mouse sobre uma pasta ou um ativo para exibir as ações da área de trabalho como ações rápidas na visualização Cartão.
+1. Abra a interface do AEM Assets e passe o ponteiro do mouse sobre uma pasta ou um ativo para exibir as ações da área de trabalho como ações rápidas na visualização do cartão.
 
-   ![Opção Propriedades na Visualização de cartão](assets/chlimage_1-4.png)
+   ![Opção Propriedades na Visualização de cartão](assets/desktop_actions_in_card_view.png)
 
    Essas ações da área de trabalho também estão disponíveis quando você clica/toca no ícone Ações da área de trabalho na barra de ferramentas depois de selecionar o ativo ou na barra de ferramentas na página do ativo.
 
@@ -188,20 +188,17 @@ Há duas maneiras de fazer check-out de ativos na interface da Web AEM. Para obt
 
 O aplicativo permite que você faça check-out dos arquivos de ativos para impedir que outros usuários modifiquem os arquivos nos quais você está trabalhando.
 
-1. No menu de contexto do Mac, selecione a pasta Abrir AEM Assets para abrir o Finder.
+1. No menu de contexto do Mac, selecione a opção Abrir pasta do AEM Assets para abrir o Finder.
 
    ![Opções do menu de contexto para acessar e abrir ativos usando AEM aplicativo para desktop](assets/aem_desktopapp_mac_context_menu.png)
 
    Opções do menu de contexto para acessar e abrir ativos usando AEM aplicativo para desktop
 
 1. Navegue até o ativo que deseja fazer check-out.
-
-   ![Abrir no menu de contexto AEM Assets no Mac](assets/chlimage_1-5.png)
-
 1. Clique com o botão direito do mouse no ativo e selecione Mais informações de ativos no menu de contexto.
 1. Na caixa de diálogo Informações do ativo, clique/toque no ícone de Check-out para fazer check-out do ativo. O ícone Check-out alterna para o ícone de check-in depois que você clica/toca nele.
 
-   ![Navegue até o ativo para fazer check-out](assets/chlimage_1-6.png)
+   ![Navegue até o ativo para fazer check-out](assets/browse_assets_to_checkout.png)
 
 1. Para fazer check-in do ativo de modo que ele esteja disponível para outros usuários, clique/toque no ícone de check-in na caixa de diálogo Informações do ativo.
 
@@ -211,13 +208,10 @@ O aplicativo permite que você faça check-out dos arquivos de ativos para imped
 
 1. No menu Contexto, selecione Explorar ativos para abrir o Explorer.
 1. No Explorer, navegue até o local do ativo que deseja fazer check-out.
-
-   ![O ícone de finalização alterna](assets/chlimage_1-7.png)
-
 1. Clique com o botão direito do mouse no ativo e selecione Abrir na Web no menu de contexto.
 1. Na caixa de diálogo Informações do ativo, clique/toque no ícone Check-out. O ícone Check-out alterna para o ícone de check-in.
 
-   ![O ícone de finalização alterna](assets/chlimage_1-8.png)
+   ![O ícone de finalização alterna](assets/checkout_icon_toggles.png)
 
 1. Revise o ativo no Explorer. O ícone de cadeado no ícone ![de cadeado](assets/do-not-localize/aemassets_icon_lockcheckout.png) de ativo indica que você fez check-out do ativo.
 
@@ -237,7 +231,7 @@ Um ativo é carregado para AEM automaticamente depois que qualquer alteração �
 
 ### Fazer upload em massa de ativos e pastas para AEM servidor {#bulkupload}
 
-Usando AEM desktop, você pode carregar uma pasta inteira contendo ativos do diretório de arquivos local para AEM Assets. Dessa forma, todos os ativos dentro da pasta são carregados em massa, em vez de serem carregados um de cada vez.
+Usando AEM desktop, você pode carregar uma pasta inteira contendo ativos do diretório de arquivos local para o AEM Assets. Dessa forma, todos os ativos dentro da pasta são carregados em massa, em vez de serem carregados um de cada vez.
 
 1. Na interface do usuário do Assets, clique/toque em **Criar** na barra de ferramentas e escolha **Carregar pasta** no menu.
 1. Navegue até a pasta que deseja carregar e selecione-a.
