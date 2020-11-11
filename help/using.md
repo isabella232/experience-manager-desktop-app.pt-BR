@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '3993'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Use **[!UICONTROL Toggle Check-out]** para bloquear o ativo para evitar conflito
 * Você começou a editar um ativo sem verificá-lo primeiro (digamos ao abri-lo).
 * Você pretende start para editar um ativo em breve e não deseja que outras pessoas editem.
 
-Quando terminar de fazer as edições, o aplicativo exibirá o **[!UICONTROL Edited Locally]** status dos ativos alterados. Todas as alterações salvas nos ativos são somente locais até que você carregue as alterações para AEM. Para carregar um indivíduo ou alguns ativos um por um, clique **[!UICONTROL Upload Changes]** nas opções de um ativo. Cria uma versão do ativo no AEM. Usando a interface da Web do AEM Assets, você pode ver o histórico de ativos na visualização [](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html)Linha do tempo.
+Quando terminar de fazer as edições, o aplicativo exibirá o **[!UICONTROL Edited Locally]** status dos ativos alterados. Todas as alterações salvas nos ativos são somente locais até que você carregue as alterações para AEM. Para carregar um indivíduo ou alguns ativos um por um, clique **[!UICONTROL Upload Changes]** nas opções de um ativo. Cria uma versão do ativo no AEM. Usando a interface da Web do AEM Assets, você pode ver o histórico de ativos na visualização [](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html)Linha do tempo.
 
 ![Opção Carregar alterações na opção](assets/upload_changes_single1_da2.png "appCarregar alterações no aplicativo")
 
@@ -176,7 +176,7 @@ Se necessário, alterne o check-out. O ativo atualizado é removido da pasta de 
 
 ## Carregar e adicionar novos ativos ao AEM {#upload-and-add-new-assets-to-aem}
 
-Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo da agência ou um contratante que deseja adicionar um grande número de fotos de uma fotografia ao repositório AEM. Para adicionar conteúdo novo ao AEM, clique no ícone ![](assets/do-not-localize/upload_to_cloud_da2.png) Carregar na nuvem na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Os start do aplicativo carregam o ativo e exibem uma barra de progresso na parte inferior se o ativo demorar mais para ser carregado. Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas no AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders).
+Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo da agência ou um contratante que deseja adicionar um grande número de fotos de uma fotografia ao repositório AEM. Para adicionar conteúdo novo ao AEM, clique no ícone ![](assets/do-not-localize/upload_to_cloud_da2.png) Carregar na nuvem na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Os start do aplicativo carregam o ativo e exibem uma barra de progresso na parte inferior se o ativo demorar mais para ser carregado. Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas no AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -231,7 +231,7 @@ Após o upload, se as alterações esperadas não forem refletidas no aplicativo
 
 >[!NOTE]
 >
->Não use a funcionalidade de upload para migrar ativos em duas implantações AEM. Em vez disso, consulte o guia [de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html)migração.
+>Não use a funcionalidade de upload para migrar ativos em duas implantações AEM. Em vez disso, consulte o guia [de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html)migração.
 
 ### Lista dos ativos transferidos {#list-of-transferred-assets}
 
