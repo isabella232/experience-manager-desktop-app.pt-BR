@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
+source-git-commit: 9c11f0b8ace17e7f596bcfe26e69f4ca649e0126
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -69,9 +69,9 @@ Os métodos de cópia e movimentação na API Ativos exigem que os seguintes cab
 * Profundidade X
 * X-Overwrite
 
-AEM desktop se conecta a AEM usando um URL que inclui a porta padrão. Portanto, a `virtualhosts` configuração na configuração do dispatcher deve incluir o número da porta padrão. Para obter mais informações sobre a `virtualhosts` configuração, consulte [identificar hosts](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuais.
+AEM desktop se conecta a AEM usando um URL que inclui a porta padrão. Portanto, a `virtualhosts` configuração na configuração do dispatcher deve incluir o número da porta padrão. Para obter mais informações sobre a `virtualhosts` configuração, consulte [identificar hosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuais.
 
-Para obter informações adicionais sobre como configurar o dispatcher para passar por esses cabeçalhos adicionais, consulte [Especificação dos cabeçalhos](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
+Para obter informações adicionais sobre como configurar o dispatcher para passar por esses cabeçalhos adicionais, consulte [Especificação dos cabeçalhos](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
 
 ### Suporte a proxy {#proxy-support}
 
@@ -134,7 +134,7 @@ Para apontar o aplicativo para uma pasta diferente ou uma unidade diferente, edi
    >O aplicativo cria automaticamente um subdiretório *&lt;Encoded AEM Endpoint>* . Este comportamento não é configurável.
 
 >[!MORELIKETHIS]
-* [Introdução ao aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [Introdução ao aplicativo de desktop do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
 * [Usar o aplicativo de desktop do AEM](use-app-v1.md).
 * [Solução de problemas AEM aplicativo](troubleshoot-app-v1.md)de desktop.
 
