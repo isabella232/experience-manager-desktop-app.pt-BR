@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
 1. Se você estiver atualizando de outra versão do aplicativo, consulte [atualizar o aplicativo](#upgrade-from-previous-version)para desktop.
 
-1. Ignore esta etapa se estiver usando Experience Manager como Cloud Service, Experience Manager 6.4.4 ou posterior ou Experience Manager 6.5.0 ou posterior. Certifique-se de que a configuração do Experience Manager atende aos requisitos de compatibilidade mencionados nas notas [de](release-notes.md)versão. Se necessário, baixe o pacote [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) compatibilidade aplicável e instale-o usando o Gerenciador de pacotes de Experience Manager como administrador de Experience Manager. Para instalar um pacote, consulte [Como trabalhar com pacotes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Ignore esta etapa se estiver usando Experience Manager como Cloud Service, Experience Manager 6.4.4 ou posterior ou Experience Manager 6.5.0 ou posterior. Certifique-se de que a configuração do Experience Manager atende aos requisitos de compatibilidade mencionados nas notas [de](release-notes.md)versão. Se necessário, baixe o pacote [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) compatibilidade aplicável e instale-o usando o Gerenciador de pacotes de Experience Manager como administrador de Experience Manager. Para instalar um pacote, consulte [Como trabalhar com pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Execute o binário do instalador e siga as instruções na tela para instalar.
 
@@ -93,7 +93,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
    *Figura: O aplicativo exibe o conteúdo do DAM após o logon*
 
-1. (Experience Manager 6.5.1 ou posterior) Se você estiver usando um aplicativo desktop com o Experience Manager 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte Conector [do](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) Azure ou conector [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore)S3.
+1. (Experience Manager 6.5.1 ou posterior) Se você estiver usando um aplicativo desktop com o Experience Manager 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte Conector [do](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) Azure ou conector [](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)S3.
 
    Se você for um cliente do Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe.
 
