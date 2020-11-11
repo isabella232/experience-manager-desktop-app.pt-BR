@@ -1,17 +1,10 @@
 ---
 title: Práticas recomendadas do aplicativo para desktop AEM versão 1.x
 description: Recursos principais e uso recomendado do aplicativo Adobe Experience Manager desktop versão 1.x.
-uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -29,7 +22,7 @@ O aplicativo desktop monta o repositório AEM Assets como um compartilhamento de
 
 >[!NOTE]
 >
->Antes de ler este documento, você pode analisar as práticas [recomendadas gerais de integração de](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) AEM e Creative Cloud para obter uma visão geral de nível superior do tópico.
+>Antes de ler este documento, você pode analisar as práticas [recomendadas gerais de integração de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html) AEM e Creative Cloud para obter uma visão geral de nível superior do tópico.
 
 ## AEM desktop app architecture {#aem-desktop-app-architecture}
 
@@ -71,7 +64,7 @@ Os principais recursos AEM aplicativo de desktop incluem:
 
 * Não use unidades de rede AEM aplicativo desktop para salvar ativos com frequência. Todas as operações de salvamento são transmitidas para a AEM Assets. Portanto, não é prático executar operações de edição intensiva diretamente no repositório AEM Assets montado. A edição de um ativo diretamente no repositório montado encaixa a linha do tempo do ativo com versões irrelevantes e impõe sobrecargas adicionais no servidor.
 
-* Não use AEM aplicativo de desktop para a migração de grandes quantidades de dados de uma instância AEM para outra. Consulte o Guia [de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) migração para planejar e executar migrações de ativos. Por outro lado, o aplicativo de desktop [oferece suporte ao carregamento](use-app-v1.md#bulkupload) em massa de um grande número de ativos pela primeira vez em [!DNL Adobe Experience Manager].
+* Não use AEM aplicativo de desktop para a migração de grandes quantidades de dados de uma instância AEM para outra. Consulte o Guia [de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) migração para planejar e executar migrações de ativos. Por outro lado, o aplicativo de desktop [oferece suporte ao carregamento](use-app-v1.md#bulkupload) em massa de um grande número de ativos pela primeira vez em [!DNL Adobe Experience Manager].
 
 ## Recommendations para casos de uso selecionados {#recommendations-for-selected-use-cases}
 
@@ -127,7 +120,7 @@ Uma boa experiência para os usuários que usam o aplicativo de desktop AEM depe
 
 ### Considerações de rede {#network-considerations}
 
-Para entender as práticas recomendadas sobre a configuração de rede AEM Assets, consulte o documento [AEM Assets Network Considerations (Considerações](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) de rede). Alguns dos aspectos importantes que ajudam a otimizar AEM experiência do aplicativo de desktop para os usuários são:
+Para entender as práticas recomendadas sobre a configuração de rede AEM Assets, consulte o documento [AEM Assets Network Considerations (Considerações](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-migration-guide.html) de rede). Alguns dos aspectos importantes que ajudam a otimizar AEM experiência do aplicativo de desktop para os usuários são:
 
 * **Use o Dispatcher** corretamente configurado. Use AEM Dispatcher para obter segurança adicional e verifique se ele está configurado para conexão [AEM aplicativo desktop para AEM atrás de um dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
@@ -139,8 +132,8 @@ Para entender as práticas recomendadas sobre a configuração de rede AEM Asset
 
 ### Otimizando o desempenho do servidor {#optimizing-server-performance}
 
-Para entender como o servidor AEM Assets deve ser otimizado para desempenho, consulte o Guia [de Ajuste de Desempenho da](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)AEM Assets. Alguns dos aspectos importantes do desempenho do servidor para aplicativos de desktop AEM estão relacionados à otimização da configuração do fluxo de trabalho para que ele tenha bom desempenho para uploads de ativos:
+Para entender como o servidor AEM Assets deve ser otimizado para desempenho, consulte o Guia [de Ajuste de Desempenho da](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html)AEM Assets. Alguns dos aspectos importantes do desempenho do servidor para aplicativos de desktop AEM estão relacionados à otimização da configuração do fluxo de trabalho para que ele tenha bom desempenho para uploads de ativos:
 
-* **Carregamento** de ativos mais eficiente. Configure o modelo de fluxo de trabalho de Atualização de ativos [AEM para ser temporário](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows).
+* **Carregamento** de ativos mais eficiente. Configure o modelo de fluxo de trabalho de Atualização de ativos [AEM para ser temporário](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html).
 
 * **Limitar CPU do servidor para uploads**. Certifique-se de que o parâmetro de trabalho de fluxo de trabalho paralelo máximo esteja definido corretamente, de modo que os uploads não esgotem toda a CPU.
