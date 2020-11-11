@@ -3,9 +3,9 @@ title: Use AEM aplicativo para desktop versão 1.x.
 description: Saiba como usar o aplicativo Adobe Experience Manager para desktop versão 1.x e otimizar seu trabalho com ativos no desktop.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2472'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ Para localizar o ativo específico no sistema de arquivos local, clique em **Rev
 
 A AEM Assets permite que você faça check-out dos ativos para edição e volte a fazer check-in deles depois de concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo e impede que outros usuários executem qualquer uma dessas operações. Para poder fazer check-out/check-in de ativos, você precisa ter acesso de gravação neles.
 
-Há duas maneiras de fazer check-out de ativos na interface da Web AEM. Para obter informações detalhadas sobre o primeiro método, consulte arquivos de [check-in e check-out da interface do usuário](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html)do Assets. Siga estas etapas para obter os segundo métodos de dar baixa e abrir o ativo quando AEM aplicativo para desktop estiver instalado.
+Há duas maneiras de fazer check-out de ativos na interface da Web AEM. Para obter informações detalhadas sobre o primeiro método, consulte arquivos de [check-in e check-out da interface do usuário](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html)do Assets. Siga estas etapas para obter os segundo métodos de dar baixa e abrir o ativo quando AEM aplicativo para desktop estiver instalado.
 
 1. Abra a interface do AEM Assets e passe o ponteiro do mouse sobre uma pasta ou um ativo para exibir as ações da área de trabalho como ações rápidas na visualização do cartão.
 
