@@ -1,23 +1,19 @@
 ---
 title: Usar o aplicativo Adobe Experience Manager para desktop
 description: Saiba como instalar e usar o aplicativo Adobe Experience Manager desktop para trabalhar com ativos Adobe Experience Manager DAM diretamente do seu desktop Win ou Mac. Conheça as práticas recomendadas e as informações sobre solução de problemas.
-uuid: 55057617-89de-43cd-8419-1252a42ab2fb
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '4022'
 ht-degree: 0%
 
 ---
 
 
-# Use Adobe Experience Manager desktop app {#use-aem-desktop-app-v2}
+# Use [!DNL Adobe Experience Manager] desktop app {#use-aem-desktop-app-v2}
 
-Use o aplicativo Adobe Experience Manager (AEM) para desktop para acessar facilmente os ativos Adobe Experience Manager DAM em seu desktop local e usar esses ativos em qualquer aplicativo de desktop. Você pode abrir os ativos em aplicativos de desktop e editar os ativos localmente - carregue as alterações de volta para o Experience Manager com controle de versão, para compartilhar as atualizações com outros usuários. Você também pode carregar novos arquivos e hierarquias de pastas para o Experience Manager, criar pastas e excluir ativos ou pastas do Experience Manager DAM.
+Use o aplicativo de [!DNL Adobe Experience Manager] desktop para acessar facilmente os ativos Adobe Experience Manager DAM em seu desktop local e usar esses ativos em qualquer aplicativo de desktop. Você pode abrir os ativos em aplicativos de desktop e editar os ativos localmente - carregue as alterações de volta para o Experience Manager com controle de versão, para compartilhar as atualizações com outros usuários. Você também pode carregar novos arquivos e hierarquias de pastas para o Experience Manager, criar pastas e excluir ativos ou pastas do Experience Manager DAM.
 
 A integração permite que várias funções na organização gerenciem os ativos centralmente nos Ativos do Experience Manager e acessem os ativos na área de trabalho local nos aplicativos nativos do Windows ou Mac OS.
 
@@ -43,25 +39,25 @@ Antes de start com o aplicativo, entenda [como o aplicativo funciona](release-no
 
 * O status do arquivo é **[!UICONTROL Modified remotely]**: O aplicativo indica se um ativo que você baixou foi alterado no servidor Experience Manager. O aplicativo também oferece a opção de baixar a versão mais recente e atualizar sua cópia local. Consulte [como evitar conflitos](using.md#adv-workflow-collaborate-avoid-conflicts)de edição.
 
-* **[!UICONTROL Check-out]**: Se você estiver editando um arquivo ou pretender editar um arquivo, alterne o status para fazer check-out. Ele adiciona um ícone de cadeado no ativo no aplicativo e AEM interface da Web. O ícone de bloqueio indica para outros usuários evitar a edição simultânea do mesmo ativo, pois resulta em um conflito de edição.
+* **[!UICONTROL Check-out]**: Se você estiver editando um arquivo ou pretender editar um arquivo, alterne o status para fazer check-out. Ele adiciona um ícone de cadeado no ativo na interface da Web do aplicativo e do Experience Manager. O ícone de bloqueio indica para outros usuários evitar a edição simultânea do mesmo ativo, pois resulta em um conflito de edição.
 
 * **[!UICONTROL Check-in]**: Marque o ativo como seguro para que outros usuários editem sem causar um conflito de edição. Quando você carrega suas alterações, o ícone de cadeado é removido automaticamente. Alternar o status de check-in também remove o ícone de bloqueio, embora seja recomendável não fazer check-in manualmente sem fazer upload das alterações. Se você descartar suas alterações, alterne manualmente o check-in.
 
 * **[!UICONTROL Open]** ação: Basta abrir o ativo para pré-visualização-lo no aplicativo nativo. Não é recomendável editar o ativo usando essa ação, pois ele não faz check-out do ativo e outros usuários podem fazer edições que levam a conflitos de edição.
 
-* **[!UICONTROL Edit]** ação: Use a ação para modificar a imagem. Clicar em [!UICONTROL Edit] ação verifica automaticamente o ativo e adiciona um ícone de cadeado no ativo. Depois de clicar em Editar, se você não quiser editar o ativo, clique em [!UICONTROL Toggle check-in]. Para excluir, renomear ou mover ativos AEM hierarquia de pastas DAM, use as ações AEM da interface da Web e não a ação de edição.
+* **[!UICONTROL Edit]** ação: Use a ação para modificar a imagem. Clicar em [!UICONTROL Edit] ação verifica automaticamente o ativo e adiciona um ícone de cadeado no ativo. Depois de clicar em Editar, se você não quiser editar o ativo, clique em [!UICONTROL Toggle check-in]. Para excluir, renomear ou mover ativos na hierarquia de pastas do Experience Manager DAM, use as ações da interface da Web do Experience Manager e não a ação de edição.
 
 * **[!UICONTROL Download]** ação: Baixe o ativo em sua máquina local. Você pode baixar os ativos agora e editar mais tarde; trabalhar offline e carregar as alterações posteriormente. Os ativos são baixados em uma pasta de cache no seu sistema de arquivos.
 
 * **[!UICONTROL Reveal File]** ou **[!UICONTROL Reveal Folder]** ação: Enquanto os ativos são baixados para uma pasta de cache local, o aplicativo imita uma unidade de rede local e fornece um caminho local para cada ativo. Para saber esse caminho, use a opção de revelação apropriada no aplicativo. A ação Revelar é necessária para colocar ativos no aplicativo Creative Cloud. Consulte [Inserir ativos](using.md#place-assets-in-native-documents).
 
-* **[!UICONTROL Open In Web]** ação: Para visualização do ativo em AEM interface da Web, abra-o na Web. Você pode iniciar mais workflows AEM interface, como atualizar metadados ou descobrir ativos.
+* **[!UICONTROL Open In Web]** ação: Para visualização do ativo na interface da Web do Experience Manager, abra-o na Web. Você pode iniciar mais workflows na interface do Experience Manager, como atualizar metadados ou descobrir ativos.
 
-* **[!UICONTROL Delete]** ação: Exclua o ativo do repositório AEM DAM. A ação exclui a cópia original do ativo no servidor AEM. Se desejar descartar apenas as modificações no ativo local, consulte [descartar as alterações](using.md#edit-assets-upload-updated-assets).
+* **[!UICONTROL Delete]** ação: Exclua o ativo do repositório Experience Manager DAM. A ação exclui a cópia original do ativo no servidor Experience Manager. Se desejar descartar apenas as modificações no ativo local, consulte [descartar as alterações](using.md#edit-assets-upload-updated-assets).
 
-* **[!UICONTROL Upload Changes]**: O aplicativo de desktop carrega o ativo atualizado somente quando você carrega explicitamente no servidor AEM. Quando você salva suas edições, as alterações são salvas somente no computador local. Quando você faz upload, o ativo é feito check-in automaticamente e o ícone de bloqueio é removido. Consulte [editar ativos](using.md#edit-assets-upload-updated-assets).
+* **[!UICONTROL Upload Changes]**: O aplicativo de desktop carrega o ativo atualizado somente quando você carrega explicitamente no servidor Experience Manager. Quando você salva suas edições, as alterações são salvas somente no computador local. Quando você faz upload, o ativo é feito check-in automaticamente e o ícone de bloqueio é removido. Consulte [editar ativos](using.md#edit-assets-upload-updated-assets).
 
-## Ativar ações da área de trabalho AEM interface da Web {#desktopactions-v2}
+## Ativar ações da área de trabalho na interface da Web do Experience Manager {#desktopactions-v2}
 
 Na interface do usuário Ativos em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas [!UICONTROL Desktop Actions] e não são ativadas por padrão. Para ativá-lo, siga estas etapas.
 
@@ -75,7 +71,7 @@ Na interface do usuário Ativos em um navegador, você pode explorar os locais d
 
 ## Pesquisar, pesquisar e pré-visualização de ativos {#browse-search-preview-assets}
 
-Você pode navegar até, procurar e pré-visualização os ativos disponíveis no repositório AEM, tudo isso no aplicativo de desktop. Experimente o seguinte no aplicativo:
+Você pode navegar, procurar e pré-visualização os ativos disponíveis no repositório do Experience Manager, tudo isso no aplicativo de desktop. Experimente o seguinte no aplicativo:
 
 1. Navegue até uma pasta e veja algumas informações básicas dos ativos disponíveis na pasta, juntamente com miniaturas pequenas de todos os ativos.
 
@@ -86,7 +82,7 @@ Você pode navegar até, procurar e pré-visualização os ativos disponíveis n
    ![Veja uma pré-visualização maior de um ativo e](assets/large_preview_actions_da2.png "açõesVeja uma pré-visualização maior de um ativo e ações")
 
 1. Clique **[!UICONTROL Open]** ou **[!UICONTROL Edit]** para baixar o arquivo localmente e apenas visualização-o ou edite-o no aplicativo nativo, respectivamente.
-1. Pesquise usando palavras-chave para localizar um ativo relacionado no repositório AEM. Use `?` e `*` como curingas. Esses curingas substituem um único caractere ou vários caracteres, respectivamente. Filtre e classifique os resultados conforme necessário.
+1. Pesquise usando palavras-chave para localizar um ativo relacionado no repositório Experience Manager. Use `?` e `*` como curingas. Esses curingas substituem um único caractere ou vários caracteres, respectivamente. Filtre e classifique os resultados conforme necessário.
 
    ![Pesquisa de amostra usando](assets/search_wildcard_da2.png "curinga de asteriscoPesquisa de amostra usando curinga de asterisco")
 
@@ -98,7 +94,7 @@ Você pode navegar até, procurar e pré-visualização os ativos disponíveis n
 
 ## Baixar ativos {#download-assets}
 
-Você pode baixar os ativos em seu sistema de arquivos local. O aplicativo obtém os ativos AEM servidor e salva a mesma cópia no sistema de arquivos local.
+Você pode baixar os ativos em seu sistema de arquivos local. O aplicativo obtém os ativos do servidor Experience Manager e salva a mesma cópia no sistema de arquivos local.
 
 Clique no ícone ![de](assets/do-not-localize/more2_da2.png) Mais opções para obter opções e clique no ícone ![](assets/do-not-localize/download_cloud_da2.png) Download para fazer download.
 
@@ -112,7 +108,7 @@ Baixar vários ativos pode resultar em desempenho ruim se o tamanho da fila for 
 
 ![O aplicativo confirma o download de um número relativamente grande de](assets/download_confirmation_da2.png "ativosO aplicativo confirma o download de um número relativamente grande de ativos")
 
-Se as pastas forem selecionadas e baixadas, o aplicativo baixará somente os ativos armazenados diretamente nas pastas no AEM. Ele não baixa ativos de subpastas automaticamente.
+Se as pastas forem selecionadas e baixadas, o aplicativo baixará somente os ativos armazenados diretamente nas pastas no Experience Manager. Ele não baixa ativos de subpastas automaticamente.
 
 ## Abrir ativos no seu desktop {#openondesktop-v2}
 
@@ -135,21 +131,21 @@ Em alguns casos, digamos ao colocar um ativo em um documento nativo, você acess
 
 ![Ação Revelar arquivo para um](assets/revealfile_action_da2.png "ativoAção Revelar arquivo para um ativo")
 
-Clique **[!UICONTROL Reveal File]** ou **[!UICONTROL Reveal Folder]** em uma pasta para abrir o Windows Explorer ou o Mac Finder com o arquivo ou pasta pré-selecionado em sua máquina local. A opção é útil para, digamos, colocar os arquivos AEM nos aplicativos nativos que suportam a inserção ou a vinculação de arquivos locais. Para ver como colocar arquivos no Adobe InDesign, consulte [Colocar gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
+Clique **[!UICONTROL Reveal File]** ou **[!UICONTROL Reveal Folder]** em uma pasta para abrir o Windows Explorer ou o Mac Finder com o arquivo ou pasta pré-selecionado em sua máquina local. A opção é útil para, digamos, colocar os arquivos Experience Manager nos aplicativos nativos que suportam a inserção ou a vinculação de arquivos locais. Para ver como colocar arquivos no Adobe InDesign, consulte [Colocar gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
 
-A **[!UICONTROL Reveal File]** ação abre um compartilhamento de rede local, que exibe apenas os ativos disponíveis localmente, ou seja, exibe os ativos que foram revelados, baixados ou abertos/editados usando o aplicativo. O compartilhamento de rede local não carrega nenhuma alteração no AEM. Para carregar as alterações, use explicitamente **[!UICONTROL Upload Changes]** ou **[!UICONTROL Upload]** as ações no aplicativo.
+A **[!UICONTROL Reveal File]** ação abre um compartilhamento de rede local, que exibe apenas os ativos disponíveis localmente, ou seja, exibe os ativos que foram revelados, baixados ou abertos/editados usando o aplicativo. O compartilhamento de rede local não carrega nenhuma alteração no Experience Manager. Para carregar as alterações, use explicitamente **[!UICONTROL Upload Changes]** ou **[!UICONTROL Upload]** as ações no aplicativo.
 
 >[!NOTE]
 >
->Para compatibilidade com versões anteriores do aplicativo de desktop AEM v1.x, os arquivos revelados são fornecidos a partir de um compartilhamento de rede local, expondo somente os arquivos disponíveis localmente. Os caminhos da área de trabalho dos arquivos revelados são os mesmos criados pelo app v1.x.
+>Para compatibilidade com versões anteriores do aplicativo de desktop Experience Manager v1.x, os arquivos revelados são fornecidos a partir de um compartilhamento de rede local, expondo somente os arquivos disponíveis localmente. Os caminhos da área de trabalho dos arquivos revelados são os mesmos criados pelo app v1.x.
 
 >[!CAUTION]
 >
 >Não use **[!UICONTROL Reveal File]** a opção para editar ativos em aplicativos nativos. Em vez disso, use as **[!UICONTROL Edit]** ações. Para saber mais, consulte Fluxo de trabalho [avançado: colabore nos mesmos arquivos e evite conflitos](#adv-workflow-collaborate-avoid-conflicts)de edição.
 
-## Editar ativos e fazer upload de ativos atualizados para AEM {#edit-assets-upload-updated-assets}
+## Editar ativos e fazer upload de ativos atualizados para o Experience Manager {#edit-assets-upload-updated-assets}
 
-Abra ativos para edição quando quiser fazer alterações e fazer upload dos ativos atualizados para AEM servidor. Para evitar conflitos com edições de outros usuários, use o aplicativo para iniciar uma sessão de edição. Antes de editar o start, verifique se o ativo não tem um ícone de cadeado nele, ou seja, se outro usuário não está editando o ativo.
+Abra ativos para edição quando quiser fazer alterações e fazer upload dos ativos atualizados para o servidor AEExperience ManagerEM. Para evitar conflitos com edições de outros usuários, use o aplicativo para iniciar uma sessão de edição. Antes de editar o start, verifique se o ativo não tem um ícone de cadeado nele, ou seja, se outro usuário não está editando o ativo.
 
 Para editar um ativo, pesquise pelo ativo ou navegue até o local do ativo. Clique no ícone ![](assets/do-not-localize/more2_da2.png) Mais e clique em **[!UICONTROL Edit]**.
 
@@ -158,7 +154,7 @@ Use **[!UICONTROL Toggle Check-out]** para bloquear o ativo para evitar conflito
 * Você começou a editar um ativo sem verificá-lo primeiro (digamos ao abri-lo).
 * Você pretende start para editar um ativo em breve e não deseja que outras pessoas editem.
 
-Quando terminar de fazer as edições, o aplicativo exibirá o **[!UICONTROL Edited Locally]** status dos ativos alterados. Todas as alterações salvas nos ativos são somente locais até que você carregue as alterações para AEM. Para carregar um indivíduo ou alguns ativos um por um, clique **[!UICONTROL Upload Changes]** nas opções de um ativo. Cria uma versão do ativo no AEM. Usando a interface da Web do AEM Assets, você pode ver o histórico de ativos na visualização [](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html)Linha do tempo.
+Quando terminar de fazer as edições, o aplicativo exibirá o **[!UICONTROL Edited Locally]** status dos ativos alterados. Todas as alterações salvas nos ativos são somente locais até que você carregue as alterações no Experience Manager. Para carregar um indivíduo ou alguns ativos um por um, clique **[!UICONTROL Upload Changes]** nas opções de um ativo. Ela cria uma versão do ativo no Experience Manager. Usando a interface da Web de [!DNL Assets], você pode ver o histórico de ativos na visualização [Linha do tempo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html).
 
 ![Opção Carregar alterações na opção](assets/upload_changes_single1_da2.png "appCarregar alterações no aplicativo")
 
@@ -168,15 +164,15 @@ Para obter as práticas recomendadas sobre a edição colaborativa, consulte Flu
 
 Nos seguintes casos, você pode descartar suas alterações e edições no ativo local. Clique em **[!UICONTROL Discard Changes]**.
 
-* Se você não quiser salvar as alterações locais no AEM.
+* Se você não quiser salvar as alterações locais no Experience Manager.
 * Start fazendo alterações no ativo original depois de salvar algumas alterações.
 * Pare de editar o ativo, pois ele não é mais necessário.
 
 Se necessário, alterne o check-out. O ativo atualizado é removido da pasta de cache local e é baixado novamente quando você o edita ou o abre.
 
-## Carregar e adicionar novos ativos ao AEM {#upload-and-add-new-assets-to-aem}
+## Carregar e adicionar novos ativos ao Experience Manager {#upload-and-add-new-assets-to-aem}
 
-Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo da agência ou um contratante que deseja adicionar um grande número de fotos de uma fotografia ao repositório AEM. Para adicionar conteúdo novo ao AEM, clique no ícone ![](assets/do-not-localize/upload_to_cloud_da2.png) Carregar na nuvem na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Os start do aplicativo carregam o ativo e exibem uma barra de progresso na parte inferior se o ativo demorar mais para ser carregado. Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas no AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
+Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo da agência ou um contratante que deseja adicionar um grande número de fotos de uma captura ao repositório do Experience Manager. Para adicionar conteúdo novo ao Experience Manager, clique no ícone ![](assets/do-not-localize/upload_to_cloud_da2.png) Carregar na nuvem na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Os start do aplicativo carregam o ativo e exibem uma barra de progresso na parte inferior se o ativo demorar mais para ser carregado. Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas em [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -195,7 +191,7 @@ Você pode controlar a simultaneidade de upload (aceleração) em **[!UICONTROL 
 
 >[!NOTE]
 >
->Se os arquivos não forem carregados e se você estiver se conectando ao AEM 6.5.1 ou à implantação posterior, consulte estas informações [de](troubleshoot.md#upload-fails)solução de problemas.
+>Se os arquivos não forem carregados e se você estiver se conectando ao Experience Manager 6.5.1 ou a uma implantação posterior, consulte estas informações [de](troubleshoot.md#upload-fails)solução de problemas.
 
 ## Trabalhar com vários ativos {#work-with-multiple-assets}
 
@@ -223,23 +219,23 @@ O aplicativo fornece uma visualização, chamada **[!UICONTROL Edited locally]**
 
 ### Ativos de upload em massa {#bulk-upload-assets}
 
-Usuários ou organizações, como fotógrafos ou agências de criação, podem criar diversos ativos locais em cenários, como fotografias, retoque ou seleção de um conjunto maior feito fora da AEM. Eles podem carregar essas pastas locais grandes para a AEM Assets diretamente do aplicativo de desktop. As hierarquias de pastas são preservadas e todas as subpastas aninhadas e os ativos incluídos são carregados. Os ativos carregados estão imediatamente disponíveis para outros usuários do mesmo servidor também para consumo. Os ativos são carregados em segundo plano, de modo que a operação não está vinculada a uma sessão do navegador da Web.
+Usuários ou organizações, como fotógrafos ou agências de criação, podem criar diversos ativos locais em cenários, como fotografias, retoque ou seleção de um conjunto maior feito fora do Experience Manager. Eles podem carregar essas pastas locais grandes para o aplicativo de desktop [!DNL Assets] diretamente. As hierarquias de pastas são preservadas e todas as subpastas aninhadas e os ativos incluídos são carregados. Os ativos carregados estão imediatamente disponíveis para outros usuários do mesmo servidor também para consumo. Os ativos são carregados em segundo plano, de modo que a operação não está vinculada a uma sessão do navegador da Web.
 
-![Faça upload em massa de várias pastas locais do seu desktop para o](assets/upload_local_folders_da2.png "AEMBulk e carregue várias pastas locais do seu desktop para o AEM")
+![Faça upload em massa de várias pastas locais do seu desktop para o Experience](assets/upload_local_folders_da2.png "ManagerBulk e carregue várias pastas locais do seu desktop para o Experience Manager")
 
 Após o upload, se as alterações esperadas não forem refletidas no aplicativo, clique no ícone ![Atualizar ícone](assets/do-not-localize/refresh.png).
 
 >[!NOTE]
 >
->Não use a funcionalidade de upload para migrar ativos em duas implantações AEM. Em vez disso, consulte o guia [de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html)migração.
+>Não use a funcionalidade de upload para migrar ativos em duas implantações de Experience Manager. Em vez disso, consulte o guia [de](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html)migração.
 
 ### Lista dos ativos transferidos {#list-of-transferred-assets}
 
-Para visualização da lista de ativos transferidos em uma determinada sessão, consulte [Fazer upload de ativos para AEM](#upload-and-add-new-assets-to-aem).
+Para visualização da lista de ativos transferidos em uma determinada sessão, consulte [Fazer upload de ativos para o Experience Manager](#upload-and-add-new-assets-to-aem).
 
-## Fluxo de trabalho avançado: start da interface da Web do AEM Assets {#adv-workflow-start-from-aem-ui}
+## Fluxo de trabalho avançado: start da interface da [!DNL Assets] Web {#adv-workflow-start-from-aem-ui}
 
-Se necessário, inicie seu fluxo de trabalho na interface da Web da AEM Assets. O aplicativo de desktop integra-se ao AEM a ser tomado quando solicitado usando as Ações da área de trabalho.
+Se necessário, inicie seu fluxo de trabalho na interface da Web de Ativos. O aplicativo desktop integra-se à Experience Manager para assumir o controle quando solicitado usando as Ações da área de trabalho.
 
 Um caso especial de iniciar o fluxo de trabalho na interface da Web é a descoberta de ativos. A barra de pesquisa do Omnisearch na interface do usuário do Assets oferta uma experiência de pesquisa avançada e avançada. Você pode primeiro localizar um ativo desejado na Web e depois iniciar o fluxo de trabalho no aplicativo, usando [!UICONTROL Desktop Actions]. Alguns casos de exemplo incluem filtrar os resultados da pesquisa usando aspectos, localizar um ativo específico licenciado pela Adobe Stock ou uma personalização implementada pela sua organização que permite uma melhor descoberta da interface da Web.
 
@@ -251,7 +247,7 @@ A funcionalidade do aplicativo para desktop é usada quando você tenta as segui
 
 Por exemplo, as ações na interface da Web que estão disponíveis para um ativo cujo check-out foi feito no aplicativo são [!UICONTROL Open], [!UICONTROL Reveal]e [!UICONTROL Check-in].
 
-![Ações da área de trabalho na](assets/assets_web_actions_da2.png "interface da Web AEMAções da área de trabalho na interface da Web AEM")
+![Ações da área de trabalho na](assets/assets_web_actions_da2.png "interface da Web do Experience ManagerAções da área de trabalho na interface da Web do Experience Manager")
 
 >[!NOTE]
 >
@@ -261,7 +257,7 @@ Não é possível localizar as seguintes informações ou fluxo de trabalho usan
 
 * Arquivos editados localmente.
 * Arquivos que têm um conflito de edição e a maneira de resolvê-lo.
-* Carregar alterações locais em AEM.
+* Carregue as alterações locais no Experience Manager.
 * Vários status dos arquivos disponíveis localmente.
 
 Pelo contrário, você pode abrir o ativo na interface da Web a partir do aplicativo de desktop usando a **[!UICONTROL Open In Web]** ação.
@@ -278,7 +274,7 @@ Em ambientes colaborativos, vários usuários podem trabalhar no mesmo conjunto 
 
 ![Status dos](assets/edits_conflicts_status_da2.png "conflitos de ediçãoStatus dos conflitos de edição")
 
-Se um ativo baixado localmente for atualizado no servidor AEM, o aplicativo exibirá um **[!UICONTROL Modified remotely]** status. Você pode remover sua cópia local ou atualizar sua cópia local, clicando [!UICONTROL Remove] ou [!UICONTROL Update] , respectivamente. Os links na caixa de diálogo permitem que você visualização ambas as versões do ativo.
+Se um ativo baixado localmente for atualizado no servidor Experience Manager, o aplicativo exibirá um **[!UICONTROL Modified remotely]** status. Você pode remover sua cópia local ou atualizar sua cópia local, clicando [!UICONTROL Remove] ou [!UICONTROL Update] , respectivamente. Os links na caixa de diálogo permitem que você visualização ambas as versões do ativo.
 
 ![Opções para resolver o conflito quando o ativo for remotamente](assets/modified_remotely_dialog_da2.png "modificadoOpções para resolver o conflito quando o ativo for modificado remotamente")
 
@@ -288,9 +284,9 @@ Se um ativo que você está editando localmente também for atualizado no servid
 
 ## Fluxo de trabalho avançado: colocar e vincular ativos no arquivo de InDesign {#adv-workflow-place-assets-indesign}
 
-Quando você usa AEM aplicativo de desktop para abrir arquivos com ativos vinculados, os ativos são baixados previamente e aparecem colocados nos aplicativos nativos. Para que esse fluxo de trabalho funcione, seu aplicativo nativo deve oferecer suporte para a inserção de links para ativos locais e AEM deve oferecer suporte para a resolução desses links nos arquivos binários para referências do servidor.
+Quando você usa o aplicativo de desktop Experience Manager para abrir arquivos com ativos vinculados, os ativos são baixados previamente e aparecem colocados nos aplicativos nativos. Para que esse fluxo de trabalho funcione, seu aplicativo nativo deve oferecer suporte para a inserção de links para ativos locais e o Experience Manager deve oferecer suporte para a resolução desses links nos arquivos binários para referências do servidor.
 
-AEM aplicativo de desktop suporta esse fluxo de trabalho com alguns aplicativos de desktop e formatos de arquivo Adobe Creative Cloud selecionados - Adobe InDesign, Adobe Illustrator e Adobe Photoshop. O fluxo de trabalho permite que você trabalhe com eficiência com os arquivos de Creative Cloud suportados. Portanto, se o usuário A colocar alguns ativos em um arquivo de InDesign e verificá-lo no AEM, o usuário B visualizará os ativos no arquivo de InDesign, mesmo que os ativos não façam parte do arquivo. Os ativos são baixados localmente no computador do usuário B.
+O aplicativo de desktop Experience Manager suporta esse fluxo de trabalho com alguns aplicativos de desktop Adobe Creative Cloud selecionados e formatos de arquivo - Adobe InDesign, Adobe Illustrator e Adobe Photoshop. O fluxo de trabalho permite que você trabalhe com eficiência com os arquivos de Creative Cloud suportados. Portanto, se o usuário A colocar alguns ativos em um arquivo de InDesign e verificá-lo no Experience Manager, o usuário B visualizará os ativos no arquivo de InDesign mesmo que os ativos não façam parte do arquivo. Os ativos são baixados localmente no computador do usuário B.
 
 >[!NOTE]
 >
@@ -300,16 +296,16 @@ Para saber as limitações deste fluxo de trabalho, consulte os requisitos [do s
 
 Para tentar este fluxo de trabalho com um ativo de imagem e InDesign, siga estas etapas:
 
-1. Mantenha à mão um arquivo INDD com ativos colocados em AEM. Para saber como criar um arquivo INDD, consulte [Colocação de gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
-1. De dentro do aplicativo de desktop, **[!UICONTROL Edit]** o arquivo INDD com ativos colocados em AEM.
+1. Mantenha à mão um arquivo INDD com ativos colocados no Experience Manager. Para saber como criar um arquivo INDD, consulte [Colocação de gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
+1. De dentro do aplicativo de desktop, **[!UICONTROL Edit]** o arquivo INDD com ativos colocados no Experience Manager.
 1. O aplicativo baixa, o arquivo de InDesign e os ativos vinculados. Quando o InDesign abre o documento, os links são resolvidos, os ativos são baixados e os ativos são exibidos no documento do InDesign.
 1. Para colocar um novo gráfico no arquivo de InDesign, use **[!UICONTROL Reveal File]** ação no ativo. A ação baixa o ativo localmente e abre o local de compartilhamento de rede local no Windows Explorer ou no Mac Finder.
 1. Coloque o ativo revelado no documento do InDesign. Isso cria um link no documento.
-1. Depois de concluir as edições no documento do InDesign, salve-o e carregue-o no AEM usando o aplicativo de desktop.
+1. Depois de concluir as edições no documento do InDesign, salve-o e carregue-o no Experience Manager usando o aplicativo de desktop.
 
 ## Fluxo de trabalho avançado: baixar os ativos localmente {#adv-workflow-download-assets-locally}
 
-O aplicativo baixa os ativos do servidor AEM localmente em seu sistema de arquivos em vários cenários. Os downloads consomem largura de banda e espaço em disco. Saber os cenários ajuda a otimizar o tempo de espera para que os downloads sejam concluídos.
+O aplicativo baixa os ativos do servidor Experience Manager localmente em seu sistema de arquivos em vários cenários. Os downloads consomem largura de banda e espaço em disco. Saber os cenários ajuda a otimizar o tempo de espera para que os downloads sejam concluídos.
 
 Você baixa os ativos de dentro do aplicativo sob demanda. Consulte [Fazer download de ativos](#download-assets).
 
@@ -317,6 +313,6 @@ Quando você usa a [!UICONTROL Open] ação para abrir um ativo em um aplicativo
 
 Quando você revela o local de um ativo ou de uma pasta no aplicativo, o ativo ou a pasta é baixado localmente pela primeira vez e aberto no computador no compartilhamento de rede local. Consulte [Abrir ativos](#openondesktop-v2).
 
-Quando você usa a [!UICONTROL Edit] ação para editar um ativo em um aplicativo de desktop nativo, o ativo é baixado localmente se ainda não estiver disponível localmente. Consulte [Editar ativos e fazer upload de ativos atualizados para AEM](#edit-assets-upload-updated-assets).
+Quando você usa a [!UICONTROL Edit] ação para editar um ativo em um aplicativo de desktop nativo, o ativo é baixado localmente se ainda não estiver disponível localmente. Consulte [Editar ativos e fazer upload de ativos atualizados para o Experience Manager](#edit-assets-upload-updated-assets).
 
-Se o aplicativo estiver instalado e for permitido, ele concluirá as ações quando você usar [!UICONTROL Desktop Actions] a partir AEM interface da Web. O aplicativo baixa o ativo primeiro e, em seguida, conclui a ação.
+Se o aplicativo estiver instalado e for permitido, ele completará as ações quando você usar a [!UICONTROL Desktop Actions] partir da interface da Web do Experience Manager. O aplicativo baixa o ativo primeiro e, em seguida, conclui a ação.
