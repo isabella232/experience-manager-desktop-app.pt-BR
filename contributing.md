@@ -1,8 +1,8 @@
 ---
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '529'
 ht-degree: 2%
 
 ---
@@ -14,11 +14,11 @@ Este arquivo descreve como você pode contribuir, além de apontar as diretrizes
 
 ## Código de Conduta de Origem Aberta do Adobe
 
-Este projeto adotou o Código de Conduta [de Fonte Aberta do](code-of-conduct.md)Adobe. Ao contribuir para AEM documentação, você concorda em seguir este código de conduta. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Este projeto adotou o Código de Conduta [de Fonte Aberta do](code-of-conduct.md)Adobe. Ao contribuir para a [!DNL Adobe Experience Manager] documentação, você concorda em seguir este código de conduta. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Diretrizes para contribuir
 
-Embora nos congratulemos com quaisquer contributos para melhorar a documentação AEM, pedimos que os contributos sejam respeitados, sempre que possível, em certas orientações e normas. Consulte as [Diretrizes para contribuir para AEM documentação](guidelines.md) para obter mais informações.
+Embora nos congratulemos com quaisquer contributos para melhorar a [!DNL Experience Manager] documentação, pedimos que os contributos sejam respeitados, sempre que possível, em certas orientações e normas. Consulte as [Diretrizes para contribuição [!DNL Experience Manager] à documentação](guidelines.md) para obter mais informações.
 
 ## Como contribuir
 
@@ -37,11 +37,11 @@ Qual método você escolhe depende de quão confortável você está editando a 
 
 Você tem uma sugestão, uma observação sobre os documentos atuais, ou pergunta como algo é descrito? Em seguida, crie um problema. Os problemas também são excelentes se você tiver algo para contribuir, mas não se sinta confortável em editar os documentos ou fazer uma solicitação por push.
 
-Os problemas permitem que você descreva facilmente sua ideia para aprimorar os documentos e um membro da AEM Docs Team pode analisá-la. Basta clicar no link **Registrar um problema** na parte superior do painel de navegação direito em qualquer página para criar um problema.
+Os problemas permitem que você descreva facilmente sua ideia para melhorar os documentos e um membro da equipe de [!DNL Experience Manager] documentação pode analisá-la. Basta clicar no link **Registrar um problema** na parte superior do painel de navegação direito em qualquer página para criar um problema.
 
 ### Criar uma solicitação de recebimento {#create-a-pull-request}
 
-Se você vir um problema e souber exatamente como corrigi-lo, considere criar uma solicitação de baixa automática. Solicitações de puxamento permitem que você faça suas próprias edições na documentação, que são então revisadas para inclusão por um membro da equipe AEM Docs. Basta clicar no link **Editar esta página** na parte superior do painel de navegação direito em qualquer página para fazer as alterações sugeridas e criar a solicitação de baixa automática.
+Se você vir um problema e souber exatamente como corrigi-lo, considere criar uma solicitação de baixa automática. As solicitações de puxamento permitem que você faça suas próprias edições na documentação, que são então revisadas para inclusão por um membro da Equipe do [!DNL Experience Manager] Docs. Basta clicar no link **Editar esta página** na parte superior do painel de navegação direito em qualquer página para fazer as alterações sugeridas e criar a solicitação de baixa automática.
 
 Todas as solicitações pull devem ser acompanhadas por um contrato de licença de [contribuinte assinado ou CLA.](https://opensource.adobe.com/cla.html)  Isso dá à Adobe a permissão de redistribuir suas contribuições como parte do projeto. Você só precisa enviar um Adobe CLA uma vez, portanto, se você já enviou um anteriormente, é bom ir!
 
