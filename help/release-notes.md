@@ -26,7 +26,7 @@ ht-degree: 33%
 | Versões de Experience Manager suportadas | Experience Manager como Cloud Service; Experience Manager 6.5; Experience Manager 6.4; Experience Manager 6.3 (com pacote de compatibilidade) |
 | Tipo | Versão secundária |
 | Data de lançamento | 27 de ago de 2020 (Mac e Win) |
-| URLs para download | [macOS de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg); [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe); [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
+| URLs para download | [macOS de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg);  [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe);  [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
 
 ## Requisitos e pré-requisitos do sistema {#system-requirements-and-prerequisites-v2}
 
@@ -44,20 +44,20 @@ O aplicativo funciona com as seguintes versões de Experience Manager, sejam ela
 
 * [Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
 
-* [Experience Manager 6.5.0](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) ou mais recente.
+* [Experience Manager 6.5.0 ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) ou mais recente.
 
-* [Experience Manager 6.4.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) ou mais recente.
+* [Experience Manager 6.4.4 ](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) ou mais recente.
 
-* Experience Manager 6.4.0 - 6.4.3 com pacote [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidade.
+* Experience Manager 6.4.0 - 6.4.3 com [pacote de compatibilidade](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
 
 >[!NOTE]
 >
 >O suporte do aplicativo para desktop para o Experience Manager 6.3 está obsoleto. O Adobe recomenda atualizar para uma versão mais recente e compatível do Adobe Experience Manager.
->O Experience Manager 6.3.3.1 ou posterior funciona com o aplicativo desktop após a instalação do pacote [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidade. Esse pacote não está disponível para a Experience Manager 6.3, pois nenhum pacote de [serviços está planejado](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>O Experience Manager 6.3.3.1 ou posterior funciona com o aplicativo de desktop após a instalação do pacote de [compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Esse pacote não está disponível para Experience Manager 6.3, pois nenhum [service packs está planejado](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
 A versão do aplicativo que você pretende instalar no computador local requer uma versão específica do servidor do Adobe Experience Manager/componentes adicionais do servidor (service packs, hot fixes ou pacotes de recursos). Entre em contato com o administrador da Adobe Experience Manager para obter ajuda.
 
-### Support for different assets and file types {#support-for-file-types}
+### Suporte para diferentes ativos e tipos de arquivos {#support-for-file-types}
 
 O aplicativo suporta ativos armazenados no Adobe Experience Manager que representam arquivos binários para suas operações básicas. A abertura de arquivos no aplicativo de desktop nativo depende da associação do sistema operacional dos tipos de arquivos específicos, como PNG ou JPG, para aplicativos específicos, como Mac Preview ou Adobe Photoshop.
 
@@ -69,7 +69,7 @@ Alguns tipos de arquivo oferecem suporte para a inserção de ativos vinculados 
 
 O recurso é compatível com as versões Adobe Creative Cloud 2018 e Adobe Creative Cloud 2019 do aplicativo acima. O aplicativo usa uma abordagem heurística e de melhor correspondência para mapear os caminhos de desktop locais de ativos vinculados a URLs no servidor Experience Manager. Baseia-se em algumas suposições:
 
-* Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
+* Os caminhos para os arquivos colocados no aplicativo nativo usam um caminho de área de trabalho global (posicionado a partir do compartilhamento de rede local mostrado com a opção [!UICONTROL Reveal]).
 
 * Os caminhos são armazenados no registro XMP do arquivo pelo aplicativo nativo.
 
@@ -79,7 +79,7 @@ O recurso é compatível com as versões Adobe Creative Cloud 2018 e Adobe Creat
 
 ## Novos recursos e melhorias {#whats-new-added}
 
-To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
+Para saber mais detalhes, consulte [Novidades da v2.0](introduction.md#whats-new-v2).
 
 **Atualizações no app v2.0.3**
 
@@ -105,15 +105,15 @@ As correções e atualizações de erros são:
 
 As correções e atualizações de erros são:
 
-* Permitir que a opção configure o diretório para corresponder ao `%Temp%` `%APPDATA%` caminho. <!-- CQ-4282665 -->
+* Permita que a opção configure o diretório `%Temp%` para corresponder ao caminho `%APPDATA%`. <!-- CQ-4282665 -->
 
 * Permita que os usuários façam logon no Autor do Experience Manager por meio da autenticação Okta SAML. <!-- CQ-4278134 -->
 
 ## Instruções de instalação {#installation-instructions-v2}
 
-To know how to install and configure the app, see [Install Experience Manager desktop app](install-upgrade.md).
+Para saber como instalar e configurar o aplicativo, consulte [Instalar o aplicativo Experience Manager desktop](install-upgrade.md).
 
-If you are upgrading from a previous Experience Manager desktop app, you must follow these best practices for transitioning that are listed at [upgrade from previous version](install-upgrade.md#upgrade-from-previous-version).
+Se estiver atualizando de um aplicativo de desktop Experience Manager anterior, você deve seguir essas práticas recomendadas para a transição que estão listadas em [atualização da versão anterior](install-upgrade.md#upgrade-from-previous-version).
 
 ## Observações importantes sobre como funciona o aplicativo {#how-app-works}
 
@@ -123,7 +123,7 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
    * Se quiser trabalhar com o ativo no desktop, você precisa abrir, editar ou baixar explicitamente no desktop, individualmente, em uma pasta ou por meio de várias seleções.
 
-   * If you want to get local changes to assets uploaded to Experience Manager, you need to select [!UICONTROL Upload Changes], either individually or via multi-selection.
+   * Se quiser obter alterações locais em ativos carregados no Experience Manager, selecione [!UICONTROL Upload Changes] individualmente ou por meio de várias seleções.
 
    * O aplicativo não é um &quot;cliente de sincronização&quot; que sincroniza ativos no desktop e no Experience Manager.
 
@@ -145,9 +145,9 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 
 **Problemas da interface do usuário:**
 
-* Às vezes, a interface do aplicativo de desktop pode ficar em branco. Right-click and click [!UICONTROL Refresh] to re-load the application. Após essa atualização, você start na raiz do repositório DAM. As atualizações ou os status de seus ativos são retidos. <!-- CQ-4270267 -->
+* Às vezes, a interface do aplicativo de desktop pode ficar em branco. Clique com o botão direito do mouse e em [!UICONTROL Refresh] para recarregar o aplicativo. Após essa atualização, você start na raiz do repositório DAM. As atualizações ou os status de seus ativos são retidos. <!-- CQ-4270267 -->
 
-* Difícil navegar pelas pastas/resultados de pesquisa sem um teclado de rastreamento ou ponteiro do mouse. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
+* Difícil navegar pelas pastas/resultados de pesquisa sem um teclado de rastreamento ou ponteiro do mouse. A barra de rolagem pode não aparecer com dispositivos do mouse sem a roda do mouse. <!-- CQ-4269947 -->
 
 * Raramente, a barra de andamento não é exibida corretamente quando o ativo de upload é alterado.
 
