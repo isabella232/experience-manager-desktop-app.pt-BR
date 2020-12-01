@@ -25,9 +25,9 @@ O aplicativo para desktop Adobe Experience Manager (AEM) inclui utilitários que
 
 ![diagrama do aplicativo desktop](assets/aem-desktopapp-architecture.png)
 
-Com essa arquitetura, o aplicativo desktop intercepta chamadas do sistema de arquivos (abrir, fechar, ler, gravar e assim por diante) para o compartilhamento de rede montado e as converte em chamadas HTTP nativas AEM para o servidor AEM. Os arquivos são armazenados em cache localmente. Para obter mais detalhes, consulte [Usar AEM aplicativo para desktop v1.x](use-app-v1.md).
+Com essa arquitetura, o aplicativo desktop intercepta chamadas do sistema de arquivos (abrir, fechar, ler, gravar e assim por diante) para o compartilhamento de rede montado e as converte em chamadas HTTP nativas AEM para o servidor AEM. Os arquivos são armazenados em cache localmente. Para obter mais detalhes, consulte [Usar AEM aplicativo de desktop v1.x](use-app-v1.md).
 
-## AEM desktop app component overview {#desktop-app-component-overview}
+## Visão geral do componente do aplicativo para desktop AEM {#desktop-app-component-overview}
 
 o aplicativo desktop inclui os seguintes componentes:
 
@@ -130,23 +130,23 @@ Você deve levar em conta fatores adicionais quando vários usuários tentarem t
 
 Se o desempenho do WebDAV/SMB diminuir drasticamente quando vários usuários trabalham simultaneamente, você pode configurar algumas coisas no AEM, o que pode ajudar a melhorar o desempenho.
 
-## Atualizar workflows transitórios de ativos {#update-asset-transient-workflows}
+## Atualizar workflows transientes de ativos {#update-asset-transient-workflows}
 
 Você pode melhorar o desempenho no lado da AEM, habilitando workflows transitórios para o fluxo de trabalho do Ativo de atualização do DAM. Habilitar workflows transitórios reduz o poder de processamento necessário para atualizar ativos quando eles são criados ou modificados em AEM.
 
-1. Navegue até `/miscadmin` a instância AEM a ser configurada (por exemplo, `http://[Server]:[Port]/miscadmin`).
+1. Navegue até `/miscadmin` na instância AEM a ser configurada (por exemplo, `http://[Server]:[Port]/miscadmin`).
 1. Na árvore de navegação, expanda **Ferramentas** > **Fluxo de trabalho** > **Modelos** > **dam**.
-1. Duplo clique em Ativo **de atualização** DAM.
-1. No painel de ferramentas flutuantes, alterne para a guia **Página** e clique em Propriedades **** da página.
-1. Marque a caixa de seleção Fluxo de trabalho **temporário e clique em** OK ****.
+1. Clique no duplo **Ativo de atualização do DAM**.
+1. No painel de ferramentas flutuantes, alterne para a guia **Página** e clique em **Propriedades da página**.
+1. Marque a caixa de seleção **Fluxo de trabalho temporário** e clique em **OK**.
 
 ### Ajustar fila de Fluxo de trabalho transitório do Granite {#adjust-granite-transient-workflow-queue}
 
 Outro método para melhorar o desempenho AEM é configurar o valor máximo de trabalhos paralelos para o trabalho da Fila de Fluxo de Trabalho Transitório Granite. O valor recomendado é aproximadamente a metade do número da CPU disponível com o servidor. Para ajustar o valor, execute estas etapas:
 
 1. Navegue até */system/console/configMgr* na instância de AEM a ser configurada (por exemplo, `http://[aem_server]:[port]/system/console/configMgr`).
-1. Procure **QueueConfiguration** e clique para abrir cada tarefa até localizar o trabalho **Granite Transient Workflow Queue** . Clique em Editar ao lado.
-1. Altere o valor **Máximo de Trabalhos** Paralelos e clique em **Salvar**.
+1. Procure **QueueConfiguration** e clique para abrir cada tarefa até localizar a tarefa **Granite Transient Workflow Queue**. Clique em Editar ao lado.
+1. Altere o valor **Máximo de Trabalhos Paralelos** e clique em **Salvar**.
 
 ## Configuração AWS {#aws-configuration}
 
@@ -154,7 +154,7 @@ Devido às limitações de largura de banda da rede, o desempenho do WebDAV/SMB 
 
 Essa medida aumenta especificamente a quantidade de largura de banda de rede disponível para o servidor. Estes são alguns detalhes:
 
-* A quantidade de largura de banda de rede dedicada a uma instância AWS aumenta à medida que o tamanho da instância aumenta. Para obter informações sobre a largura de banda disponível para cada tamanho de instância, consulte a documentação [](https://aws.amazon.com/ec2/instance-types/)AWS.
+* A quantidade de largura de banda de rede dedicada a uma instância AWS aumenta à medida que o tamanho da instância aumenta. Para obter informações sobre a largura de banda disponível para cada tamanho de instância, consulte [documentação AWS](https://aws.amazon.com/ec2/instance-types/).
 * Ao solucionar problemas para um cliente grande, o Adobe configurou o tamanho de sua instância AEM para c4.8xlarge, principalmente para os 4000 Mbps de largura de banda dedicada que ele fornece.
 * Se houver um expedidor à frente da instância AEM, verifique se ele tem o tamanho apropriado. Se a instância AEM fornecer 4000 Mbps, mas o dispatcher fornecer apenas 500 Mbps, a largura de banda efetiva será de apenas 500 Mbps. É porque o dispatcher cria um gargalo de rede.
 
@@ -238,7 +238,7 @@ Para limpar o cache, exclua o diretório &lt;Encoded AEM Endpoint>.
 >
 >A partir AEM aplicativo de desktop versão 1.5, há uma opção na interface do usuário do aplicativo de desktop para limpar o cache.
 
-## Como encontrar a versão da área de trabalho AEM {#finding-the-aem-desktop-version}
+## Localizando a versão da área de trabalho AEM {#finding-the-aem-desktop-version}
 
 O procedimento para determinar a versão da área de trabalho AEM é o mesmo para Windows e Mac OS.
 
@@ -271,7 +271,7 @@ Independentemente do comportamento, o arquivo permanece inalterado quando você 
 
 A API do servidor requer cabeçalhos adicionais, Destino X, Profundidade X e Substituição X para que as operações de movimentação e cópia funcionem. O dispatcher não passa esses cabeçalhos por padrão, o que resulta em falha dessas operações. Para obter mais informações, consulte [Conexão com AEM atrás de um Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
-## Solução de problemas AEM conexão de desktop {#troubleshooting-aem-desktop-connection-issues}
+## Solução de problemas AEM conexão da área de trabalho {#troubleshooting-aem-desktop-connection-issues}
 
 ### Problema de redirecionamento SAML {#saml-redirect-issue}
 
@@ -282,15 +282,15 @@ O motivo mais comum para problemas com a área de trabalho AEM se conectando à 
 1. Substitua o URL pela instância AEM público alvo, por exemplo `http://localhost:4502/content/dam.json`.
 1. Faça logon no AEM.
 1. Depois de fazer logon, verifique o endereço atual do navegador na barra de endereços. Deve corresponder ao URL inserido inicialmente.
-1. Verifique se todos os itens anteriores correspondem `/content/dam.json` ao valor AEM do público alvo configurado na área de trabalho AEM.
+1. Verifique se tudo antes de `/content/dam.json` corresponde ao valor AEM do público alvo configurado na área de trabalho AEM.
 
-### Problema de configuração de SSL {#ssl-configuration-issue}
+### Problema de configuração SSL {#ssl-configuration-issue}
 
 As bibliotecas que AEM aplicativo de desktop usa para comunicação HTTP utilizam imposição rigorosa de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar AEM aplicativo de desktop. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
 
-## Uso do AEM Desktop com o dispatcher {#using-aem-desktop-with-dispatcher}
+## Uso da área de trabalho AEM com o dispatcher {#using-aem-desktop-with-dispatcher}
 
-AEM desktop trabalha com implantações AEM atrás de um dispatcher, que é uma configuração padrão e recomendada para AEM servidores. AEM despachantes na frente dos ambientes de criação AEM geralmente são configurados para ignorar o armazenamento em cache de ativos DAM. Portanto, os despachantes não fornecem armazenamento em cache adicional do ponto de vista da área de trabalho AEM. Verifique se a configuração do dispatcher está ajustada para funcionar AEM desktop. Para obter detalhes adicionais, consulte [Conexão com AEM atrás de um expedidor](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
+AEM desktop trabalha com implantações AEM atrás de um dispatcher, que é uma configuração padrão e recomendada para AEM servidores. AEM despachantes na frente dos ambientes de criação AEM geralmente são configurados para ignorar o armazenamento em cache de ativos DAM. Portanto, os despachantes não fornecem armazenamento em cache adicional do ponto de vista da área de trabalho AEM. Verifique se a configuração do dispatcher está ajustada para funcionar AEM desktop. Para obter mais detalhes, consulte [Ligar a AEM atrás de um dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
 ## Verificando arquivos de registro {#checking-for-log-files}
 
