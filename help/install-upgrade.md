@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Install Adobe Experience Manager desktop app {#install-app-v2}
+# Instalar o aplicativo de desktop Adobe Experience Manager {#install-app-v2}
 
 Usando o aplicativo Adobe Experience Manager para desktop, os recursos no Experience Manager são facilmente disponíveis em seu desktop local e podem ser usados em qualquer aplicativo nativo de desktop. Os ativos podem ser visualizados, abertos em aplicativos nativos da área de trabalho, revelados no Mac Finder ou no Windows Explorer para serem colocados em outros documentos e alterados localmente - as alterações são salvas no Experience Manager quando você carrega e uma nova versão é criada no repositório.
 
@@ -29,19 +29,19 @@ Tal integração permite que várias funções na organização
 
 Para usar o aplicativo de desktop Experience Manager,
 
-* Certifique-se de que sua versão do Experience Manager seja suportada pelo aplicativo de desktop Experience Manager. Consulte os requisitos [do](release-notes.md#system-requirements-and-prerequisites-v2) sistema abaixo.
+* Certifique-se de que sua versão do Experience Manager seja suportada pelo aplicativo de desktop Experience Manager. Consulte os [requisitos do sistema](release-notes.md#system-requirements-and-prerequisites-v2) abaixo.
 
-* Baixe e instale o aplicativo. Consulte [instalar o aplicativo](#install-v2) de desktop abaixo.
+* Baixe e instale o aplicativo. Consulte [instalar aplicativo de desktop](#install-v2) abaixo.
 
-* Teste a conexão usando alguns ativos. Consulte [como procurar ativos](using.md#browse-search-preview-assets).
+* Teste a conexão usando alguns ativos. Consulte [como navegar e procurar ativos](using.md#browse-search-preview-assets).
 
 ## Requisitos do sistema, pré-requisitos e links de download {#tech-specs-v2}
 
-Para obter informações detalhadas, consulte as notas [de versão do aplicativo para desktop](release-notes.md)Experience Manager.
+Para obter informações detalhadas, consulte as [notas de versão do aplicativo para desktop Experience Manager](release-notes.md).
 
-## Upgrade from a previous version {#upgrade-from-previous-version}
+## Atualizar de uma versão anterior {#upgrade-from-previous-version}
 
-Se você for um usuário da versão 1.x do aplicativo para desktop, entenda as diferenças e as semelhanças entre a versão anterior e a versão mais recente do aplicativo. Veja [as novidades no aplicativo](introduction.md#whats-new-v2) para desktop e [como o aplicativo funciona](release-notes.md#how-app-works)
+Se você for um usuário da versão 1.x do aplicativo para desktop, entenda as diferenças e as semelhanças entre a versão anterior e a versão mais recente do aplicativo. Veja [o que há de novo no aplicativo de desktop](introduction.md#whats-new-v2) e [como o aplicativo funciona](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
@@ -55,27 +55,27 @@ Para atualizar de uma versão anterior do aplicativo, siga estas instruções:
 
 1. Reinicie a máquina.
 
-1. [Baixe](release-notes.md) e [instale](#install-v2) o aplicativo mais recente. Siga as instruções abaixo.
+1. [](release-notes.md) Baixe e  [](#install-v2) instale o aplicativo mais recente. Siga as instruções abaixo.
 
 ## Instalar {#install-v2}
 
 Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer aplicativo de desktop Adobe Experience Manager v1.x existente antes de instalar o aplicativo mais recente. Para obter mais informações, consulte acima.
 
-1. Baixe o instalador mais recente da página de notas [de](release-notes.md) versão.
+1. Baixe o instalador mais recente da página [notas de versão](release-notes.md).
 
 1. Mantenha o URL e as credenciais da sua implementação de Experience Manager.
 
-1. Se você estiver atualizando de outra versão do aplicativo, consulte [atualizar o aplicativo](#upgrade-from-previous-version)para desktop.
+1. Se você estiver atualizando de outra versão do aplicativo, consulte [atualizar aplicativo desktop](#upgrade-from-previous-version).
 
-1. Ignore esta etapa se estiver usando Experience Manager como Cloud Service, Experience Manager 6.4.4 ou posterior ou Experience Manager 6.5.0 ou posterior. Certifique-se de que a configuração do Experience Manager atende aos requisitos de compatibilidade mencionados nas notas [de](release-notes.md)versão. Se necessário, baixe o pacote [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) compatibilidade aplicável e instale-o usando o Gerenciador de pacotes de Experience Manager como administrador de Experience Manager. Para instalar um pacote, consulte [Como trabalhar com pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Ignore esta etapa se estiver usando Experience Manager como Cloud Service, Experience Manager 6.4.4 ou posterior ou Experience Manager 6.5.0 ou posterior. Certifique-se de que a configuração do Experience Manager atende aos requisitos de compatibilidade mencionados nas [notas de versão](release-notes.md). Se necessário, baixe o [pacote de compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) aplicável e instale-o usando o Gerenciador de pacotes de Experience Manager como administrador de Experience Manager. Para instalar um pacote, consulte [Como trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Execute o binário do instalador e siga as instruções na tela para instalar.
 
-1. No Windows, o instalador pode solicitar a instalação `Visual Studio C++ Redistributable 2015`. Siga as instruções na tela para instalá-la. Se a instalação falhar, instale-a manualmente. Baixe o instalador [daqui](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e instale os arquivos `vc_redist.x64.exe` e `vc_redist.x86.exe` arquivos. Execute novamente o instalador do aplicativo para [!DNL Experience Manager] desktop.
+1. No Windows, o instalador pode solicitar a instalação de `Visual Studio C++ Redistributable 2015`. Siga as instruções na tela para instalá-la. Se a instalação falhar, instale-a manualmente. Baixe o instalador de [here](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e instale os arquivos `vc_redist.x64.exe` e `vc_redist.x86.exe`. Execute novamente o instalador do aplicativo para desktop [!DNL Experience Manager].
 
 1. Reinicie a máquina, conforme solicitado. Inicie e configure o aplicativo de desktop.
 
-1. Para conectar o aplicativo a um [!DNL Experience Manager] repositório, clique no ícone do aplicativo na bandeja e inicie o aplicativo. Forneça o endereço do [!DNL Experience Manager] servidor no formato `https://[aem_server]:[port]/`.
+1. Para conectar o aplicativo a um repositório [!DNL Experience Manager], clique no ícone do aplicativo na bandeja e inicie o aplicativo. Forneça o endereço do servidor [!DNL Experience Manager] no formato `https://[aem_server]:[port]/`.
 
    Clique em **[!UICONTROL Connect]** e forneça as credenciais.
 
@@ -85,7 +85,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
    >[!CAUTION]
    >
-   >Verifique se não há espaços à esquerda ou à direita antes ou depois do endereço do [!DNL Experience Manager] servidor. Caso contrário, o aplicativo não poderá se conectar ao [!DNL Experience Manager] servidor.
+   >Verifique se não há espaços à esquerda ou à direita antes ou depois do endereço do servidor [!DNL Experience Manager]. Caso contrário, o aplicativo não poderá se conectar ao servidor [!DNL Experience Manager].
 
 1. Após uma conexão bem-sucedida, você pode visualização a lista de pastas e ativos disponíveis na pasta raiz do [!DNL Experience Manager] DAM. Você pode navegar pelas pastas dentro do aplicativo.
 
@@ -93,13 +93,13 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
    *Figura: O aplicativo exibe o conteúdo do DAM após o logon*
 
-1. (Experience Manager 6.5.1 ou posterior) Se você estiver usando um aplicativo desktop com o Experience Manager 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte Conector [do](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) Azure ou conector [](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)S3.
+1. (Experience Manager 6.5.1 ou posterior) Se você estiver usando um aplicativo desktop com o Experience Manager 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte [Conector do Azure](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) ou [Conector S3](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
    Se você for um cliente do Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe.
 
 ## Definir preferências {#set-preferences}
 
-Para alterar as preferências, clique no ícone ![](assets/do-not-localize/more_options_da2.png) Mais opções e no ícone **[!UICONTROL Preference]** ![Preferências](assets/do-not-localize/preferences_icon_da2.png). Na **[!UICONTROL Preferences]** janela, ajuste os valores do seguinte:
+Para alterar as preferências, clique no ícone ![Mais opções](assets/do-not-localize/more_options_da2.png) e **[!UICONTROL Preference]** ![Ícone de preferências](assets/do-not-localize/preferences_icon_da2.png). Na janela **[!UICONTROL Preferences]**, ajuste os valores do seguinte:
 
 * [!UICONTROL Launch application on login].
 
@@ -107,7 +107,7 @@ Para alterar as preferências, clique no ícone ![](assets/do-not-localize/more_
 
 * **[!UICONTROL Cache Directory]**: Local do cache local do aplicativo (ele contém os ativos baixados localmente).
 
-* **[!UICONTROL Network Drive Letter]**: A letra da unidade usada para mapear para o [!DNL Experience Manager] DAM. Não altere isso se não tiver certeza. O aplicativo pode mapear para qualquer letra de unidade no Windows. Se dois usuários inserirem ativos de letras de unidade diferentes, eles não poderão ver os ativos colocados uns pelos outros. O caminho dos ativos é alterado. Os ativos permanecem colocados no arquivo binário (digamos, INDD) e não são removidos. O aplicativo lista todas as letras de unidade disponíveis e, por padrão, usa a última letra disponível que normalmente é `Z`.
+* **[!UICONTROL Network Drive Letter]**: A letra da unidade usada para mapear para o  [!DNL Experience Manager] DAM. Não altere isso se não tiver certeza. O aplicativo pode mapear para qualquer letra de unidade no Windows. Se dois usuários inserirem ativos de letras de unidade diferentes, eles não poderão ver os ativos colocados uns pelos outros. O caminho dos ativos é alterado. Os ativos permanecem colocados no arquivo binário (digamos, INDD) e não são removidos. O aplicativo lista todas as letras de unidade disponíveis e, por padrão, usa a última letra disponível que normalmente é `Z`.
 
 * **[!UICONTROL Maximum Cache Size]**: Cache permitido no disco rígido em GB que é usado para armazenar ativos baixados localmente.
 
@@ -119,7 +119,7 @@ Para alterar as preferências, clique no ícone ![](assets/do-not-localize/more_
 
 * **[!UICONTROL Upload Acceleration]**: Ao fazer upload de ativos, o aplicativo pode usar uploads simultâneos para melhorar a velocidade de upload. Você pode aumentar a simultaneidade do upload movendo o controle deslizante para a direita. O controle deslizante na extremidade esquerda significa ausência de simultaneidade (carregamento de um único segmento), a posição central corresponde a 10 threads simultâneos e o limite máximo na extremidade direita corresponde a 20 threads simultâneos. Um limite de simultaneidade mais alto requer mais consumo de recursos do processador da máquina local.
 
-Para atualizar as preferências indisponíveis, faça logout do [!DNL Experience Manager] servidor. Depois de atualizar as preferências, clique em ![Salvar preferências](assets/do-not-localize/save_preferences_da2.png) para salvar as alterações.
+Para atualizar as preferências indisponíveis, faça logout do servidor [!DNL Experience Manager]. Depois de atualizar as preferências, clique em ![Salvar preferências](assets/do-not-localize/save_preferences_da2.png) para salvar as alterações.
 
 ![Preferências e configurações do aplicativo para desktop](assets/preferences_da2.png)
 
@@ -129,7 +129,7 @@ Para atualizar as preferências indisponíveis, faça logout do [!DNL Experience
 
 Para desinstalar o aplicativo no Windows, siga estas etapas:
 
-1. Carregue todas as alterações para evitar [!DNL Experience Manager] a perda de edições. Consulte [Editar ativos e fazer upload de ativos atualizados para [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Faça logoff e [!UICONTROL Exit] o aplicativo.
+1. Carregue todas as alterações em [!DNL Experience Manager] para evitar a perda de edições. Consulte [Editar ativos e carregar ativos atualizados para [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Faça logoff e [!UICONTROL Exit] o aplicativo.
 
 1. Remova o aplicativo conforme você removeria qualquer outro aplicativo do SO. Desinstale-o de Adicionar e remova programas no Windows.
 
@@ -141,9 +141,9 @@ Para desinstalar o aplicativo no Windows, siga estas etapas:
 
 Para desinstalar o aplicativo no Mac, siga estas etapas:
 
-1. Carregue todas as alterações para evitar [!DNL Experience Manager] a perda de edições. Consulte [Editar ativos e fazer upload de ativos atualizados para [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Faça logoff e [!UICONTROL Exit] o aplicativo.
+1. Carregue todas as alterações em [!DNL Experience Manager] para evitar a perda de edições. Consulte [Editar ativos e carregar ativos atualizados para [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Faça logoff e [!UICONTROL Exit] o aplicativo.
 
-1. Remova o `Adobe Experience Manager Desktop.app` de `/Applications`.
+1. Remova `Adobe Experience Manager Desktop.app` de `/Applications`.
 
 Como alternativa, para limpar caches de aplicativos internos no Mac e desinstalar o aplicativo, você pode executar o seguinte comando no terminal:
 
