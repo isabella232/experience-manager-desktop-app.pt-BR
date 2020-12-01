@@ -26,7 +26,7 @@ Para o aplicativo de desktop versão v1.x, os links a seguir são os links de do
 | Versão | 1.10 (1.10.0.6 no Mac e 1.10.0.3 no Windows) |
 | Tipo | Versão secundária |
 | Data | 1.10.0.6 (Mac): 15 de abril de 2020; 1.10.0.3 (Win): 31 de agosto de 2018 |
-| URLs para download | [Mac OS X 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg); [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe); [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
+| URLs para download | [Mac OS X 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg);  [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe);  [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
 | Compatibilidade | AEM 6.5.x; AEM 6.4.x; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
@@ -49,19 +49,19 @@ A Adobe recomenda usar a versão mais recente do aplicativo AEM desktop para apr
 
 A versão do aplicativo AEM desktop que você está planejando instalar no computador local requer uma versão específica AEM servidor/componentes adicionais do servidor (service packs, hot fixes ou pacotes de recursos). Verifique se o servidor AEM está configurado corretamente antes de se conectar a ele pela primeira vez. Se precisar de ajuda, entre em contato com o administrador AEM.
 
-Consulte a matriz [de compatibilidade](#compatibilitymatrix) detalhada no final deste documento para avaliar os pré-requisitos para sua configuração.
+Consulte a [matriz de compatibilidade detalhada](#compatibilitymatrix) no final deste documento para avaliar os pré-requisitos para sua configuração.
 
-## What&#39;s New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
+## Novidades AEM aplicativo de desktop 1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM aplicativo de desktop 1.10 foca na melhoria da experiência do usuário em uploads grandes, informações sobre as operações em segundo plano e experiência otimizada ao abrir ativos com arquivos vinculados (como o InDesign).
 
 >[!NOTE]
 >
->Se você estiver usando o macOS 10.15.4 ou mais recente, use pelo menos a versão 1.10.0.6 do aplicativo. Esta versão de patch está em conformidade com os requisitos [de autenticação da](https://developer.apple.com/news/?id=04102019a)Apple.
+>Se você estiver usando o macOS 10.15.4 ou mais recente, use pelo menos a versão 1.10.0.6 do aplicativo. Esta versão de patch está em conformidade com [os requisitos de autenticação da Apple](https://developer.apple.com/news/?id=04102019a).
 
 **Edição local / Check-out**: Os uploads automáticos de alterações salvas em ativos podem ser desativados na janela de status. Dessa forma, o usuário pode continuar trabalhando em arquivos e salvando as alterações e, quando estiver pronto, decidir carregar todas as alterações.
 
-**Janela** Status do ativo simplificado. A janela de status foi simplificada. A [!UICONTROL Uploads] guia agora mostra ativos individuais, bem como carregamentos de pasta ou em massa. A guia Carregamentos em massa anterior foi removida.
+**Janela** Status do ativo simplificado. A janela de status foi simplificada. A guia [!UICONTROL Uploads] agora mostra ativos individuais, bem como uploads de pastas ou em massa. A guia Carregamentos em massa anterior foi removida.
 
 **Ícone de aplicativo para indicar uploads** em massa. O ícone do aplicativo indica que um upload em massa está em andamento, mostrando uma sobreposição de &quot;transferência&quot;.
 
@@ -71,7 +71,7 @@ AEM aplicativo de desktop 1.10 foca na melhoria da experiência do usuário em u
 
 ## Instruções de instalação {#installation-instructions}
 
-Para obter instruções detalhadas, consulte [Instalar e configurar AEM aplicativo](install-configure-app-v1.md)para desktop.
+Para obter instruções detalhadas, consulte [Instalar e configurar AEM aplicativo de desktop](install-configure-app-v1.md).
 
 ## Melhorias nas versões anteriores {#enhancements-in-the-previous-versions}
 
@@ -91,7 +91,7 @@ Esta versão estende e substitui as versões anteriores do aplicativo para deskt
 
 * **Versão 1.3**: aprimoramentos de desempenho e estabilidade de acesso a arquivos e salvamento de alterações em AEM, especialmente em aplicativos de desktop Creative Cloud, como InDesign, Illustrator ou Photoshop. O objetivo era fornecer aos usuários uma experiência mais semelhante à de um desktop local ao trabalhar com arquivos, enquanto manipulava simultaneamente as operações de transferência de dados de rede em segundo plano.
 
-### Aprimoramentos disponíveis desde AEM aplicativo para desktop 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
+### Aprimoramentos disponíveis desde AEM aplicativo de desktop 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
 O aplicativo de desktop Adobe Experience Manager (AEM) 1.9.1 era uma versão de correção para resolver alguns problemas principais do cliente em relação à finalização de ativos e à cópia de arquivos do compartilhamento de rede para um diretório local.
 
@@ -101,9 +101,11 @@ O aplicativo de desktop Adobe Experience Manager (AEM) 1.9.1 era uma versão de 
 
 AEM aplicativo de desktop 1.9 focado na melhoria da experiência do usuário em uploads grandes, informações sobre operações em segundo plano e experiência otimizada ao abrir ativos com arquivos vinculados (como o InDesign).
 
-**Uploads** reiniciáveis Para uploads, especialmente em arquivos grandes, há uma opção para pausá-los/retomá-los na nova janela Status do ativo.
+**Uploads**
+reiniciáveisPara uploads, especialmente em arquivos grandes, há uma opção para pausá-los/retomá-los na nova janela Status do ativo.
 
-**Janela** de status de ativo aprimoradaUma janela de status de ativo aprimorada fornece as seguintes informações sobre ativos.
+**Janela de status de ativo aprimoradaUma janela de status de ativo aprimorada fornece as seguintes informações sobre ativos.**
+
 
 [!UICONTROL Changes]
 
@@ -135,7 +137,7 @@ AEM aplicativo de desktop 1.9 focado na melhoria da experiência do usuário em 
 
 * Se um usuário optar por abrir ou editar vários arquivos da interface do usuário do Experience Manager Assets, eles serão agrupados. Por exemplo, myasset.jpeg e mais 4 arquivos.
 
-* Ao baixar Documentos de InDesigns, incluindo ativos vinculados armazenados no AEM Assets, o aplicativo de desktop baixará todos os Ativos vinculados primeiro, antes de abrir o [!UICONTROL Adobe InDesign] documento e indicará o download dos ativos vinculados. Por exemplo, 5 de 24.
+* Ao baixar Documentos de InDesigns, incluindo ativos vinculados armazenados no AEM Assets, o aplicativo de desktop baixará todos os Ativos vinculados primeiro, antes de abrir o documento [!UICONTROL Adobe InDesign] e indicará o download dos ativos vinculados. Por exemplo, 5 de 24.
 
 [!UICONTROL Bulk Uploads]
 
@@ -158,7 +160,7 @@ O ícone do aplicativo indicará o estado das operações em segundo plano para 
 Para melhorar a experiência do usuário ao trabalhar com documentos de InDesign que incluem ativos vinculados armazenados em AEM, o aplicativo de desktop tentará e pré-busca desses arquivos vinculados para o cache local antes de baixar e abrir o documento do InDesign. Dessa forma, o usuário terá os arquivos vinculados disponíveis localmente e não precisará aguardar mais ao acessá-los no InDesign (no painel Vínculos).
 Observe que a busca prévia só funciona se AEM reconhecer os links no lado do servidor. Um ativo com links reconhecidos terá uma lista de &quot;Referências&quot; listada na visualização Propriedades do ativo do InDesign.
 
-### Aprimoramentos disponíveis desde AEM aplicativo de desktop 1.8.x {#enhancements-available-since-aem-desktop-app-18x}
+### Aprimoramentos disponíveis desde AEM aplicativo desktop 1.8.x {#enhancements-available-since-aem-desktop-app-18x}
 
 AEM aplicativo de desktop versão 1.8.1 de acompanhamento rápido adicionou melhorias ao abrir vários arquivos ao mesmo tempo da interface de usuário AEM versão 1.8 (CQ-4237747, CQ-4238780). Os aprimoramentos no aplicativo AEM desktop 1.8 são:
 
@@ -188,7 +190,7 @@ AEM aplicativo de desktop versão 1.8.1 de acompanhamento rápido adicionou melh
 
    * (Win) O arquivo agora pode ser sincronizado depois de reverter para uma versão anterior da interface do usuário do AEM Assets (CQ-4216411).
 
-### Aprimoramentos disponíveis desde AEM aplicativo para desktop 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
+### Aprimoramentos disponíveis desde AEM aplicativo desktop 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
 * Estabilidade:
 
@@ -212,7 +214,7 @@ AEM aplicativo de desktop versão 1.8.1 de acompanhamento rápido adicionou melh
 
    * (Win) Desinstalação do Cleaner (CQ-4220906).
 
-   * [O Windows 32 bit] Installer falha ao tentar instalar o Microsoft .NET Framework v. 4.5 (CQ-4218084).
+   * [O Windows 32] bitInstaller falha ao tentar instalar o Microsoft .NET Framework v. 4.5 (CQ-4218084).
 
    * (Mac) Script manual para remover completamente os arquivos do aplicativo de desktop (CQ-4216489).
 
@@ -220,9 +222,9 @@ AEM aplicativo de desktop versão 1.8.1 de acompanhamento rápido adicionou melh
 >
 >Problemas encontrados AEM aplicativo desktop 1.7 beta carregados (que não estavam presentes na versão 1.6 não são reportados nas notas de versão).
 
-### Aprimoramentos disponíveis desde AEM aplicativo para desktop 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
+### Aprimoramentos disponíveis desde AEM aplicativo desktop 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
-* Documentação: Novas práticas [recomendadas para a documentação do aplicativo](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) v1.x.
+* Documentação: Nova documentação [Práticas recomendadas para o aplicativo v1.x](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html).
 
 * Processo de logon aprimorado para AEM:
 
@@ -264,9 +266,9 @@ AEM aplicativo de desktop versão 1.8.1 de acompanhamento rápido adicionou melh
 
    * Erro ao arrastar e soltar arquivos ao fazer upload para o AEM (CQ-4217006).
 
-### Aprimoramentos disponíveis desde AEM aplicativo para desktop 1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}
+### Aprimoramentos disponíveis desde AEM aplicativo desktop 1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
-**Versão 1.5.1.5 para Mac OS X:** A versão 1.5.1.5 oferece os seguintes benefícios:
+**Versão 1.5.1.5 para Mac OS X:** A versão 1.5.1.5 fornece os seguintes benefícios:
 
 * Novos recursos e melhorias: Adicione a funcionalidade Copiar/Colar à integração do Finder para permitir a transferência direta da área de trabalho para a AEM (CQ-4208158).
 
@@ -325,7 +327,7 @@ Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;
 
    * Melhor manipulação do URL da AEM Assets em Preferências (CQ-97388).
 
-### Aprimoramentos disponíveis desde AEM aplicativo para desktop 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
+### Aprimoramentos disponíveis desde AEM aplicativo desktop 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * Carregamento simplificado de pastas hierárquicas por meio da nova ação Criar > Carregar pasta na interface do usuário de toque.
    * Ação inicia uma operação de carregamento de pasta executada pelo aplicativo de desktop
@@ -337,7 +339,7 @@ Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;
 * Compatibilidade aprimorada com as versões mais recentes do SO
 * Correções relatadas pelo cliente
 
-### Aprimoramentos disponíveis desde AEM aplicativo para desktop 1.3 {#Enhancements-Available-Since-AEM-Desktop-App-13}
+### Aprimoramentos disponíveis desde AEM aplicativo desktop 1.3 {#Enhancements-Available-Since-AEM-Desktop-App-13}
 
 * Maior eficiência. Os usuários gastam menos tempo esperando a conclusão das operações de rede.
 * Integração aprimorada do Finder, que oferece mais estabilidade e acesso a recursos, como miniaturas.
@@ -351,7 +353,7 @@ Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;
 
 ## Lista de alterações {#list-of-changes}
 
-### Ponto de montagem no Mac {#mount-point-on-mac}
+### Ponto de montagem em Mac {#mount-point-on-mac}
 
 Desde o MacOS 10.12 (Sierra), a Apple alterou as permissões na pasta /Volumes usada para montar unidades de rede e dispositivos para torná-los mais restritivos. A criação de um novo ponto de montagem exigia direitos administrativos. Esse problema foi corrigido no MacOS 10.12.5.
 
@@ -371,7 +373,7 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
 
 >[!NOTE]
 >
->No Mac OS X, a alteração do protocolo de unidade de rede local de WebDAV para SMB1 resulta em um caminho local diferente para o mesmo ativo no repositório. Isso pode afetar os links para arquivos colocados em aplicativos Adobe Creative Cloud por meio do comando &quot;Inserir&quot;. Consulte [Usar AEM aplicativo](use-app-v1.md) para desktop para obter mais informações.
+>No Mac OS X, a alteração do protocolo de unidade de rede local de WebDAV para SMB1 resulta em um caminho local diferente para o mesmo ativo no repositório. Isso pode afetar os links para arquivos colocados em aplicativos Adobe Creative Cloud por meio do comando &quot;Inserir&quot;. Consulte [Use AEM aplicativo para desktop](use-app-v1.md) para obter mais informações.
 
 ### Manuseio de arquivos (desde 1.3) {#file-handling-since}
 
@@ -379,7 +381,7 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
 * Os arquivos com check-out feito por outros usuários são marcados como somente leitura.
 * Os arquivos são salvos em um local de unidade de rede montado por meio de um aplicativo de desktop em duas fases.
 * Na primeira fase, um arquivo é salvo localmente. Dessa forma, o usuário que estiver salvando o arquivo não precisará aguardar até que o arquivo seja totalmente transferido para o AEM e poderá retomar o trabalho assim que o arquivo for salvo.
-* Na segunda fase, o aplicativo desktop carrega um arquivo atualizado para AEM servidor após um atraso predefinido (por exemplo, 30s ). Esta operação ocorre em segundo plano. Use a opção **Mostrar status** de sincronização de arquivo em segundo plano para visualização do status da operação de upload.
+* Na segunda fase, o aplicativo desktop carrega um arquivo atualizado para AEM servidor após um atraso predefinido (por exemplo, 30s ). Esta operação ocorre em segundo plano. Use a opção **Mostrar status de sincronização de arquivo em segundo plano** para visualização do status da operação de upload.
 
 ## Avisos importantes {#important-notices}
 
@@ -402,7 +404,7 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
 ## Problemas conhecidos {#known-issues}
 
 * Geral:
-   * Os URLs do servidor são necessários para apontar para o servidor sem um caminho (por exemplo, `http://server`, `https://server`, `http://server:port`ou `https://server:port`). Caminhos de contexto e subpastas diferentes de /content/dam não são suportados (CQ-89343, CQ-87272)
+   * Os URLs do servidor são necessários para apontar para o servidor sem um caminho (por exemplo, `http://server`, `https://server`, `http://server:port` ou `https://server:port`). Caminhos de contexto e subpastas diferentes de /content/dam não são suportados (CQ-89343, CQ-87272)
 * Nomes de arquivo / localização:
    * Os nomes de arquivos e pastas com caracteres reservados não são tratados corretamente. Certifique-se de usar os nomes de arquivos e pastas que atendem aos requisitos AEM (CQ-93361, CQ-93308, CQ-89276, CQ-4217183)
    * Alguns aplicativos como o Adobe Illustrator podem criar arquivos com nomes não suportados no AEM. Por exemplo, adicionar `Converted` após a conversão de um arquivo, o que impede que ele seja carregado (CQ-4216985)
@@ -414,7 +416,7 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
    * O status de check-out e somente leitura é relatado independentemente no Finder. Isso resulta em 2 ícones de bloqueio quando um usuário faz check-out de um ativo (CQ-89507)
 * Integração do Finder:
    * Ao arrastar/soltar arquivos grandes, o Finder pode expirar enquanto os arquivos são transferidos em segundo plano. Isso resulta em um `Error - 36`. A solução alternativa é arrastar/soltar ou abrir o ativo novamente (CQ-4219628)
-   * O recarregamento manual da pasta nem sempre funciona. Solução:  aguarde 30s para que a pasta seja atualizada automaticamente. (CQ-97389)
+   * O recarregamento manual da pasta nem sempre funciona. Solução:  wait   30 s para a pasta ser atualizada automaticamente. (CQ-97389)
    * Mais informações sobre ativos... está limitado a seleções de arquivo único (CQ-89542, CQ-87656)
    * Abrir no AEM Assets... está limitado a seleções de arquivo único e pasta (CQ-83382)
    * Erro ao renomear ativos que não têm extensão (CQ-4218971)
@@ -436,7 +438,7 @@ AEM aplicativo de desktop funciona com várias versões de AEM. Consulte a matri
 
 | Versão | Revisão | Data de lançamento | Compatibilidade |
 |--- |--- |--- |--- |
-| 1.10 | 1.10.0.3 (Mac e Win) | 31 de ago de 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.9 | 1.9.1.1 (Mac e Win) | 21 de jun de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.8 | 1.8.1.0 (Mac e Win) | 28 de mar de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.7 | 1.7.0.3 (Mac e Win) | 10 de janeiro de 2018 | AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,10 | 1.10.0.3 (Mac e Win) | 31 de ago de 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,9 | 1.9.1.1 (Mac e Win) | 21 de jun de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,8 | 1.8.1.0 (Mac e Win) | 28 de mar de 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,7 | 1.7.0.3 (Mac e Win) | 10 de janeiro de 2018 | AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
