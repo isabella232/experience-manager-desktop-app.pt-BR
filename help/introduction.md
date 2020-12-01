@@ -14,7 +14,7 @@ ht-degree: 67%
 ---
 
 
-# Adobe Experience Manager desktop app overview {#overview-v2}
+# Visão geral do aplicativo para desktop Adobe Experience Manager {#overview-v2}
 
 A Adobe oferece fluxos de trabalho conectados nas soluções para viabilizar a produtividade de nível superior para os usuários direcionados e profissionais criativos. O aplicativo de desktop do Adobe Experience Manager conecta repositórios e aplicativos de desktop, incluindo a Adobe e terceiros, para fornecer acesso mais rápido a recursos e fluxos de trabalho simplificados. Essa economia de tempo e esforço aumenta a eficiência dos usuários que trabalham com ativos do Adobe Experience Manager nos fluxos de trabalho de desktop.
 
