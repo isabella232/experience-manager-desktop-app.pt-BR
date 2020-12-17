@@ -10,9 +10,9 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1432'
 ht-degree: 33%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 33%
 
 | Produtos | Aplicativo de desktop do Adobe Experience Manager |
 |--- |--- |
-| Versão do aplicativo (revisão) | 2.0 (2.0.3.2) |
-| Versões de Experience Manager suportadas | Experience Manager como Cloud Service; Experience Manager 6.5; Experience Manager 6.4; Experience Manager 6.3 (com pacote de compatibilidade) |
+| Versão do aplicativo (revisão) | 2.1 (2.1.0.0) |
+| Versões [!DNL Adobe Experience Manager] suportadas | [!DNL Experience Manager] como um  [!DNL Cloud Service];  [!DNL Experience Manager] 6.5;  [!DNL Experience Manager] 6.4;  [!DNL Experience Manager] 6.3 (com pacote de compatibilidade) |
 | Tipo | Versão secundária |
 | Data de lançamento | 27 de ago de 2020 (Mac e Win) |
-| URLs para download | [macOS de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg);  [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe);  [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
+| URLs para download | [macOS de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg);  [Windows de 64 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe);  [Windows de 32 bits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
 
 ## Requisitos e pré-requisitos do sistema {#system-requirements-and-prerequisites-v2}
 
@@ -42,18 +42,18 @@ O aplicativo Adobe Experience Manager para desktop é compatível com os seguint
 
 O aplicativo funciona com as seguintes versões de Experience Manager, sejam elas implantadas como Cloud Service, no Adobe Managed Services (AMS) ou no local:
 
-* [Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
+* [[!DNL Experience Manager] como um [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
 
-* [Experience Manager 6.5.0 ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) ou mais recente.
+* [[!DNL Experience Manager] 6.5.0 ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) ou mais recente.
 
-* [Experience Manager 6.4.4 ](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) ou mais recente.
+* [[!DNL Experience Manager] 6.4.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) ou mais recente.
 
-* Experience Manager 6.4.0 - 6.4.3 com [pacote de compatibilidade](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
+* [!DNL Experience Manager] 6.4.0 - 6.4.3 com pacote [ de ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilidade.
 
 >[!NOTE]
 >
->O suporte do aplicativo para desktop para o Experience Manager 6.3 está obsoleto. O Adobe recomenda atualizar para uma versão mais recente e compatível do Adobe Experience Manager.
->O Experience Manager 6.3.3.1 ou posterior funciona com o aplicativo de desktop após a instalação do pacote de [compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Esse pacote não está disponível para Experience Manager 6.3, pois nenhum [service packs está planejado](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>O suporte do aplicativo para desktop para [!DNL Experience Manager] 6.3 foi substituído. O Adobe recomenda atualizar para uma versão [!DNL Adobe Experience Manager] mais recente e suportada.
+>[!DNL Experience Manager] 6.3.3.1 ou posterior funciona com o aplicativo de desktop após a instalação do pacote de compatibilidade [a1/>. ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) Esse pacote não está disponível para Experience Manager 6.3, pois nenhum [service packs está planejado](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
 A versão do aplicativo que você pretende instalar no computador local requer uma versão específica do servidor do Adobe Experience Manager/componentes adicionais do servidor (service packs, hot fixes ou pacotes de recursos). Entre em contato com o administrador da Adobe Experience Manager para obter ajuda.
 
@@ -80,6 +80,10 @@ O recurso é compatível com as versões Adobe Creative Cloud 2018 e Adobe Creat
 ## Novos recursos e melhorias {#whats-new-added}
 
 Para saber mais detalhes, consulte [Novidades da v2.0](introduction.md#whats-new-v2).
+
+**Atualizações no app v2.1.0.0**
+
+* Para carregar ativos, os usuários agora podem arrastar os arquivos ou pastas na interface do aplicativo, diretamente do Windows Explorer ou do Mac Finder. Isso funciona além da opção de carregamento anteriormente disponível no aplicativo.
 
 **Atualizações no app v2.0.3**
 
