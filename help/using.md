@@ -3,9 +3,9 @@ title: Usar o aplicativo Adobe Experience Manager para desktop
 description: Saiba como instalar e usar o aplicativo Adobe Experience Manager desktop para trabalhar com ativos Adobe Experience Manager DAM diretamente do seu desktop Win ou Mac. Conheça as práticas recomendadas e as informações sobre solução de problemas.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
 workflow-type: tm+mt
-source-wordcount: '4022'
+source-wordcount: '4028'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ Se necessário, alterne o check-out. O ativo atualizado é removido da pasta de 
 
 ## Carregar e adicionar novos ativos ao Experience Manager {#upload-and-add-new-assets-to-aem}
 
-Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo da agência ou um contratante que deseja adicionar um grande número de fotos de uma captura ao repositório do Experience Manager. Para adicionar conteúdo novo ao Experience Manager, clique em ![Carregar no ícone de nuvem](assets/do-not-localize/upload_to_cloud_da2.png) na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Os start do aplicativo carregam o ativo e exibem uma barra de progresso na parte inferior se o ativo demorar mais para ser carregado. Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas em [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
+Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo da agência ou um contratante que deseja adicionar um grande número de fotos de uma fotografia ao repositório [!DNL Experience Manager]. Para adicionar novo conteúdo a [!DNL Experience Manager], selecione ![fazer upload para a opção de nuvem](assets/do-not-localize/upload_to_cloud_da2.png) na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Como alternativa, arraste os arquivos ou pastas na interface do aplicativo. Os start do aplicativo que carregam o ativo. Se o upload demorar mais, o aplicativo exibirá uma barra de progresso na parte inferior. Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres permitidos em [criar pastas em [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
