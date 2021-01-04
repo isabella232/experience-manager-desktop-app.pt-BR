@@ -1,25 +1,18 @@
 ---
-title: Práticas recomendadas e solução de problemas para aplicativos de desktop Adobe Experience Manager
+title: Práticas recomendadas para o aplicativo desktop e solução de problemas [!DNL Adobe Experience Manager] app
 description: Siga as práticas recomendadas e solucione problemas para resolver problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
 
 
-# Solucionar problemas do aplicativo de desktop Adobe Experience Manager {#troubleshoot-v2}
+# Solucionar problemas do [!DNL Adobe Experience Manager] aplicativo de desktop {#troubleshoot-v2}
 
-O aplicativo de desktop Adobe Experience Manager se conecta a um repositório DAM (Digital Asset Management, Gerenciamento de ativos digitais) de implantação remota de Experience Manager. O aplicativo obtém informações do repositório e resultados da pesquisa em seu computador, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do Assets.
+[!DNL Adobe Experience Manager] o aplicativo desktop se conecta ao repositório DAM (Digital Asset Management, Gerenciamento de ativos digitais) de uma  [!DNL Experience Manager] implantação. O aplicativo obtém informações do repositório e resultados da pesquisa em seu computador, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do Assets.
 
 Leia para solucionar problemas do aplicativo, aprender as práticas recomendadas e descobrir as limitações.
 
@@ -27,23 +20,23 @@ Leia para solucionar problemas do aplicativo, aprender as práticas recomendadas
 
 Siga as práticas recomendadas a seguir para evitar alguns problemas comuns e a solução de problemas.
 
-* **Entenda como o aplicativo de desktop funciona**: Antes de começar a usar o aplicativo, passe alguns momentos sabendo como ele funciona. Saiba mais sobre a vinculação entre a interface da Web do Experience Manager e o desktop, o mapeamento do repositório, o armazenamento em cache de ativos, a gravação local e o upload em segundo plano. Consulte [como funciona](release-notes.md#how-app-works).
+* **Entenda como o aplicativo de desktop funciona**: Antes de começar a usar o aplicativo, passe alguns momentos sabendo como ele funciona. Saiba mais sobre a vinculação entre [!DNL Experience Manager] interface da Web e área de trabalho, mapeamento do repositório, armazenamento em cache de ativos, salvamento local e upload em segundo plano. Consulte [como funciona](release-notes.md#how-app-works).
 
-* **Evite caracteres não suportados em nomes** de pastas: Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas em Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders). Alguns casos de uso do Adobe Experience Manager podem ser afetados por caracteres não suportados no nome da pasta.
+* **Evite caracteres não suportados em nomes** de pastas: Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres em [Criar pastas em [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders). Alguns casos de uso de [!DNL Experience Manager] podem ser afetados por caracteres não suportados no nome da pasta.
 
 * **Práticas recomendadas para evitar conflitos**: Para evitar conflitos em potencial ao colaborar em vários ativos, consulte  [evitar conflitos](using.md#adv-workflow-collaborate-avoid-conflicts) de edição.
 
-* **Use o upload de pasta para pastas** grandes e hierárquicas: Em vez de usar a interface da Web do Assets ou outros métodos, use o aplicativo de desktop Experience Manager para fazer upload de pastas grandes. O aplicativo carrega os ativos em segundo plano com o registro e o monitoramento. Consulte [ativos de upload em massa](using.md#bulk-upload-assets).
+* **Use o upload de pasta para pastas** grandes e hierárquicas: Em vez de usar a interface da Web do Assets ou outros métodos, use o aplicativo de  [!DNL Experience Manager] desktop para fazer upload de pastas grandes. O aplicativo carrega os ativos em segundo plano com o registro e o monitoramento. Consulte [ativos de upload em massa](using.md#bulk-upload-assets).
 
-* **Use a versão** mais recente: Use a versão mais recente do aplicativo e sempre verifique a compatibilidade antes de instalar uma nova versão do aplicativo ou antes de atualizar para uma versão mais recente do Adobe Experience Manager. Consulte [notas de versão](release-notes.md).
+* **Use a versão** mais recente: Use a versão mais recente do aplicativo e sempre verifique a compatibilidade antes de instalar uma nova versão do aplicativo ou antes de atualizar para uma  [!DNL Experience Manager] versão mais recente. Consulte [notas de versão](release-notes.md).
 
-* **Use a mesma letra** de unidade: Use a mesma letra de unidade em uma organização para mapear para o Adobe Experience Manager DAM. Para ver os ativos colocados por outros usuários, os caminhos devem ser os mesmos. Usar a mesma letra de unidade garante um caminho constante para ativos DAM. Os ativos permanecem posicionados e não são removidos mesmo se letras de unidade diferentes forem usadas por usuários diferentes.
+* **Use a mesma letra** de unidade: Use a mesma letra de unidade em uma organização para mapear para o  [!DNL Experience Manager] DAM. Para ver os ativos colocados por outros usuários, os caminhos devem ser os mesmos. Usar a mesma letra de unidade garante um caminho constante para ativos DAM. Os ativos permanecem posicionados e não são removidos mesmo se letras de unidade diferentes forem usadas por usuários diferentes.
 
-* **Lembre-se da rede**: O desempenho da rede é essencial para o desempenho do aplicativo de desktop Experience Manager. Se você enfrentar uma resposta lenta a transferências de arquivos ou operações em massa, desative os recursos ou aplicativos que podem causar muito tráfego de rede.
+* **Lembre-se da rede**: O desempenho da rede é essencial para o desempenho do aplicativo  [!DNL Experience Manager] desktop. Se você enfrentar uma resposta lenta a transferências de arquivos ou operações em massa, desative os recursos ou aplicativos que podem causar muito tráfego de rede.
 
 * **Casos de uso não suportados para aplicativos** de desktop: Não use o aplicativo para a migração do Assets (ele precisa de planejamento e outras ferramentas); para operações DAM de uso intenso (como mover pastas grandes, uploads grandes, localizar arquivos usando pesquisas avançadas de metadados); e como um cliente de sincronização (os princípios de design e os padrões de uso são diferentes dos clientes em sincronia, como o Microsoft OneDrive ou o Adobe Creative Cloud Desktop Sync).
 
-* **Tempo limite**: Atualmente, o aplicativo de desktop não tem um valor de tempo limite configurável que desconecta a conexão entre o servidor de Experience Manager e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentativas fazer upload do ativo algumas vezes aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
+* **Tempo limite**: Atualmente, o aplicativo de desktop não tem um valor de tempo limite configurável que desconecta a conexão entre o  [!DNL Experience Manager] servidor e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentativas fazer upload do ativo algumas vezes aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
 
 ## Como solucionar problemas {#troubleshooting-prep}
 
@@ -119,7 +112,7 @@ Para ativar o modo de depuração no Windows:
 
 Execute as seguintes etapas:
 
-1. Start o aplicativo e conecte uma instância Experience Manager.
+1. Start o aplicativo e conecte uma instância [!DNL Experience Manager].
 
 1. Abra as preferências do aplicativo clicando nas elipses no canto superior direito e selecionando [!UICONTROL Preferences].
 
@@ -163,9 +156,9 @@ Se você não conseguir ver os ativos que você ou outros profissionais criativo
 
 * Tamanho de arquivo. Ativos grandes demoram mais para serem baixados e exibidos.
 
-* Aumente a consistência da letra. Se você ou outro colaborador inseriu os ativos ao mapear o Experience Manager DAM para uma letra de unidade diferente, os ativos colocados não serão exibidos.
+* Aumente a consistência da letra. Se você ou outro colaborador tiver colocado os ativos ao mapear o [!DNL Experience Manager] DAM para uma letra de unidade diferente, os ativos colocados não serão exibidos.
 
-* Permissões. Para verificar se você tem permissões para buscar os ativos inseridos, entre em contato com o administrador do Experience Manager.
+* Permissões. Para verificar se você tem permissões para buscar os ativos inseridos, entre em contato com o administrador do [!DNL Experience Manager].
 
 ### As edições em arquivos na interface de usuário do aplicativo de desktop não refletem em [!DNL Adobe Experience Manager] imediatamente {#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +166,7 @@ Se você não conseguir ver os ativos que você ou outros profissionais criativo
 
 ### Problemas ao atualizar no macOS {#issues-when-upgrading-on-macos}
 
-Ocasionalmente, podem ocorrer problemas ao atualizar o aplicativo de desktop Experience Manager no macOS. Isso é causado pela pasta herdada do sistema para o aplicativo de desktop Experience Manager, impedindo que novas versões do aplicativo de desktop Experience Manager sejam carregadas corretamente. Para resolver esse problema, as pastas e os arquivos a seguir podem ser removidos manualmente.
+Ocasionalmente, podem ocorrer problemas ao atualizar [!DNL Experience Manager] o aplicativo desktop no macOS. Isso é causado pela pasta herdada do sistema para [!DNL Experience Manager] aplicativo desktop que impede que novas versões do [!DNL Experience Manager] aplicativo desktop sejam carregadas corretamente. Para resolver esse problema, as pastas e os arquivos a seguir podem ser removidos manualmente.
 
 Antes de executar as etapas a seguir, arraste o aplicativo `Adobe Experience Manager Desktop` da pasta Aplicativos macOS para a Lixeira. Em seguida, abra o terminal, execute o seguinte comando e forneça sua senha quando solicitado.
 
@@ -188,7 +181,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### Não é possível carregar arquivos {#upload-fails}
 
-Se você estiver usando um aplicativo de desktop com Experience Manager 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Ele resolve o problema de falha de carregamento de arquivo relacionado a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte [instruções de instalação](install-upgrade.md#install-v2).
+Se você estiver usando um aplicativo de desktop com [!DNL Experience Manager] 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Ele resolve o problema de falha de carregamento de arquivo relacionado a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte [instruções de instalação](install-upgrade.md#install-v2).
 
 ### [!DNL Experience Manager] problemas de conexão do aplicativo de desktop  {#connection-issues}
 
@@ -256,9 +249,9 @@ Analisar a sequência de URL que está sendo carregada pode ajudar a solucionar 
 
 #### Problema de configuração SSL {#ssl-config-v2}
 
-As bibliotecas que o aplicativo de desktop Experience Manager usa para comunicação HTTP usam imposição rigorosa de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar o aplicativo de desktop Experience Manager. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
+As bibliotecas que o [!DNL Experience Manager] aplicativo desktop usa para comunicação HTTP utilizam imposição rigorosa de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar [!DNL Experience Manager] aplicativo desktop. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
 
-As bibliotecas que o Experience Manager Desktop usa para a comunicação HTTP utilizam a imposição rigorosa do SSL. Portanto, pode haver casos em que as conexões SSL com êxito por meio de um navegador falham com o [!DNL Adobe Experience Manager] aplicativo de desktop. Isso é bom porque incentiva a configuração correta do SSL e aumenta a segurança, mas pode ser frustrante quando o aplicativo não consegue se conectar.
+As bibliotecas que o [!DNL Experience Manager] aplicativo desktop usa para comunicação HTTP utilizam imposição rigorosa de SSL. Portanto, pode haver casos em que as conexões SSL com êxito por meio de um navegador falham com o [!DNL Adobe Experience Manager] aplicativo de desktop. Isso é bom porque incentiva a configuração correta do SSL e aumenta a segurança, mas pode ser frustrante quando o aplicativo não consegue se conectar.
 
 A abordagem recomendada neste caso é usar uma ferramenta para analisar o certificado SSL de um servidor e identificar problemas para que eles possam ser corrigidos. Há sites que verificam o certificado de um servidor ao fornecer seu URL.
 
