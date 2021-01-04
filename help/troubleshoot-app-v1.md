@@ -1,27 +1,20 @@
 ---
-title: Solução de problemas AEM aplicativo para desktop versão 1.x
-description: Solucione problemas AEM aplicativo de desktop versão 1.x para resolver problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
+title: Solução de problemas [!DNL Adobe Experience Manager] aplicativo desktop versão 1.x
+description: Solucione problemas [!DNL Adobe Experience Manager] do aplicativo desktop versão 1.x para resolver problemas ocasionais relacionados à instalação, atualização e configuração.
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '3379'
+source-wordcount: '3366'
 ht-degree: 1%
 
 ---
 
 
-# Solução de problemas AEM aplicativo de desktop v1.x {#troubleshoot-aem-desktop-app}
+# Solucionar problemas do [!DNL Adobe Experience Manager] aplicativo de desktop v1.x {#troubleshoot-aem-desktop-app}
 
 Solucione problemas AEM aplicativo de desktop para resolver problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
 
-O aplicativo para desktop Adobe Experience Manager (AEM) inclui utilitários que ajudam a mapear o repositório AEM Assets como um compartilhamento de rede no desktop (compartilhamento SMB no Mac OS). O compartilhamento de rede é uma tecnologia de sistema operacional que permite que fontes remotas sejam tratadas como se fossem parte de um sistema de arquivos local do computador. No caso de aplicativos de desktop, a estrutura de repositório DAM (digital asset management, gerenciamento de ativos digitais) de uma instância remota AEM é direcionada como a fonte de arquivos remotos. O diagrama a seguir descreve a topologia do aplicativo de desktop:
+[!DNL Adobe Experience Manager] o aplicativo desktop inclui utilitários que ajudam a mapear o repositório AEM Assets como um compartilhamento de rede no desktop (compartilhamento SMB no Mac OS). O compartilhamento de rede é uma tecnologia de sistema operacional que permite que fontes remotas sejam tratadas como se fossem parte de um sistema de arquivos local do computador. No caso de aplicativos de desktop, a estrutura de repositório DAM (digital asset management, gerenciamento de ativos digitais) de uma instância remota AEM é direcionada como a fonte de arquivos remotos. O diagrama a seguir descreve a topologia do aplicativo de desktop:
 
 ![diagrama do aplicativo desktop](assets/aem-desktopapp-architecture.png)
 
@@ -70,7 +63,7 @@ AEM desktop não é adequado para a manipulação intensiva do sistema de arquiv
 
 Devido a limitações no sistema operacional, o Windows tem uma limitação de tamanho de arquivo de 4.294.967.295 bytes (aproximadamente 4,29 GB). É devido a uma configuração de registro que define o tamanho de um arquivo em um compartilhamento de rede. O valor da configuração do Registro é um DWORD com um tamanho máximo igual ao número referenciado.
 
-O aplicativo de desktop Experience Manager não tem um valor de tempo limite configurável que desconecta a conexão entre o servidor Experience Manager e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentativas fazer upload do ativo algumas vezes aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
+[!DNL Experience Manager] o aplicativo de desktop não tem um valor de tempo limite configurável que desconecta a conexão entre o  [!DNL Experience Manager] servidor e o aplicativo de desktop após um intervalo de tempo fixo. Ao fazer upload de ativos grandes, se a conexão expirar depois de algum tempo, o aplicativo tentativas fazer upload do ativo algumas vezes aumentando o tempo limite de upload. Não há uma maneira recomendada de alterar as configurações de tempo limite padrão.
 
 ## Cache e comunicação com AEM {#caching-and-communication-with-aem}
 
