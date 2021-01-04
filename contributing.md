@@ -1,8 +1,8 @@
 ---
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18cebce065f9b55259bf96d14cb50cf5bc6c8ec6
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Assista ao vídeo a seguir para obter uma rápida visão geral de como criar pro
 
 ### Contribuições de funcionários do Adobe
 
-Se você for um funcionário do Adobe e tiver uma contribuição, solicitamos que você use a organização `AdobeDocs` no git corporativo. Você pode contribuir para esse repositório público no GitHub.com, mas as contribuições são mais fáceis de processar no acordo de recompra corporativo. Certifique-se de que qualquer informação proprietária ou não divulgada seja apenas discutida no acordo de recompra das empresas.
+Se você for um funcionário do Adobe e tiver uma contribuição, solicitamos que você use a organização `AdobeDocs` no git corporativo. Você pode contribuir para esse repositório público no GitHub.com, mas as contribuições são mais fáceis de processar no acordo de recompra corporativo. Certifique-se de que qualquer informação proprietária ou não divulgada seja apenas discutida no acordo de recompra das empresas. Os funcionários do Adobe não precisam assinar o CLA.
 
 ## Sobre a criação do Adobe GitHub e do Markdown
 
