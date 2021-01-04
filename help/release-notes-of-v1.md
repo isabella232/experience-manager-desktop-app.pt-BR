@@ -1,27 +1,20 @@
 ---
 title: Notas de versão do aplicativo para desktop AEM versão 1.x
 description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para AEM aplicativo de desktop versão 1.x.
-uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '3920'
+source-wordcount: '3906'
 ht-degree: 1%
 
 ---
 
 
-# Notas de versão do aplicativo para desktop AEM v1.x {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] notas de versão v1.x do aplicativo de desktop  {#aem-desktop-app-release-notes}
 
 Para o aplicativo de desktop versão v1.x, os links a seguir são os links de download e as informações de compatibilidade AEM.
 
-| Produtos | Aplicativo de desktop do Adobe Experience Manager (AEM) |
+| Produtos | [!DNL Adobe Experience Manager] aplicativo para desktop |
 |--- |--- |
 | Versão | 1.10 (1.10.0.6 no Mac e 1.10.0.3 no Windows) |
 | Tipo | Versão secundária |
@@ -75,7 +68,7 @@ Para obter instruções detalhadas, consulte [Instalar e configurar AEM aplicati
 
 ## Melhorias nas versões anteriores {#enhancements-in-the-previous-versions}
 
-Esta versão estende e substitui as versões anteriores do aplicativo para desktop Experience Manager, que proporcionou os seguintes aprimoramentos principais:
+Esta versão estende e substitui as versões anteriores do [!DNL Experience Manager] aplicativo para desktop, que fornece os seguintes aprimoramentos principais:
 
 * **Versão 1.9/1.9.1**: carregamentos retomáveis, janela de status aprimorada, ícones de aplicativo que indicam o status do aplicativo/conexão, busca prévia de ativos vinculados para arquivos de InDesign.
 
@@ -93,7 +86,7 @@ Esta versão estende e substitui as versões anteriores do aplicativo para deskt
 
 ### Aprimoramentos disponíveis desde AEM aplicativo de desktop 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
-O aplicativo de desktop Adobe Experience Manager (AEM) 1.9.1 era uma versão de correção para resolver alguns problemas principais do cliente em relação à finalização de ativos e à cópia de arquivos do compartilhamento de rede para um diretório local.
+[!DNL Adobe Experience Manager] o aplicativo desktop 1.9.1 era uma versão de correção para resolver alguns problemas principais do cliente em relação à finalização de ativos e à cópia de arquivos do compartilhamento de rede para um diretório local.
 
 * Os ativos com check-out feito por um usuário não devem estar disponíveis para modificação para outros usuários (CQ-4246009)
 
@@ -135,7 +128,7 @@ reiniciáveisPara uploads, especialmente em arquivos grandes, há uma opção pa
 
 * O rodapé mostra o número total de arquivos baixados e a taxa média de transferência.
 
-* Se um usuário optar por abrir ou editar vários arquivos da interface do usuário do Experience Manager Assets, eles serão agrupados. Por exemplo, myasset.jpeg e mais 4 arquivos.
+* Se um usuário optar por abrir ou editar vários arquivos da interface da Web [!DNL Experience Manager Assets], eles serão agrupados. Por exemplo, myasset.jpeg e mais 4 arquivos.
 
 * Ao baixar Documentos de InDesigns, incluindo ativos vinculados armazenados no AEM Assets, o aplicativo de desktop baixará todos os Ativos vinculados primeiro, antes de abrir o documento [!UICONTROL Adobe InDesign] e indicará o download dos ativos vinculados. Por exemplo, 5 de 24.
 
