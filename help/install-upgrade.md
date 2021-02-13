@@ -1,8 +1,8 @@
 ---
-title: Instalar e configurar [!DNL Adobe Experience Manager] aplicativo desktop
+title: Instalar e configurar o aplicativo de desktop
 description: Instale e configure [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servidores e baixe os ativos no seu sistema de arquivos local.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 1%
@@ -86,7 +86,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
    *Figura: O aplicativo exibe o conteúdo do DAM após o logon*
 
-1. ([!DNL Experience Manager] 6.5.1 ou posterior) Se você estiver usando um aplicativo desktop com [!DNL Experience Manager] 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte [Conector do Azure](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) ou [Conector S3](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
+1. ([!DNL Experience Manager] 6.5.1 ou posterior) Se estiver usando um aplicativo desktop com [!DNL Experience Manager] 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte [Conector do Azure](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) ou [Conector S3](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
    Se você for um cliente do Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe.
 
@@ -124,7 +124,7 @@ Para desinstalar o aplicativo no Windows, siga estas etapas:
 
 1. Carregue todas as alterações em [!DNL Experience Manager] para evitar a perda de edições. Consulte [Editar ativos e carregar ativos atualizados para [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Faça logoff e [!UICONTROL Exit] o aplicativo.
 
-1. Remova o aplicativo conforme você removeria qualquer outro aplicativo do SO. Desinstale-o de Adicionar e remova programas no Windows.
+1. Remova o aplicativo conforme você removeria qualquer outro aplicativo de SO. Desinstale-o de Adicionar e remova programas no Windows.
 
 1. Para remover o cache e os registros, marque a caixa de seleção necessária.
 
