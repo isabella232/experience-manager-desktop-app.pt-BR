@@ -1,10 +1,10 @@
 ---
-title: Solução de problemas [!DNL Adobe Experience Manager] aplicativo desktop versão 1.x
-description: Solucione problemas [!DNL Adobe Experience Manager] do aplicativo desktop versão 1.x para resolver problemas ocasionais relacionados à instalação, atualização e configuração.
+title: Solução de problemas do aplicativo de desktop versão 1.10.
+description: Solucione problemas [!DNL Adobe Experience Manager] do aplicativo desktop versão 1.10 para resolver problemas ocasionais relacionados à instalação, atualização e configuração.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3364'
 ht-degree: 1%
 
 ---
