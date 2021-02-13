@@ -1,11 +1,11 @@
 ---
-title: Introdução ao  [!DNL Adobe Experience Manager] aplicativo desktop
+title: Introdução ao  [!DNL Experience Manager] aplicativo desktop
 description: Saiba como usar [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] diretamente do desktop.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 67%
+source-wordcount: '619'
+ht-degree: 63%
 
 ---
 
@@ -20,7 +20,7 @@ Essa integração permite que várias funções na organização gerenciem os at
 
 >[!NOTE]
 >
->[!DNL Adobe Experience Manager] o aplicativo desktop foi introduzido na versão  [!DNL Adobe Experience Manager] 6.1 e era anteriormente chamado de Aplicativo  [!DNL Adobe Experience Manager Assets] complementar. Para obter ajuda sobre a versão 1.x do aplicativo, consulte o índice na barra lateral esquerda. A Adobe recomenda atualizar para a versão mais recente 2.
+>O aplicativo foi introduzido na versão [!DNL Adobe Experience Manager] 6.1 e era anteriormente chamado [!DNL Adobe Experience Manager Assets] aplicativo complementar. Para obter ajuda sobre a versão 1.x do aplicativo, consulte o índice na barra lateral esquerda. A Adobe recomenda atualizar para a versão mais recente.
 
 A documentação do aplicativo de desktop contém informações sobre as seguintes funções e casos de uso.
 
