@@ -1,9 +1,9 @@
 ---
-title: Usar  [!DNL Adobe Experience Manager] aplicativo de desktop
+title: Usar  [!DNL Experience Manager] aplicativo de desktop
 description: Use  [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] ativos DAM diretamente do seu desktop Win ou Mac e use em outros aplicativos.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
