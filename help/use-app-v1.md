@@ -1,16 +1,16 @@
 ---
-title: Use [!DNL Experience Manager] aplicativo desktop versão 1.x.
-description: Saiba como usar o aplicativo Adobe Experience Manager para desktop versão 1.x e otimizar seu trabalho com ativos no desktop.
+title: Use [!DNL Experience Manager] aplicativo desktop versão 1.10.
+description: Saiba como usar o aplicativo Adobe Experience Manager desktop versão 1.10 e otimizar seu trabalho com ativos no desktop.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2377'
 ht-degree: 0%
 
 ---
 
 
-# Usar [!DNL Experience Manager] aplicativo de desktop v1.x {#use-aem-desktop-app-v1x}
+# Usar [!DNL Experience Manager] aplicativo de desktop v1.10 {#use-aem-desktop-app-v1x}
 
 Usando o aplicativo, os ativos em [!DNL Experience Manager] são facilmente acessíveis em seu desktop local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em [!DNL Experience Manager] com uma nova versão criada no repositório.
 
@@ -27,7 +27,7 @@ Para as várias ações recomendadas e não ativas, consulte as [práticas recom
 
 >[!NOTE]
 >
->[!DNL Experience Manager] o aplicativo desktop foi introduzido na versão  [!DNL Experience Manager] 6.1 e foi chamado  [!DNL Experience Manager Assets Companion App].
+>O aplicativo de desktop foi introduzido na versão [!DNL Experience Manager] 6.1 e foi chamado de [!DNL Experience Manager Assets Companion App].
 
 ## [!DNL Experience Manager] pontos de contato do aplicativo desktop no fluxo de trabalho criativo  {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
