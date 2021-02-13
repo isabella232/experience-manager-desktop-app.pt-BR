@@ -1,16 +1,16 @@
 ---
-title: Notas de versão do aplicativo para desktop AEM versão 1.x
-description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para AEM aplicativo de desktop versão 1.x.
+title: Notas de versão do aplicativo de desktop v1.10
+description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para AEM aplicativo de desktop versão 1.10.
 translation-type: tm+mt
-source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3904'
+source-wordcount: '3901'
 ht-degree: 1%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] notas de versão v1.x do aplicativo de desktop  {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] notas de versão do aplicativo de desktop v1.10  {#aem-desktop-app-release-notes}
 
 Para o aplicativo de desktop versão v1.x, os links a seguir são os links de download e as informações de compatibilidade AEM.
 
@@ -44,7 +44,7 @@ A versão do aplicativo AEM desktop que você está planejando instalar no compu
 
 Consulte a [matriz de compatibilidade detalhada](#compatibilitymatrix) no final deste documento para avaliar os pré-requisitos para sua configuração.
 
-## Novidades AEM aplicativo de desktop 1.10 {#what-s-new-in-aem-desktop-app}
+## Novidades no aplicativo de desktop v1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM aplicativo de desktop 1.10 foca na melhoria da experiência do usuário em uploads grandes, informações sobre as operações em segundo plano e experiência otimizada ao abrir ativos com arquivos vinculados (como o InDesign).
 
