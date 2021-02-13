@@ -1,16 +1,16 @@
 ---
-title: Instalar e configurar [!DNL Experience Manager] aplicativo desktop versão 1.x
-description: Instale e configure os servidores [!DNL Experience Manager] desktop app version 1.x to work with [!DNL Assets] e mapeie os ativos para montar como uma unidade no seu desktop.
+title: Instalar e configurar o aplicativo de desktop v1.10
+description: Instale e configure os servidores [!DNL Experience Manager] desktop app version 1.10 to work with [!DNL Assets] e mapeie os ativos para montar como uma unidade no seu desktop.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
 
 
-# Instalar e configurar [!DNL Experience Manager] aplicativo de desktop v1.x {#install-and-configure-aem-desktop-app}
+# Instalar e configurar [!DNL Experience Manager] aplicativo desktop v1.10 {#install-and-configure-aem-desktop-app}
 
 Usando o [!DNL Experience Manager] aplicativo de desktop, os ativos em [!DNL Experience Manager] são facilmente acessíveis em seu desktop local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em [!DNL Experience Manager] quando você carrega e uma nova versão é criada no repositório.
 
