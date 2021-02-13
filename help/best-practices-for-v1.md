@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Experience Manager] práticas recomendadas do aplicativo para desktop versão 1.x'
 description: Recursos principais e uso recomendado do  [!DNL Adobe Experience Manager] aplicativo desktop versão 1.x.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Para entender as práticas recomendadas sobre a configuração de rede AEM Asset
 
 >[!NOTE]
 >
->Para desativar pré-visualizações de ícones, no Finder vá para Visualização, selecione Opções de Visualização e desmarque a opção &quot;Mostrar pré-visualização de ícones&quot;. Isso só funciona para a pasta atual - para torná-la padrão, clique no botão &quot;Usar como padrão&quot; na mesma janela.
+>Para desativar pré-visualizações de ícones, no Finder vá para [!UICONTROL View], selecione [!UICONTROL View Options] e desmarque a opção [!UICONTROL Show icon preview]. Isso só funciona para a pasta atual - para torná-la padrão, clique na opção [!UICONTROL Use as default] na mesma caixa de diálogo.
 
 ### Otimizando o desempenho do servidor {#optimizing-server-performance}
 
