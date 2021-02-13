@@ -2,9 +2,9 @@
 title: Notas de versão do aplicativo para desktop AEM versão 1.x
 description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para AEM aplicativo de desktop versão 1.x.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3904'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ AEM aplicativo de desktop 1.10 foca na melhoria da experiência do usuário em u
 
 **Notificações para conflito** de atualização. Quando o aplicativo detectar um conflito ao tentar atualizar um ativo, ele mostrará uma notificação, para que o usuário possa revisá-lo sem a necessidade de monitorar a janela de status. Quando o aplicativo for start, ele verificará todos os conflitos para que o usuário possa resolvê-los.
 
-**Melhor tratamento das perdas** de conexão. Os uploads em massa serão pausados se houver perda de conexão e o usuário poderá retomar mais tarde. Um botão Tentar novamente está disponível para tentar fazer novamente um upload com falha de um arquivo individual.
+**Melhor tratamento das perdas** de conexão. Os uploads em massa serão pausados se houver perda de conexão e o usuário poderá retomar mais tarde. Uma opção [!UICONTROL Retry] está disponível para repetir um carregamento com falha de um arquivo individual.
 
 ## Instruções de instalação {#installation-instructions}
 
@@ -289,7 +289,7 @@ Esse comportamento é o mesmo para ativos em disco local e ativos em um diretór
 
 * Se um usuário modificar um ativo colocado pelo diretório montado AEM desktop e, em seguida, limpar seu cache local, o ativo colocado será reportado como desatualizado.
 
-Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;sincronização atrasada&quot; da área de trabalho AEM.
+Ambos os casos são esperados e são efeitos colaterais da arquitetura de &quot;sincronização tardia&quot; da área de trabalho AEM.
 
 **Versão 1.5.0.x para Mac OS X e Windows:** Esta versão do aplicativo AEM desktop oferece os seguintes benefícios:
 
@@ -417,7 +417,7 @@ Como a pasta /Volumes não requer mais direitos administrativos, essa alteraçã
 * Windows:
    * Os arquivos com fluxos de dados alternativos (ADS) só são totalmente suportados no NTFS. A cópia desses arquivos para o compartilhamento WebDAV fornecido pelo aplicativo de desktop resultará em uma caixa de diálogo de precaução avisando o usuário de que o arquivo tem propriedades que não podem ser copiadas para o novo local. Normalmente, isso é correto, pois as propriedades são relevantes somente para um aplicativo específico na área de trabalho do usuário e não têm nada a ver com o conteúdo do arquivo real (CQ-103770) (Win)
    * o aplicativo desktop no Windows precisa ser instalado pelo usuário que o usará (CQ-4216389) (win)
-   * O aplicativo pode travar ao clicar no botão Tentar novamente em um upload com falha em determinadas circunstâncias depois de retomar o upload em lote quando desconectado (CQ-4251884) (Win)
+   * O aplicativo pode travar ao selecionar a opção [!UICONTROL Retry] em um upload com falha em determinadas circunstâncias após ter retomado o upload em lote quando desconectado (CQ-4251884) (Win)
 
 ## Recursos úteis {#helpful-resources}
 
