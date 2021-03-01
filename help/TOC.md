@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guia do aplicativo para desktop Experience Manager
 breadcrumb-title: Guia do aplicativo para desktop
-user-guide-description: Saiba como usar o aplicativo de desktop Experience Manager para conectar repositórios e aplicativos de desktop para fornecer acesso mais rápido aos recursos e workflows otimizados.
+user-guide-description: Saiba como usar o aplicativo para desktop Experience Manager para conectar repositórios e aplicativos de desktop a fim de fornecer acesso mais rápido aos recursos e workflows otimizados.
 solution-title: Ativos AEM
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html
@@ -13,8 +13,8 @@ tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-tutorials
 translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 48%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
