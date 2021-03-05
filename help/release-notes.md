@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] notas de versão do aplicativo de deskto
 description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para o aplicativo de desktop  [!DNL Adobe Experience Manager] da .
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4288c77036ba992c37ceafc158e0503244a1e600
+source-git-commit: 784ffb2468d856589fbf29b10b965b3c3d919a2f
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 28%
@@ -12,8 +12,6 @@ ht-degree: 28%
 
 
 # [!DNL Adobe Experience Manager] notas de versão do aplicativo de desktop  {#release-notes-v2}
-
-<!-- TBD: Update 6 links and 1 date below. -->
 
 As informações de versão do aplicativo de desktop mais recente versão 2.1 (2.1.1.0) estão abaixo. A data de lançamento é 5 de março de 2021. É uma versão secundária com um aprimoramento.
 
