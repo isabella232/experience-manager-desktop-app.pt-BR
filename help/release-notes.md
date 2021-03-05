@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] notas de versão do aplicativo de deskto
 description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para o aplicativo de desktop  [!DNL Adobe Experience Manager] da .
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 784ffb2468d856589fbf29b10b965b3c3d919a2f
+source-git-commit: 06ce2dc1c47bc1ba71b4fd1d053131d9dbdb08ba
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 28%
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 As informações de versão do aplicativo de desktop mais recente versão 2.1 (2.1.1.0) estão abaixo. A data de lançamento é 5 de março de 2021. É uma versão secundária com um aprimoramento.
 
-As versões [!DNL Experience Manager] compatíveis são:
+As **versões [!DNL Experience Manager] suportadas** são:
 
 * [!DNL Experience Manager] as a [!DNL Cloud Service]. Consulte as [notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=pt-BR).
 * [!DNL Experience Manager] 6.5.0 ou mais recente, no Adobe Managed Services (AMS) ou no local. Consulte as [notas de versão do service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=pt-BR).
@@ -24,12 +24,12 @@ As versões [!DNL Experience Manager] compatíveis são:
 * [!DNL Experience Manager] 6.3 (com pacote de compatibilidade)
 * [!DNL Experience Manager] 6.3.3.1 ou mais recente com o pacote de  [compatibilidade ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado. O aplicativo de desktop não é compatível com [!DNL Experience Manager] 6.3.3.0 ou versões anteriores.
 
-[!DNL Adobe Experience Manager] o aplicativo de desktop está disponível para os seguintes sistemas operacionais:
+[!DNL Adobe Experience Manager] o aplicativo de desktop está disponível para os seguintes sistemas  **operacionais**:
 
 * macOS X 10.14 ou mais recente, com as últimas correções de erros.
 * Windows 10 com os service packs e correções de erros mais recentes.
 
-Os URLs de download para o SO suportado são:
+Os **URLs de download** para SO suportado são:
 
 | Sistema operacional | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
