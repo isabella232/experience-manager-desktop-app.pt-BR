@@ -2,10 +2,11 @@
 title: Usar  [!DNL Experience Manager] aplicativo de desktop
 description: Use [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM assets diretamente do desktop Win ou Mac e use em outros aplicativos.
 mini-toc-levels: 1
+feature: Experience Manager Desktop App, Gerenciamento de ativos
 translation-type: tm+mt
-source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3912'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Antes de começar a usar o aplicativo, entenda [Como o aplicativo funciona](rele
 
 * **[!UICONTROL Download]** ação: Baixe o ativo no computador local. Você pode baixar os ativos agora e editar posteriormente; trabalhe offline e carregue as alterações posteriormente. Os ativos são baixados em uma pasta de cache no sistema de arquivos.
 
-* **[!UICONTROL Reveal File]** ou  **[!UICONTROL Reveal Folder]** ação: Enquanto os ativos são baixados para uma pasta de cache local, o aplicativo imita uma unidade de rede local e fornece um caminho local para cada ativo. Para conhecer esse caminho, use a opção de revelação apropriada no aplicativo. A ação Revelar é necessária para colocar ativos no aplicativo da Creative Cloud. Consulte [colocar ativos](using.md#place-assets-in-native-documents).
+* **[!UICONTROL Reveal File]** ou  **[!UICONTROL Reveal Folder]** ação: Enquanto os ativos são baixados para uma pasta de cache local, o aplicativo imita uma unidade de rede local e fornece um caminho local para cada ativo. Para conhecer esse caminho, use a opção de revelação apropriada no aplicativo. A ação Revelar é necessária para colocar ativos no aplicativo Creative Cloud. Consulte [colocar ativos](using.md#place-assets-in-native-documents).
 
 * **[!UICONTROL Open In Web]** ação: Para exibir o ativo na interface  [!DNL Experience Manager] da Web, abra-o na Web. Você pode iniciar mais workflows a partir da interface [!DNL Experience Manager] como atualizar metadados ou descoberta de ativos.
 
@@ -222,7 +223,7 @@ O aplicativo fornece uma visualização, chamada **[!UICONTROL Edited locally]**
 
 Usuários ou organizações, como fotógrafos ou agências criativas, podem criar vários ativos locais em cenários, como fotografias, retoque ou seleção em um conjunto maior feito fora de [!DNL Experience Manager]. Eles podem fazer upload dessas pastas locais grandes para [!DNL Assets] diretamente do aplicativo de desktop. As hierarquias da pasta são preservadas e todas as subpastas aninhadas e os ativos incluídos são carregados. Os ativos carregados também estão imediatamente disponíveis para consumo por outros usuários do mesmo servidor. Os ativos são carregados em segundo plano, de modo que a operação não está vinculada a uma sessão do navegador da Web.
 
-![Faça upload em massa de várias pastas locais do seu desktop para fazer upload em  [!DNL Experience Manager]](assets/upload_local_folders_da2.png "massa de várias pastas locais do seu desktop para o Experience Manager")
+![Faça o upload em massa de várias pastas locais da área de trabalho para o upload em  [!DNL Experience Manager]](assets/upload_local_folders_da2.png "massa de várias pastas locais da área de trabalho no Experience Manager")
 
 Após o upload, se as alterações esperadas não forem refletidas no aplicativo, clique no ícone de atualização ![Atualizar ícone](assets/do-not-localize/refresh.png).
 
@@ -238,7 +239,7 @@ Para exibir a lista de ativos transferidos em uma determinada sessão, consulte 
 
 Se necessário, inicie o fluxo de trabalho pela interface da Web do Assets. O aplicativo de desktop integra-se com o [!DNL Experience Manager] para assumir o controle quando solicitado usando as Ações do desktop.
 
-Um caso especial de início de fluxo de trabalho na interface da Web é a descoberta de ativos. A barra Omnisearch na interface de usuário do Assets oferece uma experiência de pesquisa avançada e avançada. Você pode primeiro localizar um ativo desejado na Web e depois iniciar o fluxo de trabalho no aplicativo, usando [!UICONTROL Desktop Actions]. Alguns casos de exemplo incluem filtrar resultados de pesquisa usando facetas, localizar um ativo específico licenciado do Adobe Stock ou uma personalização implementada pela sua organização que permite uma melhor descoberta na interface da Web.
+Um caso especial de início de fluxo de trabalho na interface da Web é a descoberta de ativos. A barra Omnisearch na interface de usuário do Assets oferece uma experiência de pesquisa avançada e avançada. Você pode primeiro localizar um ativo desejado na Web e depois iniciar o fluxo de trabalho no aplicativo, usando [!UICONTROL Desktop Actions]. Alguns casos de exemplo incluem filtrar resultados de pesquisa usando facetas, localizar um ativo específico licenciado pelo Adobe Stock ou uma personalização implementada pela organização que permite uma melhor descoberta na interface da Web.
 
 A funcionalidade do aplicativo de desktop é usada ao tentar as seguintes ações na interface da Web do Assets:
 
@@ -283,11 +284,11 @@ Se um ativo que você está editando localmente também for atualizado no servid
 
 ![Opções para resolver um ](assets/editing_conflict_dialog_da2.png "conflito de ediçãoOpções para resolver um conflito de edição")
 
-## Fluxo de trabalho avançado: colocar e vincular ativos no arquivo do InDesign {#adv-workflow-place-assets-indesign}
+## Fluxo de trabalho avançado: colocar e vincular ativos no arquivo de InDesign {#adv-workflow-place-assets-indesign}
 
 Quando você usa [!DNL Experience Manager] aplicativo de desktop para abrir arquivos com ativos vinculados, os ativos são baixados previamente e aparecem colocados nos aplicativos nativos. Para que esse fluxo de trabalho funcione, o aplicativo nativo deve oferecer suporte para a inserção de links para ativos locais e [!DNL Experience Manager] deve oferecer suporte para a resolução desses links nos arquivos binários para referências do lado do servidor.
 
-[!DNL Experience Manager] o aplicativo de desktop é compatível com esse fluxo de trabalho com alguns aplicativos de desktop selecionados da Adobe Creative Cloud e formatos de arquivo - Adobe InDesign, Adobe Illustrator e Adobe Photoshop. O fluxo de trabalho permite trabalhar com eficiência com os arquivos da Creative Cloud compatíveis. Portanto, se o usuário A colocar alguns ativos em um arquivo do InDesign e fizer o check-in em [!DNL Experience Manager], o usuário B visualizará os ativos no arquivo do InDesign, mesmo que os ativos não façam parte do arquivo. Os ativos são baixados localmente na máquina do usuário B.
+[!DNL Experience Manager] o aplicativo de desktop é compatível com esse fluxo de trabalho com alguns aplicativos de desktop Adobe Creative Cloud e formatos de arquivo selecionados - Adobe InDesign, Adobe Illustrator e Adobe Photoshop. O fluxo de trabalho permite trabalhar com eficiência com os arquivos Creative Cloud suportados. Portanto, se o usuário A colocar alguns ativos em um arquivo de InDesign e fizer o check-in em [!DNL Experience Manager], o usuário B visualizará os ativos no arquivo de InDesign, mesmo que os ativos não façam parte do arquivo. Os ativos são baixados localmente na máquina do usuário B.
 
 >[!NOTE]
 >
@@ -295,12 +296,12 @@ Quando você usa [!DNL Experience Manager] aplicativo de desktop para abrir arqu
 
 Para saber quais são as limitações desse fluxo de trabalho, consulte os [requisitos do sistema e as versões compatíveis](release-notes.md).
 
-Para experimentar esse fluxo de trabalho com um ativo de imagem e o InDesign, siga estas etapas:
+Para experimentar este fluxo de trabalho com um ativo e InDesign de imagem, siga estas etapas:
 
 1. Mantenha o controle de um arquivo INDD com ativos colocados em [!DNL Experience Manager]. Para saber como criar um arquivo INDD, consulte [Colocando gráficos](https://helpx.adobe.com/indesign/using/placing-graphics.html).
 1. No aplicativo de desktop, **[!UICONTROL Edit]** o arquivo INDD com ativos colocados em [!DNL Experience Manager].
-1. O aplicativo baixa ambos, o arquivo do InDesign e os ativos vinculados. Quando o InDesign abre o documento, os links são resolvidos, os ativos são baixados e os ativos são exibidos no documento do InDesign.
-1. Para colocar um novo gráfico no arquivo do InDesign, use a ação **[!UICONTROL Reveal File]** no ativo. A ação baixa o ativo localmente e abre o local de compartilhamento de rede local no Windows Explorer ou no Mac Finder.
+1. O aplicativo baixa ambos, o arquivo InDesign e os ativos vinculados. Quando o InDesign abre o documento, os links são resolvidos, os ativos são baixados e os ativos são exibidos no documento do InDesign.
+1. Para colocar um novo gráfico no arquivo de InDesign, use a ação **[!UICONTROL Reveal File]** no ativo. A ação baixa o ativo localmente e abre o local de compartilhamento de rede local no Windows Explorer ou no Mac Finder.
 1. Coloque o ativo revelado no documento do InDesign. Isso cria um link no documento.
 1. Depois de concluir as edições no documento do InDesign, salve-o e carregue-o em [!DNL Experience Manager] usando o aplicativo de desktop.
 
