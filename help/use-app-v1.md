@@ -1,10 +1,11 @@
 ---
 title: Use [!DNL Experience Manager] aplicativo de desktop versão 1.10.
 description: Saiba como usar o aplicativo de desktop do Adobe Experience Manager versão 1.10 e otimizar seu trabalho com ativos no desktop.
+feature: Experience Manager Desktop App, Gerenciamento de ativos
 translation-type: tm+mt
-source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
+source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 Usando o aplicativo, os ativos em [!DNL Experience Manager] são facilmente acessíveis no desktop local e podem ser usados em qualquer aplicativo de desktop. Os ativos podem ser facilmente revelados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em [!DNL Experience Manager] com uma nova versão criada no repositório.
 
-Essa integração permite que várias funções na organização gerenciem os ativos de forma central no Assets e os acessem na Creative Cloud e em outros aplicativos, além de facilitar a adesão aos vários padrões, incluindo identidade visual.
+Essa integração permite que várias funções na organização gerenciem os ativos centralmente no Assets e os acessem no Creative Cloud e em outros aplicativos, facilitando o cumprimento dos vários padrões, incluindo a identidade visual.
 
 As principais tarefas que você faz usando o [!DNL Experience Manager] aplicativo de desktop v1 incluem:
 
@@ -114,7 +115,7 @@ Quando você clica em **Abrir** para abrir um ativo no computador local, o aplic
 
 No Mac, selecione **Abrir** no menu de contexto para abrir um ativo por meio de [!DNL Experience Manager] aplicativo de desktop. No Windows, selecione Abrir na Web no menu de contexto para abrir o ativo. Na janela Status do ativo, clique/toque em ![Abrir no desktop ícone](assets/do-not-localize/aemassets_icon_openondesktop.png) para abrir o ativo.
 
-Para arquivos do Adobe InDesign (INDD), selecione **[!UICONTROL Open]** no menu de contexto. Ao clicar nessa opção, o aplicativo baixa os ativos vinculados no seu sistema de arquivos local e abre o arquivo INDD no Adobe InDesign. Esse método garante que os ativos necessários estejam disponíveis localmente ao editar o arquivo INDD.
+Para arquivos Adobe InDesign (INDD), selecione **[!UICONTROL Open]** no menu de contexto. Ao clicar nessa opção, o aplicativo baixa os ativos vinculados no seu sistema de arquivos local e abre o arquivo INDD no Adobe InDesign. Esse método garante que os ativos necessários estejam disponíveis localmente ao editar o arquivo INDD.
 
 ![Opções do menu de contexto para acessar e abrir ativos usando o aplicativo  [!DNL Experience Manager] de desktop](assets/aem_desktopapp_mac_context_menu.png)
 
@@ -129,7 +130,7 @@ Para arquivos do Adobe InDesign (INDD), selecione **[!UICONTROL Open]** no menu 
 
 >[!NOTE]
 >
->A Adobe recomenda acessar as Opções de visualização do localizador no Mac e desativar as opções **Mostrar informações do item**, **Mostrar visualização do item** e **Mostrar coluna de visualização** para a pasta montada [!DNL Assets]. Melhora o desempenho.
+>O Adobe recomenda que você vá para as Opções de visualização do localizador no Mac e desative as opções **Mostrar informações do item**, **Mostrar visualização do item** e **Mostrar coluna de visualização** para a pasta montada [!DNL Assets]. Melhora o desempenho.
 
 ### Opções adicionais na interface [!DNL Experience Manager] {#additional-options-in-aem-assets}
 
@@ -179,7 +180,7 @@ Há duas maneiras de fazer check-out de ativos na interface da Web [!DNL Experie
    >
    >Ao editar um arquivo que acabou de ser aberto e sem check-out, outros usuários não sabem que um ativo está sendo atualizado por você.
 
-1. Para abrir um ativo para edição em um aplicativo da Adobe Creative Cloud, clique/toque na ação rápida Editar desktop ![Editar ícone da área de trabalho](assets/do-not-localize/aemassets_icon_editdesktop.png). Isso também verifica o ativo para edição. Após terminar a edição, marque no ativo para atualizar as alterações em [!DNL Assets].
+1. Para abrir um ativo para edição em um aplicativo do Adobe Creative Cloud, clique/toque na ação rápida Editar desktop ![Editar ícone da área de trabalho](assets/do-not-localize/aemassets_icon_editdesktop.png). Isso também verifica o ativo para edição. Após terminar a edição, marque no ativo para atualizar as alterações em [!DNL Assets].
 
    Como alternativa, escolha Editar no menu Ações da área de trabalho na barra de ferramentas.
 
@@ -190,7 +191,7 @@ Há duas maneiras de fazer check-out de ativos na interface da Web [!DNL Experie
 
 O aplicativo permite que você faça check-out dos arquivos de ativos para impedir que outros usuários modifiquem os arquivos nos quais você está trabalhando.
 
-1. No menu de contexto Mac, selecione a opção Abrir pasta do AEM Assets para abrir o Finder.
+1. No menu de contexto do Mac, selecione a opção Abrir pasta do AEM Assets para abrir o Finder.
 
    ![Opções do menu de contexto para acessar e abrir ativos usando o aplicativo  [!DNL Experience Manager] de desktop](assets/aem_desktopapp_mac_context_menu.png)
 
@@ -249,7 +250,7 @@ Usando o [!DNL Experience Manager] aplicativo de desktop, você pode fazer uploa
 
 1. Depois que a pasta for carregada, feche a caixa de diálogo e navegue até a interface do usuário do Assets. A pasta carregada é exibida na interface da Web.
 
-A Adobe não recomenda copiar-colar ou arrastar um número maior de arquivos ou pastas aninhadas, do sistema de arquivos local, para a área de compartilhamento de rede. O aplicativo não pode controlar o processo de upload devido a limitações técnicas e o desempenho é ruim.
+O Adobe não recomenda copiar-colar ou arrastar um número maior de arquivos ou pastas aninhadas, do sistema de arquivos local, para a área de compartilhamento de rede. O aplicativo não pode controlar o processo de upload devido a limitações técnicas e o desempenho é ruim.
 
 Como alternativa, selecione os arquivos/pastas que deseja fazer upload para [!DNL Experience Manager] no Finder ou Explorer, copie-os para a área de transferência do sistema, navegue até a pasta de destino na área de compartilhamento de rede e, no menu de contexto do aplicativo de desktop [!DNL Experience Manager] selecione **Colar ativos**. Dessa forma, [!DNL Experience Manager] o aplicativo de desktop inicia o upload dos ativos colados semelhantes à opção **Fazer upload da pasta** disponível na interface da Web [!DNL Experience Manager].
 
