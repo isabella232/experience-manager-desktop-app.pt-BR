@@ -1,10 +1,11 @@
 ---
 title: Instalar e configurar o aplicativo de desktop
 description: Instale e configure [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servidores e baixe os ativos em seu sistema de arquivos local.
+feature: Experience Manager Desktop App, Informações da versão
 translation-type: tm+mt
-source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -18,7 +19,7 @@ Essa integração permite que várias funções na organização,
 
 * Gerencie os ativos centralmente em [!DNL Experience Manager Assets].
 
-* Acesse os ativos em qualquer aplicativo de desktop nativo, incluindo aplicativos de terceiros e na Adobe Creative Cloud. Ao fazer isso, os usuários podem aderir facilmente aos vários padrões, incluindo identidade visual.
+* Acesse os ativos em qualquer aplicativo de desktop nativo, incluindo aplicativos de terceiros e no Adobe Creative Cloud. Ao fazer isso, os usuários podem aderir facilmente aos vários padrões, incluindo identidade visual.
 
 Para usar [!DNL Experience Manager] aplicativo de desktop,
 
@@ -88,7 +89,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
 1. ([!DNL Experience Manager] 6.5.1 ou posterior) Se estiver usando um aplicativo de desktop com [!DNL Experience Manager] 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte [Conector do Azure](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) ou [Conector S3](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
-   Se você for um cliente do Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe.
+   Se você for um cliente do Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente do Adobe.
 
 ## Definir preferências {#set-preferences}
 
@@ -106,7 +107,7 @@ Para alterar as preferências, clique no ícone ![Mais opções](assets/do-not-l
 
 * **[!UICONTROL Current cache size]**: Tamanho de armazenamento dos ativos baixados localmente. As informações são exibidas somente após o download dos ativos por meio do aplicativo.
 
-* **[!UICONTROL Automatically download linked assets]**: Os ativos colocados nos aplicativos nativos da Creative Cloud compatíveis são buscados automaticamente se você baixar o arquivo original.
+* **[!UICONTROL Automatically download linked assets]**: Os ativos colocados nos aplicativos nativos do Creative Cloud suportados são buscados automaticamente se você baixar o arquivo original.
 
 * **[!UICONTROL Maximum number of downloads]**:  ![ícone ](assets/do-not-localize/caution-icon.png) de cuidado: altere com cuidado. Ao baixar ativos pela primeira vez (por meio da opção Revelar, Abrir, Editar, Download ou semelhante), os ativos são baixados somente se o lote contiver menos do que esse número. O valor padrão é 50. Não altere se não tiver certeza. Aumentar o valor pode levar a tempos de espera mais longos e diminuir o valor pode não permitir que você baixe os ativos ou pastas necessários de uma só vez.
 
