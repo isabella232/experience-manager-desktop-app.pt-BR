@@ -2,10 +2,11 @@
 title: '[!DNL Adobe Experience Manager] notas de versão do aplicativo de desktop'
 description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para o aplicativo de desktop  [!DNL Adobe Experience Manager] da .
 mini-toc-levels: 1
+feature: Experience Manager Desktop App, Informações da versão
 translation-type: tm+mt
-source-git-commit: 06ce2dc1c47bc1ba71b4fd1d053131d9dbdb08ba
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1474'
 ht-degree: 28%
 
 ---
@@ -60,7 +61,7 @@ O recurso é compatível com as versões [!DNL Adobe Creative Cloud] 2018 e [!DN
 
 * Os caminhos são armazenados no registro XMP do arquivo pelo aplicativo nativo.
 
-* [!DNL Experience Manager] extraiu o registro XMP com os caminhos para o registro de metadados do ativo.
+* [!DNL Experience Manager] extraiu o registro de XMP com os caminhos para o registro de metadados do ativo.
 
 * Os caminhos podem corresponder aos ativos em [!DNL Experience Manager], ou seja, os arquivos inseridos também estão em [!DNL Experience Manager] em um caminho correspondente.
 
@@ -154,7 +155,7 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 
 * O aplicativo tenta carregar arquivos mesmo com caracteres inválidos, isso pode causar falha de carregamento no servidor. <!-- CQ-4273652 -->
 
-* Ao fazer upload de alterações em um ativo com comentários, os comentários são armazenados com o ativo em [!DNL Experience Manager], mas não são visíveis como comentários de versão. Esse problema é resolvido em [!DNL Experience Manager] 6.4.5 e [!DNL Experience Manager] 6.5.1. A Adobe recomenda instalar os service packs mais recentes. <!-- CQ-4268990 -->
+* Ao fazer upload de alterações em um ativo com comentários, os comentários são armazenados com o ativo em [!DNL Experience Manager], mas não são visíveis como comentários de versão. Esse problema é resolvido em [!DNL Experience Manager] 6.4.5 e [!DNL Experience Manager] 6.5.1. O Adobe recomenda instalar os service packs mais recentes. <!-- CQ-4268990 -->
 
 * As transferências de ativos não podem ser canceladas pelo usuário. Se você acionou uma transferência volumosa não intencional, saia do aplicativo e reinicie. <!-- CQ-4278940 -->
 
