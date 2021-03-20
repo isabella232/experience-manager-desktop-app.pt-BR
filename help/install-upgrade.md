@@ -3,9 +3,9 @@ title: Instalar e configurar o aplicativo de desktop
 description: Instale e configure [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servidores e baixe os ativos em seu sistema de arquivos local.
 feature: Experience Manager Desktop App, Informações da versão
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1405'
 ht-degree: 1%
 
 ---
@@ -111,7 +111,7 @@ Para alterar as preferências, clique no ícone ![Mais opções](assets/do-not-l
 
 * **[!UICONTROL Maximum number of downloads]**:  ![ícone ](assets/do-not-localize/caution-icon.png) de cuidado: altere com cuidado. Ao baixar ativos pela primeira vez (por meio da opção Revelar, Abrir, Editar, Download ou semelhante), os ativos são baixados somente se o lote contiver menos do que esse número. O valor padrão é 50. Não altere se não tiver certeza. Aumentar o valor pode levar a tempos de espera mais longos e diminuir o valor pode não permitir que você baixe os ativos ou pastas necessários de uma só vez.
 
-* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**:  ![ícone ](assets/do-not-localize/caution-icon.png) de cuidado: altere com cuidado. Essa configuração permite que o aplicativo emule o comportamento do aplicativo v1.10 ao carregar pastas. Na v1.10, os nomes de nó criados no repositório respeitam os espaços e a capitalização dos nomes de pastas fornecidos pelo usuário. No entanto, na v2.1 do aplicativo, os espaços extras nos nomes das pastas são convertidos em traços. Por exemplo, carregar `New Folder` ou `new   folder` cria o mesmo nó no repositório se a opção não estiver selecionada e o comportamento padrão na v2.1 for retido. Se essa opção estiver selecionada, nós diferentes serão criados no repositório para as duas pastas acima e corresponderão ao comportamento do aplicativo v1.10.
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**:  ![ícone ](assets/do-not-localize/caution-icon.png) de cuidado: altere com cuidado. Essa configuração permite que o aplicativo emule o comportamento do aplicativo v1.10 ao carregar pastas. Na v1.10, os nomes de nó criados no repositório respeitam os espaços e a identificação dos nomes de pasta fornecidos pelo usuário. No entanto, na v2.1 do aplicativo, os espaços extras nos nomes das pastas são convertidos em traços. Por exemplo, carregar `New Folder` ou `new   folder` cria o mesmo nó no repositório se a opção não estiver selecionada e o comportamento padrão na v2.1 for retido. Se essa opção estiver selecionada, nós diferentes serão criados no repositório para as duas pastas acima e corresponderão ao comportamento do aplicativo v1.10.
 
    O comportamento padrão da v2.1 continua o mesmo, ou seja, substitua vários espaços em nomes de pastas por traços no nome do nó do repositório e converta em nomes de nó em minúsculas.
 
@@ -122,6 +122,14 @@ Para atualizar as preferências indisponíveis, saia do servidor [!DNL Experienc
 ![Preferências e configurações do aplicativo de desktop](assets/preferences_da2.png)
 
 *Figura: Preferências do aplicativo de desktop.*
+
+### Suporte a proxy {#proxy-support}
+
+[!DNL Experience Manager] o aplicativo de desktop usa o proxy predefinido do sistema para se conectar à Internet por HTTPS. O aplicativo só pode se conectar usando um proxy de rede que não requer autenticação extra.
+
+Se você configurar ou modificar as configurações do servidor proxy para o Windows (Opções da Internet > Configurações da LAN), reinicie o aplicativo de desktop [!DNL Experience Manager] para que as alterações tenham efeito. A configuração de proxy se aplica ao iniciar o aplicativo de desktop. Feche e reinicie o aplicativo para que as alterações entrem em vigor.
+
+Se seu proxy exigir autenticação, a equipe de TI pode permitir o URL [!DNL Experience Manager Assets] nas configurações do servidor proxy para permitir que o tráfego do aplicativo passe.
 
 ## Desinstale o aplicativo {#uninstall-the-app}
 
