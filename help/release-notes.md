@@ -4,7 +4,7 @@ description: Detalhes da versão, melhorias, novos recursos, compatibilidade e l
 mini-toc-levels: 1
 feature: Experience Manager Desktop App, Informações da versão
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 28%
@@ -71,7 +71,7 @@ Para saber os detalhes, consulte [Novidades na v2.0](introduction.md#whats-new-v
 
 **Atualização no aplicativo v2.1.1.0**
 
-* Uma configuração avançada permite que o aplicativo emule o comportamento do aplicativo v1.10 ao carregar pastas. Na v1.10, os nomes de nó criados no repositório respeitam os espaços e a capitalização dos nomes de pastas fornecidos pelo usuário. O comportamento padrão da v2.1 continua o mesmo, ou seja, substitua vários espaços em nomes de pastas por um hífen no nome do nó do repositório e converta em nomes de nó em minúsculas. Consulte [as preferências do aplicativo](/help/install-upgrade.md#set-preferences).
+* Uma configuração avançada permite que o aplicativo emule o comportamento do aplicativo v1.10 ao carregar pastas. Na v1.10, os nomes de nó criados no repositório respeitam os espaços e a identificação dos nomes de pasta fornecidos pelo usuário. O comportamento padrão da v2.1 continua o mesmo, ou seja, substitua vários espaços em nomes de pastas por um hífen no nome do nó do repositório e converta em nomes de nó em minúsculas. Consulte [as preferências do aplicativo](/help/install-upgrade.md#set-preferences).
 
 **Atualização no aplicativo v2.1.0.0**
 
