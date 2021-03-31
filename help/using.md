@@ -4,9 +4,9 @@ description: Use [!DNL Adobe Experience Manager] desktop app, to work with [!DNL
 mini-toc-levels: 1
 feature: Experience Manager Desktop App, Gerenciamento de ativos
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: d345a0f0ac6826cf623f6e8bbbcc132481ea557c
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3907'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,17 @@ Antes de começar a usar o aplicativo, entenda [Como o aplicativo funciona](rele
 
 ## Ativar ações da área de trabalho na [!DNL Experience Manager] interface da Web {#desktopactions-v2}
 
-Na interface do usuário do Assets em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas [!UICONTROL Desktop Actions] e não são ativadas por padrão. Para habilitá-lo, siga estas etapas.
+Na interface do usuário [!DNL Assets] em um navegador, é possível explorar os locais do ativo ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas [!UICONTROL Desktop Actions] e não são ativadas por padrão. Para habilitá-lo, siga estas etapas.
 
-1. No console Assets, clique/toque no ícone **[!UICONTROL User]** na barra de ferramentas.
-1. Clique/toque em **[!UICONTROL My Preferences]** para exibir a caixa de diálogo **[!UICONTROL Preferences]**.
-1. Na caixa de diálogo Preferências do usuário, selecione **[!UICONTROL Show Desktop Actions For Assets]**. Clique/toque em **[!UICONTROL Accept]**.
+1. No console [!DNL Assets], clique no ícone **[!UICONTROL User]** na barra de ferramentas.
+1. Clique em **[!UICONTROL My Preferences]** para exibir a caixa de diálogo **[!UICONTROL Preferences]**.
 
-   ![Marque Mostrar ações da área de trabalho para ativos para ativar ações da área de trabalho](assets/enable_desktop_actions.png)
+1. Na caixa de diálogo Preferências do usuário, selecione **[!UICONTROL Show Desktop Actions For Assets]**. Clique em **[!UICONTROL Accept]**.
 
-   Marque [!UICONTROL Show Desktop Actions For Assets] para ativar as ações da área de trabalho
+
+   ![Selecione Mostrar ações da área de trabalho para ativos para ativar ações da área de trabalho](assets/enable_desktop_actions.png)
+
+   *Figura: Selecione  [!UICONTROL Show Desktop Actions For Assets] para ativar as ações da área de trabalho.*
 
 ## Procurar, pesquisar e visualizar ativos {#browse-search-preview-assets}
 
