@@ -2,9 +2,9 @@
 title: Práticas recomendadas para o aplicativo de desktop e solução de problemas [!DNL Adobe Experience Manager] i
 description: Siga as práticas recomendadas e solucione problemas para resolver os problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
 translation-type: tm+mt
-source-git-commit: 9d90bdcab79604e03d1ad3f30ed2aca2eb03e1c5
+source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2175'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,16 @@ Para ativar o modo de depuração no Windows:
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
 
+### Saiba mais sobre a versão [!DNL Adobe Experience Manager] do aplicativo de desktop {#know-app-version-v2}
+
+Para ver o número da versão:
+
+1. Inicie o aplicativo.
+
+1. Clique nas reticências no canto superior direito, passe o mouse sobre [!UICONTROL Help] e clique em [!UICONTROL About].
+
+   O número da versão é listado nesta tela.
+
 ### Limpar cache {#clear-cache-v2}
 
 Execute as seguintes etapas:
@@ -138,17 +148,7 @@ Para limpar o cache, exclua o diretório Endpoint [!DNL Adobe Experience Manager
 
 Limpar o cache do [!DNL Adobe Experience Manager] aplicativo de desktop é uma tarefa preliminar de solução de problemas que pode resolver vários problemas. Limpe o cache das preferências do aplicativo. Consulte [definir preferências](install-upgrade.md#set-preferences). O local padrão da pasta de cache é:
 
-### Saiba mais sobre a versão [!DNL Adobe Experience Manager] do aplicativo de desktop {#know-app-version-v2}
-
-Para ver o número da versão:
-
-1. Inicie o aplicativo.
-
-1. Clique nas reticências no canto superior direito, passe o mouse sobre [!UICONTROL Help] e clique em [!UICONTROL About].
-
-   O número da versão é listado nesta tela.
-
-### Não é possível ver os ativos colocados {#placed-assets-missing}
+## Não é possível ver os ativos colocados {#placed-assets-missing}
 
 Se não conseguir ver os ativos que você ou outros profissionais criativos colocaram nos arquivos de suporte (por exemplo, arquivos INDD), verifique o seguinte:
 
@@ -179,11 +179,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-### Não é possível carregar arquivos {#upload-fails}
+## Não é possível carregar arquivos {#upload-fails}
 
 Se você estiver usando o aplicativo de desktop com [!DNL Experience Manager] 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Ele resolve o problema de falha de carregamento de arquivo relacionado a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte [instruções de instalação](install-upgrade.md#install-v2).
 
-### [!DNL Experience Manager] problemas de conexão do aplicativo de desktop  {#connection-issues}
+## [!DNL Experience Manager] problemas de conexão do aplicativo de desktop  {#connection-issues}
 
 Se você estiver tendo problemas gerais de conectividade, veja algumas maneiras de obter mais informações sobre o que o [!DNL Experience Manager] aplicativo de desktop está fazendo.
 
@@ -200,7 +200,7 @@ Se você estiver tendo problemas gerais de conectividade, veja algumas maneiras 
 A maioria das solicitações do aplicativo é encontrada no log de solicitações. No entanto, se não houver informações úteis, pode ser útil examinar as solicitações enviadas pelo navegador incorporado do aplicativo.
 Consulte a seção [SAML](#da-connection-issue-with-saml-aem) para obter instruções sobre como visualizar essas solicitações.
 
-#### Autenticação de logon SAML não funciona {#da-connection-issue-with-saml-aem}
+### Autenticação de logon SAML não funciona {#da-connection-issue-with-saml-aem}
 
 [!DNL Experience Manager] o aplicativo de desktop pode não se conectar à  [!DNL Adobe Experience Manager] implantação habilitada para SSO (SAML). O design do aplicativo tenta acomodar as variações e complexidades de conexões e processos SSO. No entanto, uma configuração pode exigir solução de problemas adicional.
 
@@ -247,7 +247,7 @@ Para solucionar mais problemas, é possível exibir os URLs exatos que o navegad
 
 Olhar a sequência de URL que está sendo carregada pode ajudar a solucionar problemas no final do SAML para determinar o que está errado.
 
-#### Problema de configuração SSL {#ssl-config-v2}
+### Problema de configuração SSL {#ssl-config-v2}
 
 As bibliotecas que o [!DNL Experience Manager] aplicativo de desktop usa para comunicação HTTP usam a imposição estrita de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar [!DNL Experience Manager] aplicativo de desktop. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
 
@@ -284,7 +284,13 @@ Como medida temporária, é possível desabilitar a imposição SSL estrita no [
 
 1. Salve o arquivo e reinicie o [!DNL Adobe Experience Manager] aplicativo de desktop.
 
-### O aplicativo não responde {#unresponsive}
+### Problemas de logon ao alternar para um servidor diferente {#cannot-login-cookies-issue}
+
+Depois de usar um servidor [!DNL Experience Manager], ao tentar alterar a conexão com um servidor diferente, você pode encontrar problemas de logon. Isso ocorre porque os cookies antigos interferem na nova autenticação. Uma opção no menu principal para [!UICONTROL Clear Cookies] ajuda. Faça logoff da sessão atual no aplicativo e selecione [!UICONTROL Clear Cookies] antes de continuar a se conectar.
+
+![Limpar cookies ao alternar o servidor](assets/main_menu_logout_da2.png)
+
+## O aplicativo não responde {#unresponsive}
 
 Raramente, o aplicativo pode ficar sem resposta, exibir apenas uma tela branca ou exibir um erro na parte inferior da interface, sem opções na interface. Tente o seguinte na ordem:
 
