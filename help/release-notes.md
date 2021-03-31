@@ -4,9 +4,9 @@ description: Detalhes da versão, melhorias, novos recursos, compatibilidade e l
 mini-toc-levels: 1
 feature: Experience Manager Desktop App, Informações da versão
 translation-type: tm+mt
-source-git-commit: e8a299c7357faf2c19c11a56f2868f6679c15ac1
+source-git-commit: 861f2e8994ae7eb9b35c78036479fe47dc793cf3
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1512'
 ht-degree: 27%
 
 ---
@@ -71,7 +71,7 @@ Para saber os detalhes, consulte [Novidades na v2.0](introduction.md#whats-new-v
 
 **Atualização no aplicativo v2.1.2.0**
 
-* Uma nova opção para [!UICONTROL Clear Cookies] é adicionada ao menu principal do aplicativo. Ajuda com possíveis problemas de logon, por exemplo, ao alterar a conexão de um servidor para outro.
+* Uma nova opção para [!UICONTROL Clear Cookies] é adicionada ao menu principal do aplicativo. Ajuda com possíveis problemas de logon, por exemplo, ao alterar a conexão de um servidor para outro. Consulte [limpar cookies antes de conectar](/help/troubleshoot.md#cannot-login-cookies-issue).
 
 **Atualização no aplicativo v2.1.1.0**
 
