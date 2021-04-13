@@ -1,14 +1,14 @@
 ---
 title: Práticas recomendadas para o aplicativo de desktop e solução de problemas [!DNL Adobe Experience Manager] i
 description: Siga as práticas recomendadas e solucione problemas para resolver os problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
+exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
 translation-type: tm+mt
-source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
+source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
-
 
 # Solucionar problemas do [!DNL Adobe Experience Manager] aplicativo de desktop {#troubleshoot-v2}
 
@@ -298,6 +298,13 @@ Raramente, o aplicativo pode ficar sem resposta, exibir apenas uma tela branca o
 * Saia do aplicativo e abra-o novamente.
 
 Em ambos os métodos, o aplicativo é iniciado na pasta DAM raiz.
+
+## Ocultar ativos expirados {#hide-expired-assets}
+
+Ao navegar pelos ativos na interface do usuário [!DNL Experience Manager], os ativos expirados não são exibidos. Para evitar visualizar, pesquisar e buscar ativos expirados ao navegar por ativos do aplicativo de desktop e do Asset Link, os administradores podem fazer a seguinte configuração. A configuração funciona para todos os usuários, independentemente do privilégio de administrador.
+
+* [Configuração no Experience Manager 6.5 para ocultar ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api) expirados.
+* [Configuração no Experience Manager como Cloud Service para ocultar ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api) expirados.
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
