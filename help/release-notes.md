@@ -5,9 +5,9 @@ mini-toc-levels: 1
 feature: Aplicativo para desktop, Informações sobre a versão
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1523'
 ht-degree: 27%
 
 ---
@@ -27,7 +27,7 @@ As **versões [!DNL Experience Manager] suportadas** são:
 
 [!DNL Adobe Experience Manager] o aplicativo de desktop está disponível para os seguintes sistemas  **operacionais**:
 
-* macOS X 10.14 ou mais recente, com as últimas correções de erros.
+* macOS X 10.14 ou mais recente, com as últimas correções de erros. [Computadores Mac com ](https://support.apple.com/en-us/HT211814) silicone Apple ainda não são compatíveis.
 * Windows 10 com os service packs e correções de erros mais recentes.
 
 Os **URLs de download** para SO suportado são:
