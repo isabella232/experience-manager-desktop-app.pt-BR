@@ -1,7 +1,7 @@
 ---
 title: Use [!DNL Experience Manager] aplicativo de desktop versão 1.10.
 description: Saiba como usar o aplicativo de desktop do Adobe Experience Manager versão 1.10 e otimizar seu trabalho com ativos no desktop.
-feature: Aplicativo para desktop, Gerenciamento de ativos
+feature: Desktop App,Asset Management
 exl-id: 2fdc1c8d-b822-4cca-ad06-bd875a00aa6d
 translation-type: tm+mt
 source-git-commit: 4616934e8923693106401da008e2510310d0742a
