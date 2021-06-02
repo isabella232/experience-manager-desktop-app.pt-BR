@@ -2,12 +2,11 @@
 title: Usar  [!DNL Experience Manager] aplicativo de desktop
 description: Use [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM assets diretamente do desktop Win ou Mac e use em outros aplicativos.
 mini-toc-levels: 1
-feature: Desktop App,Asset Management
+feature: Aplicativo para desktop, Gerenciamento de ativos
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
 workflow-type: tm+mt
-source-wordcount: '3905'
+source-wordcount: '3923'
 ht-degree: 0%
 
 ---
@@ -176,7 +175,9 @@ Se necessário, alterne o check-out. O ativo atualizado é removido da pasta de 
 
 ## Faça upload e adicione novos ativos a [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
-Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo ou empreiteiro de agências que deseja adicionar um grande número de fotos de uma sessão fotográfica ao repositório [!DNL Experience Manager]. Para adicionar novo conteúdo a [!DNL Experience Manager], selecione ![opção upload to cloud](assets/do-not-localize/upload_to_cloud_da2.png) na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Como alternativa, arraste os arquivos ou pastas na interface do aplicativo. O aplicativo inicia o upload do ativo. Se o upload demorar mais, o aplicativo exibirá uma barra de progresso na parte inferior. Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres permitidos em [criar pastas em [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
+Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo ou empreiteiro de agências que deseja adicionar um grande número de fotos de uma sessão fotográfica ao repositório [!DNL Experience Manager]. Para adicionar novo conteúdo a [!DNL Experience Manager], selecione ![opção upload to cloud](assets/do-not-localize/upload_to_cloud_da2.png) na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Como alternativa, para fazer upload de ativos, arraste os arquivos ou pastas na interface do aplicativo. No Windows, se você arrastar ativos em uma pasta dentro do aplicativo, os ativos serão carregados na pasta.
+
+Se o upload demorar mais para ser carregado, o aplicativo exibirá uma barra de progresso na parte inferior. Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres permitidos em [criar pastas em [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
