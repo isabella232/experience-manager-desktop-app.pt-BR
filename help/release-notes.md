@@ -2,12 +2,11 @@
 title: '[!DNL Adobe Experience Manager] notas de versão do aplicativo de desktop'
 description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para o aplicativo de desktop  [!DNL Adobe Experience Manager] da .
 mini-toc-levels: 1
-feature: Desktop App,Release Information
+feature: Aplicativo para desktop, Informações sobre a versão
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-translation-type: tm+mt
-source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
+source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1525'
 ht-degree: 27%
 
 ---
@@ -79,7 +78,7 @@ Para saber os detalhes, consulte [Novidades na v2.0](introduction.md#whats-new-v
 
 **Atualização no aplicativo v2.1.0.0**
 
-* Para fazer upload de ativos, os usuários agora podem arrastar os arquivos ou pastas na interface do aplicativo, diretamente do Windows Explorer ou do Mac Finder. Isso funciona além da opção de upload disponível anteriormente no aplicativo. <!-- CQ-4309527 -->
+* Para fazer upload de ativos, os usuários agora podem arrastar os arquivos ou pastas na interface do aplicativo, diretamente do Windows Explorer ou do Mac Finder. Isso funciona além da opção de upload disponível no aplicativo. Consulte [fazer upload de ativos](/help/using.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
 
 **Atualização no aplicativo v2.0.3**
 
@@ -171,7 +170,7 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 >
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
->* [Como  [!DNL Experience Manager] usar o aplicativo de desktop](using.md)
->* [Instalar e atualizar o aplicativo de desktop](install-upgrade.md)
->* [Práticas recomendadas e dicas para solução de problemas](troubleshoot.md)
+>* [Como usar [!DNL Experience Manager] aplicativo de desktop](using.md)
+* [Instalar e atualizar o aplicativo de desktop](install-upgrade.md)
+* [Práticas recomendadas e dicas para solução de problemas](troubleshoot.md)
 
