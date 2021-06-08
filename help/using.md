@@ -4,9 +4,9 @@ description: Use [!DNL Adobe Experience Manager] desktop app, to work with [!DNL
 mini-toc-levels: 1
 feature: Aplicativo para desktop, Gerenciamento de ativos
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
+source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
 workflow-type: tm+mt
-source-wordcount: '3923'
+source-wordcount: '3999'
 ht-degree: 0%
 
 ---
@@ -175,9 +175,19 @@ Se necessário, alterne o check-out. O ativo atualizado é removido da pasta de 
 
 ## Faça upload e adicione novos ativos a [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
-Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo ou empreiteiro de agências que deseja adicionar um grande número de fotos de uma sessão fotográfica ao repositório [!DNL Experience Manager]. Para adicionar novo conteúdo a [!DNL Experience Manager], selecione ![opção upload to cloud](assets/do-not-localize/upload_to_cloud_da2.png) na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Como alternativa, para fazer upload de ativos, arraste os arquivos ou pastas na interface do aplicativo. No Windows, se você arrastar ativos em uma pasta dentro do aplicativo, os ativos serão carregados na pasta.
+Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo ou empreiteiro de agências que deseja adicionar um grande número de fotos de uma sessão fotográfica ao repositório [!DNL Experience Manager]. Para adicionar novo conteúdo a [!DNL Experience Manager], selecione ![opção upload to cloud](assets/do-not-localize/upload_to_cloud_da2.png) na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Como alternativa, para fazer upload de ativos, arraste os arquivos ou pastas na interface do aplicativo. No Windows, se você arrastar ativos em uma pasta dentro do aplicativo, os ativos serão carregados na pasta. Se demorar mais para fazer upload, o aplicativo exibirá uma barra de progresso.
 
-Se o upload demorar mais para ser carregado, o aplicativo exibirá uma barra de progresso na parte inferior. Não use espaços em branco e caracteres inválidos ao criar ou carregar pastas. Consulte uma lista de caracteres permitidos em [criar pastas em [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
+Ao nomear os arquivos e pastas, não use os seguintes caracteres (lista separada por espaços):
+
+* em nomes de arquivo `\\`.
+
+   Os caracteres `# % { } ? & . / : [ | ] *` são substituídos por traço nos nomes de nó criados em [!DNL Adobe Experience Manager]; mas os espaços em branco e o invólucro são retidos.
+
+* em nomes de pastas `\\ \t &`.
+
+   Os espaços em branco e os caracteres `% ; # , + ? ^ { } " . / : [ ] | *` nos nomes de pasta são substituídos por traço nos caminhos de pasta nos nomes de nó criados em [!DNL Adobe Experience Manager]. Além disso, os caracteres em maiúsculas são convertidos em minúsculas nos caminhos da pasta.
+
+No entanto, se [!UICONTROL Use legacy conventions when creating nodes for assets and folders] estiver ativado em [!UICONTROL Preferences], o aplicativo emula o comportamento do aplicativo v1.10 ao carregar pastas. Na v1.10, os nomes de nó criados no repositório respeitam os espaços e a identificação dos nomes de pasta fornecidos pelo usuário. Para obter mais informações, consulte [Preferências de aplicativo](/help/install-upgrade.md#set-preferences).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
