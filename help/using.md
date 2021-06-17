@@ -4,9 +4,9 @@ description: Use [!DNL Adobe Experience Manager] desktop app, to work with [!DNL
 mini-toc-levels: 1
 feature: Aplicativo para desktop, Gerenciamento de ativos
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: 7c413be995ef087fab75114d65e87f6936c8e021
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4054'
 ht-degree: 0%
 
 ---
@@ -177,18 +177,6 @@ Se necessário, alterne o check-out. O ativo atualizado é removido da pasta de 
 
 Os usuários podem adicionar novos ativos ao repositório DAM. Por exemplo, você pode ser um fotógrafo ou empreiteiro de agências que deseja adicionar um grande número de fotos de uma sessão fotográfica ao repositório [!DNL Experience Manager]. Para adicionar novo conteúdo a [!DNL Experience Manager], selecione ![opção upload to cloud](assets/do-not-localize/upload_to_cloud_da2.png) na barra superior do aplicativo. Navegue até os arquivos de ativos no sistema de arquivos local e clique em **[!UICONTROL Select]**. Como alternativa, para fazer upload de ativos, arraste os arquivos ou pastas na interface do aplicativo. No Windows, se você arrastar ativos em uma pasta dentro do aplicativo, os ativos serão carregados na pasta. Se demorar mais para fazer upload, o aplicativo exibirá uma barra de progresso.
 
-Ao nomear os arquivos e pastas, não use os seguintes caracteres (lista separada por espaços):
-
-* em nomes de arquivo `\\`.
-
-   Os caracteres `# % { } ? & . / : [ | ] *` são substituídos por traço nos nomes de nó criados em [!DNL Adobe Experience Manager]; mas os espaços em branco e o invólucro são retidos.
-
-* em nomes de pastas `\\ \t &`.
-
-   Os espaços em branco e os caracteres `% ; # , + ? ^ { } " . / : [ ] | *` nos nomes de pasta são substituídos por traço nos caminhos de pasta nos nomes de nó criados em [!DNL Adobe Experience Manager]. Além disso, os caracteres em maiúsculas são convertidos em minúsculas nos caminhos da pasta.
-
-No entanto, se [!UICONTROL Use legacy conventions when creating nodes for assets and folders] estiver ativado em [!UICONTROL Preferences], o aplicativo emula o comportamento do aplicativo v1.10 ao carregar pastas. Na v1.10, os nomes de nó criados no repositório respeitam os espaços e a identificação dos nomes de pasta fornecidos pelo usuário. Para obter mais informações, consulte [Preferências de aplicativo](/help/install-upgrade.md#set-preferences).
-
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
 
@@ -204,9 +192,76 @@ Você pode controlar a simultaneidade do upload (aceleração) na configuração
 >
 >A lista de transferência não é persistente e não está disponível se você sair do aplicativo e reabri-lo.
 
+### Gerenciar caracteres especiais nos nomes de ativos {#special-characters-in-filename}
+
+No aplicativo herdado, os nomes de nó criados no repositório retinham os espaços e o formato dos nomes de pastas fornecidos pelo usuário. Para que o aplicativo atual emule as regras de nomenclatura de nós do aplicativo v1.10, habilite [!UICONTROL Use legacy conventions when creating nodes for assets and folders] no [!UICONTROL Preferences]. Consulte [preferências do aplicativo](/help/install-upgrade.md#set-preferences). Essa preferência herdada está desativada por padrão.
+
 >[!NOTE]
 >
->Se os arquivos não conseguirem fazer upload e se você estiver se conectando a [!DNL Experience Manager] 6.5.1 ou posterior implantação, consulte estas [informações de solução de problemas](troubleshoot.md#upload-fails).
+>O aplicativo altera apenas os nomes dos nós no repositório usando as seguintes convenções de nomenclatura. O aplicativo retém o `Title` do ativo como está.
+
+<!-- TBD: Do NOT use this table.
+
+| Where do characters occur | Characters | Legacy preference | Renaming convention | Example |
+|---|---|---|---|---|
+| In file name extension | `.` | Enabled or disabled | Retained as is | NA |
+| File or folder name | `. / : [ ] | *` | Enabled or disabled | Replaced with a `-` (hyphen) | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| Folder name | `% ; # , + ? ^ { } "` | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | `% # ? { } &` | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | Whitespaces | Enabled or disabled | Retained as is | NA |
+| Folder name | Whitespaces | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | Uppercase characters | Disabled | Retained as is | tbd |
+| Folder name | Uppercase characters | Disabled | Replaced with a `-` (hyphen) | tbd |
+-->
+
+| Caracteres ‡ | Preferência herdada no aplicativo | Quando ocorre em nomes de arquivo | Quando ocorre em nomes de pastas | Exemplo |
+|---|---|---|---|---|
+| `. / : [ ] | *` | Ativado ou Desativado | Substituído por `-` (hífen). Um `.` (ponto) na extensão do nome de arquivo é retido como está. | Substituído por `-` (hífen). | `myimage.jpg` permanece como está e  `my.image.jpg` muda para  `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` e espaços em branco | ![desmarcar ](assets/do-not-localize/deselect-icon.png) iconDisabled | Os espaços em branco são retidos | Substituído por `-` (hífen). | `My Folder.` alterações em  `my-folder-`. |
+| `# % { } ? & .` | ![desmarcar ](assets/do-not-localize/deselect-icon.png) iconDisabled | Substituído por `-` (hífen). | ND. | `#My New File.` alterações em  `-My New File-`. |
+| Caracteres em maiúsculas | ![desmarcar ](assets/do-not-localize/deselect-icon.png) iconDisabled | A caixa é mantida como está. | Alterado para caracteres em minúsculas. | `My New Folder` alterações em  `my-new-folder`. |
+| Caracteres em maiúsculas | ![seleção ](assets/do-not-localize/selection-checked-icon.png) ícone marcadoEnabled | A caixa é mantida como está. | A caixa é mantida como está. | ND. |
+
+‡ A lista de caracteres é uma lista separada por espaços em branco.
+
+<!-- TBD: Check if the following is to be included in the footnote.
+
+Do not use &#92;&#92; in the names of files and &#92;&#116; &#38; in the names of folders. 
+-->
+
+
+<!-- TBD: Securing the below presentation of the same content in a comment.
+
+**File names**
+
+| Characters | Replaced by |
+|---|---|
+| &#35; &#37; &#123; &#63; &#125; &#38; &#46; &#47; &#58; &#91; &#124; &#93; &#42; | hyphen (-) |
+| whitespaces | whitespaces are retained |
+| capital case | casing is retained |
+
+>[!CAUTION]
+>
+>Avoid using &#92;&#92; in file names.
+
+**Folder names**
+
+| Characters | Replaced by |
+|---|---|
+| Characters | Replaced by |
+| &#37; &#59; &#35; &#44; &#43; &#63; &#94; &#123; &#123; &#34; &#46; &#47; &#59; &#91; &#93; &#124; &#42; | hyphen (-) |
+| whitespaces | hyphen (-) |
+| capital case | lower case |
+
+>[!CAUTION]
+>
+>Avoid using &#92;&#92; &#92;&#116; &#38; in folder names.
+
+>[!NOTE]
+>
+>If you enable [!UICONTROL Use legacy conventions when creating nodes for assets and folders] in app [!UICONTROL Preferences], then the app emulates v1.10 app behavior when uploading folders. In v1.10, the node names created in the repository respect spaces and casing of the folder names provided by the user. For more information, see [app Preferences](/help/install-upgrade.md#set-preferences).
+
+-->
 
 ## Trabalhar com vários ativos {#work-with-multiple-assets}
 
