@@ -4,7 +4,7 @@ description: Detalhes da versão, melhorias, novos recursos, compatibilidade e l
 mini-toc-levels: 1
 feature: Aplicativo para desktop, Informações sobre a versão
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: d642a33c8e8c2f771a6f996a76167b7f6e42c1ce
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 24%
@@ -70,10 +70,6 @@ Para saber os detalhes, consulte [Novidades na v2.0](introduction.md#whats-new-v
 
 **Atualizações no aplicativo v2.1.3.1**
 
-* Uma opção é adicionada permitindo que o aplicativo carregue pastas e arquivos, de modo que seus nomes de nó criados em [!DNL Adobe Experience Manager] sejam iguais aos nomes de arquivo e pasta locais.
-
-   Esse comportamento é semelhante ao comportamento padrão na versão 1 do aplicativo de desktop. Enquanto na versão atual, se a opção não estiver ativada, os espaços em branco e os caracteres `% ; # , + ? ^ { } "` nos nomes das pastas serão substituídos por traço nos caminhos das pastas. Além disso, os caracteres em maiúsculas são convertidos em minúsculas nos caminhos da pasta. No entanto, em nomes de arquivos, os caracteres `# % { } ? &` são substituídos por traço; mas os espaços em branco e o invólucro são retidos. Para obter mais informações, consulte [Preferências de aplicativo](/help/install-upgrade.md#set-preferences) e [Fazer upload e adicionar novos ativos](/help/using.md#upload-and-add-new-assets-to-aem).
-
 O erro corrigido na versão atual é:
 
 * As velocidades de upload e download de ativos melhoraram, mesmo com ativos grandes. Correção do problema em que os uploads de ativos com [!DNL desktop app] falhavam cada vez mais quando arquivos grandes eram carregados.
@@ -81,6 +77,10 @@ O erro corrigido na versão atual é:
 **Atualização no aplicativo v2.1.2.0**
 
 * Uma nova opção para [!UICONTROL Clear Cookies] é adicionada ao menu principal do aplicativo. Ajuda com possíveis problemas de logon, por exemplo, ao alterar a conexão de um servidor para outro. Consulte [limpar cookies antes de conectar](/help/troubleshoot.md#cannot-login-cookies-issue).
+
+* Uma opção é adicionada permitindo que o aplicativo carregue pastas e arquivos, de modo que seus nomes de nó criados em [!DNL Adobe Experience Manager] sejam iguais aos nomes de arquivo e pasta locais.
+
+   Esse comportamento é semelhante ao comportamento padrão na versão 1 do aplicativo de desktop. Enquanto na versão atual, se a opção não estiver ativada, os espaços em branco e os caracteres `% ; # , + ? ^ { } "` nos nomes das pastas serão substituídos por traço nos caminhos das pastas. Além disso, os caracteres em maiúsculas são convertidos em minúsculas nos caminhos da pasta. No entanto, em nomes de arquivos, os caracteres `# % { } ? &` são substituídos por traço; mas os espaços em branco e o invólucro são retidos. Para obter mais informações, consulte [Preferências de aplicativo](/help/install-upgrade.md#set-preferences) e [Fazer upload e adicionar novos ativos](/help/using.md#upload-and-add-new-assets-to-aem).
 
 **Atualização no aplicativo v2.1.1.0**
 
