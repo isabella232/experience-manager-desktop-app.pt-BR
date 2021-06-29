@@ -4,14 +4,14 @@ description: Use [!DNL Adobe Experience Manager] desktop app, to work with [!DNL
 mini-toc-levels: 1
 feature: Aplicativo para desktop, Gerenciamento de ativos
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 7c413be995ef087fab75114d65e87f6936c8e021
+source-git-commit: dcd29d0bbb32004d970d334c256e659f4a4c39e1
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4053'
 ht-degree: 0%
 
 ---
 
-# Use [!DNL Adobe Experience Manager] aplicativo de desktop {#use-aem-desktop-app-v2}
+# Usar [!DNL Adobe Experience Manager] aplicativo de desktop {#use-aem-desktop-app-v2}
 
 Use o [!DNL Adobe Experience Manager] aplicativo de desktop para acessar facilmente os ativos digitais armazenados no repositório DAM [!DNL Adobe Experience Manager] em seu desktop local e usar esses ativos em qualquer aplicativo de desktop. Você pode abrir os ativos em aplicativos de desktop e editar os ativos localmente - faça upload das alterações de volta para [!DNL Experience Manager] com controle de versão, para compartilhar as atualizações com outros usuários. Você também pode fazer upload de novos arquivos e hierarquias de pastas para [!DNL Experience Manager], criar pastas e excluir ativos ou pastas do [!DNL Experience Manager] DAM.
 
@@ -58,14 +58,14 @@ Antes de começar a usar o aplicativo, entenda [Como o aplicativo funciona](rele
 
 * **[!UICONTROL Upload Changes]**: O aplicativo de desktop faz upload do ativo atualizado somente quando você faz upload explícito para o  [!DNL Experience Manager] servidor. Ao salvar suas edições, as alterações são salvas somente no computador local. Ao fazer upload, o ativo é automaticamente marcado e o ícone de bloqueio é removido. Consulte [editar ativos](using.md#edit-assets-upload-updated-assets).
 
-## Ativar ações da área de trabalho na [!DNL Experience Manager] interface da Web {#desktopactions-v2}
+## Ativar ações da área de trabalho na interface da Web [!DNL Experience Manager] {#desktopactions-v2}
 
 Na interface do usuário [!DNL Assets] em um navegador, é possível explorar os locais do ativo ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas [!UICONTROL Desktop Actions] e não são ativadas por padrão. Para habilitá-lo, siga estas etapas.
 
 1. No console [!DNL Assets], clique no ícone **[!UICONTROL User]** na barra de ferramentas.
 1. Clique em **[!UICONTROL My Preferences]** para exibir a caixa de diálogo **[!UICONTROL Preferences]**.
 
-1. Na caixa de diálogo Preferências do usuário, selecione **[!UICONTROL Show Desktop Actions For Assets]**. Clique em **[!UICONTROL Accept]**.
+1. Na caixa de diálogo [!UICONTROL User Preferences], selecione **[!UICONTROL Show Desktop Actions For Assets]** e clique em **[!UICONTROL Accept]**.
 
 
    ![Selecione Mostrar ações da área de trabalho para ativos para ativar ações da área de trabalho](assets/enable_desktop_actions.png)
@@ -303,7 +303,7 @@ Após o upload, se as alterações esperadas não forem refletidas no aplicativo
 
 Para exibir a lista de ativos transferidos em uma determinada sessão, consulte [Fazer upload de ativos para [!DNL Experience Manager]](#upload-and-add-new-assets-to-aem).
 
-## Fluxo de trabalho avançado: inicie a partir da [!DNL Assets] interface da Web {#adv-workflow-start-from-aem-ui}
+## Fluxo de trabalho avançado: inicie a partir da interface da Web [!DNL Assets] {#adv-workflow-start-from-aem-ui}
 
 Se necessário, inicie o fluxo de trabalho pela interface da Web do Assets. O aplicativo de desktop integra-se com o [!DNL Experience Manager] para assumir o controle quando solicitado usando as Ações do desktop.
 
@@ -352,7 +352,7 @@ Se um ativo que você está editando localmente também for atualizado no servid
 
 ![Opções para resolver um ](assets/editing_conflict_dialog_da2.png "conflito de ediçãoOpções para resolver um conflito de edição")
 
-## Fluxo de trabalho avançado: colocar e vincular ativos no arquivo de InDesign {#adv-workflow-place-assets-indesign}
+## Fluxo de trabalho avançado: colocar e vincular ativos no arquivo do InDesign {#adv-workflow-place-assets-indesign}
 
 Quando você usa [!DNL Experience Manager] aplicativo de desktop para abrir arquivos com ativos vinculados, os ativos são baixados previamente e aparecem colocados nos aplicativos nativos. Para que esse fluxo de trabalho funcione, o aplicativo nativo deve oferecer suporte para a inserção de links para ativos locais e [!DNL Experience Manager] deve oferecer suporte para a resolução desses links nos arquivos binários para referências do lado do servidor.
 
@@ -373,7 +373,7 @@ Para experimentar este fluxo de trabalho com um ativo e InDesign de imagem, siga
 1. Coloque o ativo revelado no documento do InDesign. Isso cria um link no documento.
 1. Depois de concluir as edições no documento do InDesign, salve-o e carregue-o em [!DNL Experience Manager] usando o aplicativo de desktop.
 
-## Fluxo de trabalho avançado: baixe os ativos localmente {#adv-workflow-download-assets-locally}
+## Fluxo de trabalho avançado: baixar os ativos localmente {#adv-workflow-download-assets-locally}
 
 O aplicativo baixa os ativos do [!DNL Experience Manager] servidor localmente em seu sistema de arquivos em vários cenários. Os downloads consomem largura de banda e espaço em disco. Conhecer os cenários ajuda a otimizar o tempo de espera para a conclusão dos downloads.
 
