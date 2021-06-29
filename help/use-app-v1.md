@@ -1,12 +1,11 @@
 ---
 title: Use [!DNL Experience Manager] aplicativo de desktop versão 1.10.
 description: Saiba como usar o aplicativo de desktop do Adobe Experience Manager versão 1.10 e otimizar seu trabalho com ativos no desktop.
-feature: Desktop App,Asset Management
+feature: Aplicativo para desktop, Gerenciamento de ativos
 exl-id: 2fdc1c8d-b822-4cca-ad06-bd875a00aa6d
-translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: dcd29d0bbb32004d970d334c256e659f4a4c39e1
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2371'
 ht-degree: 0%
 
 ---
@@ -19,7 +18,7 @@ Essa integração permite que várias funções na organização gerenciem os at
 
 As principais tarefas que você faz usando o [!DNL Experience Manager] aplicativo de desktop v1 incluem:
 
-1. [Conectar com  [!DNL Experience Manager] um servidor](#installandconnect)
+1. [Conecte-se com um servidor [!DNL Experience Manager] ](#installandconnect)
 1. [Abrir ativos diretamente no desktop](#openondesktop)
 1. [Editar e fazer check-out de ativos no desktop](#workonassets)
 1. [Fazer upload de ativos e pastas em massa](#bulkupload)
@@ -30,7 +29,7 @@ Para as várias ações recomendadas e não ativas, consulte as [práticas recom
 >
 >O aplicativo de desktop foi introduzido na versão [!DNL Experience Manager] 6.1 e foi chamado de [!DNL Experience Manager Assets Companion App].
 
-## [!DNL Experience Manager] pontos de contato do aplicativo de desktop no fluxo de trabalho criativo  {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## [!DNL Experience Manager] pontos de contato do aplicativo de desktop no fluxo de trabalho criativo {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
 [!DNL Experience Manager] o aplicativo de desktop, juntamente com o  [!DNL Assets], integra-se ao fluxo de trabalho criativo e oferece os seguintes pontos de contato.
 
@@ -66,7 +65,7 @@ A configuração detalhada pode ser necessária, dependendo das preferências da
    >
    >Somente uma instância do aplicativo de desktop [!DNL Experience Manager] pode ser instalada e estar ativa de cada vez.
 
-### Entenda as opções e preferências no aplicativo {#inapppref}
+### Compreender as opções e preferências no aplicativo {#inapppref}
 
 O aplicativo permite que as configurações se conectem e se desconectem dos servidores [!DNL Experience Manager], visualizem o status de uploads, gerenciem o cache local e assim por diante. As configurações padrão funcionam para um usuário típico do aplicativo. Você pode ajustar as configurações para tirar mais proveito do aplicativo e da integração com o servidor [!DNL Experience Manager]. As várias configurações são descritas abaixo em detalhes.
 
@@ -78,7 +77,7 @@ O aplicativo permite que as configurações se conectem e se desconectem dos ser
 
 **Avançado > Gerenciar** cacheVocê pode controlar a quantidade de espaço em disco disponível para fins de armazenamento em cache local. Os artefatos do servidor [!DNL Assets] são armazenados em cache localmente para uma experiência mais suave. Você pode alterar os padrões para atender aos seus requisitos. Além disso, é possível limpar o cache para buscar todos os ativos novamente. Ao limpar o cache, ele preserva as alterações não salvas. Quaisquer ativos não verificados no servidor [!DNL Experience Manager] são retidos e não excluídos.
 
-### Conecte-se a um servidor [!DNL Experience Manager] {#connect}
+### Conectar-se a um servidor [!DNL Experience Manager] {#connect}
 
 O aplicativo oferece suporte à configuração de proxy no Mac e no Windows. A configuração é lida quando o aplicativo é iniciado. Se modificar configurações de proxy, reinicie o aplicativo para que as alterações tenham efeito.
 
@@ -94,7 +93,7 @@ O aplicativo oferece suporte à configuração de proxy no Mac e no Windows. A c
 
    ![Forneça credenciais  [!DNL Experience Manager] do servidor na tela de logon no aplicativo  [!DNL Experience Manager] de desktop](assets/login_screen_v1.png)
 
-### Ativar ações da área de trabalho na [!DNL Experience Manager] interface da Web {#desktopactions}
+### Ativar ações da área de trabalho na interface da Web [!DNL Experience Manager] {#desktopactions}
 
 Na interface do usuário do Assets, é possível explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de ações da área de trabalho e não são ativadas por padrão. Siga estas etapas para habilitá-lo.
 
@@ -103,13 +102,13 @@ Na interface do usuário do Assets, é possível explorar os locais dos ativos o
 
    ![[!DNL Experience Manager] interface com preferências do usuário](assets/aem_ui_user_preferences.png)
 
-1. Na caixa de diálogo Preferências do usuário, selecione **[!UICONTROL Show Desktop Actions For Assets]**. Clique em **[!UICONTROL Accept]**.
+1. Na caixa de diálogo [!UICONTROL User Preferences], selecione **[!UICONTROL Show Desktop Actions For Assets]** e clique em **[!UICONTROL Accept]**.
 
    ![Marque  [!UICONTROL Show Desktop Actions For Assets] para ativar ações da área de trabalho](assets/enable_desktop_actions.png)
 
-   *Figura: Marque Mostrar ações da área de trabalho para ativos para ativar as ações da área de trabalho.*
+   *Figura: Marque  [!UICONTROL Show Desktop Actions For Assets] para ativar as ações da área de trabalho.*
 
-## Acessar e abrir ativos na área de trabalho {#openondesktop}
+## Acessar e abrir ativos no desktop {#openondesktop}
 
 Quando você clica em **Abrir** para abrir um ativo no computador local, o aplicativo baixa o ativo no cache interno. O aplicativo inicia o aplicativo de desktop nativo associado ao tipo de arquivo do ativo baixado.
 
@@ -150,7 +149,7 @@ Depois de mapear o repositório [!DNL Assets] para a unidade local, é possível
 
 Para localizar o ativo específico em seu sistema de arquivos local, clique em **Revelar** ação rápida ![Ícone de revelação](assets/do-not-localize/aemassets_reveal_icon.png). Como alternativa, escolha **Revelar** no menu **Ações da Área de Trabalho** na barra de ferramentas.
 
-## Entenda os status do ativo {#understand-the-asset-statuses}
+## Entender os status do ativo {#understand-the-asset-statuses}
 
 | ![Ícone de aplicativo padrão do Windows](assets/do-not-localize/win_default.png) | O aplicativo está conectado ao servidor e todos os ativos são sincronizados. |
 --- |--- |
@@ -158,9 +157,9 @@ Para localizar o ativo específico em seu sistema de arquivos local, clique em *
 | ![Ícone de sincronização de arquivos do Windows](assets/do-not-localize/win_sync.png) | Os ativos estão sincronizando. Os arquivos estão sendo carregados ou baixados. Você pode ver status exatos e pausar as transferências da janela Status do Ativo . |
 | ![Ícone de reconexão do Windows](assets/do-not-localize/win_refresh.png) | O aplicativo está tentando se reconectar. Possivelmente, os problemas de rede estão fazendo com que ela se desconecte. |
 
-## Trabalhe seus ativos {#workonassets}
+## Trabalhe com seus ativos {#workonassets}
 
-### Confira os ativos da [!DNL Experience Manager] interface da Web {#check-out-assets-from-the-aem-web-interface}
+### Confira os ativos da interface da Web [!DNL Experience Manager] {#check-out-assets-from-the-aem-web-interface}
 
 [!DNL Assets] permite fazer check-out dos ativos para edição e check-in deles novamente depois de concluir a realização das alterações. Após fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo e impede que outros usuários executem qualquer uma dessas operações. Para fazer check-out/in de ativos, você precisa ter acesso de gravação.
 
@@ -205,7 +204,7 @@ O aplicativo permite que você faça check-out dos arquivos de ativos para imped
 
 1. Para fazer check-in do ativo para que ele fique disponível para outros usuários, clique/toque no ícone de check-in na caixa de diálogo Informações do ativo .
 
-### Confira os ativos no Windows {#check-out-assets-on-windows}
+### Verificar ativos no Windows {#check-out-assets-on-windows}
 
 O aplicativo permite que você faça check-out dos arquivos de ativos para impedir que outros usuários modifiquem os arquivos nos quais você está trabalhando.
 
@@ -224,7 +223,7 @@ O aplicativo permite que você faça check-out dos arquivos de ativos para imped
 
 1. Para fazer o check-in do ativo para que ele esteja disponível para outros usuários, clique/toque no ícone de check-in na caixa de diálogo **Informações do ativo**.
 
-### Fazer check-in de um ativo usando o Finder ou o Explorer e usando a interface da Web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
+### Fazer check-in de um ativo usando o Finder ou o Explorer e a interface da Web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
 Quando terminar de editar os ativos, salve-os no aplicativo de desktop. No menu de contexto, selecione **Mais informações de ativos** e clique em check-in.
 
@@ -256,5 +255,5 @@ Como alternativa, selecione os arquivos/pastas que deseja fazer upload para [!DN
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager] Solução de problemas do aplicativo de desktop](troubleshoot-app-v1.md)
+>* [Solução de problemas do aplicativo de desktop  [!DNL Experience Manager] ](troubleshoot-app-v1.md)
 
