@@ -2,15 +2,14 @@
 title: Práticas recomendadas para o aplicativo de desktop e solução de problemas [!DNL Adobe Experience Manager] i
 description: Siga as práticas recomendadas e solucione problemas para resolver os problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-translation-type: tm+mt
-source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
+source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
 workflow-type: tm+mt
-source-wordcount: '2261'
+source-wordcount: '2260'
 ht-degree: 0%
 
 ---
 
-# Solucionar problemas do [!DNL Adobe Experience Manager] aplicativo de desktop {#troubleshoot-v2}
+# Solucionar problemas do aplicativo de desktop [!DNL Adobe Experience Manager] {#troubleshoot-v2}
 
 [!DNL Adobe Experience Manager] o aplicativo de desktop se conecta a um repositório DAM (Digital Asset Management, gerenciamento de ativos digitais) de  [!DNL Experience Manager] implantação. O aplicativo busca informações do repositório e resultados de pesquisa em sua máquina, baixa e carrega arquivos e pastas e inclui recursos para gerenciar conflitos com a interface do usuário do Assets.
 
@@ -56,7 +55,7 @@ Ao carregar muitos ativos, se alguns arquivos não forem carregados, consulte o 
 >
 >Ao trabalhar com o Atendimento ao cliente do Adobe em uma solicitação de suporte ou tíquete, você pode ser solicitado a compartilhar os arquivos de log para ajudar a equipe de Atendimento ao cliente a entender o problema. Arquive toda a pasta `Logs` e compartilhe-a com o contato do Atendimento ao cliente.
 
-### Alterar o nível de detalhes em arquivos de log {#level-of-details-in-log}
+### Alterar nível de detalhes em arquivos de log {#level-of-details-in-log}
 
 Para alterar o nível de detalhes nos arquivos de log:
 
@@ -183,7 +182,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 Se você estiver usando o aplicativo de desktop com [!DNL Experience Manager] 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Ele resolve o problema de falha de carregamento de arquivo relacionado a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consulte [instruções de instalação](install-upgrade.md#install-v2).
 
-## [!DNL Experience Manager] problemas de conexão do aplicativo de desktop  {#connection-issues}
+## [!DNL Experience Manager] problemas de conexão do aplicativo de desktop {#connection-issues}
 
 Se você estiver tendo problemas gerais de conectividade, veja algumas maneiras de obter mais informações sobre o que o [!DNL Experience Manager] aplicativo de desktop está fazendo.
 
@@ -200,7 +199,7 @@ Se você estiver tendo problemas gerais de conectividade, veja algumas maneiras 
 A maioria das solicitações do aplicativo é encontrada no log de solicitações. No entanto, se não houver informações úteis, pode ser útil examinar as solicitações enviadas pelo navegador incorporado do aplicativo.
 Consulte a seção [SAML](#da-connection-issue-with-saml-aem) para obter instruções sobre como visualizar essas solicitações.
 
-### Autenticação de logon SAML não funciona {#da-connection-issue-with-saml-aem}
+### Autenticação de logon SAML não está funcionando {#da-connection-issue-with-saml-aem}
 
 [!DNL Experience Manager] o aplicativo de desktop pode não se conectar à  [!DNL Adobe Experience Manager] implantação habilitada para SSO (SAML). O design do aplicativo tenta acomodar as variações e complexidades de conexões e processos SSO. No entanto, uma configuração pode exigir solução de problemas adicional.
 
@@ -247,7 +246,7 @@ Para solucionar mais problemas, é possível exibir os URLs exatos que o navegad
 
 Olhar a sequência de URL que está sendo carregada pode ajudar a solucionar problemas no final do SAML para determinar o que está errado.
 
-### Problema de configuração SSL {#ssl-config-v2}
+### Problema de configuração de SSL {#ssl-config-v2}
 
 As bibliotecas que o [!DNL Experience Manager] aplicativo de desktop usa para comunicação HTTP usam a imposição estrita de SSL. Às vezes, uma conexão pode ser bem-sucedida usando um navegador, mas falha ao usar [!DNL Experience Manager] aplicativo de desktop. Para configurar o SSL adequadamente, instale o certificado intermediário ausente no Apache. Consulte [Como instalar um certificado CA intermediário no Apache](https://access.redhat.com/solutions/43575).
 
@@ -327,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [Problemas conhecidos](release-notes.md#known-issues-v2)
->* [Evite conflitos de edição](using.md#adv-workflow-collaborate-avoid-conflicts)
+* [Evite conflitos de edição](using.md#adv-workflow-collaborate-avoid-conflicts)
 
