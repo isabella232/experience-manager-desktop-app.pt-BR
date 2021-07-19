@@ -4,9 +4,9 @@ description: Detalhes da versão, melhorias, novos recursos, compatibilidade e l
 mini-toc-levels: 1
 feature: Aplicativo para desktop, Informações sobre a versão
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 56596ade6e7aca5020af6df485289c5902417594
+source-git-commit: d83f04fb4757bb8025489da7866d36a51ddfe374
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 24%
 
 ---
@@ -70,7 +70,7 @@ Para saber os detalhes, consulte [Novidades na v2.0](introduction.md#whats-new-v
 
 **Atualizações no aplicativo v2.1.3.2**
 
-A nova versão do aplicativo vem com algumas grandes correções.
+A nova versão do aplicativo oferece uma correção de erro.
 
 **Atualizações no aplicativo v2.1.3.1**
 
