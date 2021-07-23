@@ -4,10 +4,10 @@ description: Detalhes da versão, melhorias, novos recursos, compatibilidade e l
 mini-toc-levels: 1
 feature: Aplicativo para desktop, Informações sobre a versão
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: d83f04fb4757bb8025489da7866d36a51ddfe374
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 24%
+source-wordcount: '1675'
+ht-degree: 23%
 
 ---
 
@@ -22,7 +22,7 @@ As **versões [!DNL Experience Manager] suportadas** são:
 * [!DNL Experience Manager] 6.4.4 ou mais recente, no Adobe Managed Services (AMS) ou no local. Consulte as [notas de versão do service pack](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=pt-BR).
 * [!DNL Experience Manager] 6.4.0 - 6.4.3 com o pacote de  [compatibilidade ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado, no Adobe Managed Services (AMS) ou no local.
 * [!DNL Experience Manager] 6.3 (com pacote de compatibilidade)
-* [!DNL Experience Manager] 6.3.3.1 ou mais recente com o pacote de  [compatibilidade ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado. O aplicativo de desktop não é compatível com [!DNL Experience Manager] 6.3.3.0 ou versões anteriores.
+* [!DNL Experience Manager] 6.3.3.1 ou mais recente com o pacote de  [compatibilidade ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado. O aplicativo de desktop não é compatível com [!DNL Experience Manager] 6.3.3.0 ou versões anteriores.
 
 [!DNL Adobe Experience Manager] o aplicativo de desktop está disponível para os seguintes sistemas  **operacionais**:
 
