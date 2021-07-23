@@ -1,17 +1,16 @@
 ---
 title: Instalar e configurar o aplicativo de desktop
 description: Instale e configure [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servidores e baixe os ativos em seu sistema de arquivos local.
-feature: Desktop App,Release Information
+feature: Aplicativo para desktop, Informações sobre a versão
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 1%
+source-wordcount: '1410'
+ht-degree: 0%
 
 ---
 
-# Instalar [!DNL Adobe Experience Manager] aplicativo de desktop {#install-app-v2}
+# Instalar o [!DNL Adobe Experience Manager] aplicativo de desktop {#install-app-v2}
 
 Usando o [!DNL Adobe Experience Manager] aplicativo de desktop, os ativos em [!DNL Experience Manager] são facilmente disponíveis no desktop local e podem ser usados em qualquer aplicativo de desktop nativo. Os ativos podem ser visualizados, abertos em aplicativos nativos de desktop, revelados no Mac Finder ou no Windows Explorer para inserção em outros documentos e alterados localmente - as alterações são salvas em [!DNL Experience Manager] quando você carrega e uma nova versão é criada no repositório.
 
@@ -61,7 +60,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
 1. Se estiver atualizando de outra versão do aplicativo, consulte [atualizar aplicativo de desktop](#upgrade-from-previous-version).
 
-1. Ignore esta etapa se estiver usando [!DNL Experience Manager] como [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 ou posterior ou [!DNL Experience Manager] 6.5.0 ou posterior. Certifique-se de que a configuração [!DNL Experience Manager] atenda aos requisitos de compatibilidade mencionados nas [notas de versão](release-notes.md). Se necessário, baixe o [pacote de compatibilidade aplicável](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) e instale-o usando o [!DNL Experience Manager] Gerenciador de Pacotes como um administrador [!DNL Experience Manager]. Para instalar um pacote, consulte [Como trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Ignore esta etapa se estiver usando [!DNL Experience Manager] como [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 ou posterior ou [!DNL Experience Manager] 6.5.0 ou posterior. Certifique-se de que a configuração [!DNL Experience Manager] atenda aos requisitos de compatibilidade mencionados nas [notas de versão](release-notes.md). Se necessário, baixe o [pacote de compatibilidade aplicável](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) e instale-o usando o [!DNL Experience Manager] Gerenciador de Pacotes como um administrador [!DNL Experience Manager]. Para instalar um pacote, consulte [Como trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Execute o binário do instalador e siga as instruções na tela para instalar.
 
@@ -131,7 +130,7 @@ Se você configurar ou modificar as configurações do servidor proxy para o Win
 
 Se seu proxy exigir autenticação, a equipe de TI pode permitir o URL [!DNL Experience Manager Assets] nas configurações do servidor proxy para permitir que o tráfego do aplicativo passe.
 
-## Desinstale o aplicativo {#uninstall-the-app}
+## Desinstalar o aplicativo {#uninstall-the-app}
 
 Para desinstalar o aplicativo no Windows, siga estas etapas:
 
