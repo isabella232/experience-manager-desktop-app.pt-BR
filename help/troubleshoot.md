@@ -2,7 +2,7 @@
 title: Práticas recomendadas para o aplicativo de desktop e solução de problemas [!DNL Adobe Experience Manager] i
 description: Siga as práticas recomendadas e solucione problemas para resolver os problemas ocasionais relacionados à instalação, atualização, configuração e assim por diante.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Siga as práticas recomendadas a seguir para evitar alguns problemas comuns e a 
 
 ## Como solucionar problemas {#troubleshooting-prep}
 
-Para solucionar problemas do aplicativo de desktop, esteja ciente das seguintes informações. Além disso, ele o prepara para transmitir melhor os problemas ao Atendimento ao cliente do Adobe se você optar por solicitar suporte.
+Para solucionar problemas do aplicativo de desktop, esteja ciente das seguintes informações. Além disso, ele o prepara para transmitir melhor os problemas ao Suporte ao cliente do Adobe se você optar por solicitar suporte.
 
 ### Localização dos arquivos de log {#check-log-files-v2}
 
@@ -53,7 +53,7 @@ Ao carregar muitos ativos, se alguns arquivos não forem carregados, consulte o 
 
 >[!NOTE]
 >
->Ao trabalhar com o Atendimento ao cliente do Adobe em uma solicitação de suporte ou tíquete, você pode ser solicitado a compartilhar os arquivos de log para ajudar a equipe de Atendimento ao cliente a entender o problema. Arquive toda a pasta `Logs` e compartilhe-a com o contato do Atendimento ao cliente.
+>Ao trabalhar com o Suporte ao cliente do Adobe em uma solicitação de suporte ou tíquete, você pode ser solicitado a compartilhar os arquivos de log para ajudar a equipe de suporte ao cliente a entender o problema. Arquive toda a pasta `Logs` e compartilhe-a com o contato do Suporte ao cliente.
 
 ### Alterar nível de detalhes em arquivos de log {#level-of-details-in-log}
 
@@ -303,7 +303,7 @@ Em ambos os métodos, o aplicativo é iniciado na pasta DAM raiz.
 Ao navegar pelos ativos na interface do usuário [!DNL Experience Manager], os ativos expirados não são exibidos. Para evitar visualizar, pesquisar e buscar ativos expirados ao navegar por ativos do aplicativo de desktop e do Asset Link, os administradores podem fazer a seguinte configuração. A configuração funciona para todos os usuários, independentemente do privilégio de administrador.
 
 * [Configuração no Experience Manager 6.5 para ocultar ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api) expirados.
-* [Configuração no Experience Manager como Cloud Service para ocultar ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api) expirados.
+* [Configuração no Experience Manager as a Cloud Service para ocultar ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api) expirados.
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
@@ -326,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [Problemas conhecidos](release-notes.md#known-issues-v2)
-* [Evite conflitos de edição](using.md#adv-workflow-collaborate-avoid-conflicts)
+>* [Evite conflitos de edição](using.md#adv-workflow-collaborate-avoid-conflicts)
 

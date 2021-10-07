@@ -1,11 +1,11 @@
 ---
 title: Instalar e configurar o aplicativo de desktop
 description: Instale e configure [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servidores e baixe os ativos em seu sistema de arquivos local.
-feature: Aplicativo para desktop, Informações sobre a versão
+feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer ap
 
 1. ([!DNL Experience Manager] 6.5.1 ou posterior) Se estiver usando um aplicativo de desktop com [!DNL Experience Manager] 6.5.1 ou posterior, atualize o conector S3 ou Azure para a versão 1.10.4 ou posterior. Consulte [Conector do Azure](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) ou [Conector S3](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
-   Se você for um cliente do Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente do Adobe.
+   Se você for um cliente do Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe.
 
 ## Definir preferências {#set-preferences}
 
