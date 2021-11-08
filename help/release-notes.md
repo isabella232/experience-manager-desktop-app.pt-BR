@@ -1,62 +1,59 @@
 ---
 title: '[!DNL Adobe Experience Manager] notas de versão do aplicativo de desktop'
-description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para o aplicativo de desktop  [!DNL Adobe Experience Manager] da .
+description: Detalhes da versão, melhorias, novos recursos, compatibilidade e links de download para [!DNL Adobe Experience Manager] aplicativo de desktop.
 mini-toc-levels: 1
-feature: Aplicativo para desktop, Informações sobre a versão
+feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 96be3f61388b7ec83bdb87d3d13a109d8cce0a1c
+source-git-commit: 9b7cb9c7114c1518f9b6c2e4c9ed9771f4a1716d
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1697'
 ht-degree: 22%
 
 ---
 
 # [!DNL Adobe Experience Manager] notas de versão do aplicativo de desktop {#release-notes-v2}
 
-As informações de versão do aplicativo de desktop mais recente versão 2.1 (2.1.3.3) estão abaixo. A data de lançamento é 29 de julho de 2021.
+As informações de versão do aplicativo de desktop mais recente versão 2.1 (2.1.3.4) estão abaixo. A data de lançamento é 4 de novembro de 2021.
 
-As **versões [!DNL Experience Manager] suportadas** são:
+O **compatível [!DNL Experience Manager] versões** são:
 
-* [!DNL Experience Manager] as a [!DNL Cloud Service]. Consulte as [notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=pt-BR).
-* [!DNL Experience Manager] 6.5.0 ou mais recente, no Adobe Managed Services (AMS) ou no local. Consulte as [notas de versão do service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=pt-BR).
-* [!DNL Experience Manager] 6.4.4 ou mais recente, no Adobe Managed Services (AMS) ou no local. Consulte as [notas de versão do service pack](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=pt-BR).
-* [!DNL Experience Manager] 6.4.0 - 6.4.3 com o pacote de  [compatibilidade ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado, no Adobe Managed Services (AMS) ou no local.
+* [!DNL Experience Manager] as a [!DNL Cloud Service]. Consulte [notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=pt-BR).
+* [!DNL Experience Manager] 6.5.0 ou mais recente, no Adobe Managed Services (AMS) ou no local. Consulte [notas de versão do service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=pt-BR).
+* [!DNL Experience Manager] 6.4.4 ou mais recente, no Adobe Managed Services (AMS) ou no local. Consulte [notas de versão do service pack](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=pt-BR).
+* [!DNL Experience Manager] 6.4.0 - 6.4.3 com o [pacote de compatibilidade](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado, no Adobe Managed Services (AMS) ou no local.
 * [!DNL Experience Manager] 6.3 (com pacote de compatibilidade)
-* [!DNL Experience Manager] 6.3.3.1 ou mais recente com o pacote de  [compatibilidade ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado. O aplicativo de desktop não é compatível com [!DNL Experience Manager] 6.3.3.0 ou versões anteriores.
+* [!DNL Experience Manager] 6.3.3.1 ou mais recente com o [pacote de compatibilidade](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) instalado. O aplicativo de desktop não é compatível com [!DNL Experience Manager] 6.3.3.0 ou versões anteriores.
 
-[!DNL Adobe Experience Manager] o aplicativo de desktop está disponível para os seguintes sistemas  **operacionais**:
+[!DNL Adobe Experience Manager] o aplicativo de desktop está disponível para o seguinte **sistemas operacionais**:
 
-* macOS X 10.14 ou mais recente, com as últimas correções de erros. [Computadores Mac com ](https://support.apple.com/en-us/HT211814) silicone Apple ainda não são compatíveis.
+* macOS X 10.14 ou mais recente, com as correções de erros mais recentes. [Computadores Mac com silício Apple](https://support.apple.com/en-us/HT211814) ainda não são compatíveis.
 * Windows 10 com os service packs e correções de erros mais recentes.
 
-Os **URLs de download** para SO suportado são:
+O **baixar URLs** para os SO compatíveis são:
 
 | Sistema operacional | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS (v2.1.3.3) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.3.dmg) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.3.dmg) |
-| Windows de 64 bits (v2.1.3.3) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.3.exe) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.3.exe) |
+| macOS (v2.1.3.4) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.4.dmg) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.4.dmg) |
+| Windows de 64 bits (v2.1.3.4) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.4.exe) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.4.exe) |
 | Windows de 32 bits (v2.1.3.1) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
 
 >[!NOTE]
 >
 >O Windows 7 não é mais suportado. Consulte [o artigo sobre EOL do Windows 7](https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 
-<!-- The version of the app you plan to install on your local machine requires a specific [!DNL Adobe Experience Manager] server version/additional server-side components (service packs, hot fixes, or feature packs). Contact your [!DNL Experience Manager] administrator for help.
--->
-
 ## Suporte para diferentes ativos e tipos de arquivo {#support-for-file-types}
 
-O aplicativo suporta ativos armazenados em [!DNL Experience Manager] que representam arquivos binários para suas operações básicas. A abertura de arquivos no aplicativo de desktop nativo depende da associação do sistema operacional dos tipos de arquivos específicos, como PNG ou JPG, para aplicativos específicos, como Mac Preview ou Adobe Photoshop.
+O aplicativo é compatível com ativos armazenados em [!DNL Experience Manager] que representam arquivos binários para suas operações básicas. A abertura de arquivos no aplicativo de desktop nativo depende da associação do sistema operacional dos tipos de arquivos específicos, como PNG ou JPG, para aplicativos específicos, como Mac Preview ou Adobe Photoshop.
 
-Alguns tipos de arquivo oferecem suporte para a inserção de ativos vinculados no binário. O aplicativo baixa previamente os ativos vinculados, se o ativo estiver presente no repositório [!DNL Experience Manager] quando esses arquivos binários forem abertos usando o aplicativo de desktop. Os tipos de arquivos compatíveis no momento incluem o seguinte:
+Alguns tipos de arquivo oferecem suporte para a inserção de ativos vinculados no binário. O aplicativo baixa previamente os ativos vinculados se o ativo estiver presente na variável [!DNL Experience Manager] repositório quando esses arquivos binários forem abertos usando o aplicativo de desktop. Os tipos de arquivos compatíveis no momento incluem o seguinte:
 
 * [!DNL Adobe InDesign] arquivos (formato INDD)
 * [!DNL Adobe Illustrator] arquivos (formato AI)
 * [!DNL Adobe Photoshop] arquivos (formato PS)
 
-O recurso é compatível com as versões [!DNL Adobe Creative Cloud] 2018 e [!DNL Adobe Creative Cloud] 2019 do aplicativo acima. O aplicativo usa uma abordagem heurística e de melhor correspondência para mapear os caminhos de desktop locais dos ativos vinculados para URLs no servidor [!DNL Experience Manager]. Baseia-se em algumas suposições:
+O recurso é compatível com [!DNL Adobe Creative Cloud] 2018 e [!DNL Adobe Creative Cloud] Versões de 2019 do aplicativo acima. O aplicativo usa uma abordagem heurística e de melhor correspondência para mapear os caminhos de desktop locais dos ativos vinculados para URLs na [!DNL Experience Manager] servidor. Baseia-se em algumas suposições:
 
-* Os caminhos para os arquivos colocados no aplicativo nativo usam um caminho de desktop global (posicionado a partir do compartilhamento de rede local mostrado com a opção [!UICONTROL Reveal]).
+* Os caminhos para os arquivos colocados no aplicativo nativo usam um caminho de desktop global (posicionado a partir do compartilhamento de rede local mostrado com [!UICONTROL Reveal] ).
 
 * Os caminhos são armazenados no registro XMP do arquivo pelo aplicativo nativo.
 
@@ -66,7 +63,11 @@ O recurso é compatível com as versões [!DNL Adobe Creative Cloud] 2018 e [!DN
 
 ## Novos recursos, melhorias e correções de erros {#what-is-new}
 
-Para saber os detalhes, consulte [Novidades na v2.0](introduction.md#whats-new-v2).
+Para saber os detalhes, consulte [Novidades da versão 2.0](introduction.md#whats-new-v2).
+
+**Atualizações no aplicativo v2.1.3.4**
+
+A nova versão do aplicativo oferece uma correção de erro.
 
 **Atualizações no aplicativo v2.1.3.3**
 
@@ -74,21 +75,21 @@ A nova versão do aplicativo oferece uma correção de erro.
 
 **Atualizações no aplicativo v2.1.3.2**
 
-Esta versão do aplicativo ofereceu uma correção de erro.
+Esta versão do aplicativo oferece uma correção de erro.
 
 **Atualizações no aplicativo v2.1.3.1**
 
 O erro corrigido nesta versão é:
 
-* As velocidades de upload e download de ativos melhoraram, mesmo com ativos grandes. Esta versão corrigiu um problema em que os uploads de ativos com [!DNL desktop app] falhavam às vezes quando arquivos muito grandes eram carregados.
+* As velocidades de upload e download de ativos melhoraram, mesmo com ativos grandes. Esta versão corrigiu um problema em que o upload de ativos com [!DNL desktop app] às vezes, falhava quando arquivos muito grandes eram carregados.
 
 **Atualização no aplicativo v2.1.2.0**
 
-* Uma nova opção para [!UICONTROL Clear Cookies] é adicionada ao menu principal do aplicativo. Ajuda com possíveis problemas de logon, por exemplo, ao alterar a conexão de um servidor para outro. Consulte [limpar cookies antes de conectar](/help/troubleshoot.md#cannot-login-cookies-issue).
+* Uma nova opção para [!UICONTROL Clear Cookies] é adicionado ao menu principal do aplicativo. Ajuda com possíveis problemas de logon, por exemplo, ao alterar a conexão de um servidor para outro. Consulte [limpar cookies antes de conectar](/help/troubleshoot.md#cannot-login-cookies-issue).
 
-* Uma opção é adicionada permitindo que o aplicativo carregue pastas e arquivos, de modo que seus nomes de nó criados em [!DNL Adobe Experience Manager] sejam iguais aos nomes de arquivo e pasta locais.
+* Uma opção é adicionada permitindo que o aplicativo carregue pastas e arquivos, de modo que seus nomes de nó tenham sido criados no [!DNL Adobe Experience Manager] são iguais aos nomes de arquivo e pasta locais.
 
-   Esse comportamento é semelhante ao comportamento padrão na versão 1 do aplicativo de desktop. Enquanto na versão atual, se a opção não estiver ativada, os espaços em branco e os caracteres `% ; # , + ? ^ { } "` nos nomes das pastas serão substituídos por traço nos caminhos das pastas. Além disso, os caracteres em maiúsculas são convertidos em minúsculas nos caminhos da pasta. No entanto, em nomes de arquivos, os caracteres `# % { } ? &` são substituídos por traço; mas os espaços em branco e o invólucro são retidos. Para obter mais informações, consulte [Preferências de aplicativo](/help/install-upgrade.md#set-preferences) e [Fazer upload e adicionar novos ativos](/help/using.md#upload-and-add-new-assets-to-aem).
+   Esse comportamento é semelhante ao comportamento padrão na versão 1 do aplicativo de desktop. Enquanto na versão atual, se a opção não estiver ativada, os espaços em branco e os caracteres `% ; # , + ? ^ { } "` em nomes de pastas são substituídos por traço nos caminhos de pastas. Além disso, os caracteres em maiúsculas são convertidos em minúsculas nos caminhos da pasta. No entanto, em nomes de arquivos, os caracteres `# % { } ? &` são substituídas por traço; mas os espaços em branco e o invólucro são retidos. Para obter mais informações, consulte [Preferências do aplicativo](/help/install-upgrade.md#set-preferences) e [Fazer upload e adicionar novos ativos](/help/using.md#upload-and-add-new-assets-to-aem).
 
 **Atualização no aplicativo v2.1.1.0**
 
@@ -102,7 +103,7 @@ O erro corrigido nesta versão é:
 
 O erro corrigido nesta versão é:
 
-* Correção do problema de logon para usuários de aplicativos no Windows que tentam acessar o repositório DAM em [!DNL Adobe Experience Manager] 6.5.5.0.
+* Correção do problema de logon para usuários de aplicativos no Windows que tentam acessar o repositório DAM no [!DNL Adobe Experience Manager] 6.5.5.0
 
 **Atualizações no aplicativo v2.0.2**
 
@@ -122,15 +123,15 @@ As correções de erros e atualizações são:
 
 As correções de erros e atualizações são:
 
-* Permita que a opção configure o diretório `%Temp%` para corresponder ao caminho `%APPDATA%`. <!-- CQ-4282665 -->
+* Permitir opção para configurar `%Temp%` diretório para corresponder `%APPDATA%` caminho. <!-- CQ-4282665 -->
 
-* Permita que os usuários façam logon no Autor [!DNL Experience Manager] por meio da autenticação Okta SAML. <!-- CQ-4278134 -->
+* Permitir que os usuários façam logon [!DNL Experience Manager] Autor via autenticação Okta SAML. <!-- CQ-4278134 -->
 
 ## Instruções de instalação {#installation-instructions-v2}
 
 Para saber como instalar e configurar o aplicativo, consulte [Instalar [!DNL Experience Manager] aplicativo de desktop](install-upgrade.md).
 
-Se estiver atualizando de um aplicativo de desktop [!DNL Experience Manager] anterior, você deve seguir essas práticas recomendadas para transição que estão listadas em [atualizar da versão anterior](install-upgrade.md#upgrade-from-previous-version).
+Se você estiver atualizando de um [!DNL Experience Manager] aplicativo de desktop, você deve seguir essas práticas recomendadas para transição listadas em [atualizar da versão anterior](install-upgrade.md#upgrade-from-previous-version).
 
 ## Observações importantes sobre como funciona o aplicativo {#how-app-works}
 
@@ -140,11 +141,11 @@ Se estiver atualizando de um aplicativo de desktop [!DNL Experience Manager] ant
 
    * Se quiser trabalhar com o ativo no desktop, você deve abrir, editar ou baixar explicitamente no desktop, individualmente, em uma pasta ou por meio de várias seleções.
 
-   * Se você deseja obter alterações locais em ativos carregados em [!DNL Experience Manager], é necessário selecionar [!UICONTROL Upload Changes], individualmente ou por meio de várias seleções.
+   * Se desejar obter alterações locais em ativos carregados para o [!DNL Experience Manager], é necessário selecionar [!UICONTROL Upload Changes], individualmente ou por meio de várias seleções.
 
    * O aplicativo não é um “cliente de sincronização” que sincroniza ativos no desktop e no [!DNL Experience Manager].
 
-   * O aplicativo não fornece um compartilhamento de rede que mapeia o repositório [!DNL Experience Manager] como uma estrutura de pasta virtual.
+   * O aplicativo não fornece um compartilhamento de rede que mapeia a variável [!DNL Experience Manager] repositório como uma estrutura de pasta virtual.
 
 * A lista de ativos mostrada pelo aplicativo se baseia no status do repositório dos Ativos Os arquivos baixados localmente e depois renomeados nos arquivos locais ou na pasta de cache não são exibidos ou gerenciados pelo aplicativo.
 
@@ -170,11 +171,11 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 
 * Depois de aplicar e remover o filtro para localizar todos os ativos editados localmente, o aplicativo não leva os usuários até os resultados da pesquisa ou a visualização de pasta com os quais os usuários começaram a trabalhar. O aplicativo exibe a pasta raiz do repositório DAM.
 
-* Às vezes, quando você se conecta a um URL que não tem [!DNL Experience Manager] servidor em execução, a tela de conexão fica sem resposta. Saia do aplicativo e reinicie.
+* Às vezes, ao se conectar a um URL que não tem [!DNL Experience Manager] servidor em execução, a tela de conexão fica sem resposta. Saia do aplicativo e reinicie.
 
 **Problemas de CRUD (Create, Read, Update, and Delete, Criar, ler, atualizar e excluir):**
 
-* Ao fazer upload de alterações em um ativo com comentários, os comentários são armazenados com o ativo em [!DNL Experience Manager], mas não são visíveis como comentários de versão. Esse problema é resolvido em [!DNL Experience Manager] 6.4.5 e [!DNL Experience Manager] 6.5.1. O Adobe recomenda instalar os service packs mais recentes. <!-- CQ-4268990 -->
+* Ao fazer upload de alterações em um ativo com comentários, os comentários são armazenados com o ativo em [!DNL Experience Manager] mas não são visíveis como comentários de versão. Esse problema é resolvido em [!DNL Experience Manager] 6.4.5 e [!DNL Experience Manager] 6.5.1. A Adobe recomenda a instalação dos service packs mais recentes. <!-- CQ-4268990 -->
 
 * As transferências de ativos não podem ser canceladas pelo usuário. Se você acionou uma transferência volumosa não intencional, saia do aplicativo e reinicie. <!-- CQ-4278940 -->
 
@@ -184,9 +185,9 @@ O diagrama a seguir ilustra o fluxo de ativos e arquivos da nuvem para o sistema
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=pt-BR)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
->* [Como usar [!DNL Experience Manager] aplicativo de desktop](using.md)
-* [Instalar e atualizar o aplicativo de desktop](install-upgrade.md)
-* [Práticas recomendadas e dicas para solução de problemas](troubleshoot.md)
+>* [Como utilizar [!DNL Experience Manager] aplicativo de desktop](using.md)
+>* [Instalar e atualizar o aplicativo de desktop](install-upgrade.md)
+>* [Práticas recomendadas e dicas para solução de problemas](troubleshoot.md)
 
