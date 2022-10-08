@@ -3,9 +3,9 @@ title: Instalar e configurar o aplicativo de desktop
 description: Instalar e configurar [!DNL Adobe Experience Manager] aplicativo de desktop para trabalhar com [!DNL Adobe Experience Manager Assets] e baixe os ativos no sistema de arquivos local.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 7b884d89c34a6e45f49d4cacb0f5d537dc769742
+source-git-commit: 5b5970cec02d4a605bd7d826d1daa71fe228b0d9
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,8 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer Ad
 
    *Figura: Tela de conexão para o endereço do servidor de entrada.*
 
+   Selecionar **[!UICONTROL Remember Connection]** para evitar inserir os detalhes da conexão sempre que fizer logon no aplicativo de desktop.
+
    >[!CAUTION]
    >
    >Verifique se não há espaços à esquerda ou à direita antes ou depois do endereço do [!DNL Experience Manager] servidor. Caso contrário, o aplicativo não poderá se conectar ao [!DNL Experience Manager] servidor.
@@ -136,7 +138,7 @@ Para desinstalar o aplicativo no Windows, siga estas etapas:
 
 1. Faça upload de todas as suas alterações para [!DNL Experience Manager] para evitar a perda de edições. Consulte [Edite ativos e faça upload de ativos atualizados para [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Fazer logoff e [!UICONTROL Exit] o aplicativo.
 
-1. Remova o aplicativo conforme você removeria qualquer outro aplicativo de SO. Desinstale-o em Adicionar e remova programas no Windows.
+1. Remova o aplicativo conforme você removeria qualquer outro aplicativo do sistema operacional. Desinstale-o em Adicionar e remova programas no Windows.
 
 1. Para remover o cache e os logs, marque a caixa de seleção necessária.
 
