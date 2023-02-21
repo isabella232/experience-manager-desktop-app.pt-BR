@@ -4,22 +4,24 @@ description: Detalhes da versão, melhorias, novos recursos, compatibilidade e l
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 2f49c1e952202e627e60fa9ad7998a4927aa817c
+source-git-commit: 6dfbfc6d0a1f1947ef03ebde73a5601b790a5d18
 workflow-type: tm+mt
-source-wordcount: '2188'
-ht-degree: 17%
+source-wordcount: '2368'
+ht-degree: 16%
 
 ---
 
 # [!DNL Adobe Experience Manager] notas de versão do aplicativo de desktop {#release-notes-v2}
 
-As informações de versão do aplicativo de desktop mais recente versão 2.2.0 estão abaixo. A data de lançamento é quinta-feira, 7 de outubro de 2022.
+As informações de versão do aplicativo de desktop mais recente versão 2.2.1 estão abaixo. A data de lançamento é 10 de fevereiro de 2023.
 
-A versão mais recente do aplicativo de desktop inclui os seguintes aprimoramentos:
+A versão mais recente do aplicativo de desktop inclui as seguintes correções de erros:
 
-* Suporte para Apple Silicon (M1).
+* o aplicativo de desktop exibe a mensagem de erro de tempo limite da sessão ao clicar **[!UICONTROL Sign In]**.
 
-* Capacidade de lembrar a string de conexão ao fazer logon no aplicativo de desktop.
+* Problemas ao acessar o aplicativo de desktop v2.2.0 no macOS.
+
+* o aplicativo de desktop exibe uma mensagem de erro ao classificar ativos clicando em **[!UICONTROL Edited Locally]**.
 
 O **compatível [!DNL Experience Manager] versões** são:
 
@@ -39,6 +41,9 @@ O **baixar URLs** para os SO compatíveis são:
 
 | Sistema operacional | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v2.2.1) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.2.1.dmg) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.2.1.dmg) |
+| macOS Apple Silicon (M1) (v2.2.1) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.2.1.dmg) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.2.1.dmg) |
+| Windows de 64 bits (v2.2.1) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.2.1.exe) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.2.1.exe) |
 | macOS (v2.2.0) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.2.0.dmg) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.2.0.dmg) |
 | macOS Apple Silicon (M1) (v2.2.0) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.2.0.dmg) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.2.0.dmg) |
 | Windows de 64 bits (v2.2.0) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.2.0.exe) | [Link de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.2.0.exe) |
@@ -79,6 +84,12 @@ O recurso é compatível com [!DNL Adobe Creative Cloud] 2018 e [!DNL Adobe Crea
 ## Novos recursos, melhorias e correções de erros {#what-is-new}
 
 Para saber os detalhes, consulte [Novidades da versão 2.0](introduction.md#whats-new-v2).
+
+**Atualizações no aplicativo v2.2.0**
+
+* Suporte para Apple Silicon (M1).
+
+* Capacidade de lembrar a string de conexão ao fazer logon no aplicativo de desktop.
 
 **Atualizações no aplicativo v2.1.5.0**
 
