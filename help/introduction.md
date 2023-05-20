@@ -6,7 +6,7 @@ exl-id: 5da36ac5-ab5b-4f8d-b446-ebe2360ec464
 source-git-commit: bc188db916eaa2d45f68849bb1527acd27e03db9
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 62%
+ht-degree: 64%
 
 ---
 
@@ -16,7 +16,7 @@ A Adobe oferece fluxos de trabalho conectados nas soluções para viabilizar a p
 
 Ao usar o aplicativo, os ativos em [!DNL Experience Manager Assets] são facilmente acessíveis no desktop local e podem ser usados em qualquer aplicativo de desktop. Você pode abrir e editar os ativos nos aplicativos de desktop de sua escolha. As edições locais são disponibilizadas em [!DNL Experience Manager] como uma nova versão do ativo somente quando você opta por fazer upload das alterações, o que permite manipular a edição de ativos em andamento de maneira eficiente no desktop. O aplicativo oferece suporte ao upload de ativos e pastas aninhadas para [!DNL Experience Manager], simplificando a adição de novo conteúdo ao repositório.
 
-Essa integração permite que várias funções na organização gerenciem os ativos de forma central no [!DNL Experience Manager Assets]. Os profissionais de marketing e usuários empresariais podem garantir a conformidade com os vários padrões, incluindo identidade visual e licenciamento. Os usuários criativos, que também têm uma ferramenta dedicada, o [Adobe Asset Link](https://www.adobe.com/marketing/experience-manager-assets/adobe-asset-link.html), para trabalhar com ativos no Adobe Photoshop, Illustrator e InDesign, também podem acessar ativos no desktop na Creative Cloud e em outros aplicativos nativos.
+Essa integração permite que várias funções na empresa gerenciem os ativos de maneira central no [!DNL Experience Manager Assets]. Os profissionais de marketing e usuários empresariais podem garantir a conformidade com os vários padrões, incluindo identidade visual e licenciamento. Os usuários criativos, que também têm uma ferramenta dedicada, o [Adobe Asset Link](https://www.adobe.com/marketing/experience-manager-assets/adobe-asset-link.html), para trabalhar com ativos no Adobe Photoshop, Illustrator e InDesign, também podem acessar ativos no desktop na Creative Cloud e em outros aplicativos nativos.
 
 >[!NOTE]
 >

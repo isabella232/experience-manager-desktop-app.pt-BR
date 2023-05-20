@@ -6,17 +6,17 @@ user-guide-title: Guia do aplicativo para desktop Experience Manager
 breadcrumb-title: Guia do aplicativo para desktop
 user-guide-description: Saiba como usar o aplicativo para desktop Experience Manager para conectar repositórios e aplicativos de desktop a fim de fornecer acesso mais rápido aos recursos e workflows otimizados.
 feature-set: Experience Manager Assets,Experience Manager
-feature: Aplicativo de desktop
+feature: Desktop App
 role: User, Admin
 source-git-commit: b661fedb6e33599921d39c0597c7d9f8e576798b
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 90%
+source-wordcount: '63'
+ht-degree: 93%
 
 ---
 
 
-# Guia do aplicativo de desktop do Adobe {#using}
+# Guia do aplicativo para desktop Adobe {#using}
 
 + [Visão geral](introduction.md)
 + [Notas de versão](release-notes.md)
