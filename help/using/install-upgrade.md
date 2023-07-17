@@ -3,9 +3,9 @@ title: Instalar e configurar o aplicativo de desktop
 description: Instalar e configurar [!DNL Adobe Experience Manager] aplicativo de desktop para trabalhar com [!DNL Adobe Experience Manager Assets] servidores e baixe os ativos em seu sistema de arquivos local.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 0f366e07b9d220cf04286b24e4bb45ce0b385e5c
+source-git-commit: e51547496b03ac42d13e7bee5e2e3d20e520d0ad
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Para instalar o aplicativo de desktop, siga estas etapas. Desinstale qualquer Ad
    >
    >Verifique se não há espaços à esquerda ou à direita antes ou depois do endereço do [!DNL Experience Manager] servidor. Caso contrário, o aplicativo não poderá se conectar à [!DNL Experience Manager] servidor.
 
-1. Clique em **[!UICONTROL I want to connect a different way]** e clique em **[!UICONTROL Adobe login]** para fazer logon no servidor do Experience Manager Assets usando o Adobe Identity Management Service (IMS). O logon IMS permite que o aplicativo de desktop execute a atualização do token de acesso automaticamente, permitindo que o usuário permaneça conectado por até 14 dias. Clique em **[!UICONTROL Direct login]** para fazer logon na [!DNL Experience Manager] servidor usando as credenciais.
+1. [Opcional] Clique em **[!UICONTROL I want to connect a different way]** e clique em **[!UICONTROL Adobe login]** para fazer logon no servidor do Experience Manager Assets usando o Adobe Identity Management Service (IMS). O logon IMS permite que o aplicativo de desktop execute a atualização do token de acesso automaticamente, permitindo que o usuário permaneça conectado por até 14 dias. Clique em **[!UICONTROL Direct login]** para executar o logon padrão na [!DNL Experience Manager] servidor usando as credenciais do usuário.
 
    ![Login do Adobe](assets/adobe-login.png)
 
