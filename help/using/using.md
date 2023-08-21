@@ -4,7 +4,7 @@ description: Uso [!DNL Adobe Experience Manager] aplicativo de desktop, para tra
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: df5283f6bef6adbb007bf93c6dabb3b12e430f58
+source-git-commit: 98e99ee48d835cea0098c4acfe49f6b247ccf658
 workflow-type: tm+mt
 source-wordcount: '4054'
 ht-degree: 0%
@@ -22,6 +22,7 @@ Ao abrir o aplicativo depois de fazer logoff ou pela primeira vez, forneça o UR
 As principais tarefas que você realizar usando o [!DNL Adobe Experience Manager] aplicativos de desktop são:
 
 ![Workflows e tarefas que você pode realizar usando [!DNL Experience Manager] aplicativo de desktop](assets/aem_desktop_app_usecases_v2.png "Workflows e tarefas que você pode realizar usando [!DNL Adobe Experience Manager] aplicativo de desktop")
+
 Baixar [este](assets/aem_desktop_app_usecases_print.pdf) arquivo PDF pronto para impressão.
 
 ## Como o aplicativo de desktop funciona {#how-app-works2}
