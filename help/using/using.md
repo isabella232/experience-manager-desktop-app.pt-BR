@@ -4,9 +4,9 @@ description: Uso [!DNL Adobe Experience Manager] aplicativo de desktop, para tra
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 98e99ee48d835cea0098c4acfe49f6b247ccf658
+source-git-commit: 1139b3359042a134d86900e3b7b7f03d8d920cdc
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4032'
 ht-degree: 0%
 
 ---
@@ -217,11 +217,11 @@ No aplicativo herdado, os nomes de nó criados no repositório mantiveram os esp
 
 | Caracteres ‡ | Preferência Herdada no aplicativo | Quando ocorrer em nomes de arquivo | Quando ocorrer em nomes de pasta | Exemplo |
 |---|---|---|---|---|
-| `. / : [ ] | *` | Ativado ou desativado | Substituído por `-` (hífen). A `.` (ponto) na extensão de nome de arquivo é retido como está. | Substituído por `-` (hífen). | `myimage.jpg` permanece como está e `my.image.jpg` alterações em `my-image.jpg`. |
+| `. / : [ ] \| *` | Ativado ou desativado | Substituído por `-` (hífen). A `.` (ponto) na extensão de nome de arquivo é retido como está. | Substituído por `-` (hífen). | `myimage.jpg` permanece como está e `my.image.jpg` alterações em `my-image.jpg`. |
 | `% ; # , + ? ^ { } "` e espaços em branco | ![ícone de desmarcar](assets/do-not-localize/deselect-icon.png) Desabilitado | Os espaços em branco são retidos | Substituído por `-` (hífen). | `My Folder.` alterações em `my-folder-`. |
-| `# % { } ? & .` | ![ícone de desmarcar](assets/do-not-localize/deselect-icon.png) Desabilitado | Substituído por `-` (hífen). | ND. | `#My New File.` alterações em `-My New File-`. |
+| `# % { } ? & .` | ![ícone de desmarcar](assets/do-not-localize/deselect-icon.png) Desabilitado | Substituído por `-` (hífen). | N. D. | `#My New File.` alterações em `-My New File-`. |
 | Caracteres em maiúsculas | ![ícone de desmarcar](assets/do-not-localize/deselect-icon.png) Desabilitado | A caixa é retida como está. | Alterado para caracteres em minúsculas. | `My New Folder` alterações em `my-new-folder`. |
-| Caracteres em maiúsculas | ![ícone seleção verificada](assets/do-not-localize/selection-checked-icon.png) Ativado | A caixa é retida como está. | A caixa é retida como está. | ND. |
+| Caracteres em maiúsculas | ![ícone seleção verificada](assets/do-not-localize/selection-checked-icon.png) Ativado | A caixa é retida como está. | A caixa é retida como está. | N. D. |
 
 ‡ A lista de caracteres é uma lista separada por espaços em branco.
 
